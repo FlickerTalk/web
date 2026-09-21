@@ -1,0 +1,8 @@
+node_modules/
+dist/
+
+# Secrets
+.env
+
+# Versioned on purpose (overrides the global git ignore)
+!CLAUDE.md
