@@ -89,8 +89,8 @@ test("the price is on the home page and in the terms", () => {
   for (const page of ["index.html", "terms/index.html"]) {
     const words = text(page);
     assert.match(words, /first year/i, `${page}: first year free`);
-    assert.match(words, /€1 (per|a) year/i, `${page}: €1 a year`);
-    assert.match(words, /under 18/i, `${page}: free under 18`);
+    assert.match(words, /€1 a year/i, `${page}: €1 a year`);
+    assert.match(words, /under 21/i, `${page}: free under 21`);
   }
 });
 
