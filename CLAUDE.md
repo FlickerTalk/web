@@ -15,8 +15,8 @@ architecture, Download, FAQ, Privacy Policy, Terms, Security, Transparency, Cont
   comunicación; los mensajes que no pueden entregarse directamente se guardan cifrados de
   extremo a extremo, sin que FlickerTalk pueda leerlos, solo hasta su entrega o caducidad; y no
   conserva historiales de IP.
-- Precio (`§40`): primer año gratis, después 1 €/año para adultos; menores de 18, siempre gratis.
-  Debe figurar desde el lanzamiento en la landing y en los términos.
+- Precio (`§40`): 1 €/año, con el primer año gratis desde la instalación; **menores de 21, siempre
+  gratis** (2026-09-22). Debe figurar desde el lanzamiento en la landing y en los términos.
 - Documentar con claridad los límites del modelo (`§67–69`, `§99`): los peers ven sus IPs
   públicas, Google STUN ve conexiones y Google/Apple ven metadatos de push.
 
