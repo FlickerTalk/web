@@ -1,0 +1,8 @@
+{
+  "name": "flickertalk-web",
+  "private": true,
+  "description": "flickertalk.com: static HTML and CSS, no scripts",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  }
+}

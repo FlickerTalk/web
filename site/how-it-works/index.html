@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How FlickerTalk works</title>
+  <meta name="description" content="What travels where in FlickerTalk, what our server keeps, and who can see what, limits included.">
+  <meta name="theme-color" content="#e8731f">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="26" height="26">FlickerTalk</a>
+    <nav aria-label="Main">
+        <a href="/how-it-works/" aria-current="page">How it works</a>
+        <a href="/security/">Security</a>
+        <a href="/faq/">FAQ</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <h1>How it works</h1>
+    <p class="lead">FlickerTalk is built so that there is as little as possible to keep. This page says what travels where, what our server keeps and, just as important, what others can still see.</p>
+
+    <h2>Your identity</h2>
+    <p>When you open FlickerTalk for the first time, your phone makes a pair of keys. The private key stays in the phone's secure key store (Android Keystore or the iOS Keychain) and never leaves it. Your FlickerTalk ID is derived from the public key. There is no phone number, email or password.</p>
+    <p>You add someone by scanning the code on their screen or opening the link they share. That code is a contact card signed by their key. We have no directory of users and never see your address book.</p>
+
+    <h2>Sending a message</h2>
+    <p>A message is saved on your phone first. If the other phone can be reached, it goes straight there over an encrypted WebRTC connection, and it is also encrypted end to end with the Olm protocol (a Double Ratchet, from the Matrix project's audited vodozemac library). The other phone saves it and confirms, and only then is it marked as delivered.</p>
+
+    <h3>When the other phone is off</h3>
+    <p>Our server wakes the other phone with a push notification that carries no message and no sender: only “wake up”. If a direct connection is still not possible, the message goes to the recipient's mailbox on our server, encrypted end to end so that we cannot read it. It is deleted as soon as the recipient picks it up, and after 7 days at the latest. The mailbox keeps no sender and is never backed up.</p>
+    <p>The mailbox is on by default. Either of you can turn it off in Settings; then messages wait on the sender's phone until the two phones can talk directly.</p>
+
+    <h3>Files and calls</h3>
+    <p>Files and calls never go through the mailbox. They travel over the direct connection between the phones, or through our relay when a direct path is impossible, still encrypted.</p>
+
+    <h2>What our server keeps</h2>
+    <table>
+      <thead><tr><th>Data</th><th>Why</th><th>For how long</th></tr></thead>
+      <tbody>
+        <tr><td>Your device ID and public key</td><td>To check that requests really come from your phone</td><td>Until you erase the phone in the app</td></tr>
+        <tr><td>A hash of your contact card's routing code</td><td>So that only your contacts can wake you or leave you mail</td><td>Same</td></tr>
+        <tr><td>Your push token, encrypted with a key kept outside the database</td><td>To wake your phone</td><td>Same, or until Google or Apple say it expired</td></tr>
+        <tr><td>Messages that could not be delivered, encrypted end to end</td><td>To deliver them later</td><td>Until picked up, at most 7 days</td></tr>
+      </tbody>
+    </table>
+    <p>Nothing else: no contacts, no conversations, no call history, no access logs and no history of IP addresses.</p>
+
+    <h2>What others can see</h2>
+    <dl>
+      <dt>The person you talk to</dt>
+      <dd>When your phones connect directly, each can see the other's public IP address: that is how peer-to-peer works. In Settings you can make calls always go through our relay, which hides your IP address from the other person during calls.</dd>
+      <dt>Our relay</dt>
+      <dd>When a direct connection is impossible, our relay carries the encrypted traffic. It sees the IP addresses of both phones and how much data flows, never the content, and it keeps no logs.</dd>
+      <dt>Google and Apple</dt>
+      <dd>They deliver the wake-up notifications, so they see that your phone got a push and when. The push never contains a message or who sent it.</dd>
+      <dt>Our server</dt>
+      <dd>It sees the IP address of a connection while it is open, to route it and to stop abuse. It does not keep it: the abuse limits use a salted hash that lives only in memory for a minute.</dd>
+      <dt>Your network provider</dt>
+      <dd>Like with any app, your internet provider can see that you use FlickerTalk and when.</dd>
+    </dl>
+
+    <h2>What no app can protect</h2>
+    <p>FlickerTalk protects your conversations from our servers, from a breach of our database and from the push services. It cannot protect you from a phone that is compromised or unlocked in someone else's hands, from malware, from screenshots, or from the other person copying what you send.</p>
+  </main>
+  <footer class="wrap">
+    <nav aria-label="Legal">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/transparency/">Transparency</a>
+      <a href="/security/">Security</a>
+      <a href="https://github.com/FlickerTalk">Source code</a>
+      <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>
+    </nav>
+    <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
+    <p>No cookies, no analytics, no trackers on this site.</p>
+  </footer>
+</body>
+</html>

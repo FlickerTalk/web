@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · FlickerTalk</title>
+  <meta name="description" content="FlickerTalk's privacy policy: who is responsible, what data is processed, why, for how long, and your rights.">
+  <meta name="theme-color" content="#e8731f">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="26" height="26">FlickerTalk</a>
+    <nav aria-label="Main">
+        <a href="/how-it-works/">How it works</a>
+        <a href="/security/">Security</a>
+        <a href="/faq/">FAQ</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <h1>Privacy policy</h1>
+    <p class="updated">Effective 22 September 2026</p>
+    <p class="lead">FlickerTalk does not store conversations, address books, private keys or communication histories on its servers. Messages that cannot be delivered directly are kept encrypted end to end, so that we cannot read them, only until they are delivered or expire. The service keeps only the minimum technical information needed to route notifications and deliver those pending messages.</p>
+
+    <h2>1. Who is responsible</h2>
+    <p>The controller of your data is <strong>ERPLORA CLOUD SL</strong>, NIF B27593136, Avda. de Lisboa, 17, Pta. C, 28822 Coslada (Madrid), Spain. Contact: <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>.</p>
+
+    <h2>2. Data that never leaves your phone</h2>
+    <p>Your messages, files, call history, contacts and the names you give them, your private keys and, if the app ever needs it for the price, whether you are under 18. FlickerTalk does not read your phone's address book and never asks for your date of birth.</p>
+
+    <h2>3. Data our servers process</h2>
+    <table>
+      <thead><tr><th>Data</th><th>Purpose and legal basis</th><th>Kept</th></tr></thead>
+      <tbody>
+        <tr><td>Device ID, public key and a hash of your routing code</td><td>Authenticate your phone's requests and let only your contacts reach you. Performance of the contract (GDPR art. 6.1.b).</td><td>Until you use “Erase this phone”</td></tr>
+        <tr><td>Push token and provider, encrypted</td><td>Wake your phone when a message or call arrives. Art. 6.1.b.</td><td>Until you erase the phone, turn notifications off, or the provider says the token expired</td></tr>
+        <tr><td>Undelivered messages, end-to-end encrypted, without sender</td><td>Deliver them when your phone comes back. Art. 6.1.b.</td><td>Until picked up, at most 7 days; never in backups</td></tr>
+        <tr><td>IP address of an open connection</td><td>Route it and limit abuse. Legitimate interest in the security of the service (art. 6.1.f).</td><td>Not stored; the abuse limits use a salted hash held in memory for one minute</td></tr>
+        <tr><td>IP addresses seen by our relay and STUN servers</td><td>Connect two phones that cannot reach each other directly. Art. 6.1.b.</td><td>Not logged</td></tr>
+        <tr><td>Reports and emails you send us</td><td>Handle abuse reports and answer you. Art. 6.1.f.</td><td>As long as needed to handle them</td></tr>
+      </tbody>
+    </table>
+    <p>A report is an email you send from your own mail app to <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>, with only the evidence you choose to include.</p>
+
+    <h2>4. Who else takes part</h2>
+    <ul>
+      <li><strong>Hetzner Online GmbH</strong> (Germany) hosts our servers in its data centre in Falkenstein, Germany.</li>
+      <li><strong>Google</strong> (Firebase Cloud Messaging) delivers the wake-up notifications on Android, and <strong>Apple</strong> (Apple Push Notification service) on iPhone. They receive your push token and the time of each notification, never its content or sender.</li>
+      <li><strong>OVH</strong> (France) hosts the mailbox of info@flickertalk.com.</li>
+      <li><strong>Google Play and the App Store</strong> distribute the app and handle payments under their own privacy policies. We receive no payment data: your phone checks the subscription locally.</li>
+    </ul>
+    <p>Google and Apple may process data outside the European Economic Area, under the safeguards they provide (the EU-US Data Privacy Framework or standard contractual clauses).</p>
+
+    <h2>5. No tracking</h2>
+    <p>No analytics, advertising or crash-reporting services in the app. This website sets no cookies, loads nothing from other sites and keeps no access logs.</p>
+
+    <h2>6. Your rights</h2>
+    <p>You can ask for access to, rectification or erasure of your data, restrict or object to its processing, and ask for its portability (GDPR arts. 15 to 22). You can delete everything yourself in the app with Settings → “Erase this phone”. Because we do not know who you are, we will need your FlickerTalk ID (shown in the app) to find your record. Write to <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>.</p>
+    <p>You can also complain to the Spanish Data Protection Agency (AEPD), <a href="https://www.aepd.es">www.aepd.es</a>.</p>
+
+    <h2>7. Children</h2>
+    <p>If you are under 14, you need your parent or guardian's permission to use FlickerTalk.</p>
+
+    <h2>8. Security</h2>
+    <p>End-to-end encryption, keys sealed by the phone's secure key store, signed requests, encrypted push tokens and no logs of content, identifiers or IP addresses. See <a href="/security/">Security</a>.</p>
+
+    <h2>9. Changes</h2>
+    <p>If this policy changes, the new version will be published here with its date.</p>
+  </main>
+  <footer class="wrap">
+    <nav aria-label="Legal">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/transparency/">Transparency</a>
+      <a href="/security/">Security</a>
+      <a href="https://github.com/FlickerTalk">Source code</a>
+      <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>
+    </nav>
+    <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
+    <p>No cookies, no analytics, no trackers on this site.</p>
+  </footer>
+</body>
+</html>
