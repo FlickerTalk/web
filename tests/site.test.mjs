@@ -128,6 +128,20 @@ test("the terms say there is no warranty and that use is at the user's own risk"
   assert.match(words, /ERPLORA CLOUD SL/);
 });
 
+// Two colours only: black and white, with greys in between.
+test("the stylesheet is black and white", () => {
+  const css = readFileSync(join(site, "assets/style.css"), "utf8");
+  for (const [hex, value] of css.matchAll(/#([0-9a-f]{3,8})\b/gi)) {
+    const full = value.length <= 4 ? [...value].map((c) => c + c).join("") : value;
+    const [r, g, b] = [0, 2, 4].map((i) => full.slice(i, i + 2));
+    assert.ok(r === g && g === b, `${hex} is not a grey`);
+  }
+  for (const [colour, channels] of css.matchAll(/rgba?\(([^)]+)\)/gi)) {
+    const [r, g, b] = channels.split(/[\s,/]+/).filter(Boolean).slice(0, 3);
+    assert.ok(r === g && g === b, `${colour} is not a grey`);
+  }
+});
+
 // §71: no access logs anywhere; the headers keep the page to itself.
 test("the web server keeps no access log and sends a strict policy", () => {
   const conf = readFileSync(join(root, "nginx.conf"), "utf8");

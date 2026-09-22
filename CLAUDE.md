@@ -23,8 +23,10 @@ architecture, Download, FAQ, Privacy Policy, Terms, Security, Transparency, Cont
 ## Estado (2026-09-22)
 
 - **HTML y CSS puros, sin JavaScript ni framework** (`site/`): portada, `how-it-works/`,
-  `security/`, `faq/`, `transparency/`, `privacy/`, `terms/` y `404.html`. Colores de la app,
-  modo oscuro automático, sin fuentes web.
+  `security/`, `faq/`, `transparency/`, `privacy/`, `terms/` y `404.html`. **Minimalista, en
+  blanco y negro** (decisión de Ioan, 2026-09-22): un test comprueba que la hoja de estilos solo
+  usa grises. Modo oscuro automático, sin fuentes web. La marca, en una sola tinta
+  (`assets/mark.svg`); el icono de color queda para la app y el favicon.
 - Responsable: **ERPLORA CLOUD SL** (NIF B27593136). El domicilio solo aparece en la política de
   privacidad y en los términos (LSSI art. 10, RGPD art. 13); en el pie, el nombre y el NIF. Los
   términos dicen que la app se ofrece «as is», sin garantía, y que se usa bajo la responsabilidad
