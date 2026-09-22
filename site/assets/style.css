@@ -1,0 +1,96 @@
+/* flickertalk.com: the app's Ember palette, light and dark like the app. No web fonts. */
+:root {
+  --bg: #fbf8f5;
+  --surface: #ffffff;
+  --surface-2: #f2ebe4;
+  --border: rgba(40, 20, 5, 0.08);
+  --text: #1c1714;
+  --muted: #7d726a;
+  --accent: #e8731f;
+  --accent-2: #d9481e;
+  --on-accent: #ffffff;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0b0a;
+    --surface: #161311;
+    --surface-2: #211c19;
+    --border: rgba(255, 240, 225, 0.08);
+    --text: #f5efe9;
+    --muted: #a39890;
+    --accent: #ff8a45;
+    --accent-2: #ff6a3d;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); }
+a:hover { color: var(--accent-2); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap { width: min(100% - 2.5rem, 46rem); margin-inline: auto; }
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.1rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  font-weight: 700;
+  text-decoration: none;
+}
+.brand img { width: 32px; height: 32px; border-radius: 9px; }
+.top nav { display: flex; flex-wrap: wrap; gap: 0.3rem 1.1rem; font-size: 0.95rem; }
+.top nav a { color: var(--muted); text-decoration: none; }
+.top nav a:hover, .top nav a[aria-current="page"] { color: var(--text); }
+
+main { padding-block: 1.5rem 3rem; }
+h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.15; margin: 0.5rem 0 1rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.35rem; margin: 2.4rem 0 0.6rem; }
+h3 { font-size: 1.05rem; margin: 1.6rem 0 0.3rem; }
+p, li { color: var(--text); }
+.lead { font-size: 1.2rem; color: var(--muted); margin-top: 0; }
+.updated { color: var(--muted); font-size: 0.9rem; }
+
+.hero { text-align: center; padding-block: 2.5rem 1rem; }
+.hero img { width: 96px; height: 96px; border-radius: 24px; box-shadow: 0 12px 32px rgba(232, 115, 31, 0.3); }
+.hero .lead { max-width: 32rem; margin-inline: auto; }
+
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1rem; margin-top: 2rem; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 1.1rem 1.2rem; }
+.card h3 { margin-top: 0.2rem; }
+.card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+.card .icon { font-size: 1.6rem; }
+
+.price { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: var(--on-accent); border-radius: 20px; padding: 1.4rem 1.5rem; margin-top: 2.4rem; }
+.price h2 { margin-top: 0; color: var(--on-accent); }
+.price p { color: var(--on-accent); margin: 0.3rem 0; }
+
+.soon { display: inline-block; background: var(--surface-2); color: var(--muted); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.95rem; }
+
+dl { margin: 0; }
+dt { font-weight: 600; margin-top: 1.4rem; }
+dd { margin: 0.3rem 0 0; }
+
+table { width: 100%; border-collapse: collapse; margin: 0.8rem 0; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+
+footer { border-top: 1px solid var(--border); padding-block: 1.5rem 2.5rem; color: var(--muted); font-size: 0.9rem; }
+footer nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin-bottom: 0.8rem; }
+footer a { color: var(--muted); }
+footer p { color: var(--muted); margin: 0.2rem 0; }

@@ -1,0 +1,81 @@
+# flickertalk.com (Plan §77, §105). Tests every change; every push to main publishes the image to
+# GHCR and redeploys the site through its own Dokploy webhook, which can only redeploy that stack
+# and lives in the `production` environment (main only). The site has no canary: it is text.
+name: web
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: web-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+env:
+  IMAGE: ghcr.io/flickertalk/web
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - run: npm test
+      - name: The image serves the site
+        run: |
+          docker build -q --build-arg VERSION="$GITHUB_SHA" -t web:test .
+          docker run -d --name web -p 8080:8080 web:test
+          sleep 1
+          test "$(curl -fsS http://localhost:8080/version.txt)" = "$GITHUB_SHA"
+          curl -fsS -o /dev/null http://localhost:8080/privacy/
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/nope)" = 404
+
+  image:
+    needs: test
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: docker/setup-buildx-action@v4
+      - uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v7
+        with:
+          context: .
+          push: true
+          build-args: VERSION=${{ github.sha }}
+          tags: |
+            ${{ env.IMAGE }}:latest
+            ${{ env.IMAGE }}:sha-${{ github.sha }}
+          labels: org.opencontainers.image.source=https://github.com/FlickerTalk/web
+
+  deploy:
+    needs: image
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Redeploy the site stack
+        env:
+          WEBHOOK: ${{ secrets.DOKPLOY_WEB_WEBHOOK }}
+        run: curl -fsS -X POST "$WEBHOOK" -o /dev/null
+      - name: Wait until flickertalk.com serves this commit
+        run: |
+          for _ in $(seq 1 36); do
+            sleep 5
+            if [[ "$(curl -fsS https://flickertalk.com/version.txt || true)" == "$GITHUB_SHA" ]]; then exit 0; fi
+          done
+          echo "::error::flickertalk.com does not serve $GITHUB_SHA after 3 minutes"
+          exit 1

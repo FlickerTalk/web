@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security · FlickerTalk</title>
+  <meta name="description" content="The cryptography behind FlickerTalk, what it protects against, and how to report a security problem.">
+  <meta name="theme-color" content="#e8731f">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="32" height="32">FlickerTalk</a>
+    <nav aria-label="Main">
+        <a href="/how-it-works/">How it works</a>
+        <a href="/security/" aria-current="page">Security</a>
+        <a href="/faq/">FAQ</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <h1>Security</h1>
+    <p class="lead">No home-made cryptography: FlickerTalk uses reviewed protocols and libraries, and all of its code is public.</p>
+
+    <h2>Building blocks</h2>
+    <ul>
+      <li><strong>Messages:</strong> end-to-end encrypted with Olm (Double Ratchet), using vodozemac, the Matrix project's audited Rust implementation.</li>
+      <li><strong>Transport:</strong> WebRTC between the phones (DTLS for data, DTLS-SRTP for calls); TLS to our server.</li>
+      <li><strong>Identity:</strong> an Ed25519 key per phone; every request to our server is signed with it.</li>
+      <li><strong>Keys at rest:</strong> sealed by the phone's secure key store (Android Keystore, iOS Keychain), on that device only.</li>
+      <li><strong>Server:</strong> push tokens encrypted with a key kept outside the database; the mailbox holds only end-to-end encrypted messages and is never backed up.</li>
+    </ul>
+
+    <h2>No trackers</h2>
+    <p>No analytics, no advertising, no crash-reporting services, in the app or on this site.</p>
+
+    <h2>Threat model</h2>
+    <p>FlickerTalk is designed to protect against a breach of our database, anyone running our servers reading chats, central collection of messages, exposure of a cloud history (there is none), and push services reading messages.</p>
+    <p>It cannot fully protect against a compromised phone or operating system, malware, screenshots, the other person copying messages, someone holding your unlocked phone, or network metadata held by third parties. <a href="/how-it-works/">How it works</a> lists who can see what.</p>
+
+    <h2>Open source</h2>
+    <p>The <a href="https://github.com/FlickerTalk/app">app</a> and the <a href="https://github.com/FlickerTalk/server">server</a> are published under the AGPL-3.0 licence.</p>
+
+    <h2>Report a problem</h2>
+    <p>Please report security issues privately, through GitHub's “Report a vulnerability” on the <a href="https://github.com/FlickerTalk/app/security">app</a> or <a href="https://github.com/FlickerTalk/server/security">server</a> repository, or by email to <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>. We will answer, keep you informed and credit you if you wish.</p>
+  </main>
+  <footer class="wrap">
+    <nav aria-label="Legal">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/transparency/">Transparency</a>
+      <a href="/security/">Security</a>
+      <a href="https://github.com/FlickerTalk">Source code</a>
+      <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>
+    </nav>
+    <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
+    <p>No cookies, no analytics, no trackers on this site.</p>
+  </footer>
+</body>
+</html>
