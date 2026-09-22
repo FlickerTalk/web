@@ -1,0 +1,104 @@
+/* flickertalk.com: black and white, nothing else. No web fonts, no scripts. */
+:root {
+  --bg: #ffffff;
+  --text: #000000;
+  --muted: #595959;
+  --line: #d9d9d9;
+  --inverse-bg: #000000;
+  --inverse-text: #ffffff;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --text: #ffffff;
+    --muted: #a6a6a6;
+    --line: #333333;
+    --inverse-bg: #ffffff;
+    --inverse-text: #000000;
+  }
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+
+/* Wide on a desktop, edge to edge on a phone; the reading column stays comfortable. */
+.wrap { width: min(100% - clamp(1.5rem, 6vw, 5rem), 64rem); margin-inline: auto; }
+main :is(p, li, dd) { max-width: 44rem; }
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.6rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+.brand img { width: 26px; height: 26px; }
+.top nav { display: flex; flex-wrap: wrap; gap: 0.3rem 1.3rem; font-size: 0.95rem; }
+.top nav a { color: var(--muted); text-decoration: none; }
+.top nav a:hover, .top nav a[aria-current="page"] { color: var(--text); text-decoration: underline; }
+
+main { padding-block: 2rem 4rem; }
+h1 { font-size: clamp(2.1rem, 5vw + 1rem, 3.6rem); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 1rem; max-width: 20ch; }
+h2 { font-size: 1.25rem; letter-spacing: -0.01em; margin: 3rem 0 0.7rem; }
+h3 { font-size: 1rem; margin: 1.8rem 0 0.35rem; }
+p { margin: 0 0 1rem; }
+.lead { font-size: clamp(1.05rem, 0.4vw + 1rem, 1.3rem); color: var(--muted); }
+.updated { color: var(--muted); font-size: 0.9rem; margin-top: -0.5rem; }
+
+.hero { padding-block: clamp(2.5rem, 8vw, 5rem) 1.5rem; border-bottom: 1px solid var(--line); }
+.hero img { width: 44px; height: 44px; margin-bottom: 1.5rem; }
+.hero .lead { max-width: 38rem; }
+
+.cards { display: grid; gap: 0 3rem; margin-top: 2.5rem; border-top: 1px solid var(--line); }
+@media (min-width: 42rem) {
+  .cards { grid-template-columns: 1fr 1fr; }
+}
+.card { border-bottom: 1px solid var(--line); padding: 1.4rem 0; }
+.card + .card { padding-left: 0; }
+.card h3 { margin: 0 0 0.35rem; }
+.card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+.card .icon { display: none; }
+/* Tables scroll instead of squeezing on a narrow phone. */
+@media (max-width: 40rem) {
+  table { display: block; overflow-x: auto; }
+  .price { padding: 1.3rem 1.2rem; }
+}
+
+.price { background: var(--inverse-bg); color: var(--inverse-text); padding: 1.6rem 1.7rem; margin-top: 3rem; }
+.price h2 { margin: 0 0 0.6rem; }
+.price p { margin: 0.2rem 0; }
+
+.soon { display: inline-block; border: 1px solid var(--line); padding: 0.4rem 0.9rem; color: var(--muted); font-size: 0.95rem; }
+
+dl { margin: 0; }
+dt { font-weight: 600; margin-top: 1.8rem; }
+dd { margin: 0.35rem 0 0; color: var(--muted); }
+
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95rem; }
+th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.8rem 0.6rem 0; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; }
+
+ul { padding-left: 1.1rem; }
+li { margin-bottom: 0.4rem; }
+
+footer { border-top: 1px solid var(--line); padding-block: 1.6rem 3rem; color: var(--muted); font-size: 0.9rem; }
+footer nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin-bottom: 0.9rem; }
+footer p { margin: 0.2rem 0; }
