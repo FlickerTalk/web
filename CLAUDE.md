@@ -20,6 +20,21 @@ architecture, Download, FAQ, Privacy Policy, Terms, Security, Transparency, Cont
 - Documentar con claridad los límites del modelo (`§67–69`, `§99`): los peers ven sus IPs
   públicas, Google STUN ve conexiones y Google/Apple ven metadatos de push.
 
+## El catálogo de plugins (`site/plugins/`, 2026-09-23)
+
+El sitio sirve también el **catálogo de plugins** (`§56`): `index.json`, su firma
+`index.json.sig` y los paquetes `.ftplugin`. La app descarga el índice, comprueba la firma del
+catálogo y solo entonces baja un paquete, que tiene que ser byte a byte el que el índice
+listaba. **No se edita a mano**: lo construye y firma `ftcatalogue` con la clave privada de
+`infra/secrets/plugin-catalogue.key`, desde los repos de los plugins:
+
+```sh
+cd app && cargo run -q -p ft-plugins --bin ftcatalogue -- ../plugins ../web/site/plugins ../infra/secrets/plugin-catalogue.key
+```
+
+`tests/catalogue.test.mjs` comprueba que lo servido está en sintonía consigo mismo (cada
+paquete existe y pesa lo que dice el índice).
+
 ## Estado (2026-09-22)
 
 - **HTML y CSS puros, sin JavaScript ni framework** (`site/`): portada, `how-it-works/`,
