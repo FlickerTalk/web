@@ -1,0 +1,54 @@
+{
+  "plugins": [
+    {
+      "hash": "07937aa00994af092af9347f0069f425b8a0d060bb537eaf4f660b5988b2825f",
+      "id": "com.flickertalk.images",
+      "minCoreVersion": "0.1.0",
+      "name": "Image",
+      "size": 4133,
+      "summary": "Make a picture smaller, turn it, cut it, and let it go without what the camera wrote in it.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
+      "hash": "e0fa2a0281b220aba498370e2a8d252d7e5b4f37814f5e1f5f04e742d6a8cbc9",
+      "id": "com.flickertalk.markdown",
+      "minCoreVersion": "0.1.0",
+      "name": "Markdown",
+      "size": 2736,
+      "summary": "Show a message written in markdown: headings, lists, quotes and code.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
+      "hash": "49cb5588596efb59aa5ed5833e1ab2f92c9e42d675a6764a1ca567224c72b56a",
+      "id": "com.flickertalk.pdf",
+      "minCoreVersion": "0.1.0",
+      "name": "PDF",
+      "size": 4427,
+      "summary": "Put pictures together into a PDF, one page each, with a document mode.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
+      "hash": "a726bc8c6a8f159aea1caee35bbfab8d590ef8aced4caa67f19d9f4de3a38812",
+      "id": "com.flickertalk.redact",
+      "minCoreVersion": "0.1.0",
+      "name": "Cover",
+      "size": 3688,
+      "summary": "Cover a face, a name or a number in a picture: black or mosaic, in the pixels.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
+      "hash": "8b3871405cec8fbf671aaf7037d21bec27df7ee658518fc129a31177bb419c17",
+      "id": "com.flickertalk.sketch",
+      "minCoreVersion": "0.1.0",
+      "name": "Sketch",
+      "size": 2973,
+      "summary": "Draw with a finger and send the drawing as a picture.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.0.0.ftplugin",
+      "version": "1.0.0"
+    }
+  ]
+}
