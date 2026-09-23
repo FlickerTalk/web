@@ -18,11 +18,12 @@ const PAGES = [
   "privacy/index.html",
   "delete-data/index.html",
   "terms/index.html",
+  "support/index.html",
   "404.html",
 ];
 
 const read = (path) => readFileSync(join(site, path), "utf8");
-const text = (path) => read(path).replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ");
+const text = (path) => read(path).replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ");
 const everything = () => PAGES.map(text).join(" ");
 
 test("every page exists, in English, with a title and a description", () => {
@@ -57,9 +58,10 @@ test("every internal link points to a file that exists", () => {
   }
 });
 
-test("every page reaches the privacy policy, the terms and the contact address", () => {
+test("every page reaches the privacy policy, the terms, help and the contact address", () => {
   for (const page of PAGES) {
     const html = read(page);
+    assert.match(html, /href="\/support\/"/, `${page} links help & contact`);
     assert.match(html, /href="\/privacy\/"/, `${page} links the privacy policy`);
     assert.match(html, /href="\/terms\/"/, `${page} links the terms`);
     assert.match(html, /mailto:info@flickertalk\.com/, `${page} shows the contact address`);
@@ -80,6 +82,15 @@ test("no privacy claim the design cannot keep", () => {
     "never stores messages",
     "100% anonymous",
     "military-grade",
+    // The key does leave the phone once, to the user's new phone (§60); mail waits on our server.
+    "never leaves",
+    "we store nothing",
+    "we know nothing",
+    "no data to hand over",
+    // Not in the MVP (§85).
+    "voice note",
+    // No promise of support we do not run.
+    "we will answer",
   ]) {
     assert.ok(!all.includes(claim), `nobody may read "${claim}"`);
   }
@@ -91,7 +102,9 @@ test("the price is on the home page and in the terms", () => {
     const words = text(page);
     assert.match(words, /first year/i, `${page}: first year free`);
     assert.match(words, /€1 (per|a) year/i, `${page}: €1 a year`);
-    assert.match(words, /under 18/i, `${page}: free under 18`);
+    assert.match(words, /under 21/i, `${page}: free under 21 (§40, 2026-09-22)`);
+    assert.match(words, /aged 21 and over/i, `${page}: €1 for users aged 21 and over`);
+    assert.doesNotMatch(words, /under 18|for adults/i, `${page}: the old age rule is gone`);
   }
 });
 
@@ -154,4 +167,51 @@ test("the web server keeps no access log and sends a strict policy", () => {
   assert.match(conf, /Content-Security-Policy "default-src 'none';[^"]*style-src 'self'/);
   assert.match(conf, /frame-ancestors 'none'/);
   assert.match(conf, /Referrer-Policy "no-referrer"/);
+});
+
+// Privacy first: no activity logs is the promise of the home page, and it is precise about it.
+test("the home page leads with privacy and no activity logs", () => {
+  const html = read("index.html");
+  assert.match(html, /<title>[^<]*No activity logs[^<]*<\/title>/);
+  const words = text("index.html");
+  assert.match(words, /Your conversations are yours/);
+  assert.match(words, /No activity logs/);
+  assert.match(words, /7 days/);
+  assert.match(words, /install only the ones you want/i, "the tools are installed, not built in (§56)");
+  assert.match(words, /without network access/i);
+});
+
+test("the FAQ says what the server does keep", () => {
+  const words = text("faq/index.html");
+  assert.match(words, /Does that mean your servers store nothing\?/);
+  assert.match(words, /hash of your routing code/);
+  assert.match(words, /never through our servers/, "moving phones never goes through us (§60)");
+});
+
+test("transparency lists the routing hash with the rest of what we have", () => {
+  assert.match(text("transparency/index.html"), /routing code/);
+});
+
+test("the privacy policy says what stays on the device, not what never leaves it", () => {
+  const words = text("privacy/index.html");
+  assert.match(words, /What stays on your device/);
+  assert.match(words, /under 21/);
+  assert.match(words, /under 14/, "the age of consent does not follow the price");
+});
+
+test("help & contact is honest about what we cannot do", () => {
+  const words = text("support/index.html");
+  for (const fact of [
+    "Help & contact",
+    "activity logs",
+    "Move to a new phone",
+    "Erase this phone",
+    "Report a vulnerability",
+    "info@flickertalk.com",
+    "ERPLORA CLOUD SL",
+    "B27593136",
+  ]) {
+    assert.ok(words.includes(fact), `the help page mentions ${fact}`);
+  }
+  assert.match(words, /Android or iOS/, "the help page does not assume one platform");
 });
