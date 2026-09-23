@@ -15,8 +15,13 @@ architecture, Download, FAQ, Privacy Policy, Terms, Security, Transparency, Cont
   comunicación; los mensajes que no pueden entregarse directamente se guardan cifrados de
   extremo a extremo, sin que FlickerTalk pueda leerlos, solo hasta su entrega o caducidad; y no
   conserva historiales de IP.
-- Precio (`§40`): primer año gratis, después 1 €/año para adultos; menores de 18, siempre gratis.
+- Precio (`§40`): primer año gratis, después 1 €/año a partir de 21 años («users aged 21 and over»);
+  menores de 21, gratis (decisión 2026-09-22).
   Debe figurar desde el lanzamiento en la landing y en los términos.
+- Mensaje de portada (2026-09-23): privacidad y **sin registros de actividad** («No activity
+  logs»), sin decir que no guardamos nada: el registro técnico del dispositivo y el buzón existen.
+  La clave privada no «nunca sale del teléfono»: sale una vez, P2P, al cambiar de teléfono (`§60`).
+  Sin notas de voz (fuera de `§85`). Los tests vigilan estas frases.
 - Documentar con claridad los límites del modelo (`§67–69`, `§99`): los peers ven sus IPs
   públicas, Google STUN ve conexiones y Google/Apple ven metadatos de push.
 
@@ -38,7 +43,8 @@ paquete existe y pesa lo que dice el índice).
 ## Estado (2026-09-22)
 
 - **HTML y CSS puros, sin JavaScript ni framework** (`site/`): portada, `how-it-works/`,
-  `security/`, `faq/`, `transparency/`, `privacy/`, `terms/` y `404.html`. **Minimalista, en
+  `security/`, `faq/`, `transparency/`, `privacy/`, `delete-data/`, `terms/`, `support/` (Help &
+  contact) y `404.html`. **Minimalista, en
   blanco y negro** (decisión de Ioan, 2026-09-22): un test comprueba que la hoja de estilos solo
   usa grises. Modo oscuro automático, sin fuentes web. La marca, en una sola tinta
   (`assets/mark.svg`); el icono de color queda para la app y el favicon.

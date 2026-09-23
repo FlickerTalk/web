@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FlickerTalk: private messages, phone to phone</title>
-  <meta name="description" content="Private one-to-one messages, files and calls that travel from phone to phone. No account, no phone number, no chat history on our servers.">
+  <title>FlickerTalk — Private messaging. No activity logs.</title>
+  <meta name="description" content="Private messaging without an account or phone number. No activity logs, trackers or ads. Your chat history stays on your phone, not on our servers.">
   <meta name="theme-color" content="#e8731f">
   <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/style.css">
@@ -16,52 +16,83 @@
         <a href="/how-it-works/">How it works</a>
         <a href="/security/">Security</a>
         <a href="/faq/">FAQ</a>
+        <a href="https://github.com/FlickerTalk">Source code</a>
     </nav>
   </header>
   <main class="wrap">
     <section class="hero">
       <img src="/assets/mark.svg" alt="" width="44" height="44">
-      <h1>Private messages, phone to phone</h1>
-      <p class="lead">Text, files, voice and video calls between two people. Your conversations live on your phones, not on our servers.</p>
+      <h1>Your conversations are yours. We stay out of them.</h1>
+      <p class="lead">Private messages, files and calls. No account. No phone number required. No activity logs. Your chat history stays on your phone, not on our servers.</p>
+      <p><span class="soon">Coming soon to iOS and Android</span></p>
+      <p><a href="/how-it-works/">See how privacy works</a></p>
     </section>
 
     <section class="cards" aria-label="What makes it different">
-      <div class="card"><div class="icon" aria-hidden="true">🔑</div><h3>No account</h3><p>No phone number, no email, no password. Your identity is a key made on your phone. You add people by scanning their code or opening their link.</p></div>
-      <div class="card"><div class="icon" aria-hidden="true">📱</div><h3>Phone to phone</h3><p>Messages go straight to the other phone whenever it can be reached, encrypted end to end.</p></div>
-      <div class="card"><div class="icon" aria-hidden="true">📬</div><h3>Delivered, not stored</h3><p>If the other phone is off, the message waits in a mailbox, encrypted so that we cannot read it, until it is picked up or 7 days pass. You can turn the mailbox off.</p></div>
-      <div class="card"><div class="icon" aria-hidden="true">📞</div><h3>Files and calls</h3><p>Voice and video calls and files of any size, always one to one, and never through the mailbox.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">🔑</div><h3>No sign-up. Just a connection.</h3><p>No email, phone number or password. Add someone by scanning their code or opening their link. Your address book stays yours.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">🚫</div><h3>No activity logs. By design.</h3><p>We do not keep a history of your connections, calls or IP addresses. We do not track your activity or build a profile of you.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">📱</div><h3>Your history stays with you.</h3><p>Your conversations are stored on your phones. We do not keep a server-side copy of your chat history or a cloud backup.</p></div>
+      <div class="card"><div class="icon" aria-hidden="true">📬</div><h3>Private, even while waiting.</h3><p>If the other phone is offline, an optional mailbox holds your message end-to-end encrypted. It is deleted when picked up, or after 7 days at the latest. We cannot read it.</p></div>
+    </section>
+
+    <section aria-labelledby="everyday">
+      <h2 id="everyday">Everyday conversations. Less to give away.</h2>
+      <p>Send a message, share a file or hear a familiar voice. FlickerTalk is built for conversations between two people.</p>
+      <ul>
+        <li>Text messages.</li>
+        <li>File sharing.</li>
+        <li>Voice and video calls.</li>
+        <li>One-to-one conversations.</li>
+      </ul>
+      <p>Messages travel directly between phones when possible. Encrypted relays help when a direct connection is unavailable. Files and calls are never stored in the offline mailbox.</p>
+    </section>
+
+    <section aria-labelledby="tools">
+      <h2 id="tools">Small tools. Kept separate.</h2>
+      <p>Make a picture smaller. Cover a face or a number. Turn pictures into a PDF. Sketch an idea or write in Markdown.</p>
+      <p>None of them comes inside the app: install only the ones you want, from Settings. Each tool runs in isolation, without network access, and only sees the picture or text you hand it, never your chat history, your contacts or your keys.</p>
+    </section>
+
+    <section aria-labelledby="keep">
+      <h2 id="keep">Privacy includes what we choose not to keep.</h2>
+      <p>We keep only the technical information needed to recognise your device, help your contacts reach you and deliver pending messages. We do not ask for your real-world identity or keep activity logs.</p>
+      <p>No advertising. No analytics. No tracking profiles.</p>
+      <p><a href="/how-it-works/">See exactly what our servers keep</a></p>
     </section>
 
     <section class="price" aria-labelledby="price">
-      <h2 id="price">Price</h2>
-      <p><strong>Free for the first year</strong>, counted from the day you install it. No card needed.</p>
-      <p>After that, <strong>€1 per year</strong> for adults.</p>
-      <p><strong>Under 18: always free.</strong></p>
+      <h2 id="price">€1 a year. To keep it this way.</h2>
+      <p><strong>Your first year is free.</strong> No card needed to get started.</p>
+      <p>After that, <strong>€1 a year</strong> for users aged 21 and over. <strong>Free while you are under 21.</strong></p>
+      <p>That small annual payment helps keep FlickerTalk running without ads or tracking. Our business is providing a private messenger.</p>
     </section>
 
-    <section aria-labelledby="download">
-      <h2 id="download">Download</h2>
-      <p><span class="soon">Coming soon to Google Play and the App Store</span></p>
-      <p>FlickerTalk is open source (AGPL-3.0): read the code of the <a href="https://github.com/FlickerTalk/app">app</a> and of the <a href="https://github.com/FlickerTalk/server">server</a>.</p>
+    <section aria-labelledby="open">
+      <h2 id="open">Open source. Open to inspection.</h2>
+      <p>The app and server source code are public under the AGPL-3.0 licence. You can examine how FlickerTalk works, including its privacy protections.</p>
+      <p><a href="https://github.com/FlickerTalk/app">Read the app code</a> · <a href="https://github.com/FlickerTalk/server">Read the server code</a></p>
     </section>
 
-    <section aria-labelledby="more">
-      <h2 id="more">Want the details?</h2>
-      <p><a href="/how-it-works/">How it works</a> explains what travels where and who can see what, limits included. <a href="/security/">Security</a> covers the cryptography and how to report a problem.</p>
-      <p>Questions: <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>.</p>
+    <section aria-labelledby="start">
+      <h2 id="start">A private conversation starts with less.</h2>
+      <p>No account to create. No phone number to share. No activity logs left on our servers.</p>
+      <p><span class="soon">Coming soon to iOS and Android</span></p>
     </section>
   </main>
   <footer class="wrap">
     <nav aria-label="Legal">
+      <a href="/how-it-works/">How it works</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/support/">Help &amp; contact</a>
       <a href="/privacy/">Privacy</a>
       <a href="/terms/">Terms</a>
       <a href="/transparency/">Transparency</a>
       <a href="/security/">Security</a>
       <a href="https://github.com/FlickerTalk">Source code</a>
-      <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>
     </nav>
     <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
-    <p>No cookies, no analytics, no trackers on this site.</p>
+    <p>No cookies, analytics, trackers or access logs on this website.</p>
+    <p>Contact: <a href="mailto:info@flickertalk.com">info@flickertalk.com</a></p>
   </footer>
 </body>
 </html>

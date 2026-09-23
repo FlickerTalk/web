@@ -16,14 +16,16 @@
         <a href="/how-it-works/" aria-current="page">How it works</a>
         <a href="/security/">Security</a>
         <a href="/faq/">FAQ</a>
+        <a href="https://github.com/FlickerTalk">Source code</a>
     </nav>
   </header>
   <main class="wrap">
     <h1>How it works</h1>
-    <p class="lead">FlickerTalk is built so that there is as little as possible to keep. This page says what travels where, what our server keeps and, just as important, what others can still see.</p>
+    <p class="lead">FlickerTalk is designed to deliver conversations without keeping a history of them. Your chats live on your phones. Our servers provide the minimum coordination needed to connect devices, send wake-up notifications and temporarily hold encrypted messages that cannot yet be delivered.</p>
+    <p>We keep no activity logs. Below is exactly what the service processes, what it stores and what other parties can still see.</p>
 
     <h2>Your identity</h2>
-    <p>When you open FlickerTalk for the first time, your phone makes a pair of keys. The private key stays in the phone's secure key store (Android Keystore or the iOS Keychain) and never leaves it. Your FlickerTalk ID is derived from the public key. There is no phone number, email or password.</p>
+    <p>When you open FlickerTalk for the first time, your phone creates your cryptographic identity: a pair of keys. Your private key is protected by the phone's secure key store (Android Keystore or the iOS Keychain); we do not hold a copy on our servers. The only time it leaves your phone is when you move to a new one with “Move to a new phone”, and then it travels directly between your two phones, over an encrypted connection, never through us. Your FlickerTalk ID is derived from the public key, which lets the service and your contacts recognise your device without an email address, phone number or password.</p>
     <p>You add someone by scanning the code on their screen or opening the link they share. That code is a contact card signed by their key. We have no directory of users and never see your address book.</p>
 
     <h2>Sending a message</h2>
@@ -67,15 +69,18 @@
   </main>
   <footer class="wrap">
     <nav aria-label="Legal">
+      <a href="/how-it-works/">How it works</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/support/">Help &amp; contact</a>
       <a href="/privacy/">Privacy</a>
       <a href="/terms/">Terms</a>
       <a href="/transparency/">Transparency</a>
       <a href="/security/">Security</a>
       <a href="https://github.com/FlickerTalk">Source code</a>
-      <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>
     </nav>
     <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
-    <p>No cookies, no analytics, no trackers on this site.</p>
+    <p>No cookies, analytics, trackers or access logs on this website.</p>
+    <p>Contact: <a href="mailto:info@flickertalk.com">info@flickertalk.com</a></p>
   </footer>
 </body>
 </html>

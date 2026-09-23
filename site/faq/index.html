@@ -21,51 +21,74 @@
   <main class="wrap">
     <h1>Questions</h1>
     <dl>
-      <dt>Do I need a phone number or an email?</dt>
-      <dd>No. Your identity is a key made on your phone. You add people by scanning their code or opening their link.</dd>
+      <dt>Do I need an account or phone number?</dt>
+      <dd>No. FlickerTalk creates a cryptographic identity on your phone. There is no email address, phone number or password to register. Add someone by scanning their code or opening their contact link.</dd>
 
-      <dt>Can FlickerTalk read my messages?</dt>
-      <dd>No. Messages are encrypted end to end on your phone. Even the ones waiting in the mailbox can only be read by the recipient's phone.</dd>
+      <dt>Do you keep logs of what I do?</dt>
+      <dd>No. We do not keep activity logs, connection histories, call histories or histories of IP addresses. This is a deliberate privacy choice: we do not keep a record of your activity to analyse or turn into a profile.</dd>
+
+      <dt>Does that mean your servers store nothing?</dt>
+      <dd>No. The service needs a small device record to authenticate your phone and route notifications and pending messages. It includes your device ID, public key, a hash of your routing code and an encrypted push token when notifications are enabled.</dd>
+      <dd>Undelivered messages may also wait in the optional encrypted mailbox for up to 7 days. These technical records are not a chat history or an activity log. See <a href="/how-it-works/">How it works</a> for the full breakdown.</dd>
+
+      <dt>Can you read my messages?</dt>
+      <dd>No. Messages are end-to-end encrypted. We cannot read them, including messages waiting in the offline mailbox.</dd>
 
       <dt>Where is my chat history?</dt>
-      <dd>Only on your phone and on the other person's. There are no cloud backups.</dd>
+      <dd>On your phone and the other person's phone. We do not store your chat history on our servers or provide a cloud backup.</dd>
 
-      <dt>What if I lose my phone?</dt>
-      <dd>Your history goes with it: we cannot recover it. If you change phones, use “Move to a new phone” while you still have the old one; it moves your identity and your history directly from one phone to the other.</dd>
+      <dt>What happens when the other phone is offline?</dt>
+      <dd>If both of you allow the mailbox, your message can wait there, end-to-end encrypted. It is deleted when picked up, or after 7 days at the latest. Files and calls do not use the mailbox.</dd>
+      <dd>If either person has disabled the mailbox, the message waits on the sender's phone until a direct connection is possible.</dd>
 
-      <dt>What if the other phone is off?</dt>
-      <dd>If you both have the mailbox on, the message waits there, encrypted, for up to 7 days. If not, it waits on your phone and goes out as soon as the two phones can talk.</dd>
+      <dt>Can I turn the mailbox off?</dt>
+      <dd>Yes, in Settings. Without it, messages wait on your phone until the phones can connect directly.</dd>
 
-      <dt>Can I use it on two devices?</dt>
-      <dd>Not yet: one identity, one phone.</dd>
+      <dt>What happens if I lose or change my phone?</dt>
+      <dd>We cannot recover your identity or chat history from our servers. If you still have your old phone, use “Move to a new phone” before erasing it or uninstalling FlickerTalk. This transfers your identity, contacts and history directly between your phones, never through our servers, and the old phone forgets its identity afterwards.</dd>
+
+      <dt>Can I use the same identity on two phones?</dt>
+      <dd>Not currently. FlickerTalk uses one identity on one phone at a time.</dd>
 
       <dt>Are there group chats?</dt>
-      <dd>No. FlickerTalk is one to one: text, files, voice and video calls.</dd>
+      <dd>No. FlickerTalk is designed for one-to-one conversations.</dd>
 
-      <dt>Why does it ask to send notifications?</dt>
-      <dd>So that it can wake up when a message or a call arrives. The notification never contains the message.</dd>
+      <dt>Can other people see my IP address?</dt>
+      <dd>During a direct connection, the other person's device can see your public IP address. You can choose to route calls through our relay to hide it from the other person during calls. This setting does not promise to hide your IP address during every kind of connection.</dd>
+
+      <dt>Why does FlickerTalk ask for notifications?</dt>
+      <dd>Notifications help wake your phone when a message or call arrives. The wake-up notification does not contain your message or identify its sender. Apple or Google still process the delivery of the notification.</dd>
 
       <dt>How much does it cost?</dt>
-      <dd>Free for the first year from installation. After that, €1 per year for adults. Under 18: always free.</dd>
+      <dd>The first year from installation is free. After that, it is €1 a year for users aged 21 and over. It remains free while you are under 21.</dd>
+      <dd>The annual payment helps fund the service without advertising or tracking.</dd>
+
+      <dt>Can you investigate a missing message or recover a conversation?</dt>
+      <dd>We cannot inspect your conversations, restore your history or trace past activity through server logs. We deliberately do not keep those records.</dd>
+      <dd>For general questions or to report a problem, contact <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>. Only include information you choose to share. Do not send private conversations, private keys or sensitive files.</dd>
 
       <dt>How do I delete my data?</dt>
-      <dd>In Settings, “Erase this phone” removes your device from our server and erases everything FlickerTalk keeps on the phone. Uninstalling the app erases the phone but leaves your device record on our server; write to <a href="mailto:info@flickertalk.com">info@flickertalk.com</a> with your FlickerTalk ID if that happened.</dd>
+      <dd>Use Settings → “Erase this phone” before uninstalling. This removes your device record from our server and erases the data FlickerTalk keeps on your phone.</dd>
+      <dd>Uninstalling alone does not remove the server-side device record. If you have already uninstalled, contact <a href="mailto:info@flickertalk.com">info@flickertalk.com</a> with your FlickerTalk ID, if available, to request its removal. We may need to verify that the record belongs to you. See <a href="/delete-data/">Delete your data</a>.</dd>
 
-      <dt>Is it open source?</dt>
-      <dd>Yes, under the AGPL-3.0 licence: <a href="https://github.com/FlickerTalk">github.com/FlickerTalk</a>.</dd>
+      <dt>Is FlickerTalk open source?</dt>
+      <dd>Yes. The app and server source code are available under the AGPL-3.0 licence at <a href="https://github.com/FlickerTalk">github.com/FlickerTalk</a>.</dd>
     </dl>
   </main>
   <footer class="wrap">
     <nav aria-label="Legal">
+      <a href="/how-it-works/">How it works</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/support/">Help &amp; contact</a>
       <a href="/privacy/">Privacy</a>
       <a href="/terms/">Terms</a>
       <a href="/transparency/">Transparency</a>
       <a href="/security/">Security</a>
       <a href="https://github.com/FlickerTalk">Source code</a>
-      <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>
     </nav>
     <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
-    <p>No cookies, no analytics, no trackers on this site.</p>
+    <p>No cookies, analytics, trackers or access logs on this website.</p>
+    <p>Contact: <a href="mailto:info@flickertalk.com">info@flickertalk.com</a></p>
   </footer>
 </body>
 </html>
