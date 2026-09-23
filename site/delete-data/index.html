@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete your data · FlickerTalk</title>
+  <meta name="description" content="How to delete everything FlickerTalk holds: from the app in one tap, and what we keep and for how long.">
+  <meta name="theme-color" content="#e8731f">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" width="26" height="26">FlickerTalk</a>
+    <nav aria-label="Main">
+        <a href="/how-it-works/">How it works</a>
+        <a href="/security/">Security</a>
+        <a href="/faq/">FAQ</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <h1>Delete your data</h1>
+    <p class="updated">FlickerTalk · ERPLORA CLOUD SL</p>
+    <p class="lead">There is no account to close, because there never was one. FlickerTalk holds no conversations, no address book and nothing that says who you are. What little it does hold, you can delete from the app in one tap.</p>
+
+    <h2>Delete everything, from the app</h2>
+    <p>Open FlickerTalk and go to <strong>Settings → Erase this phone</strong>. That one action:</p>
+    <ul>
+      <li>tells our server to <strong>forget this device</strong>: its identifier and its encrypted notification token are deleted;</li>
+      <li>deletes <strong>everything on the phone</strong>: your conversations, your files, your call history and your private key.</li>
+    </ul>
+    <p>There is no undo. Your key is gone, so the same identity cannot be brought back — that is the point of it never leaving your phone.</p>
+
+    <h2>What we hold, and for how long</h2>
+    <table>
+      <tr><th>What</th><th>Why</th><th>How long</th></tr>
+      <tr><td>Device identifier and encrypted notification token</td><td>so another phone can wake yours when a message is waiting</td><td>until you erase the phone, or until the token stops working</td></tr>
+      <tr><td>Messages waiting in the mailbox, encrypted end to end</td><td>so a message still arrives when your phone was off</td><td>deleted the moment they are delivered; at most 7 days</td></tr>
+    </table>
+    <p>That is the whole list. No conversation history, no address book, no name, no email, no phone number, no activity logs, no advertising identifier. We cannot read the messages in the mailbox: they are encrypted end to end and we do not hold the keys.</p>
+
+    <h2>If you no longer have the phone</h2>
+    <p>Uninstalling the app without erasing it first leaves only the device identifier and its encrypted token on our server. It stops being used as soon as the notification token expires, and it says nothing about you or about anyone you talked to.</p>
+    <p>If you still want it removed, write to <a href="mailto:info@flickertalk.com">info@flickertalk.com</a> from any address and include the <strong>FlickerTalk ID</strong> shown in Settings on that phone (it starts with <code>ft_</code>). It is the only thing that lets us find the entry: we have nothing else to search by, no email and no phone number. We answer within 30 days.</p>
+
+    <h2>Related</h2>
+    <p><a href="/privacy/">Privacy policy</a> · <a href="/transparency/">Transparency</a> · <a href="/security/">Security</a></p>
+  </main>
+  <footer class="wrap">
+    <nav aria-label="Legal">
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
+      <a href="/transparency/">Transparency</a>
+      <a href="/security/">Security</a>
+      <a href="https://github.com/FlickerTalk">Source code</a>
+      <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>
+    </nav>
+    <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
+    <p>No cookies, no analytics, no trackers on this site.</p>
+  </footer>
+</body>
+</html>

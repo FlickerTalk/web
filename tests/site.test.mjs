@@ -16,6 +16,7 @@ const PAGES = [
   "faq/index.html",
   "transparency/index.html",
   "privacy/index.html",
+  "delete-data/index.html",
   "terms/index.html",
   "404.html",
 ];
