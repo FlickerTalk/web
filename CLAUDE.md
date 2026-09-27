@@ -27,18 +27,32 @@ architecture, Download, FAQ, Privacy Policy, Terms, Security, Transparency, Cont
 
 ## El catálogo de plugins (`site/plugins/`, 2026-09-23)
 
-El sitio sirve también el **catálogo de plugins** (`§56`): `index.json`, su firma
-`index.json.sig` y los paquetes `.ftplugin`. La app descarga el índice, comprueba la firma del
-catálogo y solo entonces baja un paquete, que tiene que ser byte a byte el que el índice
-listaba. **No se edita a mano**: lo construye y firma `ftcatalogue` con la clave privada de
-`infra/secrets/plugin-catalogue.key`, desde los repos de los plugins:
+El sitio sirve también el **catálogo de plugins** (`§56`): dos índices firmados y los paquetes
+`.ftplugin`. La app descarga el índice, comprueba la firma del catálogo y solo entonces baja un
+paquete, que tiene que ser byte a byte el que el índice listaba.
+
+- **`catalogue.json`** (+ `.sig`): todos los plugins publicados, cada uno con el núcleo que pide;
+  lo lee la app desde la 1.1.0.
+- **`index.json`** (+ `.sig`): lo lee la app 1.0.0, que no mira `minCoreVersion`, así que solo
+  lista lo que corre en ella. Decisión del 2026-09-28: sin esto, la 1.0.0 ofrecería Notas, Pizarra
+  y Mi drive, y se romperían al abrirlos.
+
+**No se edita a mano**: lo construye y firma `ftcatalogue` con la clave privada de
+`infra/secrets/plugin-catalogue.key`, desde los repos de los plugins. Se publican los plugins
+**de la lista**: uno que aún no se ha probado en un teléfono (hoy `plugin-pdf-viewer`) se queda
+fuera, así que se construye desde una carpeta con enlaces solo a los publicados:
 
 ```sh
-cd app && cargo run -q -p ft-plugins --bin ftcatalogue -- ../plugins ../web/site/plugins ../infra/secrets/plugin-catalogue.key
+rm -rf /tmp/ft-cat && mkdir /tmp/ft-cat
+for p in images markdown pdf redact sketch notes board drive; do ln -s "$PWD/plugins/plugin-$p" /tmp/ft-cat/; done
+cd app && cargo run -q -p ft-plugins --bin ftcatalogue -- /tmp/ft-cat ../web/site/plugins ../infra/secrets/plugin-catalogue.key
 ```
 
+Empaquetar es determinista: un plugin que no cambió sale igual byte a byte. Tras construir,
+`git diff` en `site/plugins/` dice exactamente qué cambia para los usuarios.
+
 `tests/catalogue.test.mjs` comprueba que lo servido está en sintonía consigo mismo (cada
-paquete existe y pesa lo que dice el índice).
+paquete existe y pesa lo que dice su índice) y que `index.json` solo lista lo que corre en la 1.0.0.
 
 ## Estado (2026-09-22)
 
