@@ -101,11 +101,24 @@ test("the price is on the home page and in the terms", () => {
   for (const page of ["index.html", "terms/index.html"]) {
     const words = text(page);
     assert.match(words, /first year/i, `${page}: first year free`);
-    assert.match(words, /€1 (per|a) year/i, `${page}: €1 a year`);
+    assert.match(words, /€0\.99 (per|a) year/i, `${page}: €0.99 a year`);
     assert.match(words, /under 21/i, `${page}: free under 21 (§40, 2026-09-22)`);
-    assert.match(words, /aged 21 and over/i, `${page}: €1 for users aged 21 and over`);
+    assert.match(words, /€0\.99 a year for users aged 21 and over/i, `${page}: €0.99 for users aged 21 and over`);
     assert.doesNotMatch(words, /under 18|for adults/i, `${page}: the old age rule is gone`);
   }
+});
+
+// §40, 2026-09-29: the price is €0.99, because Google Play does not accept exactly €1.00.
+test("no page still states the old price of €1", () => {
+  for (const page of PAGES) {
+    assert.doesNotMatch(read(page), /€ ?1(?![.,]?\d)|1 ?€|one euro/i, `${page}: the old €1 price`);
+  }
+});
+
+test("the terms say the store sets the local price", () => {
+  const words = text("terms/index.html");
+  assert.match(words, /app store sets the price/i, "terms: the store sets the price");
+  assert.match(words, /country and currency/i, "terms: it may vary by country and currency");
 });
 
 // §67–69, §99: the limits of the model are documented.
