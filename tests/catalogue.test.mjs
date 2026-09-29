@@ -11,15 +11,35 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const plugins = join(root, "site", "plugins");
 const HOME = "https://flickertalk.com/plugins/";
 
-const index = () => JSON.parse(readFileSync(join(plugins, "index.json"), "utf8"));
+// Two indexes (2026-09-28): catalogue.json, everything, read by the app from 1.1.0 on; and
+// index.json, read by the app 1.0.0, which ignores minCoreVersion and so gets only what runs there.
+const INDEXES = ["catalogue.json", "index.json"];
+const LEGACY_CORE = "1.0.0";
+const read = (name) => JSON.parse(readFileSync(join(plugins, name), "utf8")).plugins;
+const parts = (version) => version.split(".").map(Number);
+const atLeast = (version, than) => {
+  const [a, b] = [parts(version), parts(than)];
+  for (let at = 0; at < Math.max(a.length, b.length); at++) if ((a[at] ?? 0) !== (b[at] ?? 0)) return (a[at] ?? 0) > (b[at] ?? 0);
+  return true;
+};
 
-test("the index is signed", () => {
-  const signature = readFileSync(join(plugins, "index.json.sig"), "utf8").trim();
-  assert.match(signature, /^[A-Za-z0-9+/]{80,}={0,2}$/, "the signature is base64");
+test("both indexes are signed", () => {
+  for (const name of INDEXES) {
+    const signature = readFileSync(join(plugins, `${name}.sig`), "utf8").trim();
+    assert.match(signature, /^[A-Za-z0-9+/]{80,}={0,2}$/, `${name}: the signature is base64`);
+  }
+});
+
+test("the app 1.0.0 is offered only what runs on it, and nothing the other index lacks", () => {
+  const all = read("catalogue.json");
+  for (const plugin of read("index.json")) {
+    assert.ok(atLeast(LEGACY_CORE, plugin.minCoreVersion), `${plugin.id} needs ${plugin.minCoreVersion}: not for the app 1.0.0`);
+    assert.ok(all.some((one) => one.id === plugin.id && one.hash === plugin.hash), `${plugin.id} is in catalogue.json too`);
+  }
 });
 
 test("every plugin listed is served from here, and is the file that was listed", () => {
-  const listed = index().plugins;
+  const listed = INDEXES.flatMap(read);
   assert.ok(listed.length > 0, "the catalogue offers something");
   for (const plugin of listed) {
     assert.ok(plugin.url.startsWith(HOME), `${plugin.id} is served from our own site`);
