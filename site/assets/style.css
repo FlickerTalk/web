@@ -102,3 +102,9 @@ li { margin-bottom: 0.4rem; }
 footer { border-top: 1px solid var(--line); padding-block: 1.6rem 3rem; color: var(--muted); font-size: 0.9rem; }
 footer nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin-bottom: 0.9rem; }
 footer p { margin: 0.2rem 0; }
+
+/* Where to get the app. Google's badge, untouched, at least 28px high (we use 56px) with a quarter
+   of its height clear around it; iOS waits beside it. */
+.get { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 1.2rem; margin: 0 0 1rem; }
+.get .play { display: block; line-height: 0; }
+.get .play img { display: block; height: 56px; width: auto; }
