@@ -2,6 +2,7 @@
 // privacy claims must be exactly as precise as §70 and §78 allow.
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -227,4 +228,56 @@ test("help & contact is honest about what we cannot do", () => {
     assert.ok(words.includes(fact), `the help page mentions ${fact}`);
   }
   assert.match(words, /Android or iOS/, "the help page does not assume one platform");
+});
+
+// Android is out (2026-10-01): the home page sends people to Google Play; iOS is still on its way.
+const PLAY = "https://play.google.com/store/apps/details?id=com.flickertalk.app";
+const BADGE = "assets/google-play-badge.svg";
+const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const playLinks = (html) => [...html.matchAll(new RegExp(`<a\\s[^>]*href="${escape(PLAY)}"[^>]*>([\\s\\S]*?)</a>`, "g"))];
+
+test("the home page links the Google Play listing with the official badge, twice", () => {
+  const links = playLinks(read("index.html"));
+  assert.equal(links.length, 2, "the hero and the closing section both link Google Play");
+  for (const [link, inner] of links) {
+    assert.match(link, /\starget="_blank"/, "the store opens in a new tab");
+    assert.match(link, /\srel="noopener"/, "and cannot reach back into the page");
+    assert.match(inner, new RegExp(`<img src="/${escape(BADGE)}" alt="Get it on Google Play"`), "the badge, with its alt text");
+  }
+});
+
+// Google's artwork, as Google ships it ("Get it on Google Play", English, digital SVG): the badge
+// guidelines forbid altering it, so the bytes are pinned.
+test("the badge is Google's English SVG, unaltered and served from this site", () => {
+  const file = join(site, BADGE);
+  assert.ok(existsSync(file), `${BADGE} exists`);
+  const hash = createHash("sha256").update(readFileSync(file)).digest("hex");
+  assert.equal(hash, "4ffa4c7edd2f10b297ca4de2131eddaa00d03b2278d1e178fe512920d824ca34", "the badge is byte for byte Google's file");
+});
+
+test("no page still says the app is coming to both platforms", () => {
+  for (const page of PAGES) {
+    assert.doesNotMatch(text(page), /Coming soon to iOS and Android/i, `${page}: Android is out`);
+  }
+});
+
+test("iOS is still marked as coming soon", () => {
+  assert.equal(text("index.html").match(/Coming soon on the App Store/g)?.length, 2, "next to both badges");
+});
+
+test("the FAQ and help pages say where to get the app", () => {
+  for (const page of ["faq/index.html", "support/index.html"]) {
+    assert.equal(playLinks(read(page)).length, 1, `${page} links Google Play`);
+    assert.match(text(page), /App Store/, `${page}: iOS is coming`);
+  }
+});
+
+// Links out are few and known: the source code, the Spanish regulator and the store listing.
+test("every link to another site is one we know", () => {
+  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`)];
+  for (const page of PAGES) {
+    for (const [, url] of read(page).matchAll(/\shref="((?:https?:)?\/\/[^"]*)"/gi)) {
+      assert.ok(known.some((k) => k.test(url)), `${page} → ${url}`);
+    }
+  }
 });
