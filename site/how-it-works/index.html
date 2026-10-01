@@ -38,6 +38,11 @@
     <h3>Files and calls</h3>
     <p>Files and calls never go through the mailbox. They travel over the direct connection between the phones, or through our relay when a direct path is impossible, still encrypted.</p>
 
+    <h3>In a circle</h3>
+    <p>A circle is a small, closed group of contacts, up to 32 members. Its member list, with its admins, is signed by an admin and travels end to end encrypted to every member. Nobody can add themselves: only an admin adds or removes members.</p>
+    <p>A message in a circle is saved once on your phone and sent to each member separately, as its own end-to-end encrypted copy, by the same paths as any other message: directly, or through that member's mailbox when you both allow it. Our server sees separate encrypted messages that it cannot tell apart from one-to-one messages, and it keeps no record of circles or of who is in them.</p>
+    <p>Circles carry text only: no files, no calls and no read receipts. Someone who joins later does not see what was said before.</p>
+
     <h2>What our server keeps</h2>
     <table>
       <thead><tr><th>Data</th><th>Why</th><th>For how long</th></tr></thead>
@@ -48,12 +53,14 @@
         <tr><td>Messages that could not be delivered, encrypted end to end</td><td>To deliver them later</td><td>Until picked up, at most 7 days</td></tr>
       </tbody>
     </table>
-    <p>Nothing else: no contacts, no conversations, no call history, no access logs and no history of IP addresses.</p>
+    <p>Nothing else: no contacts, no circles, no conversations, no call history, no access logs and no history of IP addresses.</p>
 
     <h2>What others can see</h2>
     <dl>
       <dt>The person you talk to</dt>
       <dd>When your phones connect directly, each can see the other's public IP address: that is how peer-to-peer works. In Settings you can make calls always go through our relay, which hides your IP address from the other person during calls.</dd>
+      <dt>Members of a circle</dt>
+      <dd>Every member receives the contact card of every other member, so a member who is not your contact can write to you: their message arrives as a request, and they cannot call you unless you accept them. When a member's phone connects directly to yours to deliver circle messages, it can see your public IP address.</dd>
       <dt>Our relay</dt>
       <dd>When a direct connection is impossible, our relay carries the encrypted traffic. It sees the IP addresses of both phones and how much data flows, never the content, and it keeps no logs.</dd>
       <dt>Google and Apple</dt>
@@ -65,7 +72,7 @@
     </dl>
 
     <h2>What no app can protect</h2>
-    <p>FlickerTalk protects your conversations from our servers, from a breach of our database and from the push services. It cannot protect you from a phone that is compromised or unlocked in someone else's hands, from malware, from screenshots, or from the other person copying what you send.</p>
+    <p>FlickerTalk protects your conversations from our servers, from a breach of our database and from the push services. It cannot protect you from a phone that is compromised or unlocked in someone else's hands, from malware, from screenshots, or from the people you write to copying what you send.</p>
   </main>
   <footer class="wrap">
     <nav aria-label="Legal">

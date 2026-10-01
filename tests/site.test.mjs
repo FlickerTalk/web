@@ -281,3 +281,63 @@ test("every link to another site is one we know", () => {
     }
   }
 });
+
+// Circles (app, 2026-09-27): small closed groups of contacts are in the app on Google Play, so no
+// page may still say FlickerTalk is one to one only, and the pages say what circles do and do not.
+test("no page still says FlickerTalk is one to one only", () => {
+  for (const page of PAGES) {
+    const words = text(page);
+    assert.doesNotMatch(words, /Are there group chats\? No/i, `${page}: circles exist`);
+    assert.doesNotMatch(words, /designed for one-to-one conversations/i, `${page}: circles exist`);
+    assert.doesNotMatch(words, /built for conversations between two people/i, `${page}: circles exist`);
+    assert.doesNotMatch(words, /lets two people exchange/i, `${page}: circles exist`);
+    assert.doesNotMatch(read(page), /<li>One-to-one conversations\.<\/li>/, `${page}: circles exist`);
+  }
+});
+
+test("the home page shows circles as part of the app, for text", () => {
+  const words = text("index.html");
+  assert.match(words, /start a circle: a small, closed group of your contacts, up to 32 members/i);
+  assert.match(words, /circles are for text messages only/i, "no files or calls in a circle");
+  assert.match(words, /keeps no record of circles/i, "the server is not told a circle exists");
+});
+
+test("the FAQ says what circles are, what they are not, and what members learn", () => {
+  const words = text("faq/index.html");
+  assert.match(words, /Are there group chats\? Yes, small ones, called circles/);
+  assert.match(words, /up to 32 members, you included/, "the limit counts the creator too");
+  assert.match(words, /nobody can join on their own/i);
+  assert.match(words, /only admins write/i, "the one-to-many switch");
+  assert.match(words, /There are no calls or file sharing in a circle, no read receipts/);
+  assert.match(words, /joins later does not see what was said before/);
+  assert.match(words, /keeps no record of circles/);
+  assert.match(words, /What do other members of a circle learn about me\?/);
+  assert.match(words, /arrives as a request/);
+  assert.match(words, /members of a circle you are in/i, "circle members may see your IP address too");
+});
+
+test("how it works explains circles and what their members can see", () => {
+  const words = text("how-it-works/index.html");
+  assert.match(words, /In a circle/);
+  assert.match(words, /cannot tell apart from one-to-one messages/);
+  assert.match(words, /Members of a circle/);
+  assert.match(words, /no circles/, "the server keeps no list of circles");
+});
+
+test("the privacy policy says what members of a circle receive about you", () => {
+  const words = text("privacy/index.html");
+  assert.match(words, /every member of the circle receives your contact card/i);
+  assert.match(words, /arrives as a request/);
+  assert.match(words, /public IP address/);
+  assert.match(words, /keep no record of circles/);
+});
+
+test("the terms describe circles", () => {
+  const words = text("terms/index.html");
+  assert.match(words, /called a circle/);
+  assert.match(words, /its admins decide who is in it/);
+});
+
+test("transparency says we do not have circles or their members", () => {
+  assert.match(text("transparency/index.html"), /circles or their members/i);
+});
