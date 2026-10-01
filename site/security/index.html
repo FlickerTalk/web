@@ -25,7 +25,7 @@
 
     <h2>Building blocks</h2>
     <ul>
-      <li><strong>Messages:</strong> end-to-end encrypted with Olm (Double Ratchet), using vodozemac, the Matrix project's audited Rust implementation.</li>
+      <li><strong>Messages:</strong> end-to-end encrypted with Olm (Double Ratchet), using vodozemac, the Matrix project's audited Rust implementation. In a circle, each member gets their own encrypted copy over the Olm channel they share with the sender.</li>
       <li><strong>Transport:</strong> WebRTC between the phones (DTLS for data, DTLS-SRTP for calls); TLS to our server.</li>
       <li><strong>Identity:</strong> an Ed25519 key per phone; every request to our server is signed with it.</li>
       <li><strong>Keys at rest:</strong> sealed by the phone's secure key store (Android Keystore, iOS Keychain). When you move to a new phone, they travel directly between your two phones over an encrypted connection, never through our servers.</li>
@@ -37,7 +37,7 @@
 
     <h2>Threat model</h2>
     <p>FlickerTalk is designed to protect against a breach of our database, anyone running our servers reading chats, central collection of messages, exposure of a cloud history (there is none), and push services reading messages.</p>
-    <p>It cannot fully protect against a compromised phone or operating system, malware, screenshots, the other person copying messages, someone holding your unlocked phone, or network metadata held by third parties. <a href="/how-it-works/">How it works</a> lists who can see what.</p>
+    <p>It cannot fully protect against a compromised phone or operating system, malware, screenshots, the people you write to copying messages, someone holding your unlocked phone, or network metadata held by third parties. <a href="/how-it-works/">How it works</a> lists who can see what.</p>
 
     <h2>Open source</h2>
     <p>The <a href="https://github.com/FlickerTalk/app">app</a> and the <a href="https://github.com/FlickerTalk/server">server</a> are published under the AGPL-3.0 licence.</p>
