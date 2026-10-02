@@ -3,6 +3,7 @@
     {
       "hash": "f733c1aac90a4b68ccb7ab7c8d14b544e8c68079cc6099b84c4c1fb55a41e3cd",
       "id": "com.flickertalk.board",
+      "kind": "tool",
       "minCoreVersion": "1.1.0",
       "name": "Board",
       "size": 401280,
@@ -11,8 +12,20 @@
       "version": "1.0.0"
     },
     {
+      "hash": "b570dba6b23d0307f85c700565cf053501553d13df4fe48b93f0ae81b2c632e0",
+      "id": "com.flickertalk.clean",
+      "kind": "tool",
+      "minCoreVersion": "1.3.0",
+      "name": "Clean",
+      "size": 244690,
+      "summary": "See and remove the location, phone model, author and other hidden data of a photo or PDF, on your phone, before sending it.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.clean/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
       "hash": "4eb85060cd9273abb2b27876903e5402e358792d78c700d725f0e25af59b1939",
       "id": "com.flickertalk.drive",
+      "kind": "tool",
       "minCoreVersion": "1.1.0",
       "name": "My drive",
       "size": 19561,
@@ -23,6 +36,7 @@
     {
       "hash": "de35e4bedab9a46b1aed636ba57efadc50233edf42b94ac74f96a4df0574d37b",
       "id": "com.flickertalk.images",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "Image",
       "size": 4321,
@@ -31,8 +45,20 @@
       "version": "1.1.0"
     },
     {
+      "hash": "fb7f0c75631ce82c514126e3ff6ea6924b0c05445bbd0bac6fa5f8267598b2ca",
+      "id": "com.flickertalk.list",
+      "kind": "tool",
+      "minCoreVersion": "1.3.0",
+      "name": "List",
+      "size": 51698,
+      "summary": "A shopping or to-do list you both edit live from a conversation, kept on each phone.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.list/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
       "hash": "e21a8f64540e6c84b0547a88cead0b98ca4444060a97b08b7c2025d1e81fc52a",
       "id": "com.flickertalk.markdown",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "Markdown",
       "size": 4461,
@@ -43,6 +69,7 @@
     {
       "hash": "f42e8cbb543a260243b88b51472332b0ece7b38bacb3e22095d9158559c6e5bc",
       "id": "com.flickertalk.notes",
+      "kind": "tool",
       "minCoreVersion": "1.1.0",
       "name": "Notes",
       "size": 13495,
@@ -53,6 +80,7 @@
     {
       "hash": "5e9a7b5a8a69f99b00a806a04527b4406cb61834af48370e1e680a2cfbf8aa40",
       "id": "com.flickertalk.pdf",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "PDF",
       "size": 4628,
@@ -61,8 +89,20 @@
       "version": "1.1.0"
     },
     {
+      "hash": "66938b1f4a632193d1cdccc0b1773e662bd45352e7ccabd7062069895c1ded3f",
+      "id": "com.flickertalk.poll",
+      "kind": "tool",
+      "minCoreVersion": "1.3.0",
+      "name": "Poll",
+      "size": 50944,
+      "summary": "Propose options or dates, vote between the two of you, and send the chosen date to the calendar.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.poll/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
       "hash": "302263178ac51d39b966c0dfa46971338aca17986dfe20b387f418651f075d70",
       "id": "com.flickertalk.redact",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "Cover",
       "size": 3886,
@@ -71,14 +111,37 @@
       "version": "1.1.0"
     },
     {
+      "hash": "40206e80af8ab22956a52b1127321d06c9a4efccfa4b5c0ff3b715f971c8dea8",
+      "id": "com.flickertalk.sign",
+      "kind": "tool",
+      "minCoreVersion": "1.3.0",
+      "name": "Sign",
+      "size": 951702,
+      "summary": "Both of you sign the same PDF with a finger, in turns, through the chat: a drawn signature with the phone's date and time.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sign/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
       "hash": "c5d8decd2f5766f310b59e19d861899cc98b78f45938bbaef58c4862c97e575e",
       "id": "com.flickertalk.sketch",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "Sketch",
       "size": 3179,
       "summary": "Draw with a finger and send the drawing as a picture.",
       "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.0.ftplugin",
       "version": "1.1.0"
+    },
+    {
+      "hash": "10afd4b6e7e90bb0e23d42d4806dfb5a382510ae3a25c0f9799c8823bea91e5a",
+      "id": "com.flickertalk.split",
+      "kind": "tool",
+      "minCoreVersion": "1.3.0",
+      "name": "Split",
+      "size": 64555,
+      "summary": "Shared expenses between two people: who paid what and who owes whom, kept on each phone and joined live from a conversation.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.split/1.0.0.ftplugin",
+      "version": "1.0.0"
     }
   ]
 }
