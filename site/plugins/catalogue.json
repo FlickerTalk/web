@@ -1,6 +1,39 @@
 {
   "plugins": [
     {
+      "hash": "d2c05f1bbfc83a3794a95fe853719656f7fddab9e3a6a7f44412c09ac9bf9d7b",
+      "id": "com.flickertalk.game.chess",
+      "kind": "game",
+      "minCoreVersion": "1.3.0",
+      "name": "Chess",
+      "size": 86207,
+      "summary": "Chess with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
+      "hash": "7965aecea4906943620c99235f18fac495fc273f0d10defe3d7d5e5bf1fc8ef1",
+      "id": "com.flickertalk.game.fourinarow",
+      "kind": "game",
+      "minCoreVersion": "1.3.0",
+      "name": "Four in a Row",
+      "size": 41946,
+      "summary": "Four in a Row with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
+      "hash": "3124f1d3751410e917b146afd652164b176fbb5e70b0e1a0a0f1827b10ec71a7",
+      "id": "com.flickertalk.game.tictactoe",
+      "kind": "game",
+      "minCoreVersion": "1.3.0",
+      "name": "Tic-Tac-Toe",
+      "size": 41580,
+      "summary": "Tic-Tac-Toe with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
       "hash": "f733c1aac90a4b68ccb7ab7c8d14b544e8c68079cc6099b84c4c1fb55a41e3cd",
       "id": "com.flickertalk.board",
       "kind": "tool",
