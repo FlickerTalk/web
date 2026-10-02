@@ -402,3 +402,37 @@ test("the games are not announced before they are published", () => {
     assert.doesNotMatch(read(page), /href="\/games\//, `${page} does not link the games yet`);
   }
 });
+
+// Suggestions (2026-10-02): a suggestion written in the app (Settings → "Suggest something") goes
+// to our server, which forwards it by email to our mailbox without the sender's name, FlickerTalk
+// ID or IP address and stores nothing. Precise about it (§70, §78): the server does see the request
+// while it handles it, so we say what the email carries, never that nobody can know who sent it.
+const suggestionRow = () => read("privacy/index.html").match(/<tr><td>Suggestions you send from the app[\s\S]*?<\/tr>/)?.[0] ?? "";
+
+test("the privacy policy says how a suggestion reaches us, that the server does not store it and that we cannot reply", () => {
+  const words = text("privacy/index.html");
+  assert.ok(suggestionRow(), "the table has a row for suggestions");
+  assert.match(suggestionRow(), /As long as needed to handle them/, "kept like the emails you send us, no new period");
+  assert.match(words, /Settings → “Suggest something”/);
+  assert.match(words, /forwards it by email to info@flickertalk\.com without your name, FlickerTalk ID or IP address/);
+  assert.match(words, /does not store it/);
+  assert.match(words, /we cannot reply/i);
+  // The count restarts every day, but the router drops a device's entry only when it sweeps or
+  // restarts: no promise of how long it stays in memory.
+  assert.match(words, /counts them per FlickerTalk ID, in memory only, never on disk or in a log\./);
+  assert.doesNotMatch(words, /counts them per FlickerTalk ID[^.]*for 24 hours/);
+});
+
+test("the terms and how it works say the server also forwards suggestions", () => {
+  const terms = text("terms/index.html");
+  assert.doesNotMatch(terms, /Our servers only wake phones, help them connect and keep undelivered messages, encrypted end to end, for up to 7 days\./, "the old list said that was all");
+  assert.match(terms, /forward the suggestions you send from the app to us/);
+  assert.match(text("how-it-works/index.html"), /If you send a suggestion from the app, it forwards the text to our mailbox without your FlickerTalk ID or IP address, and does not keep it\./);
+});
+
+test("no page says a suggestion cannot be traced to its sender", () => {
+  const all = everything().toLowerCase();
+  for (const claim of ["cannot know who", "can't know who", "never knows who", "completely anonymous", "fully anonymous", "untraceable"]) {
+    assert.ok(!all.includes(claim), `nobody may read "${claim}"`);
+  }
+});
