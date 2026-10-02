@@ -38,6 +38,30 @@ test("the app 1.0.0 is offered only what runs on it, and nothing the other index
   }
 });
 
+// Games (2026-10-02, plan of the games): only an app from GAMES_SINCE on tells a game from a tool;
+// an older one would show it among the tools. So index.json (the app 1.0.0) never lists a game,
+// and a game in catalogue.json asks for a core that knows games. `ftcatalogue` refuses to build
+// anything else; this checks what is really served.
+const GAMES_SINCE = "1.3.0";
+const gamesIn = (listed) => listed.filter((plugin) => plugin.kind === "game").map((plugin) => plugin.id);
+const gamesForOldApps = (listed) => gamesIn(listed.filter((plugin) => !atLeast(plugin.minCoreVersion, GAMES_SINCE)));
+
+test("the game checks spot a game where an old app would see it", () => {
+  const listed = [
+    { id: "com.flickertalk.sketch", minCoreVersion: "0.1.0" },
+    { id: "com.flickertalk.notes", minCoreVersion: "1.1.0", kind: "tool" },
+    { id: "com.flickertalk.game.chess", minCoreVersion: "1.3.0", kind: "game" },
+    { id: "com.flickertalk.game.dots", minCoreVersion: "1.2.0", kind: "game" },
+  ];
+  assert.deepEqual(gamesIn(listed), ["com.flickertalk.game.chess", "com.flickertalk.game.dots"]);
+  assert.deepEqual(gamesForOldApps(listed), ["com.flickertalk.game.dots"]);
+});
+
+test("no app older than games is offered one", () => {
+  assert.deepEqual(gamesIn(read("index.json")), [], "the app 1.0.0 is offered no game");
+  assert.deepEqual(gamesForOldApps(read("catalogue.json")), [], `every game needs ${GAMES_SINCE} or newer`);
+});
+
 test("every plugin listed is served from here, and is the file that was listed", () => {
   const listed = INDEXES.flatMap(read);
   assert.ok(listed.length > 0, "the catalogue offers something");
