@@ -78,6 +78,34 @@ test("every plugin listed is served from here, and is the file that was listed",
   }
 });
 
+// Names and summaries in the app's languages (2026-10-02, plan of the catalogue's translations):
+// each entry copies its manifest's `locales`, so the app shows a plugin in the phone's language
+// before installing it. The app's 20 languages besides English; the limits are the ones the app
+// enforces on a manifest. Markdown and PDF are formats: they keep their English name everywhere.
+const LANGUAGES = ["es", "pt", "fr", "de", "it", "ro", "ru", "uk", "pl", "tr", "ar", "hi", "bn", "id", "vi", "th", "ja", "ko", "zh-CN", "zh-TW"];
+const NAME_LIMIT = 64;
+const SUMMARY_LIMIT = 200;
+const KEEPS_ITS_NAME = ["com.flickertalk.markdown", "com.flickertalk.pdf"];
+const length = (text) => [...text].length;
+
+test("every plugin listed says its name and summary in each of the app's languages", () => {
+  for (const plugin of read("catalogue.json")) {
+    const locales = plugin.locales ?? {};
+    assert.deepEqual(Object.keys(locales).sort(), [...LANGUAGES].sort(), `${plugin.id} speaks the app's languages`);
+    for (const code of LANGUAGES) {
+      const { name, summary } = locales[code];
+      assert.equal(typeof summary, "string", `${plugin.id} has a summary in ${code}`);
+      assert.ok(summary.trim().length > 0 && length(summary) <= SUMMARY_LIMIT, `${plugin.id}: the summary in ${code} fits`);
+      if (KEEPS_ITS_NAME.includes(plugin.id)) {
+        assert.equal(name, undefined, `${plugin.id} keeps its English name in ${code}`);
+      } else {
+        assert.equal(typeof name, "string", `${plugin.id} has a name in ${code}`);
+        assert.ok(name.trim().length > 0 && length(name) <= NAME_LIMIT, `${plugin.id}: the name in ${code} fits`);
+      }
+    }
+  }
+});
+
 test("nothing of the catalogue is a page of the site", () => {
   assert.ok(!existsSync(join(plugins, "index.html")), "the catalogue is data, not a page");
 });
