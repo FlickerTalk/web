@@ -3,6 +3,7 @@
     {
       "hash": "de35e4bedab9a46b1aed636ba57efadc50233edf42b94ac74f96a4df0574d37b",
       "id": "com.flickertalk.images",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "Image",
       "size": 4321,
@@ -13,6 +14,7 @@
     {
       "hash": "e21a8f64540e6c84b0547a88cead0b98ca4444060a97b08b7c2025d1e81fc52a",
       "id": "com.flickertalk.markdown",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "Markdown",
       "size": 4461,
@@ -23,6 +25,7 @@
     {
       "hash": "5e9a7b5a8a69f99b00a806a04527b4406cb61834af48370e1e680a2cfbf8aa40",
       "id": "com.flickertalk.pdf",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "PDF",
       "size": 4628,
@@ -33,6 +36,7 @@
     {
       "hash": "302263178ac51d39b966c0dfa46971338aca17986dfe20b387f418651f075d70",
       "id": "com.flickertalk.redact",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "Cover",
       "size": 3886,
@@ -43,6 +47,7 @@
     {
       "hash": "c5d8decd2f5766f310b59e19d861899cc98b78f45938bbaef58c4862c97e575e",
       "id": "com.flickertalk.sketch",
+      "kind": "tool",
       "minCoreVersion": "0.1.0",
       "name": "Sketch",
       "size": 3179,
