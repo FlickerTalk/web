@@ -21,6 +21,12 @@ const PAGES = [
   "terms/index.html",
   "support/index.html",
   "404.html",
+  // Games (2026-10-02, plan of the games 10.6): where an invite link lands. Not linked from the
+  // home page or the FAQ until the games are published.
+  "games/index.html",
+  "games/tictactoe/index.html",
+  "games/fourinarow/index.html",
+  "games/chess/index.html",
 ];
 
 const read = (path) => readFileSync(join(site, path), "utf8");
@@ -340,4 +346,59 @@ test("the terms describe circles", () => {
 
 test("transparency says we do not have circles or their members", () => {
   assert.match(text("transparency/index.html"), /circles or their members/i);
+});
+
+// Games (2026-10-02, plan of the games 10.6): the app invites with https://flickertalk.com/games/<name>,
+// where <name> is the last part of the game's id (com.flickertalk.game.<name>). Whoever opens it
+// without the app, or with an older one, lands on a page that says what the game is and where it
+// is played. /games/ lists them all.
+const GAMES = { tictactoe: "Tic-Tac-Toe", fourinarow: "Four in a Row", chess: "Chess" };
+
+test("the games index links every game, and every game page links back", () => {
+  const index = read("games/index.html");
+  assert.match(index, /href="\/"/, "the index links the home page");
+  for (const [name, title] of Object.entries(GAMES)) {
+    assert.match(index, new RegExp(`href="/games/${name}/"`), `the index links ${name}`);
+    assert.ok(text("games/index.html").includes(title), `the index names ${title}`);
+    const page = read(`games/${name}/index.html`);
+    assert.match(page, /href="\/"/, `${name} links the home page`);
+    assert.match(page, /href="\/games\/"/, `${name} links the games index`);
+  }
+});
+
+test("a game page says what the game is, where it is played and what it keeps", () => {
+  for (const [name, title] of Object.entries(GAMES)) {
+    const html = read(`games/${name}/index.html`);
+    const words = text(`games/${name}/index.html`);
+    assert.match(html, new RegExp(`<title>${escape(title)} · FlickerTalk</title>`), `${name}: its title`);
+    assert.match(html, new RegExp(`<h1>${escape(title)}</h1>`), `${name}: its name`);
+    assert.match(words, /Games tab/, `${name}: opened from the Games tab`);
+    assert.match(words, /🎮/, `${name}: or the 🎮 button in a chat`);
+    assert.match(words, /1\.3\.0 or newer/, `${name}: the app that has games`);
+    assert.match(words, /Android/, `${name}: on Android for now`);
+    assert.match(words, /Games are available on Android for now/, `${name}: on Android for now`);
+    // Nothing promised that is not there, and no one else's trademark.
+    assert.doesNotMatch(words, /iPhone|iOS|App Store/, `${name}: no promise for the iPhone yet`);
+    assert.doesNotMatch(words, /dice/i, `${name}: no dice`);
+    assert.doesNotMatch(words, /connect ?(4|four)/i, `${name}: not a trademark`);
+  }
+});
+
+// §70, §78: precise about what a match keeps and where, and about the relay (named as
+// how-it-works names it), on every games page.
+test("the games pages say what a match keeps, and that the relay cannot read it", () => {
+  for (const page of ["games/index.html", ...Object.keys(GAMES).map((name) => `games/${name}/index.html`)]) {
+    assert.ok(
+      text(page).includes(
+        "Matches travel end-to-end encrypted between the two phones, over the same connection as your chat, and are saved only on them. If that connection has to go through our relay, the relay carries the encrypted data and cannot read it."
+      ),
+      `${page}: what a match keeps, and where`
+    );
+  }
+});
+
+test("the games are not announced before they are published", () => {
+  for (const page of ["index.html", "faq/index.html"]) {
+    assert.doesNotMatch(read(page), /href="\/games\//, `${page} does not link the games yet`);
+  }
 });
