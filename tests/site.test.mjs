@@ -417,6 +417,10 @@ test("the privacy policy says how a suggestion reaches us, that the server does 
   assert.match(words, /forwards it by email to info@flickertalk\.com without your name, FlickerTalk ID or IP address/);
   assert.match(words, /does not store it/);
   assert.match(words, /we cannot reply/i);
+  // The count restarts every day, but the router drops a device's entry only when it sweeps or
+  // restarts: no promise of how long it stays in memory.
+  assert.match(words, /counts them per FlickerTalk ID, in memory only, never on disk or in a log\./);
+  assert.doesNotMatch(words, /counts them per FlickerTalk ID[^.]*for 24 hours/);
 });
 
 test("the terms and how it works say the server also forwards suggestions", () => {
