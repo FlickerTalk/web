@@ -1,7 +1,7 @@
 {
   "plugins": [
     {
-      "hash": "78fff0a5da57f7bed4ffa569c5b8964c260cd9011e9d6d34c99c72ce62620736",
+      "hash": "bb70ace90428087bd3bc66b529a59a7f07c371351798fb0f6eed55af4a0ed8a5",
       "id": "com.flickertalk.images",
       "kind": "tool",
       "locales": {
@@ -88,13 +88,13 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "Image",
-      "size": 6073,
+      "size": 6088,
       "summary": "Make a picture smaller, turn it, cut it, and let it go without what the camera wrote in it.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.1.2.ftplugin",
+      "version": "1.1.2"
     },
     {
-      "hash": "50030de474f825b3a8aece006a7c89627d3e54b5ce648daa1f98d9fdfae5b65b",
+      "hash": "69550aa359818e720a98b33856c835bacdd566462678fff4dcd2d874940ccd9a",
       "id": "com.flickertalk.markdown",
       "kind": "tool",
       "locales": {
@@ -161,13 +161,13 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "Markdown",
-      "size": 6064,
+      "size": 6081,
       "summary": "Write markdown, look at it, and put it in the chat; open a file or save one.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.1.2.ftplugin",
+      "version": "1.1.2"
     },
     {
-      "hash": "d70fd08deb8581af3c25dc97be0eeac2483be69ed4d7b7efd557247d427b2de2",
+      "hash": "1d8569b4a70402850f8bf6ed18e18247db190ec2281b02dc988b41f5e765545d",
       "id": "com.flickertalk.pdf",
       "kind": "tool",
       "locales": {
@@ -234,13 +234,13 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "PDF",
-      "size": 5851,
+      "size": 5868,
       "summary": "Put pictures together into a PDF, one page each, with a document mode.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.2.ftplugin",
+      "version": "1.1.2"
     },
     {
-      "hash": "8e9dc0f1b086bfaac38291fec89cbf95d56b1f8bf3608508ec335422a736af17",
+      "hash": "872eff8747832a4703c4ed2d44a45e30e1a45a07ada94ba75d1a8e94349d5310",
       "id": "com.flickertalk.redact",
       "kind": "tool",
       "locales": {
@@ -327,13 +327,13 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "Cover",
-      "size": 5666,
+      "size": 5679,
       "summary": "Cover a face, a name or a number in a picture: black or mosaic, in the pixels.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.1.2.ftplugin",
+      "version": "1.1.2"
     },
     {
-      "hash": "08ec47ca42054708fabbd70e090d3bfe6805096ed994f0f45c33d7d0c91273de",
+      "hash": "5a99382aefbfa060e30bc6ee7387bab1857175a6cfe54a2e65a456aa2e55ca62",
       "id": "com.flickertalk.sketch",
       "kind": "tool",
       "locales": {
@@ -420,10 +420,10 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "Sketch",
-      "size": 4328,
+      "size": 4343,
       "summary": "Draw with a finger and send the drawing as a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.2.ftplugin",
+      "version": "1.1.2"
     }
   ]
 }
