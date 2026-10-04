@@ -25,6 +25,12 @@ function fill(value, labels, where) {
 function page(lang, name, strings) {
   const t = (key) => fill(strings[name][key], strings.labels, `${lang} ${name}.${key}`);
   const common = (key) => fill(strings.common[key], strings.labels, `${lang} common.${key}`);
+  // A step's title and its text: no space after full-width punctuation (ja, zh), where a space
+  // shows as a double gap; one space otherwise (Thai separates phrases with a space, too).
+  const step = (n) => {
+    const title = t(`step${n}Title`);
+    return `<strong>${title}</strong>${/[。！？]$/.test(title) ? "" : " "}${t(`step${n}`)}`;
+  };
   // The header and footer lead to the English site.
   const english = lang === "en" ? "" : RTL.has(lang) ? ' lang="en" dir="ltr"' : ' lang="en"';
   return `<!doctype html>
@@ -57,14 +63,14 @@ function page(lang, name, strings) {
 
     <h2>${t("h2")}</h2>
     <ol>
-      <li><strong>${t("step1Title")}</strong> ${t("step1")}
+      <li>${step(1)}
         <div class="get">
           <a class="play" href="https://play.google.com/store/apps/details?id=com.flickertalk.app" target="_blank" rel="noopener"><img src="/assets/google-play-badge.svg" alt="Get it on Google Play" width="189" height="56"></a>
-          <span class="soon">${common("soon")}</span>
         </div>
+        <p>${common("appStore")}</p>
       </li>
-      <li><strong>${t("step2Title")}</strong> ${t("step2")}</li>
-      <li><strong>${t("step3Title")}</strong> ${t("step3")}</li>
+      <li>${step(2)}</li>
+      <li>${step(3)}</li>
     </ol>
     <p>${common("fragment")}</p>
   </main>

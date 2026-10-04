@@ -96,6 +96,9 @@ table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95r
 th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.8rem 0.6rem 0; border-bottom: 1px solid var(--line); }
 th { color: var(--muted); font-weight: 600; }
 
+/* Japanese: no line may start with a small kana or the long vowel mark (メッセ|ージ). */
+:lang(ja) { line-break: strict; }
+
 ul { padding-left: 1.1rem; }
 li { margin-bottom: 0.4rem; }
 

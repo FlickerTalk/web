@@ -13,7 +13,7 @@
     "move.go": "Transferir e apagar"
   },
   "common": {
-    "soon": "Em breve na App Store",
+    "appStore": "O FlickerTalk ainda não está na App Store. A versão para iPhone chega em breve.",
     "fragment": "Seu navegador não envia ao nosso servidor a parte do link depois do #."
   },
   "add": {
@@ -25,7 +25,7 @@
     "step1Title": "Baixe o FlickerTalk.",
     "step1": "Se você já tem o FlickerTalk, pule esta etapa.",
     "step2Title": "Copie o link.",
-    "step2": "Volte à mensagem que você recebeu e copie o link inteiro, ou copie o endereço completo desta página.",
+    "step2": "Toque na barra de endereço do navegador e copie o endereço desta página: ele é o link inteiro, mesmo que a barra mostre só uma parte. Copiar só o link da mensagem que você recebeu também funciona.",
     "step3Title": "Cole no app.",
     "step3": "Abra o FlickerTalk, toque em “{addContact.title}” (o botão de código QR no topo de {tabs.chats}) e escolha “{addContact.scan}”. Depois cole em “{addContact.paste}” e toque em “{addContact.add}”."
   },
@@ -40,6 +40,6 @@
     "step2Title": "No celular antigo, abra o FlickerTalk.",
     "step2": "Vá em {tabs.settings} → “{settings.movePhone}”.",
     "step3Title": "Leia o código do celular novo.",
-    "step3": "Toque em “{move.scan}” e escaneie. Ou copie este link, de onde você o recebeu ou do endereço desta página, cole em “{move.paste}” e toque em “{move.go}”. Quando tudo tiver sido transferido, o celular antigo é apagado."
+    "step3": "Toque em “{move.scan}” e escaneie. Ou copie o endereço desta página na barra de endereço (ele é o link inteiro), cole em “{move.paste}” e toque em “{move.go}”. Quando tudo tiver sido transferido, o celular antigo é apagado."
   }
 }

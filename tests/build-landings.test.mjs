@@ -105,7 +105,10 @@ test("every page quotes its language's app labels verbatim and links Google Play
       const json = strings(lang);
       const words = text(path);
       for (const key of LABELS[page]) assert.ok(words.includes(json.labels[key]), `${path}: ${key} “${json.labels[key]}”`);
-      assert.ok(words.includes(json.common.soon), `${path}: iOS is coming`);
+      // Under the badge, as a sentence: no iPhone app in the App Store yet.
+      assert.ok(json.common.appStore, `${lang}: the App Store sentence`);
+      assert.match(read(path), new RegExp(`</a>\\s*</div>\\s*<p>${escape(json.common.appStore)}</p>`), `${path}: the App Store sentence under the badge`);
+      assert.doesNotMatch(read(path), /class="soon"/, `${path}: no box that looks like a button`);
       assert.ok(words.includes(json.common.fragment), `${path}: what the browser keeps to itself`);
       assert.ok(words.includes(json[page].h1), `${path}: its heading`);
       const links = [...read(path).matchAll(new RegExp(`<a\\s[^>]*href="${escape(PLAY)}"[^>]*>([\\s\\S]*?)</a>`, "g"))];
@@ -115,6 +118,22 @@ test("every page quotes its language's app labels verbatim and links Google Play
       assert.doesNotMatch(read(path), /\{[\w.]+\}/, `${path}: no placeholder left`);
     }
   }
+});
+
+// Review on an iPhone (2026-10-04): after a full-width "。", a space shows as a double gap. Step
+// titles that end in full-width punctuation run straight into the step; the rest keep one space.
+test("a step title is followed by one space, or by none after full-width punctuation", () => {
+  for (const page of LANDINGS) {
+    for (const lang of LANGUAGES) {
+      const path = `${page}/${fileOf(lang)}`;
+      for (const [, title, gap] of read(path).matchAll(/<strong>([^<]*)<\/strong>(\s*)/g)) {
+        const fullWidth = /[。！？]$/.test(title);
+        assert.equal(gap, fullWidth ? "" : " ", `${path}: after “${title}”`);
+      }
+    }
+  }
+  assert.match(read("add/ja.html"), /<strong>FlickerTalkを入手します。<\/strong>すでに/, "ja: no gap");
+  assert.match(read("add/zh-TW.html"), /<strong>取得 FlickerTalk。<\/strong>如果/, "zh-TW: no gap");
 });
 
 // The map in nginx.conf, read and run here the way nginx runs it: regular expressions in order,
