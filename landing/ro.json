@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "Adaugă contact",
+    "addContact.scan": "Scanează",
+    "addContact.paste": "Sau lipește linkul primit",
+    "addContact.add": "Adaugă",
+    "tabs.chats": "Chaturi",
+    "welcome.fromOld": "Am FlickerTalk pe alt telefon",
+    "tabs.settings": "Setări",
+    "settings.movePhone": "Mută pe un telefon nou",
+    "move.scan": "Scanează codul telefonului nou",
+    "move.paste": "Sau lipește linkul acestuia",
+    "move.go": "Mută și șterge"
+  },
+  "common": {
+    "soon": "În curând în App Store",
+    "fragment": "Browserul tău nu trimite serverului nostru partea din link de după #."
+  },
+  "add": {
+    "title": "Adaugă un contact",
+    "description": "Cineva te-a invitat să vorbiți pe FlickerTalk. Instalează aplicația, apoi lipește în ea linkul primit ca să adaugi persoana.",
+    "h1": "Ai o invitație pe FlickerTalk",
+    "lead": "Cineva te-a invitat să vorbiți pe FlickerTalk, o aplicație de mesagerie privată, fără cont și fără număr de telefon. Ca să adaugi persoana, lipește linkul ei în aplicație.",
+    "h2": "Cum adaugi contactul",
+    "step1Title": "Instalează FlickerTalk.",
+    "step1": "Dacă ai deja FlickerTalk, sari peste acest pas.",
+    "step2Title": "Copiază linkul.",
+    "step2": "Întoarce-te la mesajul primit și copiază linkul întreg sau adresa completă a acestei pagini.",
+    "step3Title": "Lipește-l în aplicație.",
+    "step3": "Deschide FlickerTalk, atinge „{addContact.title}” (butonul cu codul QR din partea de sus a ecranului {tabs.chats}) și alege „{addContact.scan}”. Apoi lipește-l în „{addContact.paste}” și atinge „{addContact.add}”."
+  },
+  "move": {
+    "title": "Mutare pe un telefon nou",
+    "description": "Acest link mută FlickerTalk de pe un telefon vechi pe unul nou. Lipește-l în FlickerTalk pe telefonul vechi.",
+    "h1": "Mută FlickerTalk pe un telefon nou",
+    "lead": "Acest link vine din codul pe care FlickerTalk îl arată pe un telefon nou. Citit de pe telefonul vechi, mută identitatea, contactele și mesajele tale pe cel nou.",
+    "h2": "Cum faci mutarea",
+    "step1Title": "Pe telefonul nou, instalează FlickerTalk.",
+    "step1": "Deschide-l și atinge „{welcome.fromOld}” ca să apară codul. Dacă arată deja codul, sari peste acest pas.",
+    "step2Title": "Pe telefonul vechi, deschide FlickerTalk.",
+    "step2": "Mergi la {tabs.settings} → „{settings.movePhone}”.",
+    "step3Title": "Citește codul telefonului nou.",
+    "step3": "Atinge „{move.scan}” și scanează-l. Sau copiază acest link, de unde l-ai primit sau din adresa acestei pagini, lipește-l în „{move.paste}” și atinge „{move.go}”. După ce totul s-a mutat, telefonul vechi este șters."
+  }
+}

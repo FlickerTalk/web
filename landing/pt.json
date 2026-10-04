@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "Adicionar contato",
+    "addContact.scan": "Escanear",
+    "addContact.paste": "Ou cole o link da pessoa",
+    "addContact.add": "Adicionar",
+    "tabs.chats": "Conversas",
+    "welcome.fromOld": "Tenho o FlickerTalk em outro celular",
+    "tabs.settings": "Configurações",
+    "settings.movePhone": "Transferir para um celular novo",
+    "move.scan": "Escaneie o código do celular novo",
+    "move.paste": "Ou cole o link dele",
+    "move.go": "Transferir e apagar"
+  },
+  "common": {
+    "soon": "Em breve na App Store",
+    "fragment": "Seu navegador não envia ao nosso servidor a parte do link depois do #."
+  },
+  "add": {
+    "title": "Adicionar um contato",
+    "description": "Alguém convidou você para conversar no FlickerTalk. Baixe o app e cole nele o link dessa pessoa para adicioná-la.",
+    "h1": "Você recebeu um convite para o FlickerTalk",
+    "lead": "Alguém convidou você para conversar no FlickerTalk, um mensageiro privado sem conta e sem número de telefone. Para adicionar essa pessoa, cole o link dela no app.",
+    "h2": "Como adicionar",
+    "step1Title": "Baixe o FlickerTalk.",
+    "step1": "Se você já tem o FlickerTalk, pule esta etapa.",
+    "step2Title": "Copie o link.",
+    "step2": "Volte à mensagem que você recebeu e copie o link inteiro, ou copie o endereço completo desta página.",
+    "step3Title": "Cole no app.",
+    "step3": "Abra o FlickerTalk, toque em “{addContact.title}” (o botão de código QR no topo de {tabs.chats}) e escolha “{addContact.scan}”. Depois cole em “{addContact.paste}” e toque em “{addContact.add}”."
+  },
+  "move": {
+    "title": "Transferir para outro celular",
+    "description": "Este link transfere o FlickerTalk de um celular antigo para um novo. Cole no FlickerTalk do celular antigo.",
+    "h1": "Transfira o FlickerTalk para um celular novo",
+    "lead": "Este link vem do código que o FlickerTalk mostra em um celular novo. Lido no seu celular antigo, ele transfere sua identidade, seus contatos e suas mensagens para o novo.",
+    "h2": "Como transferir",
+    "step1Title": "No celular novo, baixe o FlickerTalk.",
+    "step1": "Abra o app e toque em “{welcome.fromOld}” para mostrar o código. Se o código já aparece, pule esta etapa.",
+    "step2Title": "No celular antigo, abra o FlickerTalk.",
+    "step2": "Vá em {tabs.settings} → “{settings.movePhone}”.",
+    "step3Title": "Leia o código do celular novo.",
+    "step3": "Toque em “{move.scan}” e escaneie. Ou copie este link, de onde você o recebeu ou do endereço desta página, cole em “{move.paste}” e toque em “{move.go}”. Quando tudo tiver sido transferido, o celular antigo é apagado."
+  }
+}
