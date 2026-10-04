@@ -196,6 +196,15 @@ test("the stylesheet breaks Japanese lines the strict way", () => {
   assert.match(css, /:lang\(ja\)\s*\{[^}]*line-break:\s*strict;[^}]*\}/);
 });
 
+// Tablet review (2026-10-04): Korean broke inside words ("붙|여넣으세요"). Korean breaks between
+// words only, and a word too long for the line still wraps rather than overflowing the screen.
+test("the stylesheet breaks Korean lines between words, without overflowing", () => {
+  const css = readFileSync(join(site, "assets/style.css"), "utf8");
+  const rule = css.match(/:lang\(ko\)\s*\{([^}]*)\}/)?.[1] ?? "";
+  assert.match(rule, /word-break:\s*keep-all;/);
+  assert.match(rule, /overflow-wrap:\s*(break-word|anywhere);/);
+});
+
 // §71: no access logs anywhere; the headers keep the page to itself.
 test("the web server keeps no access log and sends a strict policy", () => {
   const conf = readFileSync(join(root, "nginx.conf"), "utf8");
@@ -508,6 +517,8 @@ test("the move landing says to paste the link on the old phone's Move to a new p
   assert.match(words, /Settings → “Move to a new phone”/);
   assert.match(words, /paste it into “Or paste its link”/);
   assert.match(words, /old phone is erased/i, "the app's own warning");
+  assert.ok(words.includes("When your old phone reads it, it moves your identity, contacts and messages to the new one."), "the lead says who reads the code");
+  assert.doesNotMatch(words, /Read on your old phone/);
   assert.match(words, /Or copy the address of this page from the address bar \(it is the whole link\), paste it into/);
   assert.doesNotMatch(words, /from where you got it/);
 });

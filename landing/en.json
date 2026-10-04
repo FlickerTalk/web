@@ -33,7 +33,7 @@
     "title": "Move to a new phone",
     "description": "This link moves FlickerTalk from an old phone to a new one. Paste it in FlickerTalk on the old phone.",
     "h1": "Move FlickerTalk to a new phone",
-    "lead": "This link comes from the code FlickerTalk shows on a new phone. Read on your old phone, it moves your identity, contacts and messages to the new one.",
+    "lead": "This link comes from the code FlickerTalk shows on a new phone. When your old phone reads it, it moves your identity, contacts and messages to the new one.",
     "h2": "How to move",
     "step1Title": "On the new phone, get FlickerTalk.",
     "step1": "Open it and tap “{welcome.fromOld}” to show the code. If it already shows the code, skip this step.",
