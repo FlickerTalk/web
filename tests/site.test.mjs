@@ -211,6 +211,21 @@ test("the stylesheet has a class that keeps words on one line", () => {
   assert.match(css, /\.nobr\s*\{\s*white-space:\s*nowrap;\s*\}/);
 });
 
+// Tap targets (2026-10-04): the links of the header and footer navigation are at least 44px tall
+// to the finger, without moving the text: each link grows by padding, and its nav gives the same
+// back with a negative margin. Rows of links touch but never overlap (no row gap).
+test("the header and footer links are 44px tall to the finger, and the layout does not move", () => {
+  const css = readFileSync(join(site, "assets/style.css"), "utf8");
+  const rule = (selector) => css.match(new RegExp(`(?:^|\\n)${selector.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*\\{([^}]*)\\}`))?.[1] ?? "";
+  // The arithmetic below counts on one line of text being 1.65em.
+  assert.match(rule("body"), /font:\s*\d+px\/1\.65\s/, "the body's line height is 1.65");
+  for (const nav of [".top nav", "footer nav"]) {
+    assert.match(rule(`${nav} a`), /padding-block:\s*calc\(\(44px - 1\.65em\) \/ 2\);/, `${nav} a: 44px to the finger`);
+    assert.match(rule(nav), /gap:\s*0 [\d.]+rem;/, `${nav}: no row gap, so rows do not overlap`);
+    assert.match(rule(nav), /margin-block:\s*calc\(\(1\.65em - 44px\) \/ 2\)/, `${nav}: gives the padding back`);
+  }
+});
+
 // §71: no access logs anywhere; the headers keep the page to itself.
 test("the web server keeps no access log and sends a strict policy", () => {
   const conf = readFileSync(join(root, "nginx.conf"), "utf8");
