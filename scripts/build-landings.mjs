@@ -15,16 +15,29 @@ const RTL = new Set(["ar"]);
 
 const escape = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-function fill(value, labels, where) {
-  return escape(value).replace(/\{([\w.]+)\}/g, (_, key) => {
+// Korean: WebKit with word-break: keep-all breaks after an opening quote before Hangul, so the
+// quote and the first word of the label it opens go together in a span that does not wrap. Only
+// the first word: a whole label could be wider than a phone.
+const KEEP_QUOTE_WITH_WORD = new Set(["ko"]);
+
+function fill(value, labels, where, lang) {
+  const label = (key) => {
     if (!(key in labels)) throw new Error(`${where}: no label ${key}`);
-    return escape(labels[key]);
-  });
+    return labels[key];
+  };
+  let html = escape(value);
+  if (KEEP_QUOTE_WITH_WORD.has(lang)) {
+    html = html.replace(/‘\{([\w.]+)\}/g, (_, key) => {
+      const [first, ...rest] = label(key).split(" ");
+      return `<span class="nobr">‘${escape(first)}</span>${escape(rest.length ? " " + rest.join(" ") : "")}`;
+    });
+  }
+  return html.replace(/\{([\w.]+)\}/g, (_, key) => escape(label(key)));
 }
 
 function page(lang, name, strings) {
-  const t = (key) => fill(strings[name][key], strings.labels, `${lang} ${name}.${key}`);
-  const common = (key) => fill(strings.common[key], strings.labels, `${lang} common.${key}`);
+  const t = (key) => fill(strings[name][key], strings.labels, `${lang} ${name}.${key}`, lang);
+  const common = (key) => fill(strings.common[key], strings.labels, `${lang} common.${key}`, lang);
   // A step's title and its text: no space after full-width punctuation (ja, zh), where a space
   // shows as a double gap; one space otherwise (Thai separates phrases with a space, too).
   const step = (n) => {

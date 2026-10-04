@@ -136,6 +136,27 @@ test("a step title is followed by one space, or by none after full-width punctua
   assert.match(read("add/zh-TW.html"), /<strong>取得 FlickerTalk。<\/strong>如果/, "zh-TW: no gap");
 });
 
+// Tablet review (2026-10-04): WebKit with word-break: keep-all breaks after an opening quote before
+// Hangul, leaving "‘" alone at the end of a line. In Korean, the quote and the first word of the
+// label it opens never wrap apart (only the first word: a whole label could be wider than a phone).
+test("in Korean, an opening quote stays on the line of its label's first word", () => {
+  for (const page of LANDINGS) {
+    const path = `${page}/ko.html`;
+    const main = read(path).match(/<main[\s\S]*<\/main>/)[0];
+    const quoted = [...JSON.stringify(strings("ko")[page]).matchAll(/‘\{([\w.]+)\}/g)].map(([, key]) => strings("ko").labels[key]);
+    assert.ok(quoted.length >= 4, `${path}: quoted labels`);
+    for (const label of quoted) {
+      const [first, ...rest] = label.split(" ");
+      const tail = rest.length ? " " + rest.join(" ") : "";
+      assert.ok(main.includes(`<span class="nobr">‘${first}</span>${tail}’`), `${path}: ‘${label}’`);
+    }
+    assert.equal((main.match(/‘/g) ?? []).length, (main.match(/<span class="nobr">‘/g) ?? []).length, `${path}: every opening quote`);
+  }
+  for (const lang of LANGUAGES.filter((l) => l !== "ko")) {
+    for (const page of LANDINGS) assert.doesNotMatch(read(`${page}/${fileOf(lang)}`), /class="nobr"/, `${page}/${fileOf(lang)}: Korean only`);
+  }
+});
+
 // The map in nginx.conf, read and run here the way nginx runs it: regular expressions in order,
 // the first that matches wins, otherwise the default.
 const conf = () => readFileSync(join(root, "nginx.conf"), "utf8");

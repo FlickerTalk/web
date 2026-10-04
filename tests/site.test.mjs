@@ -205,6 +205,12 @@ test("the stylesheet breaks Korean lines between words, without overflowing", ()
   assert.match(rule, /overflow-wrap:\s*(break-word|anywhere);/);
 });
 
+// A few words that must stay on one line (the Korean landings keep an opening quote with its word).
+test("the stylesheet has a class that keeps words on one line", () => {
+  const css = readFileSync(join(site, "assets/style.css"), "utf8");
+  assert.match(css, /\.nobr\s*\{\s*white-space:\s*nowrap;\s*\}/);
+});
+
 // §71: no access logs anywhere; the headers keep the page to itself.
 test("the web server keeps no access log and sends a strict policy", () => {
   const conf = readFileSync(join(root, "nginx.conf"), "utf8");

@@ -101,6 +101,8 @@ th { color: var(--muted); font-weight: 600; }
 /* Korean: break between words, never inside one (붙|여넣으세요); a word longer than the line
    still wraps instead of overflowing the screen. */
 :lang(ko) { word-break: keep-all; overflow-wrap: break-word; }
+/* Words that must stay on one line (in Korean, an opening quote and the word after it). */
+.nobr { white-space: nowrap; }
 
 ul { padding-left: 1.1rem; }
 li { margin-bottom: 0.4rem; }
