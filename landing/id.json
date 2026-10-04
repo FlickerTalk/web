@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "Tambah kontak",
+    "addContact.scan": "Pindai",
+    "addContact.paste": "Atau tempel tautan mereka",
+    "addContact.add": "Tambah",
+    "tabs.chats": "Chat",
+    "welcome.fromOld": "Saya punya FlickerTalk di ponsel lain",
+    "tabs.settings": "Pengaturan",
+    "settings.movePhone": "Pindah ke ponsel baru",
+    "move.scan": "Pindai kode ponsel baru",
+    "move.paste": "Atau tempel tautannya",
+    "move.go": "Pindahkan dan hapus"
+  },
+  "common": {
+    "soon": "Segera hadir di App Store",
+    "fragment": "Browser Anda tidak mengirim bagian tautan setelah # ke server kami."
+  },
+  "add": {
+    "title": "Menambahkan kontak",
+    "description": "Seseorang mengundang Anda mengobrol di FlickerTalk. Pasang aplikasinya, lalu tempel tautan orang itu di aplikasi untuk menambahkannya.",
+    "h1": "Anda diundang ke FlickerTalk",
+    "lead": "Seseorang mengundang Anda mengobrol di FlickerTalk, aplikasi pesan pribadi tanpa akun dan tanpa nomor telepon. Untuk menambahkannya, tempel tautannya di aplikasi.",
+    "h2": "Cara menambahkannya",
+    "step1Title": "Pasang FlickerTalk.",
+    "step1": "Jika Anda sudah punya FlickerTalk, lewati langkah ini.",
+    "step2Title": "Salin tautannya.",
+    "step2": "Kembali ke pesan yang Anda terima dan salin seluruh tautannya, atau salin alamat lengkap halaman ini.",
+    "step3Title": "Tempel di aplikasi.",
+    "step3": "Buka FlickerTalk, ketuk “{addContact.title}” (tombol kode QR di bagian atas {tabs.chats}) dan pilih “{addContact.scan}”. Lalu tempel di “{addContact.paste}” dan ketuk “{addContact.add}”."
+  },
+  "move": {
+    "title": "Memindahkan ke ponsel baru",
+    "description": "Tautan ini memindahkan FlickerTalk dari ponsel lama ke ponsel baru. Tempel di FlickerTalk pada ponsel lama.",
+    "h1": "Pindahkan FlickerTalk ke ponsel baru",
+    "lead": "Tautan ini berasal dari kode yang ditampilkan FlickerTalk di ponsel baru. Jika dibaca dari ponsel lama Anda, tautan ini memindahkan identitas, kontak, dan pesan Anda ke ponsel baru.",
+    "h2": "Cara memindahkan",
+    "step1Title": "Di ponsel baru, pasang FlickerTalk.",
+    "step1": "Buka aplikasinya dan ketuk “{welcome.fromOld}” untuk menampilkan kode. Jika kode sudah tampil, lewati langkah ini.",
+    "step2Title": "Di ponsel lama, buka FlickerTalk.",
+    "step2": "Buka {tabs.settings} → “{settings.movePhone}”.",
+    "step3Title": "Baca kode ponsel baru.",
+    "step3": "Ketuk “{move.scan}” lalu pindai kodenya. Atau salin tautan ini, dari tempat Anda menerimanya atau dari alamat halaman ini, tempel di “{move.paste}”, lalu ketuk “{move.go}”. Setelah semuanya pindah, ponsel lama akan dihapus."
+  }
+}

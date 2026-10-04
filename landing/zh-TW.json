@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "新增聯絡人",
+    "addContact.scan": "掃描",
+    "addContact.paste": "或貼上對方的連結",
+    "addContact.add": "新增",
+    "tabs.chats": "聊天",
+    "welcome.fromOld": "我在另一支手機上有 FlickerTalk",
+    "tabs.settings": "設定",
+    "settings.movePhone": "移轉到新手機",
+    "move.scan": "掃描新手機的 QR 碼",
+    "move.paste": "或貼上它的連結",
+    "move.go": "移轉並清除"
+  },
+  "common": {
+    "soon": "即將登上 App Store",
+    "fragment": "你的瀏覽器不會把連結中 # 之後的部分傳送到我們的伺服器。"
+  },
+  "add": {
+    "title": "新增一位聯絡人",
+    "description": "有人邀請你在 FlickerTalk 上聊天。安裝 App 後，把對方的連結貼到 App 裡即可新增對方。",
+    "h1": "有人邀請你使用 FlickerTalk",
+    "lead": "有人邀請你在 FlickerTalk 上聊天。FlickerTalk 是一款私密通訊 App，不需要帳號，也不需要電話號碼。要新增對方，請把對方的連結貼到 App 裡。",
+    "h2": "如何新增",
+    "step1Title": "取得 FlickerTalk。",
+    "step1": "如果你已經有 FlickerTalk，可以跳過這一步。",
+    "step2Title": "複製連結。",
+    "step2": "回到你收到的訊息，複製完整的連結，或複製本頁的完整網址。",
+    "step3Title": "貼到 App 裡。",
+    "step3": "開啟 FlickerTalk，點選「{addContact.title}」（{tabs.chats}頁面頂端的 QR 碼按鈕），然後選擇「{addContact.scan}」。再貼到「{addContact.paste}」中，點選「{addContact.add}」。"
+  },
+  "move": {
+    "title": "把 FlickerTalk 移轉到新手機",
+    "description": "這個連結用來把 FlickerTalk 從舊手機移轉到新手機。請在舊手機的 FlickerTalk 中貼上它。",
+    "h1": "把 FlickerTalk 移轉到新手機",
+    "lead": "這個連結來自 FlickerTalk 在新手機上顯示的 QR 碼。用舊手機讀取後，你的身分、聯絡人和訊息會移轉到新手機。",
+    "h2": "如何移轉",
+    "step1Title": "在新手機上取得 FlickerTalk。",
+    "step1": "開啟 App，點選「{welcome.fromOld}」以顯示 QR 碼。如果 QR 碼已經顯示，可以跳過這一步。",
+    "step2Title": "在舊手機上開啟 FlickerTalk。",
+    "step2": "前往「{tabs.settings}」→「{settings.movePhone}」。",
+    "step3Title": "讀取新手機的 QR 碼。",
+    "step3": "點選「{move.scan}」並掃描。或從你收到它的地方或本頁網址複製這個連結，貼到「{move.paste}」中，然後點選「{move.go}」。全部移轉完成後，舊手機上的資料將被清除。"
+  }
+}

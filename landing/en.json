@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "Add contact",
+    "addContact.scan": "Scan",
+    "addContact.paste": "Or paste their link",
+    "addContact.add": "Add",
+    "tabs.chats": "Chats",
+    "welcome.fromOld": "I have FlickerTalk on another phone",
+    "tabs.settings": "Settings",
+    "settings.movePhone": "Move to a new phone",
+    "move.scan": "Scan the new phone's code",
+    "move.paste": "Or paste its link",
+    "move.go": "Move and erase"
+  },
+  "common": {
+    "soon": "Coming soon on the App Store",
+    "fragment": "Your browser does not send the part of the link after # to our server."
+  },
+  "add": {
+    "title": "Add a contact",
+    "description": "Someone invited you to talk on FlickerTalk. Get the app, then paste their link in it to add them.",
+    "h1": "You are invited to FlickerTalk",
+    "lead": "Someone invited you to talk on FlickerTalk, a private messenger with no account and no phone number. To add them, paste their link in the app.",
+    "h2": "How to add them",
+    "step1Title": "Get FlickerTalk.",
+    "step1": "If you already have FlickerTalk, skip this step.",
+    "step2Title": "Copy the link.",
+    "step2": "Go back to the message you received and copy the whole link, or copy the full address of this page.",
+    "step3Title": "Paste it in the app.",
+    "step3": "Open FlickerTalk, tap “{addContact.title}” (the QR code button at the top of {tabs.chats}) and choose “{addContact.scan}”. Then paste it into “{addContact.paste}” and tap “{addContact.add}”."
+  },
+  "move": {
+    "title": "Move to a new phone",
+    "description": "This link moves FlickerTalk from an old phone to a new one. Paste it in FlickerTalk on the old phone.",
+    "h1": "Move FlickerTalk to a new phone",
+    "lead": "This link comes from the code FlickerTalk shows on a new phone. Read on your old phone, it moves your identity, contacts and messages to the new one.",
+    "h2": "How to move",
+    "step1Title": "On the new phone, get FlickerTalk.",
+    "step1": "Open it and tap “{welcome.fromOld}” to show the code. If it already shows the code, skip this step.",
+    "step2Title": "On the old phone, open FlickerTalk.",
+    "step2": "Go to {tabs.settings} → “{settings.movePhone}”.",
+    "step3Title": "Read the new phone’s code.",
+    "step3": "Tap “{move.scan}” and scan it. Or copy this link, from where you got it or from the address of this page, paste it into “{move.paste}” and tap “{move.go}”. Once everything has moved, the old phone is erased."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "Kişi ekle",
+    "addContact.scan": "Tara",
+    "addContact.paste": "Veya karşı tarafın bağlantısını yapıştırın",
+    "addContact.add": "Ekle",
+    "tabs.chats": "Sohbetler",
+    "welcome.fromOld": "Başka bir telefonda FlickerTalk kullanıyorum",
+    "tabs.settings": "Ayarlar",
+    "settings.movePhone": "Yeni telefona taşı",
+    "move.scan": "Yeni telefonun kodunu tarayın",
+    "move.paste": "Veya bağlantısını yapıştırın",
+    "move.go": "Taşı ve sil"
+  },
+  "common": {
+    "soon": "Yakında App Store’da",
+    "fragment": "Tarayıcınız, bağlantının # işaretinden sonraki kısmını sunucumuza göndermez."
+  },
+  "add": {
+    "title": "Kişi ekleme",
+    "description": "Biri sizi FlickerTalk’ta konuşmaya davet etti. Uygulamayı yükleyin, ardından bu kişiyi eklemek için bağlantısını uygulamaya yapıştırın.",
+    "h1": "FlickerTalk’a davet edildiniz",
+    "lead": "Biri sizi, hesap ve telefon numarası gerektirmeyen özel bir mesajlaşma uygulaması olan FlickerTalk’ta konuşmaya davet etti. Bu kişiyi eklemek için bağlantısını uygulamaya yapıştırın.",
+    "h2": "Nasıl eklenir",
+    "step1Title": "FlickerTalk’ı yükleyin.",
+    "step1": "FlickerTalk zaten yüklüyse bu adımı atlayın.",
+    "step2Title": "Bağlantıyı kopyalayın.",
+    "step2": "Aldığınız mesaja geri dönüp bağlantının tamamını kopyalayın ya da bu sayfanın tam adresini kopyalayın.",
+    "step3Title": "Uygulamaya yapıştırın.",
+    "step3": "FlickerTalk’ı açın, “{addContact.title}” düğmesine (“{tabs.chats}” ekranının üstündeki QR kod düğmesi) dokunun ve “{addContact.scan}” seçeneğini seçin. Ardından bağlantıyı “{addContact.paste}” alanına yapıştırıp “{addContact.add}” düğmesine dokunun."
+  },
+  "move": {
+    "title": "Yeni telefona taşıma",
+    "description": "Bu bağlantı FlickerTalk’ı eski bir telefondan yenisine taşır. Eski telefondaki FlickerTalk’a yapıştırın.",
+    "h1": "FlickerTalk’ı yeni telefona taşıyın",
+    "lead": "Bu bağlantı, FlickerTalk’ın yeni bir telefonda gösterdiği koddan gelir. Eski telefonunuzdan okunduğunda kimliğinizi, kişilerinizi ve mesajlarınızı yeni telefona taşır.",
+    "h2": "Nasıl taşınır",
+    "step1Title": "Yeni telefona FlickerTalk’ı yükleyin.",
+    "step1": "Uygulamayı açın ve kodu göstermek için “{welcome.fromOld}” seçeneğine dokunun. Kod zaten görünüyorsa bu adımı atlayın.",
+    "step2Title": "Eski telefonda FlickerTalk’ı açın.",
+    "step2": "{tabs.settings} → “{settings.movePhone}” bölümüne gidin.",
+    "step3Title": "Yeni telefonun kodunu okutun.",
+    "step3": "“{move.scan}” düğmesine dokunup kodu tarayın. Ya da bu bağlantıyı, aldığınız yerden veya bu sayfanın adresinden kopyalayıp “{move.paste}” alanına yapıştırın ve “{move.go}” düğmesine dokunun. Her şey taşındıktan sonra eski telefon silinir."
+  }
+}

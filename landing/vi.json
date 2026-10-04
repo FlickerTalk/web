@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "Thêm liên hệ",
+    "addContact.scan": "Quét",
+    "addContact.paste": "Hoặc dán liên kết của họ",
+    "addContact.add": "Thêm",
+    "tabs.chats": "Trò chuyện",
+    "welcome.fromOld": "Tôi có FlickerTalk trên điện thoại khác",
+    "tabs.settings": "Cài đặt",
+    "settings.movePhone": "Chuyển sang điện thoại mới",
+    "move.scan": "Quét mã của điện thoại mới",
+    "move.paste": "Hoặc dán liên kết của nó",
+    "move.go": "Chuyển và xóa"
+  },
+  "common": {
+    "soon": "Sắp có trên App Store",
+    "fragment": "Trình duyệt của bạn không gửi phần liên kết sau dấu # đến máy chủ của chúng tôi."
+  },
+  "add": {
+    "title": "Thêm một liên hệ",
+    "description": "Có người mời bạn trò chuyện trên FlickerTalk. Hãy cài ứng dụng, rồi dán liên kết của họ vào đó để thêm họ.",
+    "h1": "Bạn được mời dùng FlickerTalk",
+    "lead": "Có người mời bạn trò chuyện trên FlickerTalk, ứng dụng nhắn tin riêng tư không cần tài khoản và không cần số điện thoại. Để thêm họ, hãy dán liên kết của họ vào ứng dụng.",
+    "h2": "Cách thêm họ",
+    "step1Title": "Cài FlickerTalk.",
+    "step1": "Nếu bạn đã có FlickerTalk, hãy bỏ qua bước này.",
+    "step2Title": "Sao chép liên kết.",
+    "step2": "Quay lại tin nhắn bạn nhận được và sao chép toàn bộ liên kết, hoặc sao chép địa chỉ đầy đủ của trang này.",
+    "step3Title": "Dán vào ứng dụng.",
+    "step3": "Mở FlickerTalk, chạm vào “{addContact.title}” (nút mã QR ở đầu màn hình {tabs.chats}) và chọn “{addContact.scan}”. Sau đó dán vào “{addContact.paste}” và chạm vào “{addContact.add}”."
+  },
+  "move": {
+    "title": "Chuyển FlickerTalk sang điện thoại mới",
+    "description": "Liên kết này chuyển FlickerTalk từ điện thoại cũ sang điện thoại mới. Hãy dán nó vào FlickerTalk trên điện thoại cũ.",
+    "h1": "Chuyển FlickerTalk sang điện thoại mới",
+    "lead": "Liên kết này đến từ mã mà FlickerTalk hiển thị trên điện thoại mới. Khi được đọc từ điện thoại cũ, nó chuyển danh tính, liên hệ và tin nhắn của bạn sang điện thoại mới.",
+    "h2": "Cách chuyển",
+    "step1Title": "Trên điện thoại mới, cài FlickerTalk.",
+    "step1": "Mở ứng dụng và chạm vào “{welcome.fromOld}” để hiện mã. Nếu mã đã hiện, hãy bỏ qua bước này.",
+    "step2Title": "Trên điện thoại cũ, mở FlickerTalk.",
+    "step2": "Vào {tabs.settings} → “{settings.movePhone}”.",
+    "step3Title": "Đọc mã của điện thoại mới.",
+    "step3": "Chạm vào “{move.scan}” và quét mã. Hoặc sao chép liên kết này, từ nơi bạn nhận được hoặc từ địa chỉ của trang này, dán vào “{move.paste}” và chạm vào “{move.go}”. Khi mọi thứ đã được chuyển xong, điện thoại cũ sẽ bị xóa sạch."
+  }
+}

@@ -38,6 +38,10 @@ jobs:
           # Contact and move links land here: answered as they are, never redirected to /add/.
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/add)" = 200
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/move)" = 200
+          # In the browser's language, at the same address; English without one.
+          test "$(curl -s -o /dev/null -w '%{http_code}' -H 'Accept-Language: es-ES,es;q=0.9' http://localhost:8080/add)" = 200
+          curl -fsS -H 'Accept-Language: es-ES,es;q=0.9' http://localhost:8080/add | grep -q '<html lang="es">'
+          curl -fsS http://localhost:8080/add | grep -q '<html lang="en">'
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/nope)" = 404
 
   image:

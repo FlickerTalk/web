@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "連絡先を追加",
+    "addContact.scan": "スキャン",
+    "addContact.paste": "または相手のリンクを貼り付け",
+    "addContact.add": "追加",
+    "tabs.chats": "チャット",
+    "welcome.fromOld": "別のスマホでFlickerTalkを使っています",
+    "tabs.settings": "設定",
+    "settings.movePhone": "新しいスマホに移行",
+    "move.scan": "新しいスマホのコードをスキャン",
+    "move.paste": "またはそのリンクを貼り付け",
+    "move.go": "移行して消去"
+  },
+  "common": {
+    "soon": "App Store版は近日公開",
+    "fragment": "お使いのブラウザは、リンクの#より後ろの部分を当社のサーバーに送信しません。"
+  },
+  "add": {
+    "title": "連絡先の追加",
+    "description": "FlickerTalkでの会話に招待されました。アプリをインストールし、相手のリンクをアプリに貼り付けて追加してください。",
+    "h1": "FlickerTalkへの招待が届いています",
+    "lead": "FlickerTalkでの会話に招待されました。FlickerTalkは、アカウントも電話番号も不要なプライベートメッセンジャーです。相手を追加するには、相手のリンクをアプリに貼り付けてください。",
+    "h2": "追加の手順",
+    "step1Title": "FlickerTalkを入手します。",
+    "step1": "すでにFlickerTalkをお持ちの場合は、この手順を飛ばしてください。",
+    "step2Title": "リンクをコピーします。",
+    "step2": "受け取ったメッセージに戻ってリンク全体をコピーするか、このページのアドレス全体をコピーしてください。",
+    "step3Title": "アプリに貼り付けます。",
+    "step3": "FlickerTalkを開き、「{addContact.title}」（{tabs.chats}の上部にあるQRコードのボタン）をタップして、「{addContact.scan}」を選びます。次に「{addContact.paste}」の欄に貼り付けて、「{addContact.add}」をタップします。"
+  },
+  "move": {
+    "title": "新しいスマホへの移行",
+    "description": "このリンクで、FlickerTalkを古いスマホから新しいスマホに移行できます。古いスマホのFlickerTalkに貼り付けてください。",
+    "h1": "FlickerTalkを新しいスマホに移行",
+    "lead": "このリンクは、FlickerTalkが新しいスマホに表示するコードから来ています。古いスマホで読み取ると、あなたのID、連絡先、メッセージが新しいスマホに移ります。",
+    "h2": "移行の手順",
+    "step1Title": "新しいスマホでFlickerTalkを入手します。",
+    "step1": "アプリを開き、「{welcome.fromOld}」をタップしてコードを表示します。すでにコードが表示されている場合は、この手順を飛ばしてください。",
+    "step2Title": "古いスマホでFlickerTalkを開きます。",
+    "step2": "「{tabs.settings}」→「{settings.movePhone}」に進みます。",
+    "step3Title": "新しいスマホのコードを読み取ります。",
+    "step3": "「{move.scan}」をタップしてスキャンします。または、このリンクを受け取った場所かこのページのアドレスからコピーし、「{move.paste}」の欄に貼り付けて「{move.go}」をタップします。すべて移行されると、古いスマホのデータは消去されます。"
+  }
+}

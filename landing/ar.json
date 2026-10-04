@@ -1,0 +1,45 @@
+{
+  "labels": {
+    "addContact.title": "إضافة جهة اتصال",
+    "addContact.scan": "مسح",
+    "addContact.paste": "أو الصق رابط الطرف الآخر",
+    "addContact.add": "إضافة",
+    "tabs.chats": "الدردشات",
+    "welcome.fromOld": "لديّ FlickerTalk على هاتف آخر",
+    "tabs.settings": "الإعدادات",
+    "settings.movePhone": "النقل إلى هاتف جديد",
+    "move.scan": "امسح رمز الهاتف الجديد",
+    "move.paste": "أو الصق رابطه",
+    "move.go": "نقل ومسح"
+  },
+  "common": {
+    "soon": "قريبًا على App Store",
+    "fragment": "لا يرسل متصفحك إلى خادمنا جزء الرابط الذي يأتي بعد #."
+  },
+  "add": {
+    "title": "إضافة جهة اتصال جديدة",
+    "description": "دعاك أحدهم إلى التحدث على FlickerTalk. ثبّت التطبيق، ثم الصق رابطه فيه لإضافته.",
+    "h1": "لديك دعوة إلى FlickerTalk",
+    "lead": "دعاك أحدهم إلى التحدث على FlickerTalk، وهو تطبيق مراسلة خاص بلا حساب وبلا رقم هاتف. لإضافته، الصق رابطه في التطبيق.",
+    "h2": "كيف تضيفه",
+    "step1Title": "احصل على FlickerTalk.",
+    "step1": "إذا كان FlickerTalk لديك بالفعل، فتخطَّ هذه الخطوة.",
+    "step2Title": "انسخ الرابط.",
+    "step2": "عُد إلى الرسالة التي وصلتك وانسخ الرابط كاملًا، أو انسخ العنوان الكامل لهذه الصفحة.",
+    "step3Title": "الصقه في التطبيق.",
+    "step3": "افتح FlickerTalk، واضغط «{addContact.title}» (زر رمز QR أعلى {tabs.chats})، واختر «{addContact.scan}». ثم الصقه في «{addContact.paste}» واضغط «{addContact.add}»."
+  },
+  "move": {
+    "title": "نقل FlickerTalk إلى هاتف جديد",
+    "description": "ينقل هذا الرابط FlickerTalk من هاتف قديم إلى هاتف جديد. الصقه في FlickerTalk على الهاتف القديم.",
+    "h1": "انقل FlickerTalk إلى هاتف جديد",
+    "lead": "يأتي هذا الرابط من الرمز الذي يعرضه FlickerTalk على هاتف جديد. عند قراءته من هاتفك القديم، ينقل هويتك وجهات اتصالك ورسائلك إلى الهاتف الجديد.",
+    "h2": "كيف تنقله",
+    "step1Title": "على الهاتف الجديد، احصل على FlickerTalk.",
+    "step1": "افتحه واضغط «{welcome.fromOld}» ليعرض الرمز. إذا كان الرمز ظاهرًا بالفعل، فتخطَّ هذه الخطوة.",
+    "step2Title": "على الهاتف القديم، افتح FlickerTalk.",
+    "step2": "انتقل إلى {tabs.settings} ← «{settings.movePhone}».",
+    "step3Title": "اقرأ رمز الهاتف الجديد.",
+    "step3": "اضغط «{move.scan}» وامسحه. أو انسخ هذا الرابط، من حيث وصلك أو من عنوان هذه الصفحة، والصقه في «{move.paste}» واضغط «{move.go}». بعد نقل كل شيء، يُمسح الهاتف القديم."
+  }
+}
