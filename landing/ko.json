@@ -13,7 +13,7 @@
     "move.go": "이동 후 삭제"
   },
   "common": {
-    "soon": "App Store 출시 예정",
+    "appStore": "FlickerTalk는 아직 App Store에 없어요. iPhone 버전은 곧 나올 예정이에요.",
     "fragment": "사용 중인 브라우저는 링크의 # 뒤 부분을 저희 서버로 보내지 않습니다."
   },
   "add": {
@@ -25,7 +25,7 @@
     "step1Title": "FlickerTalk를 설치하세요.",
     "step1": "이미 FlickerTalk가 있다면 이 단계는 건너뛰세요.",
     "step2Title": "링크를 복사하세요.",
-    "step2": "받은 메시지로 돌아가 링크 전체를 복사하거나, 이 페이지의 전체 주소를 복사하세요.",
+    "step2": "브라우저의 주소창을 탭하고 이 페이지의 주소를 복사하세요. 주소창에 일부만 보여도 이 주소가 링크 전체예요. 받은 메시지에서 링크만 복사해도 돼요.",
     "step3Title": "앱에 붙여넣으세요.",
     "step3": "FlickerTalk를 열고 ‘{addContact.title}’({tabs.chats} 상단의 QR 코드 버튼)를 탭한 다음 ‘{addContact.scan}’을 선택하세요. 그런 다음 ‘{addContact.paste}’ 칸에 붙여넣고 ‘{addContact.add}’를 탭하세요."
   },
@@ -40,6 +40,6 @@
     "step2Title": "이전 휴대폰에서 FlickerTalk를 여세요.",
     "step2": "‘{tabs.settings}’ → ‘{settings.movePhone}’으로 가세요.",
     "step3Title": "새 휴대폰의 코드를 읽으세요.",
-    "step3": "‘{move.scan}’을 탭해 스캔하세요. 또는 이 링크를 받은 곳이나 이 페이지 주소에서 복사해 ‘{move.paste}’ 칸에 붙여넣고 ‘{move.go}’를 탭하세요. 모두 옮겨지면 이전 휴대폰의 데이터는 삭제돼요."
+    "step3": "‘{move.scan}’을 탭해 스캔하세요. 또는 주소창에서 이 페이지의 주소(링크 전체예요)를 복사해 ‘{move.paste}’ 칸에 붙여넣고 ‘{move.go}’를 탭하세요. 모두 옮겨지면 이전 휴대폰의 데이터는 삭제돼요."
   }
 }

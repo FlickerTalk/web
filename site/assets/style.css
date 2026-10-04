@@ -51,8 +51,10 @@ main :is(p, li, dd) { max-width: 44rem; }
   text-decoration: none;
 }
 .brand img { width: 26px; height: 26px; }
-.top nav { display: flex; flex-wrap: wrap; gap: 0.3rem 1.3rem; font-size: 0.95rem; }
-.top nav a { color: var(--muted); text-decoration: none; }
+/* Navigation links are 44px tall to the finger: the padding grows the touch area and the nav's
+   negative margin gives it back, so the text stays where it was. Rows touch, never overlap. */
+.top nav { display: flex; flex-wrap: wrap; gap: 0 1.3rem; margin-block: calc((1.65em - 44px) / 2); font-size: 0.95rem; }
+.top nav a { color: var(--muted); text-decoration: none; padding-block: calc((44px - 1.65em) / 2); }
 .top nav a:hover, .top nav a[aria-current="page"] { color: var(--text); text-decoration: underline; }
 
 main { padding-block: 2rem 4rem; }
@@ -96,11 +98,20 @@ table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95r
 th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.8rem 0.6rem 0; border-bottom: 1px solid var(--line); }
 th { color: var(--muted); font-weight: 600; }
 
+/* Japanese: no line may start with a small kana or the long vowel mark (メッセ|ージ). */
+:lang(ja) { line-break: strict; }
+/* Korean: break between words, never inside one (붙|여넣으세요); a word longer than the line
+   still wraps instead of overflowing the screen. */
+:lang(ko) { word-break: keep-all; overflow-wrap: break-word; }
+/* Words that must stay on one line (in Korean, an opening quote and the word after it). */
+.nobr { white-space: nowrap; }
+
 ul { padding-left: 1.1rem; }
 li { margin-bottom: 0.4rem; }
 
 footer { border-top: 1px solid var(--line); padding-block: 1.6rem 3rem; color: var(--muted); font-size: 0.9rem; }
-footer nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; margin-bottom: 0.9rem; }
+footer nav { display: flex; flex-wrap: wrap; gap: 0 1.4rem; margin-block: calc((1.65em - 44px) / 2) calc(0.9rem + (1.65em - 44px) / 2); }
+footer nav a { padding-block: calc((44px - 1.65em) / 2); }
 footer p { margin: 0.2rem 0; }
 
 /* Where to get the app. Google's badge, untouched, at least 28px high (we use 56px) with a quarter

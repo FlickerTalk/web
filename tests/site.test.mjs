@@ -189,6 +189,43 @@ test("the stylesheet is black and white", () => {
   }
 });
 
+// Review on an iPhone (2026-10-04): "メッセ|ージ" broke before the long vowel mark. Japanese text
+// follows the strict line-breaking rules.
+test("the stylesheet breaks Japanese lines the strict way", () => {
+  const css = readFileSync(join(site, "assets/style.css"), "utf8");
+  assert.match(css, /:lang\(ja\)\s*\{[^}]*line-break:\s*strict;[^}]*\}/);
+});
+
+// Tablet review (2026-10-04): Korean broke inside words ("붙|여넣으세요"). Korean breaks between
+// words only, and a word too long for the line still wraps rather than overflowing the screen.
+test("the stylesheet breaks Korean lines between words, without overflowing", () => {
+  const css = readFileSync(join(site, "assets/style.css"), "utf8");
+  const rule = css.match(/:lang\(ko\)\s*\{([^}]*)\}/)?.[1] ?? "";
+  assert.match(rule, /word-break:\s*keep-all;/);
+  assert.match(rule, /overflow-wrap:\s*(break-word|anywhere);/);
+});
+
+// A few words that must stay on one line (the Korean landings keep an opening quote with its word).
+test("the stylesheet has a class that keeps words on one line", () => {
+  const css = readFileSync(join(site, "assets/style.css"), "utf8");
+  assert.match(css, /\.nobr\s*\{\s*white-space:\s*nowrap;\s*\}/);
+});
+
+// Tap targets (2026-10-04): the links of the header and footer navigation are at least 44px tall
+// to the finger, without moving the text: each link grows by padding, and its nav gives the same
+// back with a negative margin. Rows of links touch but never overlap (no row gap).
+test("the header and footer links are 44px tall to the finger, and the layout does not move", () => {
+  const css = readFileSync(join(site, "assets/style.css"), "utf8");
+  const rule = (selector) => css.match(new RegExp(`(?:^|\\n)${selector.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*\\{([^}]*)\\}`))?.[1] ?? "";
+  // The arithmetic below counts on one line of text being 1.65em.
+  assert.match(rule("body"), /font:\s*\d+px\/1\.65\s/, "the body's line height is 1.65");
+  for (const nav of [".top nav", "footer nav"]) {
+    assert.match(rule(`${nav} a`), /padding-block:\s*calc\(\(44px - 1\.65em\) \/ 2\);/, `${nav} a: 44px to the finger`);
+    assert.match(rule(nav), /gap:\s*0 [\d.]+rem;/, `${nav}: no row gap, so rows do not overlap`);
+    assert.match(rule(nav), /margin-block:\s*calc\(\(1\.65em - 44px\) \/ 2\)/, `${nav}: gives the padding back`);
+  }
+});
+
 // §71: no access logs anywhere; the headers keep the page to itself.
 test("the web server keeps no access log and sends a strict policy", () => {
   const conf = readFileSync(join(root, "nginx.conf"), "utf8");
@@ -457,7 +494,12 @@ test("no page says a suggestion cannot be traced to its sender", () => {
 // answers /add and /move as they are, without a redirect to /add/ that would change the address.
 const LANDINGS = { add: "add/index.html", move: "move/index.html" };
 
-test("a landing page offers Google Play with the badge and marks iOS as coming soon", () => {
+// Review on an iPhone (2026-10-04): a "Coming soon" box beside the badge looked like a button and
+// left an iPhone reader stuck. The landings say plainly, under the badge, that there is no iPhone
+// app in the App Store yet; the home page keeps its box.
+const NO_IOS = "FlickerTalk is not on the App Store yet. The iPhone version is coming soon.";
+
+test("a landing page offers Google Play with the badge and says plainly that iOS is not there yet", () => {
   for (const page of Object.values(LANDINGS)) {
     const links = playLinks(read(page));
     assert.equal(links.length, 1, `${page} links Google Play`);
@@ -465,7 +507,8 @@ test("a landing page offers Google Play with the badge and marks iOS as coming s
     assert.match(link, /\starget="_blank"/, `${page}: the store opens in a new tab`);
     assert.match(link, /\srel="noopener"/, `${page}: and cannot reach back into the page`);
     assert.match(inner, new RegExp(`<img src="/${escape(BADGE)}" alt="Get it on Google Play"`), `${page}: the badge`);
-    assert.match(text(page), /Coming soon on the App Store/, `${page}: iOS is coming`);
+    assert.match(read(page), new RegExp(`<div class="get">\\s*<a class="play"[^>]*>[^]*?</a>\\s*</div>\\s*<p>${escape(NO_IOS)}</p>`), `${page}: a sentence under the badge`);
+    assert.doesNotMatch(read(page), /class="soon"/, `${page}: nothing that looks like a button`);
     assert.match(text(page), /Google Play and the Google Play logo are trademarks of Google LLC/, `${page}: the badge's notice`);
   }
 });
@@ -478,6 +521,13 @@ test("the contact landing says to paste the link in the app's Add contact screen
   assert.match(words, /“Scan”/);
   assert.match(words, /paste it into “Or paste their link” and tap “Add”/);
   assert.match(words, /already have FlickerTalk/, "it reads fine for someone who has the app");
+  // The app takes the bare link only, and a phone's address bar shows just "flickertalk.com": the
+  // page's own address is the link, so that comes first, and the bar is named.
+  assert.ok(
+    words.includes("Copy the link. Tap your browser’s address bar and copy the address of this page: it is the whole link, even if the bar shows only part of it. Copying just the link from the message you received works too."),
+    "step 2 leads with the address bar"
+  );
+  assert.doesNotMatch(words, /full address of this page/);
 });
 
 test("the move landing says to paste the link on the old phone's Move to a new phone screen", () => {
@@ -488,6 +538,10 @@ test("the move landing says to paste the link on the old phone's Move to a new p
   assert.match(words, /Settings → “Move to a new phone”/);
   assert.match(words, /paste it into “Or paste its link”/);
   assert.match(words, /old phone is erased/i, "the app's own warning");
+  assert.ok(words.includes("When your old phone reads it, it moves your identity, contacts and messages to the new one."), "the lead says who reads the code");
+  assert.doesNotMatch(words, /Read on your old phone/);
+  assert.match(words, /Or copy the address of this page from the address bar \(it is the whole link\), paste it into/);
+  assert.doesNotMatch(words, /from where you got it/);
 });
 
 test("a landing page says what the browser keeps to itself, and nothing more", () => {

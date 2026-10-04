@@ -13,7 +13,7 @@
     "move.go": "Chuyển và xóa"
   },
   "common": {
-    "soon": "Sắp có trên App Store",
+    "appStore": "FlickerTalk chưa có trên App Store. Phiên bản iPhone sẽ sớm ra mắt.",
     "fragment": "Trình duyệt của bạn không gửi phần liên kết sau dấu # đến máy chủ của chúng tôi."
   },
   "add": {
@@ -25,7 +25,7 @@
     "step1Title": "Cài FlickerTalk.",
     "step1": "Nếu bạn đã có FlickerTalk, hãy bỏ qua bước này.",
     "step2Title": "Sao chép liên kết.",
-    "step2": "Quay lại tin nhắn bạn nhận được và sao chép toàn bộ liên kết, hoặc sao chép địa chỉ đầy đủ của trang này.",
+    "step2": "Chạm vào thanh địa chỉ của trình duyệt và sao chép địa chỉ của trang này: đó là toàn bộ liên kết, kể cả khi thanh địa chỉ chỉ hiện một phần. Bạn cũng có thể chỉ sao chép liên kết trong tin nhắn đã nhận.",
     "step3Title": "Dán vào ứng dụng.",
     "step3": "Mở FlickerTalk, chạm vào “{addContact.title}” (nút mã QR ở đầu màn hình {tabs.chats}) và chọn “{addContact.scan}”. Sau đó dán vào “{addContact.paste}” và chạm vào “{addContact.add}”."
   },
@@ -40,6 +40,6 @@
     "step2Title": "Trên điện thoại cũ, mở FlickerTalk.",
     "step2": "Vào {tabs.settings} → “{settings.movePhone}”.",
     "step3Title": "Đọc mã của điện thoại mới.",
-    "step3": "Chạm vào “{move.scan}” và quét mã. Hoặc sao chép liên kết này, từ nơi bạn nhận được hoặc từ địa chỉ của trang này, dán vào “{move.paste}” và chạm vào “{move.go}”. Khi mọi thứ đã được chuyển xong, điện thoại cũ sẽ bị xóa sạch."
+    "step3": "Chạm vào “{move.scan}” và quét mã. Hoặc sao chép địa chỉ của trang này từ thanh địa chỉ (đó là toàn bộ liên kết), dán vào “{move.paste}” và chạm vào “{move.go}”. Khi mọi thứ đã được chuyển xong, điện thoại cũ sẽ bị xóa sạch."
   }
 }

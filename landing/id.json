@@ -13,7 +13,7 @@
     "move.go": "Pindahkan dan hapus"
   },
   "common": {
-    "soon": "Segera hadir di App Store",
+    "appStore": "FlickerTalk belum ada di App Store. Versi iPhone segera hadir.",
     "fragment": "Browser Anda tidak mengirim bagian tautan setelah # ke server kami."
   },
   "add": {
@@ -25,7 +25,7 @@
     "step1Title": "Pasang FlickerTalk.",
     "step1": "Jika Anda sudah punya FlickerTalk, lewati langkah ini.",
     "step2Title": "Salin tautannya.",
-    "step2": "Kembali ke pesan yang Anda terima dan salin seluruh tautannya, atau salin alamat lengkap halaman ini.",
+    "step2": "Ketuk bilah alamat browser Anda dan salin alamat halaman ini: itulah tautan lengkapnya, meskipun bilah hanya menampilkan sebagian. Menyalin tautannya saja dari pesan yang Anda terima juga bisa.",
     "step3Title": "Tempel di aplikasi.",
     "step3": "Buka FlickerTalk, ketuk “{addContact.title}” (tombol kode QR di bagian atas {tabs.chats}) dan pilih “{addContact.scan}”. Lalu tempel di “{addContact.paste}” dan ketuk “{addContact.add}”."
   },
@@ -40,6 +40,6 @@
     "step2Title": "Di ponsel lama, buka FlickerTalk.",
     "step2": "Buka {tabs.settings} → “{settings.movePhone}”.",
     "step3Title": "Baca kode ponsel baru.",
-    "step3": "Ketuk “{move.scan}” lalu pindai kodenya. Atau salin tautan ini, dari tempat Anda menerimanya atau dari alamat halaman ini, tempel di “{move.paste}”, lalu ketuk “{move.go}”. Setelah semuanya pindah, ponsel lama akan dihapus."
+    "step3": "Ketuk “{move.scan}” lalu pindai kodenya. Atau salin alamat halaman ini dari bilah alamat (itulah tautan lengkapnya), tempel di “{move.paste}”, lalu ketuk “{move.go}”. Setelah semuanya pindah, ponsel lama akan dihapus."
   }
 }

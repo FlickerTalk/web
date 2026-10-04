@@ -13,7 +13,7 @@
     "move.go": "Taşı ve sil"
   },
   "common": {
-    "soon": "Yakında App Store’da",
+    "appStore": "FlickerTalk henüz App Store’da yok. iPhone sürümü yakında geliyor.",
     "fragment": "Tarayıcınız, bağlantının # işaretinden sonraki kısmını sunucumuza göndermez."
   },
   "add": {
@@ -25,7 +25,7 @@
     "step1Title": "FlickerTalk’ı yükleyin.",
     "step1": "FlickerTalk zaten yüklüyse bu adımı atlayın.",
     "step2Title": "Bağlantıyı kopyalayın.",
-    "step2": "Aldığınız mesaja geri dönüp bağlantının tamamını kopyalayın ya da bu sayfanın tam adresini kopyalayın.",
+    "step2": "Tarayıcınızın adres çubuğuna dokunun ve bu sayfanın adresini kopyalayın: çubuk yalnızca bir kısmını gösterse de bu adres bağlantının tamamıdır. Aldığınız mesajdan yalnızca bağlantıyı kopyalamak da olur.",
     "step3Title": "Uygulamaya yapıştırın.",
     "step3": "FlickerTalk’ı açın, “{addContact.title}” düğmesine (“{tabs.chats}” ekranının üstündeki QR kod düğmesi) dokunun ve “{addContact.scan}” seçeneğini seçin. Ardından bağlantıyı “{addContact.paste}” alanına yapıştırıp “{addContact.add}” düğmesine dokunun."
   },
@@ -40,6 +40,6 @@
     "step2Title": "Eski telefonda FlickerTalk’ı açın.",
     "step2": "{tabs.settings} → “{settings.movePhone}” bölümüne gidin.",
     "step3Title": "Yeni telefonun kodunu okutun.",
-    "step3": "“{move.scan}” düğmesine dokunup kodu tarayın. Ya da bu bağlantıyı, aldığınız yerden veya bu sayfanın adresinden kopyalayıp “{move.paste}” alanına yapıştırın ve “{move.go}” düğmesine dokunun. Her şey taşındıktan sonra eski telefon silinir."
+    "step3": "“{move.scan}” düğmesine dokunup kodu tarayın. Ya da bu sayfanın adresini adres çubuğundan kopyalayıp (bağlantının tamamıdır) “{move.paste}” alanına yapıştırın ve “{move.go}” düğmesine dokunun. Her şey taşındıktan sonra eski telefon silinir."
   }
 }

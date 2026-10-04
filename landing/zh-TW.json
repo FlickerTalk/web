@@ -13,7 +13,7 @@
     "move.go": "移轉並清除"
   },
   "common": {
-    "soon": "即將登上 App Store",
+    "appStore": "FlickerTalk 尚未在 App Store 上架，iPhone 版即將推出。",
     "fragment": "你的瀏覽器不會把連結中 # 之後的部分傳送到我們的伺服器。"
   },
   "add": {
@@ -25,7 +25,7 @@
     "step1Title": "取得 FlickerTalk。",
     "step1": "如果你已經有 FlickerTalk，可以跳過這一步。",
     "step2Title": "複製連結。",
-    "step2": "回到你收到的訊息，複製完整的連結，或複製本頁的完整網址。",
+    "step2": "點選瀏覽器的網址列，複製本頁的網址：即使網址列只顯示一部分，它也是完整的連結。只從你收到的訊息裡複製連結也可以。",
     "step3Title": "貼到 App 裡。",
     "step3": "開啟 FlickerTalk，點選「{addContact.title}」（{tabs.chats}頁面頂端的 QR 碼按鈕），然後選擇「{addContact.scan}」。再貼到「{addContact.paste}」中，點選「{addContact.add}」。"
   },
@@ -40,6 +40,6 @@
     "step2Title": "在舊手機上開啟 FlickerTalk。",
     "step2": "前往「{tabs.settings}」→「{settings.movePhone}」。",
     "step3Title": "讀取新手機的 QR 碼。",
-    "step3": "點選「{move.scan}」並掃描。或從你收到它的地方或本頁網址複製這個連結，貼到「{move.paste}」中，然後點選「{move.go}」。全部移轉完成後，舊手機上的資料將被清除。"
+    "step3": "點選「{move.scan}」並掃描。或從網址列複製本頁的網址（它就是完整的連結），貼到「{move.paste}」中，然後點選「{move.go}」。全部移轉完成後，舊手機上的資料將被清除。"
   }
 }
