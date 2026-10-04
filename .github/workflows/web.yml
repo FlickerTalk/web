@@ -35,6 +35,9 @@ jobs:
           sleep 1
           test "$(curl -fsS http://localhost:8080/version.txt)" = "$GITHUB_SHA"
           curl -fsS -o /dev/null http://localhost:8080/privacy/
+          # Contact and move links land here: answered as they are, never redirected to /add/.
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/add)" = 200
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/move)" = 200
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/nope)" = 404
 
   image:

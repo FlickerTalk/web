@@ -27,6 +27,10 @@ const PAGES = [
   "games/tictactoe/index.html",
   "games/fourinarow/index.html",
   "games/chess/index.html",
+  // Where a contact link (https://flickertalk.com/add#<card>) and a move link
+  // (https://flickertalk.com/move#<invite>) land when they open in a browser (2026-10-04).
+  "add/index.html",
+  "move/index.html",
 ];
 
 const read = (path) => readFileSync(join(site, path), "utf8");
@@ -435,4 +439,65 @@ test("no page says a suggestion cannot be traced to its sender", () => {
   for (const claim of ["cannot know who", "can't know who", "never knows who", "completely anonymous", "fully anonymous", "untraceable"]) {
     assert.ok(!all.includes(claim), `nobody may read "${claim}"`);
   }
+});
+
+// Links that land here (2026-10-04): the app shares a contact as https://flickertalk.com/add#<card>,
+// and a new phone shows https://flickertalk.com/move#<invite> as a code. The app does not register
+// these addresses, so they open in the browser: whoever opens one gets the app and is told where to
+// paste the link. The app accepts only links that start exactly with /add# or /move#, so the server
+// answers /add and /move as they are, without a redirect to /add/ that would change the address.
+const LANDINGS = { add: "add/index.html", move: "move/index.html" };
+
+test("a landing page offers Google Play with the badge and marks iOS as coming soon", () => {
+  for (const page of Object.values(LANDINGS)) {
+    const links = playLinks(read(page));
+    assert.equal(links.length, 1, `${page} links Google Play`);
+    const [link, inner] = links[0];
+    assert.match(link, /\starget="_blank"/, `${page}: the store opens in a new tab`);
+    assert.match(link, /\srel="noopener"/, `${page}: and cannot reach back into the page`);
+    assert.match(inner, new RegExp(`<img src="/${escape(BADGE)}" alt="Get it on Google Play"`), `${page}: the badge`);
+    assert.match(text(page), /Coming soon on the App Store/, `${page}: iOS is coming`);
+    assert.match(text(page), /Google Play and the Google Play logo are trademarks of Google LLC/, `${page}: the badge's notice`);
+  }
+});
+
+test("the contact landing says to paste the link in the app's Add contact screen", () => {
+  const words = text(LANDINGS.add);
+  assert.match(words, /invited you to talk on FlickerTalk/);
+  // The names the app shows (app/src/i18n/en.json, addContact.*).
+  assert.match(words, /“Add contact”/);
+  assert.match(words, /“Scan”/);
+  assert.match(words, /paste it into “Or paste their link” and tap “Add”/);
+  assert.match(words, /already have FlickerTalk/, "it reads fine for someone who has the app");
+});
+
+test("the move landing says to paste the link on the old phone's Move to a new phone screen", () => {
+  const words = text(LANDINGS.move);
+  // The new phone shows the code ("I have FlickerTalk on another phone"); the old phone reads it
+  // from Settings → "Move to a new phone" (app/src/i18n/en.json, welcome.fromOld and move.*).
+  assert.match(words, /“I have FlickerTalk on another phone”/);
+  assert.match(words, /Settings → “Move to a new phone”/);
+  assert.match(words, /paste it into “Or paste its link”/);
+  assert.match(words, /old phone is erased/i, "the app's own warning");
+});
+
+test("a landing page says what the browser keeps to itself, and nothing more", () => {
+  for (const page of Object.values(LANDINGS)) {
+    assert.ok(text(page).includes("Your browser does not send the part of the link after # to our server."), `${page}: the fragment`);
+  }
+});
+
+test("the landing pages are kept out of search engines", () => {
+  for (const page of Object.values(LANDINGS)) {
+    assert.match(read(page), /<meta name="robots" content="noindex">/, `${page} is noindex`);
+  }
+  assert.doesNotMatch(read("index.html"), /noindex/, "the home page stays indexed");
+});
+
+test("the web server answers /add and /move without a redirect", () => {
+  const conf = readFileSync(join(root, "nginx.conf"), "utf8");
+  for (const name of Object.keys(LANDINGS)) {
+    assert.match(conf, new RegExp(`location = /${name} \\{\\s*try_files /${name}/index\\.html =404;\\s*\\}`), `/${name} is served as it is`);
+  }
+  assert.doesNotMatch(conf, /\b(return\s+30\d|rewrite)\b/, "no redirect anywhere");
 });
