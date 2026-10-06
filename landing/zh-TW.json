@@ -13,7 +13,6 @@
     "move.go": "移轉並清除"
   },
   "common": {
-    "appStore": "FlickerTalk 尚未在 App Store 上架，iPhone 版即將推出。",
     "fragment": "你的瀏覽器不會把連結中 # 之後的部分傳送到我們的伺服器。"
   },
   "add": {

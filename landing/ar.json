@@ -13,7 +13,6 @@
     "move.go": "نقل ومسح"
   },
   "common": {
-    "appStore": "FlickerTalk غير متوفر على App Store بعد. نسخة iPhone قادمة قريبًا.",
     "fragment": "لا يرسل متصفحك إلى خادمنا جزء الرابط الذي يأتي بعد #."
   },
   "add": {

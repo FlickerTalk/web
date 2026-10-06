@@ -13,7 +13,6 @@
     "move.go": "Move and erase"
   },
   "common": {
-    "appStore": "FlickerTalk is not on the App Store yet. The iPhone version is coming soon.",
     "fragment": "Your browser does not send the part of the link after # to our server."
   },
   "add": {

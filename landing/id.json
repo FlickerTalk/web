@@ -13,7 +13,6 @@
     "move.go": "Pindahkan dan hapus"
   },
   "common": {
-    "appStore": "FlickerTalk belum ada di App Store. Versi iPhone segera hadir.",
     "fragment": "Browser Anda tidak mengirim bagian tautan setelah # ke server kami."
   },
   "add": {

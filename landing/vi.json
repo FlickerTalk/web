@@ -13,7 +13,6 @@
     "move.go": "Chuyển và xóa"
   },
   "common": {
-    "appStore": "FlickerTalk chưa có trên App Store. Phiên bản iPhone sẽ sớm ra mắt.",
     "fragment": "Trình duyệt của bạn không gửi phần liên kết sau dấu # đến máy chủ của chúng tôi."
   },
   "add": {

@@ -88,8 +88,6 @@ p { margin: 0 0 1rem; }
 .price h2 { margin: 0 0 0.6rem; }
 .price p { margin: 0.2rem 0; }
 
-.soon { display: inline-block; border: 1px solid var(--line); padding: 0.4rem 0.9rem; color: var(--muted); font-size: 0.95rem; }
-
 dl { margin: 0; }
 dt { font-weight: 600; margin-top: 1.8rem; }
 dd { margin: 0.35rem 0 0; color: var(--muted); }
@@ -114,8 +112,10 @@ footer nav { display: flex; flex-wrap: wrap; gap: 0 1.4rem; margin-block: calc((
 footer nav a { padding-block: calc((44px - 1.65em) / 2); }
 footer p { margin: 0.2rem 0; }
 
-/* Where to get the app. Google's badge, untouched, at least 28px high (we use 56px) with a quarter
-   of its height clear around it; iOS waits beside it. */
-.get { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 1.2rem; margin: 0 0 1rem; }
-.get .play { display: block; line-height: 0; }
-.get .play img { display: block; height: 56px; width: auto; }
+/* Where to get the app. Apple's and Google's badges, untouched, side by side at the same height
+   (56px: Apple asks for at least 40px on screen, Google for its badge to be no smaller than the
+   others), the App Store first as Apple asks, with a quarter of that height (14px) clear between
+   them and above them (after a paragraph the margins collapse, so only a step's text moves). */
+.get { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; margin: 14px 0 1rem; }
+.get a { display: block; line-height: 0; }
+.get img { display: block; height: 56px; width: auto; margin: 0; }

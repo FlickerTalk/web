@@ -15,6 +15,40 @@ const RTL = new Set(["ar"]);
 
 const escape = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+// Apple's "Download on the App Store" badge in the page's language: Apple's own SVG in site/assets/
+// (black, from Apple's App Store Marketing Tools, unaltered) and the badge's own wording as its alt
+// text. Apple's tool has no Hindi badge, so Hindi (and any language not listed) shows the English one.
+const APPLE_BADGE = {
+  ar: "تنزيل من App Store",
+  bn: "App Store থেকে ডাউনলোড করুন",
+  de: "Laden im App Store",
+  es: "Consíguelo en el App Store",
+  fr: "Télécharger dans l’App Store",
+  id: "Download di App Store",
+  it: "Scarica su App Store",
+  ja: "App Storeからダウンロード",
+  ko: "App Store에서 다운로드 하기",
+  pl: "Pobierz w App Store",
+  pt: "Baixar na App Store",
+  ro: "Descărcați de pe App Store",
+  ru: "Загрузите в App Store",
+  th: "ดาวน์โหลดได้ที่ App Store",
+  tr: "App Store’dan İndirin",
+  uk: "Завантажити в App Store",
+  vi: "Tải về trên App Store",
+  "zh-CN": "App Store 下载",
+  "zh-TW": "App Store 下載",
+};
+// Both badges are 56px high (style.css); the width keeps the badge's own shape.
+const BADGE_HEIGHT = 56;
+
+function appleBadge(lang) {
+  const file = lang in APPLE_BADGE ? `app-store-badge-${lang}.svg` : "app-store-badge.svg";
+  const alt = APPLE_BADGE[lang] ?? "Download on the App Store";
+  const [, , w, h] = readFileSync(join(root, "site", "assets", file), "utf8").match(/viewBox="([^"]+)"/)[1].trim().split(/\s+/).map(Number);
+  return `<img src="/assets/${file}" alt="${escape(alt)}" width="${Math.round((BADGE_HEIGHT * w) / h)}" height="${BADGE_HEIGHT}">`;
+}
+
 // Korean: WebKit with word-break: keep-all breaks after an opening quote before Hangul, so the
 // quote and the first word of the label it opens go together in a span that does not wrap. Only
 // the first word: a whole label could be wider than a phone.
@@ -78,9 +112,9 @@ function page(lang, name, strings) {
     <ol>
       <li>${step(1)}
         <div class="get">
+          <a class="apple" href="https://apps.apple.com/app/id6817480081" target="_blank" rel="noopener">${appleBadge(lang)}</a>
           <a class="play" href="https://play.google.com/store/apps/details?id=com.flickertalk.app" target="_blank" rel="noopener"><img src="/assets/google-play-badge.svg" alt="Get it on Google Play" width="189" height="56"></a>
         </div>
-        <p>${common("appStore")}</p>
       </li>
       <li>${step(2)}</li>
       <li>${step(3)}</li>
@@ -101,6 +135,7 @@ function page(lang, name, strings) {
     <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
     <p>No cookies, analytics, trackers or access logs on this website.</p>
     <p>Contact: <a href="mailto:info@flickertalk.com">info@flickertalk.com</a></p>
+    <p>Apple, the Apple logo and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.</p>
     <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </footer>
 </body>

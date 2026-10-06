@@ -286,11 +286,21 @@ test("help & contact is honest about what we cannot do", () => {
   assert.match(words, /Android or iOS/, "the help page does not assume one platform");
 });
 
-// Android is out (2026-10-01): the home page sends people to Google Play; iOS is still on its way.
+// Android is out (2026-10-01) and iOS follows: the home page sends people to the App Store and to
+// Google Play.
 const PLAY = "https://play.google.com/store/apps/details?id=com.flickertalk.app";
 const BADGE = "assets/google-play-badge.svg";
+// The App Store listing (Apple ID 6817480081); apps.apple.com picks the reader's storefront.
+const APP_STORE = "https://apps.apple.com/app/id6817480081";
+const APPLE_BADGE = "assets/app-store-badge.svg";
 const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const playLinks = (html) => [...html.matchAll(new RegExp(`<a\\s[^>]*href="${escape(PLAY)}"[^>]*>([\\s\\S]*?)</a>`, "g"))];
+const storeLinks = (url) => (html) => [...html.matchAll(new RegExp(`<a\\s[^>]*href="${escape(url)}"[^>]*>([\\s\\S]*?)</a>`, "g"))];
+const playLinks = storeLinks(PLAY);
+const appStoreLinks = storeLinks(APP_STORE);
+// Apple's credit line, where Google's is (App Store marketing guidelines: when the badge is used,
+// credit Apple and the Apple logo; the international form outside the U.S.).
+const APPLE_CREDIT = "Apple, the Apple logo and App Store are trademarks of Apple Inc., registered in the U.S. and other countries.";
+const GOOGLE_CREDIT = "Google Play and the Google Play logo are trademarks of Google LLC.";
 
 test("the home page links the Google Play listing with the official badge, twice", () => {
   const links = playLinks(read("index.html"));
@@ -317,20 +327,79 @@ test("no page still says the app is coming to both platforms", () => {
   }
 });
 
-test("iOS is still marked as coming soon", () => {
-  assert.equal(text("index.html").match(/Coming soon on the App Store/g)?.length, 2, "next to both badges");
+// iOS is out (2026-10): Apple's black badge, first in the lineup (Apple's guidelines), at the same
+// height as Google's (Google's: the same size as the other stores' badges or larger).
+test("the home page links the App Store listing with Apple's badge, first, twice", () => {
+  const html = read("index.html");
+  const links = appStoreLinks(html);
+  assert.equal(links.length, 2, "the hero and the closing section both link the App Store");
+  for (const [link, inner] of links) {
+    assert.match(link, /\starget="_blank"/, "the store opens in a new tab");
+    assert.match(link, /\srel="noopener"/, "and cannot reach back into the page");
+    assert.match(inner, new RegExp(`<img src="/${escape(APPLE_BADGE)}" alt="Download on the App Store" width="\\d+" height="56">`), "Apple's badge, with its alt text");
+  }
+  const lineups = [...html.matchAll(/<div class="get">\s*(<a class="apple"[^>]*>[\s\S]*?<\/a>)\s*(<a class="play"[^>]*>[\s\S]*?<\/a>)\s*<\/div>/g)];
+  assert.equal(lineups.length, 2, "both badges side by side, the App Store first, twice");
+  for (const [, apple, play] of lineups) {
+    assert.ok(apple.includes(`href="${APP_STORE}"`), "the first is the App Store");
+    assert.ok(play.includes(`href="${PLAY}"`), "the second is Google Play");
+  }
+});
+
+// Apple's artwork as Apple's App Store Marketing Tools serve it (black, English, SVG): the
+// guidelines forbid altering it, so the bytes are pinned.
+test("the App Store badge is Apple's English SVG, unaltered and served from this site", () => {
+  const file = join(site, APPLE_BADGE);
+  assert.ok(existsSync(file), `${APPLE_BADGE} exists`);
+  const hash = createHash("sha256").update(readFileSync(file)).digest("hex");
+  assert.equal(hash, "a26fc5b38380272c92e9019a2eb8b45542a66814b3e2b203772db8904b9fb99f", "the badge is byte for byte Apple's file");
+});
+
+test("both store badges are the same height, with a quarter of it clear between them", () => {
+  const css = read("assets/style.css");
+  assert.match(css, /\.get img\s*\{[^}]*height:\s*56px;[^}]*\}/, "one height for every badge");
+  // .hero img (the hero's logo) must not add its margin under a badge: stacked on a phone, the
+  // badges keep the same gap in the hero as anywhere else.
+  assert.match(css, /\.get img\s*\{[^}]*margin:\s*0;[^}]*\}/, "no margin from other img rules");
+  assert.doesNotMatch(css, /\.get \.play img/, "no rule that sizes one badge only");
+  const gap = css.match(/\.get\s*\{[^}]*gap:\s*(\d+)px (\d+)px;/);
+  assert.ok(gap, "the gap between badges is in pixels");
+  for (const value of gap.slice(1)) assert.ok(Number(value) >= 14, `clear space ${value}px ≥ a quarter of 56px`);
+  // Text never comes closer: on /add and /move the step's text runs straight into the badges.
+  const margin = css.match(/\.get\s*\{[^}]*margin:\s*(\d+)px 0 1rem;/);
+  assert.ok(margin && Number(margin[1]) >= 14, "clear space above the badges");
+});
+
+test("where a store badge is, both companies' credit lines are in the footer", () => {
+  for (const page of ["index.html", "add/index.html", "move/index.html", ...LOCALIZED]) {
+    const footer = text(page).slice(text(page).lastIndexOf("FlickerTalk is a service of"));
+    assert.ok(footer.includes(GOOGLE_CREDIT), `${page}: Google's credit line`);
+    assert.ok(footer.includes(APPLE_CREDIT), `${page}: Apple's credit line`);
+  }
+});
+
+test("no page still says iOS is coming", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    assert.doesNotMatch(read(page), /class="soon"/, `${page}: no "coming soon" box`);
+    assert.doesNotMatch(text(page), /coming soon|not on the App Store yet/i, `${page}: iOS is out`);
+  }
+  assert.doesNotMatch(read("assets/style.css"), /\.soon\b/, "the box's style is gone too");
 });
 
 test("the FAQ and help pages say where to get the app", () => {
   for (const page of ["faq/index.html", "support/index.html"]) {
     assert.equal(playLinks(read(page)).length, 1, `${page} links Google Play`);
-    assert.match(text(page), /App Store/, `${page}: iOS is coming`);
+    assert.equal(appStoreLinks(read(page)).length, 1, `${page} links the App Store`);
+    for (const [link] of [...playLinks(read(page)), ...appStoreLinks(read(page))]) {
+      assert.match(link, /\starget="_blank" rel="noopener"/, `${page}: the store opens in a new tab`);
+    }
+    assert.match(text(page), /on iPhone, from the App Store/i, `${page}: the iPhone app is in the App Store`);
   }
 });
 
-// Links out are few and known: the source code, the Spanish regulator and the store listing.
+// Links out are few and known: the source code, the Spanish regulator and the store listings.
 test("every link to another site is one we know", () => {
-  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`)];
+  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`), new RegExp(`^${escape(APP_STORE)}$`)];
   for (const page of [...PAGES, ...LOCALIZED]) {
     for (const [, url] of read(page).matchAll(/\shref="((?:https?:)?\/\/[^"]*)"/gi)) {
       assert.ok(known.some((k) => k.test(url)), `${page} → ${url}`);
@@ -494,22 +563,22 @@ test("no page says a suggestion cannot be traced to its sender", () => {
 // answers /add and /move as they are, without a redirect to /add/ that would change the address.
 const LANDINGS = { add: "add/index.html", move: "move/index.html" };
 
-// Review on an iPhone (2026-10-04): a "Coming soon" box beside the badge looked like a button and
-// left an iPhone reader stuck. The landings say plainly, under the badge, that there is no iPhone
-// app in the App Store yet; the home page keeps its box.
-const NO_IOS = "FlickerTalk is not on the App Store yet. The iPhone version is coming soon.";
-
-test("a landing page offers Google Play with the badge and says plainly that iOS is not there yet", () => {
+// iOS is out (2026-10): the landings offer both stores, the App Store first, and step 1 ends with
+// the badges (the 2026-10-04 sentence "not on the App Store yet" is gone).
+test("a landing page offers the App Store and Google Play with their badges", () => {
   for (const page of Object.values(LANDINGS)) {
-    const links = playLinks(read(page));
-    assert.equal(links.length, 1, `${page} links Google Play`);
-    const [link, inner] = links[0];
-    assert.match(link, /\starget="_blank"/, `${page}: the store opens in a new tab`);
-    assert.match(link, /\srel="noopener"/, `${page}: and cannot reach back into the page`);
-    assert.match(inner, new RegExp(`<img src="/${escape(BADGE)}" alt="Get it on Google Play"`), `${page}: the badge`);
-    assert.match(read(page), new RegExp(`<div class="get">\\s*<a class="play"[^>]*>[^]*?</a>\\s*</div>\\s*<p>${escape(NO_IOS)}</p>`), `${page}: a sentence under the badge`);
-    assert.doesNotMatch(read(page), /class="soon"/, `${page}: nothing that looks like a button`);
-    assert.match(text(page), /Google Play and the Google Play logo are trademarks of Google LLC/, `${page}: the badge's notice`);
+    const html = read(page);
+    for (const [links, store, badge, alt] of [
+      [appStoreLinks(html), "the App Store", APPLE_BADGE, "Download on the App Store"],
+      [playLinks(html), "Google Play", BADGE, "Get it on Google Play"],
+    ]) {
+      assert.equal(links.length, 1, `${page} links ${store}`);
+      const [link, inner] = links[0];
+      assert.match(link, /\starget="_blank"/, `${page}: ${store} opens in a new tab`);
+      assert.match(link, /\srel="noopener"/, `${page}: and cannot reach back into the page`);
+      assert.match(inner, new RegExp(`<img src="/${escape(badge)}" alt="${alt}"`), `${page}: the ${store} badge`);
+    }
+    assert.match(html, /<div class="get">\s*<a class="apple"[^>]*>[^]*?<\/a>\s*<a class="play"[^>]*>[^]*?<\/a>\s*<\/div>\s*<\/li>/, `${page}: the badges close step 1, the App Store first`);
   }
 });
 

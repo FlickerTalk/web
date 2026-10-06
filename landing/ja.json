@@ -13,7 +13,6 @@
     "move.go": "移行して消去"
   },
   "common": {
-    "appStore": "FlickerTalkはまだApp Storeにありません。iPhone版は近日公開予定です。",
     "fragment": "お使いのブラウザは、リンクの#より後ろの部分を当社のサーバーに送信しません。"
   },
   "add": {

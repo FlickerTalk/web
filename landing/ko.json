@@ -13,7 +13,6 @@
     "move.go": "이동 후 삭제"
   },
   "common": {
-    "appStore": "FlickerTalk는 아직 App Store에 없어요. iPhone 버전은 곧 나올 예정이에요.",
     "fragment": "사용 중인 브라우저는 링크의 # 뒤 부분을 저희 서버로 보내지 않습니다."
   },
   "add": {

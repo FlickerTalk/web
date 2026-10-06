@@ -13,7 +13,6 @@
     "move.go": "Taşı ve sil"
   },
   "common": {
-    "appStore": "FlickerTalk henüz App Store’da yok. iPhone sürümü yakında geliyor.",
     "fragment": "Tarayıcınız, bağlantının # işaretinden sonraki kısmını sunucumuza göndermez."
   },
   "add": {

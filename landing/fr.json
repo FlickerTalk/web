@@ -13,7 +13,6 @@
     "move.go": "Transférer et effacer"
   },
   "common": {
-    "appStore": "FlickerTalk n’est pas encore sur l’App Store. La version iPhone arrive bientôt.",
     "fragment": "Votre navigateur n’envoie pas à notre serveur la partie du lien qui suit le #."
   },
   "add": {
