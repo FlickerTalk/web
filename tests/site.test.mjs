@@ -116,32 +116,24 @@ test("no privacy claim the design cannot keep", () => {
   }
 });
 
-// §40: the price is announced from the launch, on the landing and in the terms.
-test("the price is on the home page and in the terms", () => {
-  for (const page of ["index.html", "terms/index.html"]) {
+// §40, 2026-10-08: talking is free forever; only the tools cost €0.99 a year after the first year.
+test("the price is on the home page, in the FAQ and in the terms", () => {
+  for (const page of ["index.html", "faq/index.html", "terms/index.html"]) {
     const words = text(page);
-    assert.match(words, /first year/i, `${page}: first year free`);
-    assert.match(words, /€0\.99 (per|a) year/i, `${page}: €0.99 a year`);
-    assert.match(words, /minors/i, `${page}: free for minors (§40, 2026-10-07)`);
-    assert.match(words, /€0\.99 a year for adults/i, `${page}: €0.99 a year for adults`);
+    assert.match(words, /Chat, calls, files and games are free, forever/i, `${page}: talking is free forever`);
+    assert.match(words, /tools/i, `${page}: the tools are what costs`);
+    assert.match(words, /first year/i, `${page}: tools free the first year`);
+    assert.match(words, /€0\.99 a year/i, `${page}: €0.99 a year`);
   }
 });
 
-// §43, 2026-10-07: minor comes only from the store's age range; no self-declaration.
-test("the terms take the minor rule from the store, with no self-declaration", () => {
-  const words = text("terms/index.html");
-  assert.match(words, /age range Google Play or the App Store gives the app/);
-  assert.match(words, /treats you as an adult/);
-  assert.doesNotMatch(words, /what you tell the app|you declare/i, "no self-declaration");
-});
-
-// §40, 2026-10-07: the rule is minor or adult, with no age number on the site.
-test("no page puts an age number on the price", () => {
+// §40, 2026-10-08: there is no age rule on the price any more.
+test("no page ties the price to an age", () => {
   for (const page of [...PAGES, ...LOCALIZED]) {
     assert.doesNotMatch(
       text(page),
-      /under (18|21)|aged (18|21)|(18|21) (and|or) (over|older)/i,
-      `${page}: the price rule names an age`,
+      /\bminors?\b|for adults|under (18|21)|aged (18|21)|(18|21) (and|or) (over|older)/i,
+      `${page}: the price names an age`,
     );
   }
 });
@@ -283,7 +275,7 @@ test("transparency lists the routing hash with the rest of what we have", () => 
 test("the privacy policy says what stays on the device, not what never leaves it", () => {
   const words = text("privacy/index.html");
   assert.match(words, /What stays on your device/);
-  assert.match(words, /Whether you are a minor/);
+  assert.doesNotMatch(words, /Whether you are/, "nothing about age is decided or kept");
   assert.match(words, /under 14/, "the age of consent does not follow the price");
 });
 
