@@ -116,14 +116,22 @@ test("no privacy claim the design cannot keep", () => {
   }
 });
 
-// §40, 2026-10-08: talking is free forever; only the tools cost €0.99 a year after the first year.
+// §40, 2026-10-08: talking is free forever; tools and extra PIN sessions cost €0.99 a year after a 15-day trial.
 test("the price is on the home page, in the FAQ and in the terms", () => {
   for (const page of ["index.html", "faq/index.html", "terms/index.html"]) {
     const words = text(page);
     assert.match(words, /Chat, calls, files and games are free, forever/i, `${page}: talking is free forever`);
-    assert.match(words, /tools/i, `${page}: the tools are what costs`);
-    assert.match(words, /first year/i, `${page}: tools free the first year`);
+    assert.match(words, /tools/i, `${page}: the tools are premium`);
+    assert.match(words, /extra sessions protected with a PIN/i, `${page}: the extra PIN sessions are premium`);
+    assert.match(words, /15 days/i, `${page}: a 15-day trial`);
     assert.match(words, /€0\.99 a year/i, `${page}: €0.99 a year`);
+  }
+});
+
+// §40, 2026-10-08: the free year is gone; the trial lasts 15 days.
+test("no page still promises a free first year", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    assert.doesNotMatch(text(page), /first year|free year|year free/i, `${page}: the old free year`);
   }
 });
 
