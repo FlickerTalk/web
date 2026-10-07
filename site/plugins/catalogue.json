@@ -2193,7 +2193,7 @@
       "version": "1.1.2"
     },
     {
-      "hash": "22a8df201b93e74cd2f100cb4bd69202b8d17218443cb66fa979e84af91456fb",
+      "hash": "b3fec74a2fb9d9ca49d062a93936d30a62fb0afc0f508e1270da99509bd11a75",
       "id": "com.flickertalk.scanner",
       "kind": "tool",
       "locales": {
@@ -2280,10 +2280,10 @@
       },
       "minCoreVersion": "1.1.0",
       "name": "Scanner",
-      "size": 13760,
+      "size": 14339,
       "summary": "Turn a photo of a paper into a straight, clean document and send it as a PDF or a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
       "hash": "e195e2965e1160f0a25504aca2136446b5980deb77f64aa37aacf0252b9b0726",
