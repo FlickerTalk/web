@@ -127,6 +127,14 @@ test("the price is on the home page and in the terms", () => {
   }
 });
 
+// §43, 2026-10-07: minor comes only from the store's age range; no self-declaration.
+test("the terms take the minor rule from the store, with no self-declaration", () => {
+  const words = text("terms/index.html");
+  assert.match(words, /age range Google Play or the App Store gives the app/);
+  assert.match(words, /treats you as an adult/);
+  assert.doesNotMatch(words, /what you tell the app|you declare/i, "no self-declaration");
+});
+
 // §40, 2026-10-07: the rule is minor or adult, with no age number on the site.
 test("no page puts an age number on the price", () => {
   for (const page of [...PAGES, ...LOCALIZED]) {
