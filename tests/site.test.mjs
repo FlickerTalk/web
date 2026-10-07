@@ -122,9 +122,19 @@ test("the price is on the home page and in the terms", () => {
     const words = text(page);
     assert.match(words, /first year/i, `${page}: first year free`);
     assert.match(words, /€0\.99 (per|a) year/i, `${page}: €0.99 a year`);
-    assert.match(words, /under 21/i, `${page}: free under 21 (§40, 2026-09-22)`);
-    assert.match(words, /€0\.99 a year for users aged 21 and over/i, `${page}: €0.99 for users aged 21 and over`);
-    assert.doesNotMatch(words, /under 18|for adults/i, `${page}: the old age rule is gone`);
+    assert.match(words, /minors/i, `${page}: free for minors (§40, 2026-10-07)`);
+    assert.match(words, /€0\.99 a year for adults/i, `${page}: €0.99 a year for adults`);
+  }
+});
+
+// §40, 2026-10-07: the rule is minor or adult, with no age number on the site.
+test("no page puts an age number on the price", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    assert.doesNotMatch(
+      text(page),
+      /under (18|21)|aged (18|21)|(18|21) (and|or) (over|older)/i,
+      `${page}: the price rule names an age`,
+    );
   }
 });
 
@@ -265,7 +275,7 @@ test("transparency lists the routing hash with the rest of what we have", () => 
 test("the privacy policy says what stays on the device, not what never leaves it", () => {
   const words = text("privacy/index.html");
   assert.match(words, /What stays on your device/);
-  assert.match(words, /under 21/);
+  assert.match(words, /Whether you are a minor/);
   assert.match(words, /under 14/, "the age of consent does not follow the price");
 });
 
