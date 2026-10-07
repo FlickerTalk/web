@@ -1,7 +1,7 @@
 {
   "plugins": [
     {
-      "hash": "40c1f8b52075444c59f3cc020c0e373cf3eaaa1ad199fe951a5bf989b8371026",
+      "hash": "e2c5f0505c6d9537ed25d486419cd75ee12ad402aa3ea94349bf80fed7ea4cd2",
       "id": "com.flickertalk.game.backgammon",
       "kind": "game",
       "locales": {
@@ -88,13 +88,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Backgammon",
-      "size": 55052,
+      "size": 57074,
       "summary": "Backgammon with the other person in the chat: dice rolled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "5122597e40e67d2e9a3f53b37a8748946aaba617e12b62bb5c8e02ca7814cc35",
+      "hash": "8e9706c0363997b4e28e29966a55f7d57485ae11095e4ef9d4f52945a776ee61",
       "id": "com.flickertalk.game.checkers",
       "kind": "game",
       "locales": {
@@ -181,13 +181,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Checkers",
-      "size": 47122,
+      "size": 49175,
       "summary": "Checkers with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "3ad6d7c4f402362090cef6d16ac5c8be245c1687bc7170e1f0b6592ec12faf5b",
+      "hash": "4b5b4175dcb2a35b0f8f846e517bd00239809d4634c11148f01846eca1a38b8b",
       "id": "com.flickertalk.game.chess",
       "kind": "game",
       "locales": {
@@ -274,13 +274,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Chess",
-      "size": 89489,
+      "size": 90027,
       "summary": "Chess with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "b59abc83216ac8167090f49001f9e1b7de69a039e5bef73a8c2a6309fb7514b7",
+      "hash": "f51441d4a6701a8fff9bcafcb81798d1d5cd0960b74347177ffa42f1b88e2d51",
       "id": "com.flickertalk.game.dotsandboxes",
       "kind": "game",
       "locales": {
@@ -367,13 +367,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Dots and Boxes",
-      "size": 46477,
+      "size": 47052,
       "summary": "Dots and boxes with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "c857b90c7a3eb2bbcc26b705be6eb5c12acd5aa5246025fd581244fd387b82b8",
+      "hash": "1e02518666f371910064bc2cb33ac5b144d512b4ee60c2bc58513a2309fc1d9d",
       "id": "com.flickertalk.game.eights",
       "kind": "game",
       "locales": {
@@ -460,13 +460,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Crazy Eights",
-      "size": 54623,
+      "size": 56485,
       "summary": "Crazy Eights with the other person in the chat: a deck shuffled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "ca55abefc18b47b747d0bf526bd7ef769cee4cab2474aaf189ba90168f1e8ad8",
+      "hash": "7f5136debdc42148f834ef709fb1f2d5d9d0aaca8a014a55699b572758a7057c",
       "id": "com.flickertalk.game.fourinarow",
       "kind": "game",
       "locales": {
@@ -553,13 +553,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Four in a Row",
-      "size": 45360,
+      "size": 45936,
       "summary": "Four in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "d2bfe63053e64f7eca80aceae107e33264749a7b6d56abe304e523cb6fe9459f",
+      "hash": "f387a647fe46b08b1156f87daa3b684808d83897afa0deb7846690b0b7a7714e",
       "id": "com.flickertalk.game.gomoku",
       "kind": "game",
       "locales": {
@@ -646,13 +646,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Five in a Row",
-      "size": 45936,
+      "size": 46541,
       "summary": "Five in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "9710e608c42384f7eb1940ab6cb6b43172fb5746b9181335665fd72cfc1201c4",
+      "hash": "0f654a824cb47c566bf0ffff384c4d056fd9f68a3cbab83e2d10534be60bb67d",
       "id": "com.flickertalk.game.mancala",
       "kind": "game",
       "locales": {
@@ -739,13 +739,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Mancala",
-      "size": 45300,
+      "size": 45875,
       "summary": "Mancala with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "3212feb11c07c2fda2cff4760b3261f18c5967308630fcd6752ce7330c5ea28d",
+      "hash": "6dd715e2a0810d7273d4c3a2ea4317ab94c1d0ca7ebb2e4f1692c53da58e9089",
       "id": "com.flickertalk.game.reversi",
       "kind": "game",
       "locales": {
@@ -832,13 +832,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Reversi",
-      "size": 44946,
+      "size": 45522,
       "summary": "Reversi with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "8189335df464c4efb5d9b23e695b6575734dede5182c6dbb305cf5bc36ccb9eb",
+      "hash": "16b7a002ab835791af152a232e70aab052472031b43b7a646bffafe0b5782f04",
       "id": "com.flickertalk.game.seabattle",
       "kind": "game",
       "locales": {
@@ -925,13 +925,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Sea Battle",
-      "size": 55911,
+      "size": 56499,
       "summary": "Sea Battle with the other person in the chat: hidden fleets, checked at the end, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "67cc2d8e4d2d38f42c6994f5ec19639526459571c66e99e742a117d6eec25f65",
+      "hash": "694b04e18ffa0fc1b8fba400627e279415532d186b14eb8dfeda5156b581fed6",
       "id": "com.flickertalk.game.tictactoe",
       "kind": "game",
       "locales": {
@@ -1018,13 +1018,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Tic-Tac-Toe",
-      "size": 44904,
+      "size": 45479,
       "summary": "Tic-Tac-Toe with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "763ee0d28d4ddc34e7840a4f28037d051b49aec0c92333c6b59ac4f811f7ba95",
+      "hash": "0643c434607c36f9cb830792dd7eaf99dd81361deb46d06f56b6bdd9a94fa922",
       "id": "com.flickertalk.game.wordduel",
       "kind": "game",
       "locales": {
@@ -1111,13 +1111,13 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Word Duel",
-      "size": 106558,
+      "size": 107180,
       "summary": "Word Duel with the other person in the chat: each hides a five-letter word, both guess in turn, English or Spanish, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "4c8c24b8b7c80600ef72be8a7b09b11ec89778a22cc4644ef47533e9ee6bdcc4",
+      "hash": "726fb6067dbbbf3c20ee5537dc060826e0834c5d64153e59b6985b2068ef8209",
       "id": "com.flickertalk.game.wordgrid",
       "kind": "game",
       "locales": {
@@ -1204,10 +1204,10 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Letter Grid",
-      "size": 115984,
+      "size": 116598,
       "summary": "Letter Grid with the other person in the chat: sixteen letters drawn by both phones, words said in turn, English or Spanish, over the direct connection.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
       "hash": "86783845e2f426a9e97495aabc5bd9c69f99d7ed968deb82788b4643feb98947",
