@@ -1806,6 +1806,101 @@
       "version": "1.0.2"
     },
     {
+      "hash": "1e5c2251c5ab4b2dded1d5b00df08794ff21dd197a018e11701dc65548c27cf6",
+      "icon": "location-outline",
+      "id": "com.flickertalk.location",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><circle cx=\"256\" cy=\"192\" r=\"32\"/><path d=\"M256 32c-88.22 0-160 68.65-160 153 0 40.17 18.31 93.59 54.42 158.78 29 52.34 62.55 99.67 80 123.22a31.75 31.75 0 0 0 51.22 0c17.42-23.55 51-70.88 80-123.22C397.69 278.61 416 225.19 416 185c0-84.35-71.78-153-160-153m0 224a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64\"/></g></svg>\n",
+      "kind": "tool",
+      "locales": {
+        "ar": {
+          "name": "الموقع",
+          "summary": "أرسل مكانك مرة واحدة في رسالة؛ بلا خوادم خرائط، ولا يُحفظ شيء."
+        },
+        "bn": {
+          "name": "অবস্থান",
+          "summary": "আপনি কোথায় আছেন, একবার বার্তা হিসেবে পাঠান; কোনো ম্যাপ সার্ভার নেই, কিছুই রাখা হয় না।"
+        },
+        "de": {
+          "name": "Standort",
+          "summary": "Sende einmal als Nachricht, wo du bist; keine Kartenserver, nichts wird gespeichert."
+        },
+        "es": {
+          "name": "Ubicación",
+          "summary": "Envía dónde estás, una vez, como un mensaje; sin servidores de mapas, sin guardar nada."
+        },
+        "fr": {
+          "name": "Position",
+          "summary": "Envoyez où vous êtes, une fois, dans un message ; aucun serveur de cartes, rien n'est conservé."
+        },
+        "hi": {
+          "name": "स्थान",
+          "summary": "आप जहाँ हैं, उसे एक बार संदेश के रूप में भेजें; कोई मैप सर्वर नहीं, कुछ भी सहेजा नहीं जाता।"
+        },
+        "id": {
+          "name": "Lokasi",
+          "summary": "Kirim posisi Anda, sekali, sebagai pesan; tanpa server peta, tidak ada yang disimpan."
+        },
+        "it": {
+          "name": "Posizione",
+          "summary": "Invia dove sei, una volta, come messaggio; nessun server di mappe, niente viene conservato."
+        },
+        "ja": {
+          "name": "位置情報",
+          "summary": "今いる場所を一度だけメッセージとして送ります。地図サーバーは使わず、何も保存しません。"
+        },
+        "ko": {
+          "name": "위치",
+          "summary": "지금 있는 곳을 한 번, 메시지로 보냅니다. 지도 서버 없이, 아무것도 저장하지 않습니다."
+        },
+        "pl": {
+          "name": "Lokalizacja",
+          "summary": "Wyślij, gdzie jesteś, jeden raz, jako wiadomość; bez serwerów map, nic nie jest przechowywane."
+        },
+        "pt": {
+          "name": "Localização",
+          "summary": "Envie onde está, uma vez, como uma mensagem; sem servidores de mapas, nada fica guardado."
+        },
+        "ro": {
+          "name": "Locație",
+          "summary": "Trimite unde ești, o singură dată, ca mesaj; fără servere de hărți, nu se păstrează nimic."
+        },
+        "ru": {
+          "name": "Местоположение",
+          "summary": "Отправьте, где вы находитесь, один раз, сообщением; без картографических серверов, ничего не хранится."
+        },
+        "th": {
+          "name": "ตำแหน่ง",
+          "summary": "ส่งตำแหน่งที่คุณอยู่ครั้งเดียวเป็นข้อความ ไม่ใช้เซิร์ฟเวอร์แผนที่ ไม่เก็บอะไรไว้"
+        },
+        "tr": {
+          "name": "Konum",
+          "summary": "Bulunduğunuz yeri bir kez, mesaj olarak gönderin; harita sunucusu yok, hiçbir şey saklanmaz."
+        },
+        "uk": {
+          "name": "Місцезнаходження",
+          "summary": "Надішліть, де ви є, один раз, повідомленням; без картографічних серверів, нічого не зберігається."
+        },
+        "vi": {
+          "name": "Vị trí",
+          "summary": "Gửi nơi bạn đang ở, một lần, dưới dạng tin nhắn; không máy chủ bản đồ, không lưu lại gì."
+        },
+        "zh-CN": {
+          "name": "位置",
+          "summary": "以消息形式发送你所在的位置，仅一次；不使用地图服务器，不保存任何内容。"
+        },
+        "zh-TW": {
+          "name": "位置",
+          "summary": "以訊息形式傳送你所在的位置，僅一次；不使用地圖伺服器，不保存任何內容。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Location",
+      "size": 10720,
+      "summary": "Send where you are, once, as a message; no map servers, nothing kept.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.location/1.0.1.ftplugin",
+      "version": "1.0.1"
+    },
+    {
       "hash": "7d91b3a745d96462bb122b98a5f4c69af418b857e326f818c314197bec18d7f8",
       "icon": "logo-markdown",
       "id": "com.flickertalk.markdown",
