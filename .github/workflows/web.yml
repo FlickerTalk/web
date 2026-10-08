@@ -29,19 +29,8 @@ jobs:
           node-version: 22
       - run: npm test
       - name: The image serves the site
-        env:
-          # A made-up team: pull requests, forks too, build without the real secret.
-          APPLE_TEAM_ID: ABCDE12345
         run: |
-          # Without a team ID, or with a malformed one, the image does not build. (`if`, not `!`:
-          # bash -e ignores a negated command that fails.)
-          if docker build -q -t web:no-team .; then
-            echo "::error::the image built without APPLE_TEAM_ID"; exit 1
-          fi
-          if APPLE_TEAM_ID=abc docker build -q --secret id=apple_team_id,env=APPLE_TEAM_ID -t web:bad-team .; then
-            echo "::error::the image built with a malformed APPLE_TEAM_ID"; exit 1
-          fi
-          docker build -q --build-arg VERSION="$GITHUB_SHA" --secret id=apple_team_id,env=APPLE_TEAM_ID -t web:test .
+          docker build -q --build-arg VERSION="$GITHUB_SHA" -t web:test .
           docker run -d --name web -p 8080:8080 web:test
           sleep 1
           test "$(curl -fsS http://localhost:8080/version.txt)" = "$GITHUB_SHA"
@@ -63,8 +52,8 @@ jobs:
             grep -qi '^x-content-type-options: nosniff' headers
             node -e 'JSON.parse(require("fs").readFileSync("body", "utf8"))'
           done
-          # The last body is apple-app-site-association, with the team filled in.
-          grep -q "\"$APPLE_TEAM_ID\.com\.flickertalk\.app\"" body
+          # The last body is apple-app-site-association, naming the app.
+          grep -q '"3TSPDYY333\.com\.flickertalk\.app"' body
 
   image:
     needs: test
@@ -86,9 +75,6 @@ jobs:
           context: .
           push: true
           build-args: VERSION=${{ github.sha }}
-          # The Apple team for apple-app-site-association; without it the image does not build.
-          secrets: |
-            apple_team_id=${{ secrets.APPLE_TEAM_ID }}
           tags: |
             ${{ env.IMAGE }}:latest
             ${{ env.IMAGE }}:sha-${{ github.sha }}
