@@ -2,7 +2,7 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["__APPLE_TEAM_ID__.com.flickertalk.app"],
+        "appIDs": ["3TSPDYY333.com.flickertalk.app"],
         "components": [
           { "/": "/add", "comment": "Contact links: https://flickertalk.com/add#<card>" },
           { "/": "/move", "comment": "Move links: https://flickertalk.com/move#<invite>" }
