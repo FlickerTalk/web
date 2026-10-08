@@ -18,6 +18,8 @@ const TEMPLATE = "well-known/apple-app-site-association.template";
 const FINGERPRINT = /^([0-9A-F]{2}:){31}[0-9A-F]{2}$/;
 // The upload key, read from the signed APK of the 1.4.1 release.
 const UPLOAD_KEY = "97:C2:84:62:4C:46:71:05:81:FB:63:E5:1F:E0:2C:CB:42:AF:06:EA:73:35:C5:20:98:29:51:CA:E9:7E:0F:6B";
+// Play's app signing key (Play Console → App signing), the one on every install from Google Play.
+const PLAY_KEY = "D2:08:CB:64:1F:C6:26:B1:49:9F:8A:85:9E:33:65:2B:DD:36:94:A3:63:49:38:EE:9B:1C:D7:40:2A:29:E0:5B";
 const LINK_PATHS = ["/add", "/move"];
 
 test("assetlinks.json lets the app handle the links, signed with a known key", () => {
@@ -33,6 +35,7 @@ test("assetlinks.json lets the app handle the links, signed with a known key", (
   for (const print of prints) assert.match(print, FINGERPRINT);
   assert.equal(new Set(prints).size, prints.length, "no fingerprint twice");
   assert.ok(prints.includes(UPLOAD_KEY), "the upload key, for builds installed outside Play");
+  assert.ok(prints.includes(PLAY_KEY), "Play's signing key, for installs from Google Play");
 });
 
 test("the apple-app-site-association template is outside site/ and has the team as a placeholder", () => {
