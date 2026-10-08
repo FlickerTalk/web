@@ -116,15 +116,33 @@ test("no privacy claim the design cannot keep", () => {
   }
 });
 
-// §40: the price is announced from the launch, on the landing and in the terms.
-test("the price is on the home page and in the terms", () => {
-  for (const page of ["index.html", "terms/index.html"]) {
+// §40, 2026-10-08: talking is free forever; tools and extra PIN sessions cost €0.99 a year after a 15-day trial.
+test("the price is on the home page, in the FAQ and in the terms", () => {
+  for (const page of ["index.html", "faq/index.html", "terms/index.html"]) {
     const words = text(page);
-    assert.match(words, /first year/i, `${page}: first year free`);
-    assert.match(words, /€0\.99 (per|a) year/i, `${page}: €0.99 a year`);
-    assert.match(words, /under 21/i, `${page}: free under 21 (§40, 2026-09-22)`);
-    assert.match(words, /€0\.99 a year for users aged 21 and over/i, `${page}: €0.99 for users aged 21 and over`);
-    assert.doesNotMatch(words, /under 18|for adults/i, `${page}: the old age rule is gone`);
+    assert.match(words, /Chat, calls, files and games are free, forever/i, `${page}: talking is free forever`);
+    assert.match(words, /tools/i, `${page}: the tools are premium`);
+    assert.match(words, /extra sessions protected with a PIN/i, `${page}: the extra PIN sessions are premium`);
+    assert.match(words, /15 days/i, `${page}: a 15-day trial`);
+    assert.match(words, /€0\.99 a year/i, `${page}: €0.99 a year`);
+  }
+});
+
+// §40, 2026-10-08: the free year is gone; the trial lasts 15 days.
+test("no page still promises a free first year", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    assert.doesNotMatch(text(page), /first year|free year|year free/i, `${page}: the old free year`);
+  }
+});
+
+// §40, 2026-10-08: there is no age rule on the price any more.
+test("no page ties the price to an age", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    assert.doesNotMatch(
+      text(page),
+      /\bminors?\b|for adults|under (18|21)|aged (18|21)|(18|21) (and|or) (over|older)/i,
+      `${page}: the price names an age`,
+    );
   }
 });
 
@@ -265,7 +283,7 @@ test("transparency lists the routing hash with the rest of what we have", () => 
 test("the privacy policy says what stays on the device, not what never leaves it", () => {
   const words = text("privacy/index.html");
   assert.match(words, /What stays on your device/);
-  assert.match(words, /under 21/);
+  assert.doesNotMatch(words, /Whether you are/, "nothing about age is decided or kept");
   assert.match(words, /under 14/, "the age of consent does not follow the price");
 });
 
