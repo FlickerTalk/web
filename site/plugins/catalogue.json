@@ -1,1217 +1,10 @@
 {
   "plugins": [
     {
-      "hash": "e2c5f0505c6d9537ed25d486419cd75ee12ad402aa3ea94349bf80fed7ea4cd2",
-      "id": "com.flickertalk.game.backgammon",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "طاولة",
-          "summary": "طاولة مع الشخص الآخر في الدردشة: زهر يرميه الهاتفان معًا، عبر الاتصال المباشر بينهما."
-        },
-        "bn": {
-          "name": "ব্যাকগ্যামন",
-          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে ব্যাকগ্যামন: দুই ফোন মিলে গড়ানো ছক্কা, তাদের মধ্যে সরাসরি সংযোগে।"
-        },
-        "de": {
-          "name": "Backgammon",
-          "summary": "Backgammon mit der anderen Person im Chat: von beiden Telefonen geworfene Würfel, über ihre direkte Verbindung."
-        },
-        "es": {
-          "name": "Backgammon",
-          "summary": "Backgammon con la otra persona del chat: dados tirados por los dos teléfonos, por la conexión directa entre ellos."
-        },
-        "fr": {
-          "name": "Backgammon",
-          "summary": "Backgammon avec l’autre personne de la conversation : des dés lancés par les deux téléphones, par leur connexion directe."
-        },
-        "hi": {
-          "name": "बैकगैमन",
-          "summary": "चैट के दूसरे व्यक्ति के साथ बैकगैमन: दोनों फ़ोनों द्वारा फेंके गए पासे, उनके बीच सीधे कनेक्शन पर।"
-        },
-        "id": {
-          "name": "Backgammon",
-          "summary": "Backgammon dengan orang lain di obrolan: dadu dilempar oleh kedua ponsel, lewat koneksi langsung di antaranya."
-        },
-        "it": {
-          "name": "Backgammon",
-          "summary": "Backgammon con l’altra persona della chat: dadi lanciati da entrambi i telefoni, sulla connessione diretta tra loro."
-        },
-        "ja": {
-          "name": "バックギャモン",
-          "summary": "チャットの相手とバックギャモン。ダイスは2台の端末が一緒に振り、直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "백개먼",
-          "summary": "채팅 상대와 백개먼을, 두 휴대폰이 함께 굴린 주사위로, 직접 연결로 즐기세요."
-        },
-        "pl": {
-          "name": "Tryktrak",
-          "summary": "Tryktrak z drugą osobą z czatu: kości rzucane przez oba telefony, przez bezpośrednie połączenie między nimi."
-        },
-        "pt": {
-          "name": "Gamão",
-          "summary": "Gamão com a outra pessoa da conversa: dados lançados pelos dois telefones, pela conexão direta entre eles."
-        },
-        "ro": {
-          "name": "Table",
-          "summary": "Table cu cealaltă persoană din conversație: zaruri aruncate de ambele telefoane, prin conexiunea lor directă."
-        },
-        "ru": {
-          "name": "Нарды",
-          "summary": "Нарды с собеседником из чата: кости бросают оба телефона, по прямому соединению между ними."
-        },
-        "th": {
-          "name": "แบ็กแกมมอน",
-          "summary": "แบ็กแกมมอนกับอีกคนในแชท: ลูกเต๋าที่โทรศัพท์ทั้งสองทอยร่วมกัน ผ่านการเชื่อมต่อโดยตรงระหว่างกัน"
-        },
-        "tr": {
-          "name": "Tavla",
-          "summary": "Sohbetteki diğer kişiyle tavla: iki telefonun birlikte attığı zarlar, aralarındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Нарди",
-          "summary": "Нарди зі співрозмовником із чату: кості кидають обидва телефони, через пряме з’єднання між ними."
-        },
-        "vi": {
-          "name": "Cờ tào cáo",
-          "summary": "Cờ tào cáo với người kia trong cuộc trò chuyện: xúc xắc do cả hai điện thoại gieo, qua kết nối trực tiếp giữa chúng."
-        },
-        "zh-CN": {
-          "name": "双陆棋",
-          "summary": "与聊天中的对方下双陆棋：骰子由两部手机共同投掷，通过它们之间的直接连接。"
-        },
-        "zh-TW": {
-          "name": "雙陸棋",
-          "summary": "與聊天中的對方下雙陸棋：骰子由兩支手機共同投擲，透過它們之間的直接連線。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Backgammon",
-      "size": 57074,
-      "summary": "Backgammon with the other person in the chat: dice rolled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "8e9706c0363997b4e28e29966a55f7d57485ae11095e4ef9d4f52945a776ee61",
-      "id": "com.flickertalk.game.checkers",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "الضامة",
-          "summary": "الضامة مع الطرف الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "চেকার্স",
-          "summary": "চ্যাটের অন্য ব্যক্তির সাথে চেকার্স, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
-        },
-        "de": {
-          "name": "Dame",
-          "summary": "Dame mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Damas",
-          "summary": "Damas con la otra persona del chat, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "Jeu de dames",
-          "summary": "Jeu de dames avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
-        },
-        "hi": {
-          "name": "चेकर्स",
-          "summary": "चैट में दूसरे व्यक्ति के साथ चेकर्स, आपके फ़ोनों के बीच सीधे कनेक्शन से।"
-        },
-        "id": {
-          "name": "Dam",
-          "summary": "Dam dengan lawan bicara di obrolan, lewat koneksi langsung antara ponsel kalian."
-        },
-        "it": {
-          "name": "Dama",
-          "summary": "Dama con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "チェッカー",
-          "summary": "チャットの相手とチェッカー。2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "체커",
-          "summary": "채팅 상대와 체커를, 두 휴대폰 사이의 직접 연결로 즐기세요."
-        },
-        "pl": {
-          "name": "Warcaby",
-          "summary": "Warcaby z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
-        },
-        "pt": {
-          "name": "Damas",
-          "summary": "Damas com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "Dame",
-          "summary": "Dame cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Шашки",
-          "summary": "Шашки с собеседником по чату, по прямому соединению между вашими телефонами."
-        },
-        "th": {
-          "name": "หมากฮอส",
-          "summary": "หมากฮอสกับอีกฝ่ายในแชต ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
-        },
-        "tr": {
-          "name": "Dama",
-          "summary": "Sohbetteki diğer kişiyle dama, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Шашки",
-          "summary": "Шашки зі співрозмовником у чаті, через пряме з’єднання між вашими телефонами."
-        },
-        "vi": {
-          "name": "Cờ đam",
-          "summary": "Cờ đam với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "西洋跳棋",
-          "summary": "与聊天对象下西洋跳棋，通过两部手机之间的直接连接进行。"
-        },
-        "zh-TW": {
-          "name": "西洋跳棋",
-          "summary": "與聊天對象下西洋跳棋，透過兩支手機之間的直接連線進行。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Checkers",
-      "size": 49175,
-      "summary": "Checkers with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "4b5b4175dcb2a35b0f8f846e517bd00239809d4634c11148f01846eca1a38b8b",
-      "id": "com.flickertalk.game.chess",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "شطرنج",
-          "summary": "شطرنج مع الشخص الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "দাবা",
-          "summary": "চ্যাটের অন্যজনের সাথে দাবা, আপনাদের দুই ফোনের সরাসরি সংযোগের মাধ্যমে।"
-        },
-        "de": {
-          "name": "Schach",
-          "summary": "Schach mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Ajedrez",
-          "summary": "Ajedrez con la otra persona del chat, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "Échecs",
-          "summary": "Échecs avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
-        },
-        "hi": {
-          "name": "शतरंज",
-          "summary": "चैट के दूसरे व्यक्ति के साथ शतरंज, आप दोनों के फ़ोन के बीच सीधे कनेक्शन पर।"
-        },
-        "id": {
-          "name": "Catur",
-          "summary": "Catur dengan orang lain di obrolan, lewat koneksi langsung antara kedua ponsel."
-        },
-        "it": {
-          "name": "Scacchi",
-          "summary": "Scacchi con l’altra persona della chat, tramite la connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "チェス",
-          "summary": "チャットの相手とチェス。2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "체스",
-          "summary": "채팅 상대와 두 휴대폰 사이의 직접 연결로 즐기는 체스입니다."
-        },
-        "pl": {
-          "name": "Szachy",
-          "summary": "Szachy z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
-        },
-        "pt": {
-          "name": "Xadrez",
-          "summary": "Xadrez com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "Șah",
-          "summary": "Șah cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Шахматы",
-          "summary": "Шахматы с другим человеком из чата, через прямое соединение между вашими телефонами."
-        },
-        "th": {
-          "name": "หมากรุกสากล",
-          "summary": "หมากรุกสากลกับอีกฝ่ายในแชท ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของทั้งสองคน"
-        },
-        "tr": {
-          "name": "Satranç",
-          "summary": "Satranç: sohbetteki diğer kişiyle, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Шахи",
-          "summary": "Шахи з іншою людиною з чату, через пряме з’єднання між вашими телефонами."
-        },
-        "vi": {
-          "name": "Cờ vua",
-          "summary": "Cờ vua với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "国际象棋",
-          "summary": "通过两部手机之间的直连，与聊天中的对方下国际象棋。"
-        },
-        "zh-TW": {
-          "name": "西洋棋",
-          "summary": "透過兩支手機之間的直接連線，與聊天中的對方下西洋棋。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Chess",
-      "size": 90027,
-      "summary": "Chess with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.2.ftplugin",
-      "version": "1.0.2"
-    },
-    {
-      "hash": "f51441d4a6701a8fff9bcafcb81798d1d5cd0960b74347177ffa42f1b88e2d51",
-      "id": "com.flickertalk.game.dotsandboxes",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "النقاط والمربعات",
-          "summary": "النقاط والمربعات مع الطرف الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "বিন্দু ও বাক্স",
-          "summary": "চ্যাটের অন্য ব্যক্তির সাথে বিন্দু ও বাক্স, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
-        },
-        "de": {
-          "name": "Käsekästchen",
-          "summary": "Käsekästchen mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Puntos y cajas",
-          "summary": "Puntos y cajas con la otra persona del chat, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "La pipopipette",
-          "summary": "La pipopipette avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
-        },
-        "hi": {
-          "name": "बिंदु और डिब्बे",
-          "summary": "चैट में दूसरे व्यक्ति के साथ बिंदु और डिब्बे, आपके फ़ोनों के बीच सीधे कनेक्शन से।"
-        },
-        "id": {
-          "name": "Titik dan kotak",
-          "summary": "Titik dan kotak dengan lawan bicara di obrolan, lewat koneksi langsung antara ponsel kalian."
-        },
-        "it": {
-          "name": "Punti e quadretti",
-          "summary": "Punti e quadretti con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "ドットとボックス",
-          "summary": "チャットの相手とドットとボックス。2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "점과 상자",
-          "summary": "채팅 상대와 점과 상자를, 두 휴대폰 사이의 직접 연결로 즐기세요."
-        },
-        "pl": {
-          "name": "Kropki i kwadraty",
-          "summary": "Kropki i kwadraty z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
-        },
-        "pt": {
-          "name": "Pontos e caixas",
-          "summary": "Pontos e caixas com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "Puncte și pătrate",
-          "summary": "Puncte și pătrate cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Точки и квадраты",
-          "summary": "Точки и квадраты с собеседником по чату, по прямому соединению между вашими телефонами."
-        },
-        "th": {
-          "name": "จุดและกล่อง",
-          "summary": "จุดและกล่องกับอีกฝ่ายในแชต ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
-        },
-        "tr": {
-          "name": "Noktalar ve kutular",
-          "summary": "Sohbetteki diğer kişiyle noktalar ve kutular, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Крапки й квадрати",
-          "summary": "Крапки й квадрати зі співрозмовником у чаті, через пряме з’єднання між вашими телефонами."
-        },
-        "vi": {
-          "name": "Chấm và ô vuông",
-          "summary": "Chấm và ô vuông với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "点格棋",
-          "summary": "与聊天对象玩点格棋，通过两部手机之间的直接连接进行。"
-        },
-        "zh-TW": {
-          "name": "點格棋",
-          "summary": "與聊天對象玩點格棋，透過兩支手機之間的直接連線進行。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Dots and Boxes",
-      "size": 47052,
-      "summary": "Dots and boxes with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "1e02518666f371910064bc2cb33ac5b144d512b4ee60c2bc58513a2309fc1d9d",
-      "id": "com.flickertalk.game.eights",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "الثمانيات المجنونة",
-          "summary": "الثمانيات المجنونة مع الشخص الآخر في الدردشة: أوراق يخلطها الهاتفان معًا، عبر الاتصال المباشر بينهما."
-        },
-        "bn": {
-          "name": "ক্রেজি এইটস",
-          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে ক্রেজি এইটস: দুই ফোন মিলে ফেটানো কার্ড, তাদের মধ্যে সরাসরি সংযোগে।"
-        },
-        "de": {
-          "name": "Verrückte Achten",
-          "summary": "Verrückte Achten mit der anderen Person im Chat: ein von beiden Telefonen gemischtes Blatt, über ihre direkte Verbindung."
-        },
-        "es": {
-          "name": "Ochos locos",
-          "summary": "Ochos locos con la otra persona del chat: una baraja mezclada por los dos teléfonos, por la conexión directa entre ellos."
-        },
-        "fr": {
-          "name": "Huit américain",
-          "summary": "Huit américain avec l’autre personne de la conversation : un jeu mélangé par les deux téléphones, par leur connexion directe."
-        },
-        "hi": {
-          "name": "क्रेज़ी एट्स",
-          "summary": "चैट के दूसरे व्यक्ति के साथ क्रेज़ी एट्स: दोनों फ़ोनों द्वारा फेंटी गई गड्डी, उनके बीच सीधे कनेक्शन पर।"
-        },
-        "id": {
-          "name": "Delapan Gila",
-          "summary": "Delapan Gila dengan orang lain di obrolan: kartu dikocok oleh kedua ponsel, lewat koneksi langsung di antaranya."
-        },
-        "it": {
-          "name": "Otto matto",
-          "summary": "Otto matto con l’altra persona della chat: un mazzo mescolato dai due telefoni, sulla connessione diretta tra loro."
-        },
-        "ja": {
-          "name": "クレイジーエイト",
-          "summary": "チャットの相手とクレイジーエイト。山札は2台の端末が一緒に混ぜ、直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "크레이지 에이트",
-          "summary": "채팅 상대와 크레이지 에이트를, 두 휴대폰이 함께 섞은 카드로, 직접 연결로 즐기세요."
-        },
-        "pl": {
-          "name": "Szalone ósemki",
-          "summary": "Szalone ósemki z drugą osobą z czatu: talia tasowana przez oba telefony, przez bezpośrednie połączenie między nimi."
-        },
-        "pt": {
-          "name": "Oitos malucos",
-          "summary": "Oitos malucos com a outra pessoa da conversa: um baralho baralhado pelos dois telefones, pela conexão direta entre eles."
-        },
-        "ro": {
-          "name": "Optarii nebuni",
-          "summary": "Optarii nebuni cu cealaltă persoană din conversație: un pachet amestecat de ambele telefoane, prin conexiunea lor directă."
-        },
-        "ru": {
-          "name": "Сумасшедшие восьмёрки",
-          "summary": "Сумасшедшие восьмёрки с собеседником из чата: колоду тасуют оба телефона, по прямому соединению между ними."
-        },
-        "th": {
-          "name": "แปดบ้า",
-          "summary": "แปดบ้ากับอีกคนในแชท: สำรับที่โทรศัพท์ทั้งสองสับร่วมกัน ผ่านการเชื่อมต่อโดยตรงระหว่างกัน"
-        },
-        "tr": {
-          "name": "Çılgın Sekizler",
-          "summary": "Sohbetteki diğer kişiyle Çılgın Sekizler: iki telefonun birlikte kardığı deste, aralarındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Божевільні вісімки",
-          "summary": "Божевільні вісімки зі співрозмовником із чату: колоду тасують обидва телефони, через пряме з’єднання між ними."
-        },
-        "vi": {
-          "name": "Tám điên",
-          "summary": "Tám điên với người kia trong cuộc trò chuyện: bộ bài do cả hai điện thoại xáo, qua kết nối trực tiếp giữa chúng."
-        },
-        "zh-CN": {
-          "name": "疯狂八",
-          "summary": "与聊天中的对方玩疯狂八：牌由两部手机共同洗过，通过它们之间的直接连接。"
-        },
-        "zh-TW": {
-          "name": "瘋狂八",
-          "summary": "與聊天中的對方玩瘋狂八：牌由兩支手機共同洗過，透過它們之間的直接連線。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Crazy Eights",
-      "size": 56485,
-      "summary": "Crazy Eights with the other person in the chat: a deck shuffled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "7f5136debdc42148f834ef709fb1f2d5d9d0aaca8a014a55699b572758a7057c",
-      "id": "com.flickertalk.game.fourinarow",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "أربعة في صف",
-          "summary": "أربعة في صف مع الشخص الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "এক সারিতে চার",
-          "summary": "চ্যাটের অন্যজনের সাথে এক সারিতে চার, আপনাদের দুই ফোনের সরাসরি সংযোগের মাধ্যমে।"
-        },
-        "de": {
-          "name": "Vier in einer Reihe",
-          "summary": "Vier in einer Reihe mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Cuatro en raya",
-          "summary": "Cuatro en raya con la otra persona del chat, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "Quatre en ligne",
-          "summary": "Quatre en ligne avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
-        },
-        "hi": {
-          "name": "पंक्ति में चार",
-          "summary": "चैट के दूसरे व्यक्ति के साथ पंक्ति में चार, आप दोनों के फ़ोन के बीच सीधे कनेक्शन पर।"
-        },
-        "id": {
-          "name": "Empat Sejajar",
-          "summary": "Empat Sejajar dengan orang lain di obrolan, lewat koneksi langsung antara kedua ponsel."
-        },
-        "it": {
-          "name": "Quattro in fila",
-          "summary": "Quattro in fila con l’altra persona della chat, tramite la connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "四目並べ",
-          "summary": "チャットの相手と四目並べ。2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "사목",
-          "summary": "채팅 상대와 두 휴대폰 사이의 직접 연결로 즐기는 사목입니다."
-        },
-        "pl": {
-          "name": "Cztery w rzędzie",
-          "summary": "Cztery w rzędzie z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
-        },
-        "pt": {
-          "name": "Quatro em linha",
-          "summary": "Quatro em linha com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "Patru în linie",
-          "summary": "Patru în linie cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Четыре в ряд",
-          "summary": "Четыре в ряд с другим человеком из чата, через прямое соединение между вашими телефонами."
-        },
-        "th": {
-          "name": "เรียงสี่",
-          "summary": "เรียงสี่กับอีกฝ่ายในแชท ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของทั้งสองคน"
-        },
-        "tr": {
-          "name": "Dörtlü sıra",
-          "summary": "Dörtlü sıra: sohbetteki diğer kişiyle, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Чотири в ряд",
-          "summary": "Чотири в ряд з іншою людиною з чату, через пряме з’єднання між вашими телефонами."
-        },
-        "vi": {
-          "name": "Bốn quân thẳng hàng",
-          "summary": "Bốn quân thẳng hàng với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "四子棋",
-          "summary": "通过两部手机之间的直连，与聊天中的对方下四子棋。"
-        },
-        "zh-TW": {
-          "name": "四子棋",
-          "summary": "透過兩支手機之間的直接連線，與聊天中的對方下四子棋。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Four in a Row",
-      "size": 45936,
-      "summary": "Four in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.2.ftplugin",
-      "version": "1.0.2"
-    },
-    {
-      "hash": "f387a647fe46b08b1156f87daa3b684808d83897afa0deb7846690b0b7a7714e",
-      "id": "com.flickertalk.game.gomoku",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "خمسة في صف",
-          "summary": "خمسة في صف مع الشخص الآخر في الدردشة، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "পাঁচে সারি",
-          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে পাঁচে সারি, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
-        },
-        "de": {
-          "name": "Fünf in einer Reihe",
-          "summary": "Fünf in einer Reihe mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Cinco en línea",
-          "summary": "Cinco en línea con la otra persona del chat, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "Cinq en ligne",
-          "summary": "Cinq en ligne avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
-        },
-        "hi": {
-          "name": "पाँच एक पंक्ति में",
-          "summary": "चैट के दूसरे व्यक्ति के साथ पाँच एक पंक्ति में, आपके फ़ोनों के बीच सीधे कनेक्शन पर।"
-        },
-        "id": {
-          "name": "Lima Sebaris",
-          "summary": "Lima Sebaris dengan orang lain di obrolan, lewat koneksi langsung antara ponsel kalian."
-        },
-        "it": {
-          "name": "Cinque in fila",
-          "summary": "Cinque in fila con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "五目並べ",
-          "summary": "チャットの相手と五目並べ。2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "오목",
-          "summary": "채팅 상대와 오목을, 두 휴대폰 사이의 직접 연결로 즐기세요."
-        },
-        "pl": {
-          "name": "Pięć w rzędzie",
-          "summary": "Pięć w rzędzie z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
-        },
-        "pt": {
-          "name": "Cinco em linha",
-          "summary": "Cinco em linha com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "Cinci în linie",
-          "summary": "Cinci în linie cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Пять в ряд",
-          "summary": "Пять в ряд с собеседником из чата, по прямому соединению между вашими телефонами."
-        },
-        "th": {
-          "name": "โกะห้าเรียง",
-          "summary": "โกะห้าเรียงกับอีกคนในแชท ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
-        },
-        "tr": {
-          "name": "Beş Taş",
-          "summary": "Sohbetteki diğer kişiyle Beş Taş, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "П’ять у ряд",
-          "summary": "П’ять у ряд зі співрозмовником із чату, через пряме з’єднання між вашими телефонами."
-        },
-        "vi": {
-          "name": "Cờ ca-rô",
-          "summary": "Cờ ca-rô với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "五子棋",
-          "summary": "与聊天中的对方下五子棋，通过两部手机之间的直接连接。"
-        },
-        "zh-TW": {
-          "name": "五子棋",
-          "summary": "與聊天中的對方下五子棋，透過兩支手機之間的直接連線。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Five in a Row",
-      "size": 46541,
-      "summary": "Five in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "0f654a824cb47c566bf0ffff384c4d056fd9f68a3cbab83e2d10534be60bb67d",
-      "id": "com.flickertalk.game.mancala",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "المنقلة",
-          "summary": "المنقلة مع الطرف الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "মানকালা",
-          "summary": "চ্যাটের অন্য ব্যক্তির সাথে মানকালা, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
-        },
-        "de": {
-          "name": "Mancala",
-          "summary": "Mancala mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Mancala",
-          "summary": "Mancala con la otra persona del chat, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "Mancala",
-          "summary": "Mancala avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
-        },
-        "hi": {
-          "name": "मंकला",
-          "summary": "चैट में दूसरे व्यक्ति के साथ मंकला, आपके फ़ोनों के बीच सीधे कनेक्शन से।"
-        },
-        "id": {
-          "name": "Congklak",
-          "summary": "Congklak dengan lawan bicara di obrolan, lewat koneksi langsung antara ponsel kalian."
-        },
-        "it": {
-          "name": "Mancala",
-          "summary": "Mancala con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "マンカラ",
-          "summary": "チャットの相手とマンカラ。2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "만칼라",
-          "summary": "채팅 상대와 만칼라를, 두 휴대폰 사이의 직접 연결로 즐기세요."
-        },
-        "pl": {
-          "name": "Mankala",
-          "summary": "Mankala z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
-        },
-        "pt": {
-          "name": "Mancala",
-          "summary": "Mancala com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "Mancala",
-          "summary": "Mancala cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Манкала",
-          "summary": "Манкала с собеседником по чату, по прямому соединению между вашими телефонами."
-        },
-        "th": {
-          "name": "หมากขุม",
-          "summary": "หมากขุมกับอีกฝ่ายในแชต ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
-        },
-        "tr": {
-          "name": "Mangala",
-          "summary": "Sohbetteki diğer kişiyle mangala, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Манкала",
-          "summary": "Манкала зі співрозмовником у чаті, через пряме з’єднання між вашими телефонами."
-        },
-        "vi": {
-          "name": "Ô ăn quan",
-          "summary": "Ô ăn quan với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "播棋",
-          "summary": "与聊天对象玩播棋，通过两部手机之间的直接连接进行。"
-        },
-        "zh-TW": {
-          "name": "播棋",
-          "summary": "與聊天對象玩播棋，透過兩支手機之間的直接連線進行。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Mancala",
-      "size": 45875,
-      "summary": "Mancala with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "6dd715e2a0810d7273d4c3a2ea4317ab94c1d0ca7ebb2e4f1692c53da58e9089",
-      "id": "com.flickertalk.game.reversi",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "ريفيرسي",
-          "summary": "ريفيرسي مع الطرف الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "রিভার্সি",
-          "summary": "চ্যাটের অন্য ব্যক্তির সাথে রিভার্সি, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
-        },
-        "de": {
-          "name": "Reversi",
-          "summary": "Reversi mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Reversi",
-          "summary": "Reversi con la otra persona del chat, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "Reversi",
-          "summary": "Reversi avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
-        },
-        "hi": {
-          "name": "रिवर्सी",
-          "summary": "चैट में दूसरे व्यक्ति के साथ रिवर्सी, आपके फ़ोनों के बीच सीधे कनेक्शन से।"
-        },
-        "id": {
-          "name": "Reversi",
-          "summary": "Reversi dengan lawan bicara di obrolan, lewat koneksi langsung antara ponsel kalian."
-        },
-        "it": {
-          "name": "Reversi",
-          "summary": "Reversi con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "リバーシ",
-          "summary": "チャットの相手とリバーシ。2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "리버시",
-          "summary": "채팅 상대와 리버시를, 두 휴대폰 사이의 직접 연결로 즐기세요."
-        },
-        "pl": {
-          "name": "Reversi",
-          "summary": "Reversi z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
-        },
-        "pt": {
-          "name": "Reversi",
-          "summary": "Reversi com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "Reversi",
-          "summary": "Reversi cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Реверси",
-          "summary": "Реверси с собеседником по чату, по прямому соединению между вашими телефонами."
-        },
-        "th": {
-          "name": "หมากล้อมพลิก",
-          "summary": "หมากล้อมพลิกกับอีกฝ่ายในแชต ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
-        },
-        "tr": {
-          "name": "Reversi",
-          "summary": "Sohbetteki diğer kişiyle Reversi, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Реверсі",
-          "summary": "Реверсі зі співрозмовником у чаті, через пряме з’єднання між вашими телефонами."
-        },
-        "vi": {
-          "name": "Cờ lật",
-          "summary": "Cờ lật với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "黑白棋",
-          "summary": "与聊天对象下黑白棋，通过两部手机之间的直接连接进行。"
-        },
-        "zh-TW": {
-          "name": "黑白棋",
-          "summary": "與聊天對象下黑白棋，透過兩支手機之間的直接連線進行。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Reversi",
-      "size": 45522,
-      "summary": "Reversi with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "16b7a002ab835791af152a232e70aab052472031b43b7a646bffafe0b5782f04",
-      "id": "com.flickertalk.game.seabattle",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "معركة بحرية",
-          "summary": "معركة بحرية مع الشخص الآخر في الدردشة: أساطيل مخفية تُتحقق في النهاية، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "নৌযুদ্ধ",
-          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে নৌযুদ্ধ: লুকানো নৌবহর, শেষে যাচাই করা, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
-        },
-        "de": {
-          "name": "Seeschlacht",
-          "summary": "Seeschlacht mit der anderen Person im Chat: versteckte Flotten, am Ende geprüft, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Batalla naval",
-          "summary": "Batalla naval con la otra persona del chat: flotas ocultas, comprobadas al final, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "Bataille navale",
-          "summary": "Bataille navale avec l’autre personne de la conversation : flottes cachées, vérifiées à la fin, par la connexion directe entre vos téléphones."
-        },
-        "hi": {
-          "name": "समुद्री युद्ध",
-          "summary": "चैट के दूसरे व्यक्ति के साथ समुद्री युद्ध: छिपे बेड़े, अंत में जाँचे गए, आपके फ़ोनों के बीच सीधे कनेक्शन पर।"
-        },
-        "id": {
-          "name": "Perang Laut",
-          "summary": "Perang Laut dengan orang lain di obrolan: armada tersembunyi, diperiksa di akhir, lewat koneksi langsung antara ponsel kalian."
-        },
-        "it": {
-          "name": "Battaglia navale",
-          "summary": "Battaglia navale con l’altra persona della chat: flotte nascoste, verificate alla fine, sulla connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "海戦",
-          "summary": "チャットの相手と海戦。隠した艦隊は最後に検証され、2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "해전",
-          "summary": "채팅 상대와 해전을, 숨긴 함대는 마지막에 검증되며, 두 휴대폰 사이의 직접 연결로 즐기세요."
-        },
-        "pl": {
-          "name": "Bitwa morska",
-          "summary": "Bitwa morska z drugą osobą z czatu: ukryte floty, sprawdzane na końcu, przez bezpośrednie połączenie między telefonami."
-        },
-        "pt": {
-          "name": "Batalha naval",
-          "summary": "Batalha naval com a outra pessoa da conversa: frotas escondidas, verificadas no fim, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "Bătălie navală",
-          "summary": "Bătălie navală cu cealaltă persoană din conversație: flote ascunse, verificate la final, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Морской бой",
-          "summary": "Морской бой с собеседником из чата: скрытые флоты, проверяемые в конце, по прямому соединению между вашими телефонами."
-        },
-        "th": {
-          "name": "เรือรบ",
-          "summary": "เรือรบกับอีกคนในแชท: กองเรือที่ซ่อนไว้ ตรวจสอบตอนจบ ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
-        },
-        "tr": {
-          "name": "Deniz Savaşı",
-          "summary": "Sohbetteki diğer kişiyle Deniz Savaşı: gizli filolar, sonunda doğrulanır, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Морський бій",
-          "summary": "Морський бій зі співрозмовником із чату: приховані флоти, перевірені наприкінці, через пряме з’єднання між телефонами."
-        },
-        "vi": {
-          "name": "Hải chiến",
-          "summary": "Hải chiến với người kia trong cuộc trò chuyện: hạm đội ẩn, kiểm tra ở cuối, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "海战棋",
-          "summary": "与聊天中的对方玩海战棋：隐藏的舰队在最后核对，通过两部手机之间的直接连接。"
-        },
-        "zh-TW": {
-          "name": "海戰棋",
-          "summary": "與聊天中的對方玩海戰棋：隱藏的艦隊在最後核對，透過兩支手機之間的直接連線。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Sea Battle",
-      "size": 56499,
-      "summary": "Sea Battle with the other person in the chat: hidden fleets, checked at the end, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "694b04e18ffa0fc1b8fba400627e279415532d186b14eb8dfeda5156b581fed6",
-      "id": "com.flickertalk.game.tictactoe",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "إكس-أو",
-          "summary": "إكس-أو مع الشخص الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
-        },
-        "bn": {
-          "name": "টিক-ট্যাক-টো",
-          "summary": "চ্যাটের অন্যজনের সাথে টিক-ট্যাক-টো, আপনাদের দুই ফোনের সরাসরি সংযোগের মাধ্যমে।"
-        },
-        "de": {
-          "name": "Tic-Tac-Toe",
-          "summary": "Tic-Tac-Toe mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
-        },
-        "es": {
-          "name": "Tres en raya",
-          "summary": "Tres en raya con la otra persona del chat, por la conexión directa entre los dos teléfonos."
-        },
-        "fr": {
-          "name": "Morpion",
-          "summary": "Morpion avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
-        },
-        "hi": {
-          "name": "टिक-टैक-टो",
-          "summary": "चैट के दूसरे व्यक्ति के साथ टिक-टैक-टो, आप दोनों के फ़ोन के बीच सीधे कनेक्शन पर।"
-        },
-        "id": {
-          "name": "Tic-Tac-Toe",
-          "summary": "Tic-Tac-Toe dengan orang lain di obrolan, lewat koneksi langsung antara kedua ponsel."
-        },
-        "it": {
-          "name": "Tris",
-          "summary": "Tris con l’altra persona della chat, tramite la connessione diretta tra i vostri telefoni."
-        },
-        "ja": {
-          "name": "三目並べ",
-          "summary": "チャットの相手と三目並べ。2台の端末の直接接続で遊びます。"
-        },
-        "ko": {
-          "name": "틱택토",
-          "summary": "채팅 상대와 두 휴대폰 사이의 직접 연결로 즐기는 틱택토입니다."
-        },
-        "pl": {
-          "name": "Kółko i krzyżyk",
-          "summary": "Kółko i krzyżyk z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
-        },
-        "pt": {
-          "name": "Jogo da velha",
-          "summary": "Jogo da velha com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
-        },
-        "ro": {
-          "name": "X și 0",
-          "summary": "X și 0 cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
-        },
-        "ru": {
-          "name": "Крестики-нолики",
-          "summary": "Крестики-нолики с другим человеком из чата, через прямое соединение между вашими телефонами."
-        },
-        "th": {
-          "name": "โอเอกซ์",
-          "summary": "โอเอกซ์กับอีกฝ่ายในแชท ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของทั้งสองคน"
-        },
-        "tr": {
-          "name": "XOX",
-          "summary": "XOX: sohbetteki diğer kişiyle, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
-        },
-        "uk": {
-          "name": "Хрестики-нулики",
-          "summary": "Хрестики-нулики з іншою людиною з чату, через пряме з’єднання між вашими телефонами."
-        },
-        "vi": {
-          "name": "Cờ ca-rô 3×3",
-          "summary": "Cờ ca-rô 3×3 với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
-        },
-        "zh-CN": {
-          "name": "井字棋",
-          "summary": "通过两部手机之间的直连，与聊天中的对方下井字棋。"
-        },
-        "zh-TW": {
-          "name": "井字遊戲",
-          "summary": "透過兩支手機之間的直接連線，與聊天中的對方玩井字遊戲。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Tic-Tac-Toe",
-      "size": 45479,
-      "summary": "Tic-Tac-Toe with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.2.ftplugin",
-      "version": "1.0.2"
-    },
-    {
-      "hash": "0643c434607c36f9cb830792dd7eaf99dd81361deb46d06f56b6bdd9a94fa922",
-      "id": "com.flickertalk.game.wordduel",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "مبارزة الكلمات",
-          "summary": "مبارزة الكلمات مع الشخص الآخر في الدردشة: يخفي كل منكما كلمة من خمسة أحرف ويخمّنان بالتناوب، بالإنجليزية أو الإسبانية."
-        },
-        "bn": {
-          "name": "শব্দ দ্বৈরথ",
-          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে শব্দ দ্বৈরথ: প্রত্যেকে পাঁচ অক্ষরের একটি শব্দ লুকায়, দুজনে পালা করে অনুমান করে, ইংরেজি বা স্প্যানিশে।"
-        },
-        "de": {
-          "name": "Wortduell",
-          "summary": "Wortduell mit der anderen Person im Chat: jeder versteckt ein Wort aus fünf Buchstaben, beide raten abwechselnd, auf Englisch oder Spanisch."
-        },
-        "es": {
-          "name": "Palabra oculta",
-          "summary": "Palabra oculta con la otra persona del chat: cada uno esconde una palabra de cinco letras y los dos adivinan por turnos, en español o inglés."
-        },
-        "fr": {
-          "name": "Duel de mots",
-          "summary": "Duel de mots avec l’autre personne de la conversation : chacun cache un mot de cinq lettres et les deux devinent à tour de rôle, en anglais ou en espagnol."
-        },
-        "hi": {
-          "name": "शब्द द्वंद्व",
-          "summary": "चैट के दूसरे व्यक्ति के साथ शब्द द्वंद्व: हर कोई पाँच अक्षरों का शब्द छिपाता है और दोनों बारी-बारी बूझते हैं, अंग्रेज़ी या स्पेनिश में।"
-        },
-        "id": {
-          "name": "Duel Kata",
-          "summary": "Duel Kata dengan orang lain di obrolan: masing-masing menyembunyikan kata lima huruf dan keduanya menebak bergantian, dalam bahasa Inggris atau Spanyol."
-        },
-        "it": {
-          "name": "Duello di parole",
-          "summary": "Duello di parole con l’altra persona della chat: ognuno nasconde una parola di cinque lettere ed entrambi indovinano a turno, in inglese o spagnolo."
-        },
-        "ja": {
-          "name": "ワードデュエル",
-          "summary": "チャットの相手とワードデュエル。互いに5文字の単語を隠し、交互に当てます。英語またはスペイン語。"
-        },
-        "ko": {
-          "name": "단어 대결",
-          "summary": "채팅 상대와 단어 대결: 서로 다섯 글자 단어를 숨기고 번갈아 맞혀요. 영어 또는 스페인어."
-        },
-        "pl": {
-          "name": "Pojedynek na słowa",
-          "summary": "Pojedynek na słowa z drugą osobą z czatu: każdy ukrywa pięcioliterowe słowo, oboje zgadują na zmianę, po angielsku lub hiszpańsku."
-        },
-        "pt": {
-          "name": "Duelo de palavras",
-          "summary": "Duelo de palavras com a outra pessoa da conversa: cada um esconde uma palavra de cinco letras e ambos adivinham à vez, em inglês ou espanhol."
-        },
-        "ro": {
-          "name": "Duel de cuvinte",
-          "summary": "Duel de cuvinte cu cealaltă persoană din conversație: fiecare ascunde un cuvânt de cinci litere și amândoi ghicesc pe rând, în engleză sau spaniolă."
-        },
-        "ru": {
-          "name": "Дуэль слов",
-          "summary": "Дуэль слов с собеседником из чата: каждый прячет слово из пяти букв, и оба угадывают по очереди, по-английски или по-испански."
-        },
-        "th": {
-          "name": "ดวลคำ",
-          "summary": "ดวลคำกับอีกคนในแชท: แต่ละฝ่ายซ่อนคำห้าตัวอักษร แล้วผลัดกันทาย เป็นภาษาอังกฤษหรือสเปน"
-        },
-        "tr": {
-          "name": "Kelime Düellosu",
-          "summary": "Sohbetteki diğer kişiyle Kelime Düellosu: herkes beş harfli bir kelime saklar, ikisi sırayla tahmin eder, İngilizce veya İspanyolca."
-        },
-        "uk": {
-          "name": "Дуель слів",
-          "summary": "Дуель слів зі співрозмовником із чату: кожен ховає слово з п’яти літер, і обидва вгадують по черзі, англійською або іспанською."
-        },
-        "vi": {
-          "name": "Đấu từ",
-          "summary": "Đấu từ với người kia trong cuộc trò chuyện: mỗi bên giấu một từ năm chữ cái, cả hai lần lượt đoán, bằng tiếng Anh hoặc tiếng Tây Ban Nha."
-        },
-        "zh-CN": {
-          "name": "猜词对决",
-          "summary": "与聊天中的对方进行猜词对决：各藏一个五字母单词，轮流猜测，英语或西班牙语。"
-        },
-        "zh-TW": {
-          "name": "猜詞對決",
-          "summary": "與聊天中的對方進行猜詞對決：各藏一個五字母單字，輪流猜測，英語或西班牙語。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Word Duel",
-      "size": 107180,
-      "summary": "Word Duel with the other person in the chat: each hides a five-letter word, both guess in turn, English or Spanish, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "726fb6067dbbbf3c20ee5537dc060826e0834c5d64153e59b6985b2068ef8209",
-      "id": "com.flickertalk.game.wordgrid",
-      "kind": "game",
-      "locales": {
-        "ar": {
-          "name": "شبكة الحروف",
-          "summary": "شبكة الحروف مع الشخص الآخر في الدردشة: ستة عشر حرفًا يسحبها الهاتفان معًا، وكلمات بالتناوب، بالإنجليزية أو الإسبانية."
-        },
-        "bn": {
-          "name": "অক্ষরের গ্রিড",
-          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে অক্ষরের গ্রিড: দুই ফোন মিলে তোলা ষোলোটি অক্ষর, পালা করে শব্দ, ইংরেজি বা স্প্যানিশে।"
-        },
-        "de": {
-          "name": "Buchstabengitter",
-          "summary": "Buchstabengitter mit der anderen Person im Chat: sechzehn von beiden Telefonen gezogene Buchstaben, Wörter abwechselnd, auf Englisch oder Spanisch."
-        },
-        "es": {
-          "name": "Cuadrícula de letras",
-          "summary": "Cuadrícula de letras con la otra persona del chat: dieciséis letras sacadas por los dos teléfonos, palabras por turnos, en español o inglés."
-        },
-        "fr": {
-          "name": "Grille de lettres",
-          "summary": "Grille de lettres avec l’autre personne de la conversation : seize lettres tirées par les deux téléphones, des mots à tour de rôle, en anglais ou en espagnol."
-        },
-        "hi": {
-          "name": "अक्षर ग्रिड",
-          "summary": "चैट के दूसरे व्यक्ति के साथ अक्षर ग्रिड: दोनों फ़ोनों द्वारा निकाले गए सोलह अक्षर, बारी-बारी शब्द, अंग्रेज़ी या स्पेनिश में।"
-        },
-        "id": {
-          "name": "Kisi Huruf",
-          "summary": "Kisi Huruf dengan orang lain di obrolan: enam belas huruf diundi oleh kedua ponsel, kata bergantian, dalam bahasa Inggris atau Spanyol."
-        },
-        "it": {
-          "name": "Griglia di lettere",
-          "summary": "Griglia di lettere con l’altra persona della chat: sedici lettere estratte dai due telefoni, parole a turno, in inglese o spagnolo."
-        },
-        "ja": {
-          "name": "文字グリッド",
-          "summary": "チャットの相手と文字グリッド。16文字は2台の端末が一緒に引き、交互に単語を言います。英語またはスペイン語。"
-        },
-        "ko": {
-          "name": "글자 격자",
-          "summary": "채팅 상대와 글자 격자: 두 휴대폰이 함께 뽑은 열여섯 글자로 번갈아 단어를 말해요. 영어 또는 스페인어."
-        },
-        "pl": {
-          "name": "Siatka liter",
-          "summary": "Siatka liter z drugą osobą z czatu: szesnaście liter losowanych przez oba telefony, słowa na zmianę, po angielsku lub hiszpańsku."
-        },
-        "pt": {
-          "name": "Grelha de letras",
-          "summary": "Grelha de letras com a outra pessoa da conversa: dezasseis letras tiradas pelos dois telefones, palavras à vez, em inglês ou espanhol."
-        },
-        "ro": {
-          "name": "Grilă de litere",
-          "summary": "Grilă de litere cu cealaltă persoană din conversație: șaisprezece litere trase de ambele telefoane, cuvinte pe rând, în engleză sau spaniolă."
-        },
-        "ru": {
-          "name": "Сетка букв",
-          "summary": "Сетка букв с собеседником из чата: шестнадцать букв выбирают оба телефона, слова по очереди, по-английски или по-испански."
-        },
-        "th": {
-          "name": "ตารางตัวอักษร",
-          "summary": "ตารางตัวอักษรกับอีกคนในแชท: สิบหกตัวอักษรที่โทรศัพท์ทั้งสองสุ่มร่วมกัน ผลัดกันบอกคำ เป็นภาษาอังกฤษหรือสเปน"
-        },
-        "tr": {
-          "name": "Harf Izgarası",
-          "summary": "Sohbetteki diğer kişiyle Harf Izgarası: iki telefonun birlikte çektiği on altı harf, sırayla kelimeler, İngilizce veya İspanyolca."
-        },
-        "uk": {
-          "name": "Сітка літер",
-          "summary": "Сітка літер зі співрозмовником із чату: шістнадцять літер вибирають обидва телефони, слова по черзі, англійською або іспанською."
-        },
-        "vi": {
-          "name": "Lưới chữ",
-          "summary": "Lưới chữ với người kia trong cuộc trò chuyện: mười sáu chữ cái do cả hai điện thoại rút, lần lượt nói từ, bằng tiếng Anh hoặc tiếng Tây Ban Nha."
-        },
-        "zh-CN": {
-          "name": "字母格",
-          "summary": "与聊天中的对方玩字母格：十六个字母由两部手机共同抽取，轮流说出单词，英语或西班牙语。"
-        },
-        "zh-TW": {
-          "name": "字母格",
-          "summary": "與聊天中的對方玩字母格：十六個字母由兩支手機共同抽取，輪流說出單字，英語或西班牙語。"
-        }
-      },
-      "minCoreVersion": "1.3.0",
-      "name": "Letter Grid",
-      "size": 116598,
-      "summary": "Letter Grid with the other person in the chat: sixteen letters drawn by both phones, words said in turn, English or Spanish, over the direct connection.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.1.ftplugin",
-      "version": "1.0.1"
-    },
-    {
-      "hash": "86783845e2f426a9e97495aabc5bd9c69f99d7ed968deb82788b4643feb98947",
+      "hash": "e45af5282db26c0a9ff716c0b07d54316ec643e792528de93b69d093f09afaae",
+      "icon": "easel-outline",
       "id": "com.flickertalk.board",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><rect width=\"352\" height=\"208\" x=\"80\" y=\"112\" rx=\"12\" ry=\"12\"/><path d=\"M432 64H272V48a16 16 0 0 0-32 0v16H80a48.05 48.05 0 0 0-48 48v208a48.05 48.05 0 0 0 48 48h42.79l-26.17 91.6a16 16 0 1 0 30.76 8.8L156.07 368H240v48a16 16 0 0 0 32 0v-48h83.93l28.69 100.4a16 16 0 1 0 30.76-8.8L389.21 368H432a48.05 48.05 0 0 0 48-48V112a48.05 48.05 0 0 0-48-48m16 256a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V112a16 16 0 0 1 16-16h352a16 16 0 0 1 16 16Z\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -1297,14 +90,16 @@
       },
       "minCoreVersion": "1.1.0",
       "name": "Board",
-      "size": 403072,
+      "size": 403510,
       "summary": "A whiteboard with ink, text and formulas: draw a class, send it, or give it live.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "1a49cb04c7e45fe4e232621805c47a6f8acbe67d3a8138fbf604dfbc5d53883d",
+      "hash": "90dcb88d2cbfc68245d9966d1ff861d1b07812ea30a2d038337d16b79bc21b12",
+      "icon": "sparkles-outline",
       "id": "com.flickertalk.clean",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#C026D3\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M208 512a24.84 24.84 0 0 1-23.34-16l-39.84-103.6a16.06 16.06 0 0 0-9.19-9.19L32 343.34a25 25 0 0 1 0-46.68l103.6-39.84a16.06 16.06 0 0 0 9.19-9.19L184.66 144a25 25 0 0 1 46.68 0l39.84 103.6a16.06 16.06 0 0 0 9.19 9.19l103 39.63a25.49 25.49 0 0 1 16.63 24.1 24.82 24.82 0 0 1-16 22.82l-103.6 39.84a16.06 16.06 0 0 0-9.19 9.19L231.34 496A24.84 24.84 0 0 1 208 512M88 176a14.67 14.67 0 0 1-13.69-9.4l-16.86-43.84a7.28 7.28 0 0 0-4.21-4.21L9.4 101.69a14.67 14.67 0 0 1 0-27.38l43.84-16.86a7.3 7.3 0 0 0 4.21-4.21L74.16 9.79A15 15 0 0 1 86.23.11a14.67 14.67 0 0 1 15.46 9.29l16.86 43.84a7.3 7.3 0 0 0 4.21 4.21l43.84 16.86a14.67 14.67 0 0 1 0 27.38l-43.84 16.86a7.28 7.28 0 0 0-4.21 4.21l-16.86 43.84A14.67 14.67 0 0 1 88 176M400 256a16 16 0 0 1-14.93-10.26l-22.84-59.37a8 8 0 0 0-4.6-4.6l-59.37-22.84a16 16 0 0 1 0-29.86l59.37-22.84a8 8 0 0 0 4.6-4.6l22.67-58.95a16.45 16.45 0 0 1 13.17-10.57 16 16 0 0 1 16.86 10.15l22.84 59.37a8 8 0 0 0 4.6 4.6l59.37 22.84a16 16 0 0 1 0 29.86l-59.37 22.84a8 8 0 0 0-4.6 4.6l-22.84 59.37A16 16 0 0 1 400 256\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -1390,14 +185,16 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Clean",
-      "size": 246993,
+      "size": 247624,
       "summary": "See and remove the location, phone model, author and other hidden data of a photo or PDF, on your phone, before sending it.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.clean/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.clean/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "683a1140a86910d83f16a1e19e5390ca260092c9d4e430cddf353f2b315f4a36",
+      "hash": "2e705e771f5ddaf31139e13c6f9e453998b6ef6d7f80fb81707b0b1e33b605cf",
+      "icon": "timer-outline",
       "id": "com.flickertalk.countdown",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#EA580C\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 48C141.12 48 48 141.12 48 256s93.12 208 208 208 208-93.12 208-208S370.88 48 256 48m-82.33 114.34 105 71a32.5 32.5 0 0 1-37.25 53.26 33.2 33.2 0 0 1-8-8l-71-105a8.13 8.13 0 0 1 11.32-11.32ZM256 432c-97 0-176-78.95-176-176a174.55 174.55 0 0 1 53.87-126.72 14.15 14.15 0 1 1 19.64 20.37A146.53 146.53 0 0 0 108.3 256c0 81.44 66.26 147.7 147.7 147.7S403.7 337.44 403.7 256c0-76.67-58.72-139.88-133.55-147v55a14.15 14.15 0 1 1-28.3 0V94.15A14.15 14.15 0 0 1 256 80c97.05 0 176 79 176 176s-78.95 176-176 176\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -1483,14 +280,16 @@
       },
       "minCoreVersion": "1.1.0",
       "name": "Countdown",
-      "size": 19701,
+      "size": 20209,
       "summary": "The days that matter and how many are left: birthdays, trips, anniversaries, with a reminder for you alone.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.countdown/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.countdown/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "9f6c528065e640cff93e30738e8390ecbe28eb1c50201d4d47ddfa4b138963f5",
+      "hash": "9124398d5ada6affd37a5ad778423aa6c20f3bd713cffe85eb4c4a0fd8f4d34c",
+      "icon": "cloud-outline",
       "id": "com.flickertalk.drive",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0284C7\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M396 432H136c-36.44 0-70.36-12.57-95.51-35.41C14.38 372.88 0 340 0 304c0-36.58 13.39-68.12 38.72-91.22 18.11-16.53 42.22-28.25 69.18-33.87a16 16 0 0 0 11.37-9.15 156.24 156.24 0 0 1 42.05-56C187.76 91.69 220.5 80 256 80a153.57 153.57 0 0 1 107.14 42.9c24.73 23.81 41.5 55.28 49.18 92a16 16 0 0 0 12.12 12.39C470 237.42 512 270.43 512 328c0 33.39-12.24 60.78-35.41 79.23C456.23 423.43 428.37 432 396 432\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -1576,14 +375,1251 @@
       },
       "minCoreVersion": "1.1.0",
       "name": "My drive",
-      "size": 19846,
+      "size": 20332,
       "summary": "Your files, sealed on the phone, in your own Google Drive.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.drive/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.drive/1.1.2.ftplugin",
+      "version": "1.1.2"
     },
     {
-      "hash": "bb70ace90428087bd3bc66b529a59a7f07c371351798fb0f6eed55af4a0ed8a5",
+      "hash": "30351fcc3e3fc44adbdccbd2d6e3bc2ce0318c989da27818a71dbea5bf57e29c",
+      "icon": "dice-outline",
+      "id": "com.flickertalk.game.backgammon",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M440.88 129.37 288.16 40.62a64.14 64.14 0 0 0-64.33 0L71.12 129.37a4 4 0 0 0 0 6.9L254 243.85a4 4 0 0 0 4.06 0L440.9 136.27a4 4 0 0 0-.02-6.9M256 152c-13.25 0-24-7.16-24-16s10.75-16 24-16 24 7.16 24 16-10.75 16-24 16M238 270.81 54 163.48a4 4 0 0 0-6 3.46v173.92a48 48 0 0 0 23.84 41.39L234 479.48a4 4 0 0 0 6-3.46V274.27a4 4 0 0 0-2-3.46M96 368c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96-32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24M458 163.51 274 271.56a4 4 0 0 0-2 3.45V476a4 4 0 0 0 6 3.46l162.15-97.23A48 48 0 0 0 464 340.86V167a4 4 0 0 0-6-3.49M320 424c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96 32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "طاولة",
+          "summary": "طاولة مع الشخص الآخر في الدردشة: زهر يرميه الهاتفان معًا، عبر الاتصال المباشر بينهما."
+        },
+        "bn": {
+          "name": "ব্যাকগ্যামন",
+          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে ব্যাকগ্যামন: দুই ফোন মিলে গড়ানো ছক্কা, তাদের মধ্যে সরাসরি সংযোগে।"
+        },
+        "de": {
+          "name": "Backgammon",
+          "summary": "Backgammon mit der anderen Person im Chat: von beiden Telefonen geworfene Würfel, über ihre direkte Verbindung."
+        },
+        "es": {
+          "name": "Backgammon",
+          "summary": "Backgammon con la otra persona del chat: dados tirados por los dos teléfonos, por la conexión directa entre ellos."
+        },
+        "fr": {
+          "name": "Backgammon",
+          "summary": "Backgammon avec l’autre personne de la conversation : des dés lancés par les deux téléphones, par leur connexion directe."
+        },
+        "hi": {
+          "name": "बैकगैमन",
+          "summary": "चैट के दूसरे व्यक्ति के साथ बैकगैमन: दोनों फ़ोनों द्वारा फेंके गए पासे, उनके बीच सीधे कनेक्शन पर।"
+        },
+        "id": {
+          "name": "Backgammon",
+          "summary": "Backgammon dengan orang lain di obrolan: dadu dilempar oleh kedua ponsel, lewat koneksi langsung di antaranya."
+        },
+        "it": {
+          "name": "Backgammon",
+          "summary": "Backgammon con l’altra persona della chat: dadi lanciati da entrambi i telefoni, sulla connessione diretta tra loro."
+        },
+        "ja": {
+          "name": "バックギャモン",
+          "summary": "チャットの相手とバックギャモン。ダイスは2台の端末が一緒に振り、直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "백개먼",
+          "summary": "채팅 상대와 백개먼을, 두 휴대폰이 함께 굴린 주사위로, 직접 연결로 즐기세요."
+        },
+        "pl": {
+          "name": "Tryktrak",
+          "summary": "Tryktrak z drugą osobą z czatu: kości rzucane przez oba telefony, przez bezpośrednie połączenie między nimi."
+        },
+        "pt": {
+          "name": "Gamão",
+          "summary": "Gamão com a outra pessoa da conversa: dados lançados pelos dois telefones, pela conexão direta entre eles."
+        },
+        "ro": {
+          "name": "Table",
+          "summary": "Table cu cealaltă persoană din conversație: zaruri aruncate de ambele telefoane, prin conexiunea lor directă."
+        },
+        "ru": {
+          "name": "Нарды",
+          "summary": "Нарды с собеседником из чата: кости бросают оба телефона, по прямому соединению между ними."
+        },
+        "th": {
+          "name": "แบ็กแกมมอน",
+          "summary": "แบ็กแกมมอนกับอีกคนในแชท: ลูกเต๋าที่โทรศัพท์ทั้งสองทอยร่วมกัน ผ่านการเชื่อมต่อโดยตรงระหว่างกัน"
+        },
+        "tr": {
+          "name": "Tavla",
+          "summary": "Sohbetteki diğer kişiyle tavla: iki telefonun birlikte attığı zarlar, aralarındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Нарди",
+          "summary": "Нарди зі співрозмовником із чату: кості кидають обидва телефони, через пряме з’єднання між ними."
+        },
+        "vi": {
+          "name": "Cờ tào cáo",
+          "summary": "Cờ tào cáo với người kia trong cuộc trò chuyện: xúc xắc do cả hai điện thoại gieo, qua kết nối trực tiếp giữa chúng."
+        },
+        "zh-CN": {
+          "name": "双陆棋",
+          "summary": "与聊天中的对方下双陆棋：骰子由两部手机共同投掷，通过它们之间的直接连接。"
+        },
+        "zh-TW": {
+          "name": "雙陸棋",
+          "summary": "與聊天中的對方下雙陸棋：骰子由兩支手機共同投擲，透過它們之間的直接連線。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Backgammon",
+      "size": 57616,
+      "summary": "Backgammon with the other person in the chat: dice rolled by both phones, over the direct connection between them.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "531c74bf9a318124565f5b9edb1b5e89e4b3348cf4d530416e1a484b7d36e7f3",
+      "icon": "radio-button-on-outline",
+      "id": "com.flickertalk.game.checkers",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><circle cx=\"256\" cy=\"256\" r=\"144\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "الضامة",
+          "summary": "الضامة مع الطرف الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "চেকার্স",
+          "summary": "চ্যাটের অন্য ব্যক্তির সাথে চেকার্স, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
+        },
+        "de": {
+          "name": "Dame",
+          "summary": "Dame mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Damas",
+          "summary": "Damas con la otra persona del chat, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "Jeu de dames",
+          "summary": "Jeu de dames avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
+        },
+        "hi": {
+          "name": "चेकर्स",
+          "summary": "चैट में दूसरे व्यक्ति के साथ चेकर्स, आपके फ़ोनों के बीच सीधे कनेक्शन से।"
+        },
+        "id": {
+          "name": "Dam",
+          "summary": "Dam dengan lawan bicara di obrolan, lewat koneksi langsung antara ponsel kalian."
+        },
+        "it": {
+          "name": "Dama",
+          "summary": "Dama con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "チェッカー",
+          "summary": "チャットの相手とチェッカー。2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "체커",
+          "summary": "채팅 상대와 체커를, 두 휴대폰 사이의 직접 연결로 즐기세요."
+        },
+        "pl": {
+          "name": "Warcaby",
+          "summary": "Warcaby z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
+        },
+        "pt": {
+          "name": "Damas",
+          "summary": "Damas com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "Dame",
+          "summary": "Dame cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Шашки",
+          "summary": "Шашки с собеседником по чату, по прямому соединению между вашими телефонами."
+        },
+        "th": {
+          "name": "หมากฮอส",
+          "summary": "หมากฮอสกับอีกฝ่ายในแชต ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
+        },
+        "tr": {
+          "name": "Dama",
+          "summary": "Sohbetteki diğer kişiyle dama, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Шашки",
+          "summary": "Шашки зі співрозмовником у чаті, через пряме з’єднання між вашими телефонами."
+        },
+        "vi": {
+          "name": "Cờ đam",
+          "summary": "Cờ đam với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "西洋跳棋",
+          "summary": "与聊天对象下西洋跳棋，通过两部手机之间的直接连接进行。"
+        },
+        "zh-TW": {
+          "name": "西洋跳棋",
+          "summary": "與聊天對象下西洋跳棋，透過兩支手機之間的直接連線進行。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Checkers",
+      "size": 49546,
+      "summary": "Checkers with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "c5546aa6cb1878212fc7a459680d92980b6817e2dc3a259cf2e2d46db9b0eff8",
+      "icon": "shield-outline",
+      "id": "com.flickertalk.game.chess",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#475569\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M479.07 111.35a16 16 0 0 0-13.15-14.75C379.89 81.18 343.69 69.12 266 34.16c-7.76-2.89-12.57-2.84-20 0-77.69 35-113.89 47-199.92 62.44a16 16 0 0 0-13.15 14.75c-3.85 61.1 4.34 118 24.36 169.15a348.9 348.9 0 0 0 71.43 112.41c44.67 47.43 94.2 75.12 119.74 85.6a20 20 0 0 0 15.11 0c27-10.92 74.69-37.82 119.71-85.62a348.9 348.9 0 0 0 71.43-112.39c20.02-51.14 28.21-108.05 24.36-169.15\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "شطرنج",
+          "summary": "شطرنج مع الشخص الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "দাবা",
+          "summary": "চ্যাটের অন্যজনের সাথে দাবা, আপনাদের দুই ফোনের সরাসরি সংযোগের মাধ্যমে।"
+        },
+        "de": {
+          "name": "Schach",
+          "summary": "Schach mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Ajedrez",
+          "summary": "Ajedrez con la otra persona del chat, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "Échecs",
+          "summary": "Échecs avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
+        },
+        "hi": {
+          "name": "शतरंज",
+          "summary": "चैट के दूसरे व्यक्ति के साथ शतरंज, आप दोनों के फ़ोन के बीच सीधे कनेक्शन पर।"
+        },
+        "id": {
+          "name": "Catur",
+          "summary": "Catur dengan orang lain di obrolan, lewat koneksi langsung antara kedua ponsel."
+        },
+        "it": {
+          "name": "Scacchi",
+          "summary": "Scacchi con l’altra persona della chat, tramite la connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "チェス",
+          "summary": "チャットの相手とチェス。2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "체스",
+          "summary": "채팅 상대와 두 휴대폰 사이의 직접 연결로 즐기는 체스입니다."
+        },
+        "pl": {
+          "name": "Szachy",
+          "summary": "Szachy z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
+        },
+        "pt": {
+          "name": "Xadrez",
+          "summary": "Xadrez com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "Șah",
+          "summary": "Șah cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Шахматы",
+          "summary": "Шахматы с другим человеком из чата, через прямое соединение между вашими телефонами."
+        },
+        "th": {
+          "name": "หมากรุกสากล",
+          "summary": "หมากรุกสากลกับอีกฝ่ายในแชท ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของทั้งสองคน"
+        },
+        "tr": {
+          "name": "Satranç",
+          "summary": "Satranç: sohbetteki diğer kişiyle, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Шахи",
+          "summary": "Шахи з іншою людиною з чату, через пряме з’єднання між вашими телефонами."
+        },
+        "vi": {
+          "name": "Cờ vua",
+          "summary": "Cờ vua với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "国际象棋",
+          "summary": "通过两部手机之间的直连，与聊天中的对方下国际象棋。"
+        },
+        "zh-TW": {
+          "name": "西洋棋",
+          "summary": "透過兩支手機之間的直接連線，與聊天中的對方下西洋棋。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Chess",
+      "size": 90496,
+      "summary": "Chess with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "ecf9f49b5c04dcc5a4d3bb5bc8d24ae414ae47e19f116877c0908a9bfe56bf5c",
+      "icon": "square-outline",
+      "id": "com.flickertalk.game.dotsandboxes",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64m-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "النقاط والمربعات",
+          "summary": "النقاط والمربعات مع الطرف الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "বিন্দু ও বাক্স",
+          "summary": "চ্যাটের অন্য ব্যক্তির সাথে বিন্দু ও বাক্স, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
+        },
+        "de": {
+          "name": "Käsekästchen",
+          "summary": "Käsekästchen mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Puntos y cajas",
+          "summary": "Puntos y cajas con la otra persona del chat, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "La pipopipette",
+          "summary": "La pipopipette avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
+        },
+        "hi": {
+          "name": "बिंदु और डिब्बे",
+          "summary": "चैट में दूसरे व्यक्ति के साथ बिंदु और डिब्बे, आपके फ़ोनों के बीच सीधे कनेक्शन से।"
+        },
+        "id": {
+          "name": "Titik dan kotak",
+          "summary": "Titik dan kotak dengan lawan bicara di obrolan, lewat koneksi langsung antara ponsel kalian."
+        },
+        "it": {
+          "name": "Punti e quadretti",
+          "summary": "Punti e quadretti con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "ドットとボックス",
+          "summary": "チャットの相手とドットとボックス。2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "점과 상자",
+          "summary": "채팅 상대와 점과 상자를, 두 휴대폰 사이의 직접 연결로 즐기세요."
+        },
+        "pl": {
+          "name": "Kropki i kwadraty",
+          "summary": "Kropki i kwadraty z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
+        },
+        "pt": {
+          "name": "Pontos e caixas",
+          "summary": "Pontos e caixas com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "Puncte și pătrate",
+          "summary": "Puncte și pătrate cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Точки и квадраты",
+          "summary": "Точки и квадраты с собеседником по чату, по прямому соединению между вашими телефонами."
+        },
+        "th": {
+          "name": "จุดและกล่อง",
+          "summary": "จุดและกล่องกับอีกฝ่ายในแชต ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
+        },
+        "tr": {
+          "name": "Noktalar ve kutular",
+          "summary": "Sohbetteki diğer kişiyle noktalar ve kutular, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Крапки й квадрати",
+          "summary": "Крапки й квадрати зі співрозмовником у чаті, через пряме з’єднання між вашими телефонами."
+        },
+        "vi": {
+          "name": "Chấm và ô vuông",
+          "summary": "Chấm và ô vuông với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "点格棋",
+          "summary": "与聊天对象玩点格棋，通过两部手机之间的直接连接进行。"
+        },
+        "zh-TW": {
+          "name": "點格棋",
+          "summary": "與聊天對象玩點格棋，透過兩支手機之間的直接連線進行。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Dots and Boxes",
+      "size": 47449,
+      "summary": "Dots and boxes with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "16dce90f69f001002a3b9c84cb330a7dcc073eb9709d828c455f5d660f07114e",
+      "icon": "albums-outline",
+      "id": "com.flickertalk.game.eights",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 96H144a16 16 0 0 1 0-32h224a16 16 0 0 1 0 32M400 144H112a16 16 0 0 1 0-32h288a16 16 0 0 1 0 32M419.13 448H92.87A44.92 44.92 0 0 1 48 403.13V204.87A44.92 44.92 0 0 1 92.87 160h326.26A44.92 44.92 0 0 1 464 204.87v198.26A44.92 44.92 0 0 1 419.13 448\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "الثمانيات المجنونة",
+          "summary": "الثمانيات المجنونة مع الشخص الآخر في الدردشة: أوراق يخلطها الهاتفان معًا، عبر الاتصال المباشر بينهما."
+        },
+        "bn": {
+          "name": "ক্রেজি এইটস",
+          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে ক্রেজি এইটস: দুই ফোন মিলে ফেটানো কার্ড, তাদের মধ্যে সরাসরি সংযোগে।"
+        },
+        "de": {
+          "name": "Verrückte Achten",
+          "summary": "Verrückte Achten mit der anderen Person im Chat: ein von beiden Telefonen gemischtes Blatt, über ihre direkte Verbindung."
+        },
+        "es": {
+          "name": "Ochos locos",
+          "summary": "Ochos locos con la otra persona del chat: una baraja mezclada por los dos teléfonos, por la conexión directa entre ellos."
+        },
+        "fr": {
+          "name": "Huit américain",
+          "summary": "Huit américain avec l’autre personne de la conversation : un jeu mélangé par les deux téléphones, par leur connexion directe."
+        },
+        "hi": {
+          "name": "क्रेज़ी एट्स",
+          "summary": "चैट के दूसरे व्यक्ति के साथ क्रेज़ी एट्स: दोनों फ़ोनों द्वारा फेंटी गई गड्डी, उनके बीच सीधे कनेक्शन पर।"
+        },
+        "id": {
+          "name": "Delapan Gila",
+          "summary": "Delapan Gila dengan orang lain di obrolan: kartu dikocok oleh kedua ponsel, lewat koneksi langsung di antaranya."
+        },
+        "it": {
+          "name": "Otto matto",
+          "summary": "Otto matto con l’altra persona della chat: un mazzo mescolato dai due telefoni, sulla connessione diretta tra loro."
+        },
+        "ja": {
+          "name": "クレイジーエイト",
+          "summary": "チャットの相手とクレイジーエイト。山札は2台の端末が一緒に混ぜ、直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "크레이지 에이트",
+          "summary": "채팅 상대와 크레이지 에이트를, 두 휴대폰이 함께 섞은 카드로, 직접 연결로 즐기세요."
+        },
+        "pl": {
+          "name": "Szalone ósemki",
+          "summary": "Szalone ósemki z drugą osobą z czatu: talia tasowana przez oba telefony, przez bezpośrednie połączenie między nimi."
+        },
+        "pt": {
+          "name": "Oitos malucos",
+          "summary": "Oitos malucos com a outra pessoa da conversa: um baralho baralhado pelos dois telefones, pela conexão direta entre eles."
+        },
+        "ro": {
+          "name": "Optarii nebuni",
+          "summary": "Optarii nebuni cu cealaltă persoană din conversație: un pachet amestecat de ambele telefoane, prin conexiunea lor directă."
+        },
+        "ru": {
+          "name": "Сумасшедшие восьмёрки",
+          "summary": "Сумасшедшие восьмёрки с собеседником из чата: колоду тасуют оба телефона, по прямому соединению между ними."
+        },
+        "th": {
+          "name": "แปดบ้า",
+          "summary": "แปดบ้ากับอีกคนในแชท: สำรับที่โทรศัพท์ทั้งสองสับร่วมกัน ผ่านการเชื่อมต่อโดยตรงระหว่างกัน"
+        },
+        "tr": {
+          "name": "Çılgın Sekizler",
+          "summary": "Sohbetteki diğer kişiyle Çılgın Sekizler: iki telefonun birlikte kardığı deste, aralarındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Божевільні вісімки",
+          "summary": "Божевільні вісімки зі співрозмовником із чату: колоду тасують обидва телефони, через пряме з’єднання між ними."
+        },
+        "vi": {
+          "name": "Tám điên",
+          "summary": "Tám điên với người kia trong cuộc trò chuyện: bộ bài do cả hai điện thoại xáo, qua kết nối trực tiếp giữa chúng."
+        },
+        "zh-CN": {
+          "name": "疯狂八",
+          "summary": "与聊天中的对方玩疯狂八：牌由两部手机共同洗过，通过它们之间的直接连接。"
+        },
+        "zh-TW": {
+          "name": "瘋狂八",
+          "summary": "與聊天中的對方玩瘋狂八：牌由兩支手機共同洗過，透過它們之間的直接連線。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Crazy Eights",
+      "size": 56861,
+      "summary": "Crazy Eights with the other person in the chat: a deck shuffled by both phones, over the direct connection between them.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "d7129c983410ee6c0587426751ef2ca1426760f1cdeae72cdfc63ed0486946fd",
+      "icon": "ellipse-outline",
+      "id": "com.flickertalk.game.fourinarow",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 464c-114.69 0-208-93.31-208-208S141.31 48 256 48s208 93.31 208 208-93.31 208-208 208\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "أربعة في صف",
+          "summary": "أربعة في صف مع الشخص الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "এক সারিতে চার",
+          "summary": "চ্যাটের অন্যজনের সাথে এক সারিতে চার, আপনাদের দুই ফোনের সরাসরি সংযোগের মাধ্যমে।"
+        },
+        "de": {
+          "name": "Vier in einer Reihe",
+          "summary": "Vier in einer Reihe mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Cuatro en raya",
+          "summary": "Cuatro en raya con la otra persona del chat, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "Quatre en ligne",
+          "summary": "Quatre en ligne avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
+        },
+        "hi": {
+          "name": "पंक्ति में चार",
+          "summary": "चैट के दूसरे व्यक्ति के साथ पंक्ति में चार, आप दोनों के फ़ोन के बीच सीधे कनेक्शन पर।"
+        },
+        "id": {
+          "name": "Empat Sejajar",
+          "summary": "Empat Sejajar dengan orang lain di obrolan, lewat koneksi langsung antara kedua ponsel."
+        },
+        "it": {
+          "name": "Quattro in fila",
+          "summary": "Quattro in fila con l’altra persona della chat, tramite la connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "四目並べ",
+          "summary": "チャットの相手と四目並べ。2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "사목",
+          "summary": "채팅 상대와 두 휴대폰 사이의 직접 연결로 즐기는 사목입니다."
+        },
+        "pl": {
+          "name": "Cztery w rzędzie",
+          "summary": "Cztery w rzędzie z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
+        },
+        "pt": {
+          "name": "Quatro em linha",
+          "summary": "Quatro em linha com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "Patru în linie",
+          "summary": "Patru în linie cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Четыре в ряд",
+          "summary": "Четыре в ряд с другим человеком из чата, через прямое соединение между вашими телефонами."
+        },
+        "th": {
+          "name": "เรียงสี่",
+          "summary": "เรียงสี่กับอีกฝ่ายในแชท ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของทั้งสองคน"
+        },
+        "tr": {
+          "name": "Dörtlü sıra",
+          "summary": "Dörtlü sıra: sohbetteki diğer kişiyle, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Чотири в ряд",
+          "summary": "Чотири в ряд з іншою людиною з чату, через пряме з’єднання між вашими телефонами."
+        },
+        "vi": {
+          "name": "Bốn quân thẳng hàng",
+          "summary": "Bốn quân thẳng hàng với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "四子棋",
+          "summary": "通过两部手机之间的直连，与聊天中的对方下四子棋。"
+        },
+        "zh-TW": {
+          "name": "四子棋",
+          "summary": "透過兩支手機之間的直接連線，與聊天中的對方下四子棋。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Four in a Row",
+      "size": 46260,
+      "summary": "Four in a Row with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "45c3bc8bde6e02a80c7847befb5f3852bb434326e969f16b23a8f8a45550d14a",
+      "icon": "apps-outline",
+      "id": "com.flickertalk.game.gomoku",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M104 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "خمسة في صف",
+          "summary": "خمسة في صف مع الشخص الآخر في الدردشة، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "পাঁচে সারি",
+          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে পাঁচে সারি, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
+        },
+        "de": {
+          "name": "Fünf in einer Reihe",
+          "summary": "Fünf in einer Reihe mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Cinco en línea",
+          "summary": "Cinco en línea con la otra persona del chat, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "Cinq en ligne",
+          "summary": "Cinq en ligne avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
+        },
+        "hi": {
+          "name": "पाँच एक पंक्ति में",
+          "summary": "चैट के दूसरे व्यक्ति के साथ पाँच एक पंक्ति में, आपके फ़ोनों के बीच सीधे कनेक्शन पर।"
+        },
+        "id": {
+          "name": "Lima Sebaris",
+          "summary": "Lima Sebaris dengan orang lain di obrolan, lewat koneksi langsung antara ponsel kalian."
+        },
+        "it": {
+          "name": "Cinque in fila",
+          "summary": "Cinque in fila con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "五目並べ",
+          "summary": "チャットの相手と五目並べ。2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "오목",
+          "summary": "채팅 상대와 오목을, 두 휴대폰 사이의 직접 연결로 즐기세요."
+        },
+        "pl": {
+          "name": "Pięć w rzędzie",
+          "summary": "Pięć w rzędzie z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
+        },
+        "pt": {
+          "name": "Cinco em linha",
+          "summary": "Cinco em linha com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "Cinci în linie",
+          "summary": "Cinci în linie cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Пять в ряд",
+          "summary": "Пять в ряд с собеседником из чата, по прямому соединению между вашими телефонами."
+        },
+        "th": {
+          "name": "โกะห้าเรียง",
+          "summary": "โกะห้าเรียงกับอีกคนในแชท ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
+        },
+        "tr": {
+          "name": "Beş Taş",
+          "summary": "Sohbetteki diğer kişiyle Beş Taş, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "П’ять у ряд",
+          "summary": "П’ять у ряд зі співрозмовником із чату, через пряме з’єднання між вашими телефонами."
+        },
+        "vi": {
+          "name": "Cờ ca-rô",
+          "summary": "Cờ ca-rô với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "五子棋",
+          "summary": "与聊天中的对方下五子棋，通过两部手机之间的直接连接。"
+        },
+        "zh-TW": {
+          "name": "五子棋",
+          "summary": "與聊天中的對方下五子棋，透過兩支手機之間的直接連線。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Five in a Row",
+      "size": 46873,
+      "summary": "Five in a Row with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "5cc6fdc07f928316db46a45d55fad1ab64a541848a4a9c50589ede087fe95ea2",
+      "icon": "basket-outline",
+      "id": "com.flickertalk.game.mancala",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M424.11 192H360L268.8 70.4a16 16 0 0 0-25.6 0L152 192H87.89a32.57 32.57 0 0 0-32.62 32.44 30.3 30.3 0 0 0 1.31 9l46.27 163.14a50.72 50.72 0 0 0 48.84 36.91h208.62a51.21 51.21 0 0 0 49-36.86l46.33-163.36a15.6 15.6 0 0 0 .46-2.36l.53-4.93a13 13 0 0 0 .09-1.55A32.57 32.57 0 0 0 424.11 192M256 106.67 320 192H192Zm0 245a37.7 37.7 0 1 1 37.88-37.7A37.87 37.87 0 0 1 256 351.63Z\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "المنقلة",
+          "summary": "المنقلة مع الطرف الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "মানকালা",
+          "summary": "চ্যাটের অন্য ব্যক্তির সাথে মানকালা, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
+        },
+        "de": {
+          "name": "Mancala",
+          "summary": "Mancala mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Mancala",
+          "summary": "Mancala con la otra persona del chat, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "Mancala",
+          "summary": "Mancala avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
+        },
+        "hi": {
+          "name": "मंकला",
+          "summary": "चैट में दूसरे व्यक्ति के साथ मंकला, आपके फ़ोनों के बीच सीधे कनेक्शन से।"
+        },
+        "id": {
+          "name": "Congklak",
+          "summary": "Congklak dengan lawan bicara di obrolan, lewat koneksi langsung antara ponsel kalian."
+        },
+        "it": {
+          "name": "Mancala",
+          "summary": "Mancala con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "マンカラ",
+          "summary": "チャットの相手とマンカラ。2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "만칼라",
+          "summary": "채팅 상대와 만칼라를, 두 휴대폰 사이의 직접 연결로 즐기세요."
+        },
+        "pl": {
+          "name": "Mankala",
+          "summary": "Mankala z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
+        },
+        "pt": {
+          "name": "Mancala",
+          "summary": "Mancala com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "Mancala",
+          "summary": "Mancala cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Манкала",
+          "summary": "Манкала с собеседником по чату, по прямому соединению между вашими телефонами."
+        },
+        "th": {
+          "name": "หมากขุม",
+          "summary": "หมากขุมกับอีกฝ่ายในแชต ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
+        },
+        "tr": {
+          "name": "Mangala",
+          "summary": "Sohbetteki diğer kişiyle mangala, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Манкала",
+          "summary": "Манкала зі співрозмовником у чаті, через пряме з’єднання між вашими телефонами."
+        },
+        "vi": {
+          "name": "Ô ăn quan",
+          "summary": "Ô ăn quan với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "播棋",
+          "summary": "与聊天对象玩播棋，通过两部手机之间的直接连接进行。"
+        },
+        "zh-TW": {
+          "name": "播棋",
+          "summary": "與聊天對象玩播棋，透過兩支手機之間的直接連線進行。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Mancala",
+      "size": 46340,
+      "summary": "Mancala with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "329087c5e65ed2a6a6ceb25a980a8a38330f700fad8d6186417f9f89631673e3",
+      "icon": "contrast-outline",
+      "id": "com.flickertalk.game.reversi",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 32A224 224 0 0 0 97.61 414.39 224 224 0 1 0 414.39 97.61 222.53 222.53 0 0 0 256 32M64 256c0-105.87 86.13-192 192-192v384c-105.87 0-192-86.13-192-192\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "ريفيرسي",
+          "summary": "ريفيرسي مع الطرف الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "রিভার্সি",
+          "summary": "চ্যাটের অন্য ব্যক্তির সাথে রিভার্সি, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
+        },
+        "de": {
+          "name": "Reversi",
+          "summary": "Reversi mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Reversi",
+          "summary": "Reversi con la otra persona del chat, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "Reversi",
+          "summary": "Reversi avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
+        },
+        "hi": {
+          "name": "रिवर्सी",
+          "summary": "चैट में दूसरे व्यक्ति के साथ रिवर्सी, आपके फ़ोनों के बीच सीधे कनेक्शन से।"
+        },
+        "id": {
+          "name": "Reversi",
+          "summary": "Reversi dengan lawan bicara di obrolan, lewat koneksi langsung antara ponsel kalian."
+        },
+        "it": {
+          "name": "Reversi",
+          "summary": "Reversi con l’altra persona della chat, sulla connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "リバーシ",
+          "summary": "チャットの相手とリバーシ。2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "리버시",
+          "summary": "채팅 상대와 리버시를, 두 휴대폰 사이의 직접 연결로 즐기세요."
+        },
+        "pl": {
+          "name": "Reversi",
+          "summary": "Reversi z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
+        },
+        "pt": {
+          "name": "Reversi",
+          "summary": "Reversi com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "Reversi",
+          "summary": "Reversi cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Реверси",
+          "summary": "Реверси с собеседником по чату, по прямому соединению между вашими телефонами."
+        },
+        "th": {
+          "name": "หมากล้อมพลิก",
+          "summary": "หมากล้อมพลิกกับอีกฝ่ายในแชต ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
+        },
+        "tr": {
+          "name": "Reversi",
+          "summary": "Sohbetteki diğer kişiyle Reversi, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Реверсі",
+          "summary": "Реверсі зі співрозмовником у чаті, через пряме з’єднання між вашими телефонами."
+        },
+        "vi": {
+          "name": "Cờ lật",
+          "summary": "Cờ lật với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "黑白棋",
+          "summary": "与聊天对象下黑白棋，通过两部手机之间的直接连接进行。"
+        },
+        "zh-TW": {
+          "name": "黑白棋",
+          "summary": "與聊天對象下黑白棋，透過兩支手機之間的直接連線進行。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Reversi",
+      "size": 45870,
+      "summary": "Reversi with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "e7da169af4d5faef6521a883786bc71db0c43c8befe4c572d2f911d9b85cc091",
+      "icon": "boat-outline",
+      "id": "com.flickertalk.game.seabattle",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M416 473.14a6.83 6.83 0 0 0-3.57-6c-27.07-14.55-51.76-36.82-62.62-48a10.05 10.05 0 0 0-12.72-1.51c-50.33 32.42-111.61 32.44-161.95.05a10.09 10.09 0 0 0-12.82 1.56c-10.77 11.28-35.19 33.3-62.43 47.75a7.11 7.11 0 0 0-3.89 5.73 6.73 6.73 0 0 0 7.92 7.15c20.85-4.18 41-13.68 60.2-23.83a8.71 8.71 0 0 1 8-.06 185.14 185.14 0 0 0 167.81 0 8.82 8.82 0 0 1 8.09.06c19.1 10 39.22 19.59 60 23.8a6.73 6.73 0 0 0 8-6.71ZM476.71 246.91c-3.49-8.39-10.9-14.89-20.9-18.35L432 219.08V136a64 64 0 0 0-64-64h-32v-8a40 40 0 0 0-40-40h-80a40 40 0 0 0-40 40v8h-32a64 64 0 0 0-64 64v83.15l-23.58 9.39c-9.94 3.3-17.63 10-21.15 18.44-2.45 5.89-5.25 15-1.3 26.46l.1.3 46.66 119.44A23.33 23.33 0 0 0 102.58 408c.5 0 1 0 1.53-.05 31.32-2 56-17.27 72.6-31.61C200.42 396.81 228.31 408 256 408s55.43-11.2 79.14-31.7c16.59 14.36 41.3 29.67 72.61 31.65a23.36 23.36 0 0 0 23.37-14.74l46.65-119c3.28-8.09 2.9-17.76-1.06-27.3M269 154.21l-1.14-.4a39.53 39.53 0 0 0-23.73 0l-.58.18-126.07 50.23a4 4 0 0 1-5.48-3.72V136a32 32 0 0 1 32-32h224a32 32 0 0 1 32 32v64.44a4 4 0 0 1-5.48 3.72Z\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "معركة بحرية",
+          "summary": "معركة بحرية مع الشخص الآخر في الدردشة: أساطيل مخفية تُتحقق في النهاية، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "নৌযুদ্ধ",
+          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে নৌযুদ্ধ: লুকানো নৌবহর, শেষে যাচাই করা, আপনাদের ফোনের মধ্যে সরাসরি সংযোগে।"
+        },
+        "de": {
+          "name": "Seeschlacht",
+          "summary": "Seeschlacht mit der anderen Person im Chat: versteckte Flotten, am Ende geprüft, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Batalla naval",
+          "summary": "Batalla naval con la otra persona del chat: flotas ocultas, comprobadas al final, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "Bataille navale",
+          "summary": "Bataille navale avec l’autre personne de la conversation : flottes cachées, vérifiées à la fin, par la connexion directe entre vos téléphones."
+        },
+        "hi": {
+          "name": "समुद्री युद्ध",
+          "summary": "चैट के दूसरे व्यक्ति के साथ समुद्री युद्ध: छिपे बेड़े, अंत में जाँचे गए, आपके फ़ोनों के बीच सीधे कनेक्शन पर।"
+        },
+        "id": {
+          "name": "Perang Laut",
+          "summary": "Perang Laut dengan orang lain di obrolan: armada tersembunyi, diperiksa di akhir, lewat koneksi langsung antara ponsel kalian."
+        },
+        "it": {
+          "name": "Battaglia navale",
+          "summary": "Battaglia navale con l’altra persona della chat: flotte nascoste, verificate alla fine, sulla connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "海戦",
+          "summary": "チャットの相手と海戦。隠した艦隊は最後に検証され、2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "해전",
+          "summary": "채팅 상대와 해전을, 숨긴 함대는 마지막에 검증되며, 두 휴대폰 사이의 직접 연결로 즐기세요."
+        },
+        "pl": {
+          "name": "Bitwa morska",
+          "summary": "Bitwa morska z drugą osobą z czatu: ukryte floty, sprawdzane na końcu, przez bezpośrednie połączenie między telefonami."
+        },
+        "pt": {
+          "name": "Batalha naval",
+          "summary": "Batalha naval com a outra pessoa da conversa: frotas escondidas, verificadas no fim, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "Bătălie navală",
+          "summary": "Bătălie navală cu cealaltă persoană din conversație: flote ascunse, verificate la final, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Морской бой",
+          "summary": "Морской бой с собеседником из чата: скрытые флоты, проверяемые в конце, по прямому соединению между вашими телефонами."
+        },
+        "th": {
+          "name": "เรือรบ",
+          "summary": "เรือรบกับอีกคนในแชท: กองเรือที่ซ่อนไว้ ตรวจสอบตอนจบ ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของคุณทั้งสอง"
+        },
+        "tr": {
+          "name": "Deniz Savaşı",
+          "summary": "Sohbetteki diğer kişiyle Deniz Savaşı: gizli filolar, sonunda doğrulanır, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Морський бій",
+          "summary": "Морський бій зі співрозмовником із чату: приховані флоти, перевірені наприкінці, через пряме з’єднання між телефонами."
+        },
+        "vi": {
+          "name": "Hải chiến",
+          "summary": "Hải chiến với người kia trong cuộc trò chuyện: hạm đội ẩn, kiểm tra ở cuối, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "海战棋",
+          "summary": "与聊天中的对方玩海战棋：隐藏的舰队在最后核对，通过两部手机之间的直接连接。"
+        },
+        "zh-TW": {
+          "name": "海戰棋",
+          "summary": "與聊天中的對方玩海戰棋：隱藏的艦隊在最後核對，透過兩支手機之間的直接連線。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Sea Battle",
+      "size": 57295,
+      "summary": "Sea Battle with the other person in the chat: hidden fleets, checked at the end, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "24083f0727a52b4c54b0325612356db6b4454958cfc3d7f685300a5723010ae7",
+      "icon": "grid-outline",
+      "id": "com.flickertalk.game.tictactoe",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M204 240H68a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 240H308a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M204 480H68a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 480H308a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "إكس-أو",
+          "summary": "إكس-أو مع الشخص الآخر في المحادثة، عبر الاتصال المباشر بين هاتفيكما."
+        },
+        "bn": {
+          "name": "টিক-ট্যাক-টো",
+          "summary": "চ্যাটের অন্যজনের সাথে টিক-ট্যাক-টো, আপনাদের দুই ফোনের সরাসরি সংযোগের মাধ্যমে।"
+        },
+        "de": {
+          "name": "Tic-Tac-Toe",
+          "summary": "Tic-Tac-Toe mit der anderen Person im Chat, über die direkte Verbindung zwischen euren Telefonen."
+        },
+        "es": {
+          "name": "Tres en raya",
+          "summary": "Tres en raya con la otra persona del chat, por la conexión directa entre los dos teléfonos."
+        },
+        "fr": {
+          "name": "Morpion",
+          "summary": "Morpion avec l’autre personne de la conversation, par la connexion directe entre vos deux téléphones."
+        },
+        "hi": {
+          "name": "टिक-टैक-टो",
+          "summary": "चैट के दूसरे व्यक्ति के साथ टिक-टैक-टो, आप दोनों के फ़ोन के बीच सीधे कनेक्शन पर।"
+        },
+        "id": {
+          "name": "Tic-Tac-Toe",
+          "summary": "Tic-Tac-Toe dengan orang lain di obrolan, lewat koneksi langsung antara kedua ponsel."
+        },
+        "it": {
+          "name": "Tris",
+          "summary": "Tris con l’altra persona della chat, tramite la connessione diretta tra i vostri telefoni."
+        },
+        "ja": {
+          "name": "三目並べ",
+          "summary": "チャットの相手と三目並べ。2台の端末の直接接続で遊びます。"
+        },
+        "ko": {
+          "name": "틱택토",
+          "summary": "채팅 상대와 두 휴대폰 사이의 직접 연결로 즐기는 틱택토입니다."
+        },
+        "pl": {
+          "name": "Kółko i krzyżyk",
+          "summary": "Kółko i krzyżyk z drugą osobą z czatu, przez bezpośrednie połączenie między waszymi telefonami."
+        },
+        "pt": {
+          "name": "Jogo da velha",
+          "summary": "Jogo da velha com a outra pessoa da conversa, pela conexão direta entre os dois telefones."
+        },
+        "ro": {
+          "name": "X și 0",
+          "summary": "X și 0 cu cealaltă persoană din conversație, prin conexiunea directă dintre telefoanele voastre."
+        },
+        "ru": {
+          "name": "Крестики-нолики",
+          "summary": "Крестики-нолики с другим человеком из чата, через прямое соединение между вашими телефонами."
+        },
+        "th": {
+          "name": "โอเอกซ์",
+          "summary": "โอเอกซ์กับอีกฝ่ายในแชท ผ่านการเชื่อมต่อโดยตรงระหว่างโทรศัพท์ของทั้งสองคน"
+        },
+        "tr": {
+          "name": "XOX",
+          "summary": "XOX: sohbetteki diğer kişiyle, telefonlarınız arasındaki doğrudan bağlantı üzerinden."
+        },
+        "uk": {
+          "name": "Хрестики-нулики",
+          "summary": "Хрестики-нулики з іншою людиною з чату, через пряме з’єднання між вашими телефонами."
+        },
+        "vi": {
+          "name": "Cờ ca-rô 3×3",
+          "summary": "Cờ ca-rô 3×3 với người kia trong cuộc trò chuyện, qua kết nối trực tiếp giữa hai điện thoại."
+        },
+        "zh-CN": {
+          "name": "井字棋",
+          "summary": "通过两部手机之间的直连，与聊天中的对方下井字棋。"
+        },
+        "zh-TW": {
+          "name": "井字遊戲",
+          "summary": "透過兩支手機之間的直接連線，與聊天中的對方玩井字遊戲。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Tic-Tac-Toe",
+      "size": 45819,
+      "summary": "Tic-Tac-Toe with the other person in the chat, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "e7887b5bcc9d324a7f65a1cb62d876a641d46d25edd0f2dba3699e4aaf5306fd",
+      "icon": "text-outline",
+      "id": "com.flickertalk.game.wordduel",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m292.6 407.78-120-320a22 22 0 0 0-41.2 0l-120 320a22 22 0 0 0 41.2 15.44l36.16-96.42a2 2 0 0 1 1.87-1.3h122.74a2 2 0 0 1 1.87 1.3l36.16 96.42a22 22 0 0 0 41.2-15.44m-185.84-129 43.37-115.65a2 2 0 0 1 3.74 0l43.37 115.67a2 2 0 0 1-1.87 2.7h-86.74a2 2 0 0 1-1.87-2.7ZM400.77 169.5c-41.72-.3-79.08 23.87-95 61.4a22 22 0 0 0 40.5 17.2c8.88-20.89 29.77-34.44 53.32-34.6 32.32-.22 58.41 26.5 58.41 58.85a1.5 1.5 0 0 1-1.45 1.5c-21.92.61-47.92 2.07-71.12 4.8-54.75 6.44-87.43 36.29-87.43 79.85 0 23.19 8.76 44 24.67 58.68C337.6 430.93 358 438.5 380 438.5c31 0 57.69-8 77.94-23.22h.06a22 22 0 1 0 44 .19v-143c0-56.18-45-102.56-101.23-102.97M380 394.5c-17.53 0-38-9.43-38-36 0-10.67 3.83-18.14 12.43-24.23 8.37-5.93 21.2-10.16 36.14-11.92 21.12-2.49 44.82-3.86 65.14-4.47a2 2 0 0 1 2 2.1C455 370.1 429.46 394.5 380 394.5\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "مبارزة الكلمات",
+          "summary": "مبارزة الكلمات مع الشخص الآخر في الدردشة: يخفي كل منكما كلمة من خمسة أحرف ويخمّنان بالتناوب، بالإنجليزية أو الإسبانية."
+        },
+        "bn": {
+          "name": "শব্দ দ্বৈরথ",
+          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে শব্দ দ্বৈরথ: প্রত্যেকে পাঁচ অক্ষরের একটি শব্দ লুকায়, দুজনে পালা করে অনুমান করে, ইংরেজি বা স্প্যানিশে।"
+        },
+        "de": {
+          "name": "Wortduell",
+          "summary": "Wortduell mit der anderen Person im Chat: jeder versteckt ein Wort aus fünf Buchstaben, beide raten abwechselnd, auf Englisch oder Spanisch."
+        },
+        "es": {
+          "name": "Palabra oculta",
+          "summary": "Palabra oculta con la otra persona del chat: cada uno esconde una palabra de cinco letras y los dos adivinan por turnos, en español o inglés."
+        },
+        "fr": {
+          "name": "Duel de mots",
+          "summary": "Duel de mots avec l’autre personne de la conversation : chacun cache un mot de cinq lettres et les deux devinent à tour de rôle, en anglais ou en espagnol."
+        },
+        "hi": {
+          "name": "शब्द द्वंद्व",
+          "summary": "चैट के दूसरे व्यक्ति के साथ शब्द द्वंद्व: हर कोई पाँच अक्षरों का शब्द छिपाता है और दोनों बारी-बारी बूझते हैं, अंग्रेज़ी या स्पेनिश में।"
+        },
+        "id": {
+          "name": "Duel Kata",
+          "summary": "Duel Kata dengan orang lain di obrolan: masing-masing menyembunyikan kata lima huruf dan keduanya menebak bergantian, dalam bahasa Inggris atau Spanyol."
+        },
+        "it": {
+          "name": "Duello di parole",
+          "summary": "Duello di parole con l’altra persona della chat: ognuno nasconde una parola di cinque lettere ed entrambi indovinano a turno, in inglese o spagnolo."
+        },
+        "ja": {
+          "name": "ワードデュエル",
+          "summary": "チャットの相手とワードデュエル。互いに5文字の単語を隠し、交互に当てます。英語またはスペイン語。"
+        },
+        "ko": {
+          "name": "단어 대결",
+          "summary": "채팅 상대와 단어 대결: 서로 다섯 글자 단어를 숨기고 번갈아 맞혀요. 영어 또는 스페인어."
+        },
+        "pl": {
+          "name": "Pojedynek na słowa",
+          "summary": "Pojedynek na słowa z drugą osobą z czatu: każdy ukrywa pięcioliterowe słowo, oboje zgadują na zmianę, po angielsku lub hiszpańsku."
+        },
+        "pt": {
+          "name": "Duelo de palavras",
+          "summary": "Duelo de palavras com a outra pessoa da conversa: cada um esconde uma palavra de cinco letras e ambos adivinham à vez, em inglês ou espanhol."
+        },
+        "ro": {
+          "name": "Duel de cuvinte",
+          "summary": "Duel de cuvinte cu cealaltă persoană din conversație: fiecare ascunde un cuvânt de cinci litere și amândoi ghicesc pe rând, în engleză sau spaniolă."
+        },
+        "ru": {
+          "name": "Дуэль слов",
+          "summary": "Дуэль слов с собеседником из чата: каждый прячет слово из пяти букв, и оба угадывают по очереди, по-английски или по-испански."
+        },
+        "th": {
+          "name": "ดวลคำ",
+          "summary": "ดวลคำกับอีกคนในแชท: แต่ละฝ่ายซ่อนคำห้าตัวอักษร แล้วผลัดกันทาย เป็นภาษาอังกฤษหรือสเปน"
+        },
+        "tr": {
+          "name": "Kelime Düellosu",
+          "summary": "Sohbetteki diğer kişiyle Kelime Düellosu: herkes beş harfli bir kelime saklar, ikisi sırayla tahmin eder, İngilizce veya İspanyolca."
+        },
+        "uk": {
+          "name": "Дуель слів",
+          "summary": "Дуель слів зі співрозмовником із чату: кожен ховає слово з п’яти літер, і обидва вгадують по черзі, англійською або іспанською."
+        },
+        "vi": {
+          "name": "Đấu từ",
+          "summary": "Đấu từ với người kia trong cuộc trò chuyện: mỗi bên giấu một từ năm chữ cái, cả hai lần lượt đoán, bằng tiếng Anh hoặc tiếng Tây Ban Nha."
+        },
+        "zh-CN": {
+          "name": "猜词对决",
+          "summary": "与聊天中的对方进行猜词对决：各藏一个五字母单词，轮流猜测，英语或西班牙语。"
+        },
+        "zh-TW": {
+          "name": "猜詞對決",
+          "summary": "與聊天中的對方進行猜詞對決：各藏一個五字母單字，輪流猜測，英語或西班牙語。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Word Duel",
+      "size": 107852,
+      "summary": "Word Duel with the other person in the chat: each hides a five-letter word, both guess in turn, English or Spanish, over the direct connection between your phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "26bd07778662172b8b14d349b821876c96a491e0b5d8bcac4afdad7bae9a0156",
+      "icon": "language-outline",
+      "id": "com.flickertalk.game.wordgrid",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#7C3AED\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m478.33 433.6-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362 368 281.65 401.17 362ZM267.84 342.92a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "شبكة الحروف",
+          "summary": "شبكة الحروف مع الشخص الآخر في الدردشة: ستة عشر حرفًا يسحبها الهاتفان معًا، وكلمات بالتناوب، بالإنجليزية أو الإسبانية."
+        },
+        "bn": {
+          "name": "অক্ষরের গ্রিড",
+          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে অক্ষরের গ্রিড: দুই ফোন মিলে তোলা ষোলোটি অক্ষর, পালা করে শব্দ, ইংরেজি বা স্প্যানিশে।"
+        },
+        "de": {
+          "name": "Buchstabengitter",
+          "summary": "Buchstabengitter mit der anderen Person im Chat: sechzehn von beiden Telefonen gezogene Buchstaben, Wörter abwechselnd, auf Englisch oder Spanisch."
+        },
+        "es": {
+          "name": "Cuadrícula de letras",
+          "summary": "Cuadrícula de letras con la otra persona del chat: dieciséis letras sacadas por los dos teléfonos, palabras por turnos, en español o inglés."
+        },
+        "fr": {
+          "name": "Grille de lettres",
+          "summary": "Grille de lettres avec l’autre personne de la conversation : seize lettres tirées par les deux téléphones, des mots à tour de rôle, en anglais ou en espagnol."
+        },
+        "hi": {
+          "name": "अक्षर ग्रिड",
+          "summary": "चैट के दूसरे व्यक्ति के साथ अक्षर ग्रिड: दोनों फ़ोनों द्वारा निकाले गए सोलह अक्षर, बारी-बारी शब्द, अंग्रेज़ी या स्पेनिश में।"
+        },
+        "id": {
+          "name": "Kisi Huruf",
+          "summary": "Kisi Huruf dengan orang lain di obrolan: enam belas huruf diundi oleh kedua ponsel, kata bergantian, dalam bahasa Inggris atau Spanyol."
+        },
+        "it": {
+          "name": "Griglia di lettere",
+          "summary": "Griglia di lettere con l’altra persona della chat: sedici lettere estratte dai due telefoni, parole a turno, in inglese o spagnolo."
+        },
+        "ja": {
+          "name": "文字グリッド",
+          "summary": "チャットの相手と文字グリッド。16文字は2台の端末が一緒に引き、交互に単語を言います。英語またはスペイン語。"
+        },
+        "ko": {
+          "name": "글자 격자",
+          "summary": "채팅 상대와 글자 격자: 두 휴대폰이 함께 뽑은 열여섯 글자로 번갈아 단어를 말해요. 영어 또는 스페인어."
+        },
+        "pl": {
+          "name": "Siatka liter",
+          "summary": "Siatka liter z drugą osobą z czatu: szesnaście liter losowanych przez oba telefony, słowa na zmianę, po angielsku lub hiszpańsku."
+        },
+        "pt": {
+          "name": "Grelha de letras",
+          "summary": "Grelha de letras com a outra pessoa da conversa: dezasseis letras tiradas pelos dois telefones, palavras à vez, em inglês ou espanhol."
+        },
+        "ro": {
+          "name": "Grilă de litere",
+          "summary": "Grilă de litere cu cealaltă persoană din conversație: șaisprezece litere trase de ambele telefoane, cuvinte pe rând, în engleză sau spaniolă."
+        },
+        "ru": {
+          "name": "Сетка букв",
+          "summary": "Сетка букв с собеседником из чата: шестнадцать букв выбирают оба телефона, слова по очереди, по-английски или по-испански."
+        },
+        "th": {
+          "name": "ตารางตัวอักษร",
+          "summary": "ตารางตัวอักษรกับอีกคนในแชท: สิบหกตัวอักษรที่โทรศัพท์ทั้งสองสุ่มร่วมกัน ผลัดกันบอกคำ เป็นภาษาอังกฤษหรือสเปน"
+        },
+        "tr": {
+          "name": "Harf Izgarası",
+          "summary": "Sohbetteki diğer kişiyle Harf Izgarası: iki telefonun birlikte çektiği on altı harf, sırayla kelimeler, İngilizce veya İspanyolca."
+        },
+        "uk": {
+          "name": "Сітка літер",
+          "summary": "Сітка літер зі співрозмовником із чату: шістнадцять літер вибирають обидва телефони, слова по черзі, англійською або іспанською."
+        },
+        "vi": {
+          "name": "Lưới chữ",
+          "summary": "Lưới chữ với người kia trong cuộc trò chuyện: mười sáu chữ cái do cả hai điện thoại rút, lần lượt nói từ, bằng tiếng Anh hoặc tiếng Tây Ban Nha."
+        },
+        "zh-CN": {
+          "name": "字母格",
+          "summary": "与聊天中的对方玩字母格：十六个字母由两部手机共同抽取，轮流说出单词，英语或西班牙语。"
+        },
+        "zh-TW": {
+          "name": "字母格",
+          "summary": "與聊天中的對方玩字母格：十六個字母由兩支手機共同抽取，輪流說出單字，英語或西班牙語。"
+        }
+      },
+      "minCoreVersion": "1.3.0",
+      "name": "Letter Grid",
+      "size": 117211,
+      "summary": "Letter Grid with the other person in the chat: sixteen letters drawn by both phones, words said in turn, English or Spanish, over the direct connection.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "2b271c03522d4b1bfd8c588afb92ce7220d7dc14023d7392d4e2816a9c2e7ac0",
+      "icon": "image-outline",
       "id": "com.flickertalk.images",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M416 64H96a64.07 64.07 0 0 0-64 64v256a64.07 64.07 0 0 0 64 64h320a64.07 64.07 0 0 0 64-64V128a64.07 64.07 0 0 0-64-64m-80 64a48 48 0 1 1-48 48 48.05 48.05 0 0 1 48-48M96 416a32 32 0 0 1-32-32v-67.63l94.84-84.3a48.06 48.06 0 0 1 65.8 1.9l64.95 64.81L172.37 416Zm352-32a32 32 0 0 1-32 32H217.63l121.42-121.42a47.72 47.72 0 0 1 61.64-.16L448 333.84Z\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -1669,14 +1705,16 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "Image",
-      "size": 6088,
+      "size": 6508,
       "summary": "Make a picture smaller, turn it, cut it, and let it go without what the camera wrote in it.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.1.2.ftplugin",
-      "version": "1.1.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.1.3.ftplugin",
+      "version": "1.1.3"
     },
     {
-      "hash": "7513a820ee932dd125e5ac945c136eae7f88c03d3ec43784b53bb28c3923a9a6",
+      "hash": "2e390553e681431e3f6c42a7ef44666a5f0eb790c1048c9b88d5df30d3aeef53",
+      "icon": "list-outline",
       "id": "com.flickertalk.list",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M160 144h288M160 256h288M160 368h288\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"48\"/><circle cx=\"80\" cy=\"144\" r=\"16\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><circle cx=\"80\" cy=\"256\" r=\"16\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><circle cx=\"80\" cy=\"368\" r=\"16\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -1762,14 +1800,16 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "List",
-      "size": 53799,
+      "size": 54155,
       "summary": "A shopping or to-do list you both edit live from a conversation, kept on each phone.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.list/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.list/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "69550aa359818e720a98b33856c835bacdd566462678fff4dcd2d874940ccd9a",
+      "hash": "7d91b3a745d96462bb122b98a5f4c69af418b857e326f818c314197bec18d7f8",
+      "icon": "logo-markdown",
       "id": "com.flickertalk.markdown",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#475569\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M475 64H37C16.58 64 0 81.38 0 102.77v306.42C0 430.59 16.58 448 37 448h438c20.38 0 37-17.41 37-38.81V102.77C512 81.38 495.42 64 475 64M288 368h-64V256l-48 64-48-64v112H64V144h64l48 80 48-80h64Zm96 0-80-112h48.05L352 144h64v112h48Z\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -1835,14 +1875,16 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "Markdown",
-      "size": 6081,
+      "size": 6471,
       "summary": "Write markdown, look at it, and put it in the chat; open a file or save one.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.1.2.ftplugin",
-      "version": "1.1.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.1.3.ftplugin",
+      "version": "1.1.3"
     },
     {
-      "hash": "45b88b661e4bc15944e65c2de1a4f38af350fdc09301e0e680bb30f8c3035fb0",
+      "hash": "ab9a5558860fd9d6410a667f48403d4e2ab2e997fcae8bead62cd739c8144ef3",
+      "icon": "reader-outline",
       "id": "com.flickertalk.notes",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 32H144a64.07 64.07 0 0 0-64 64v320a64.07 64.07 0 0 0 64 64h224a64.07 64.07 0 0 0 64-64V96a64.07 64.07 0 0 0-64-64M256 304h-80a16 16 0 0 1 0-32h80a16 16 0 0 1 0 32m80-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32m0-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -1928,14 +1970,16 @@
       },
       "minCoreVersion": "1.1.0",
       "name": "Notes",
-      "size": 14886,
+      "size": 15232,
       "summary": "Personal notes with a reminder, kept on this phone only.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.notes/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.notes/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "1d8569b4a70402850f8bf6ed18e18247db190ec2281b02dc988b41f5e765545d",
+      "hash": "6a5774b2e516caf24a03bba6901c0b2927c1d1a63945b700ff76bb82cb4f68ad",
+      "icon": "document-outline",
       "id": "com.flickertalk.pdf",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4\"/><path d=\"M419.22 188.59 275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -2001,14 +2045,16 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "PDF",
-      "size": 5868,
+      "size": 6238,
       "summary": "Put pictures together into a PDF, one page each, with a document mode.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.2.ftplugin",
-      "version": "1.1.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.3.ftplugin",
+      "version": "1.1.3"
     },
     {
-      "hash": "d1111c0e9fbaf56348cf8e02fa91b556ed7270c3415e5c10388d3c6acc253c41",
+      "hash": "a9986c4669d6cba2c7d5a697e4d74bd1e1cf2ea823a285c8ceba9c3ff208018e",
+      "icon": "stats-chart-outline",
       "id": "com.flickertalk.poll",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M104 496H72a24 24 0 0 1-24-24V328a24 24 0 0 1 24-24h32a24 24 0 0 1 24 24v144a24 24 0 0 1-24 24M328 496h-32a24 24 0 0 1-24-24V232a24 24 0 0 1 24-24h32a24 24 0 0 1 24 24v240a24 24 0 0 1-24 24M440 496h-32a24 24 0 0 1-24-24V120a24 24 0 0 1 24-24h32a24 24 0 0 1 24 24v352a24 24 0 0 1-24 24M216 496h-32a24 24 0 0 1-24-24V40a24 24 0 0 1 24-24h32a24 24 0 0 1 24 24v432a24 24 0 0 1-24 24\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -2094,14 +2140,16 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Poll",
-      "size": 52645,
+      "size": 52996,
       "summary": "Propose options or dates, vote between the two of you, and send the chosen date to the calendar.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.poll/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.poll/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "872eff8747832a4703c4ed2d44a45e30e1a45a07ada94ba75d1a8e94349d5310",
+      "hash": "eeade4bcef1cf6131036b6b9f1aad6dd9fa34be3eeb950cf4fd5e0911f9c74d5",
+      "icon": "eye-off-outline",
       "id": "com.flickertalk.redact",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M432 448a15.92 15.92 0 0 1-11.31-4.69l-352-352a16 16 0 0 1 22.62-22.62l352 352A16 16 0 0 1 432 448M248 315.85l-51.79-51.79a2 2 0 0 0-3.39 1.69 64.11 64.11 0 0 0 53.49 53.49 2 2 0 0 0 1.69-3.39M264 196.15 315.87 248a2 2 0 0 0 3.4-1.69 64.13 64.13 0 0 0-53.55-53.55 2 2 0 0 0-1.72 3.39\"/><path d=\"M491 273.36a32.2 32.2 0 0 0-.1-34.76c-26.46-40.92-60.79-75.68-99.27-100.53C349 110.55 302 96 255.68 96a226.5 226.5 0 0 0-71.82 11.79 4 4 0 0 0-1.56 6.63l47.24 47.24a4 4 0 0 0 3.82 1.05 96 96 0 0 1 116 116 4 4 0 0 0 1.05 3.81l67.95 68a4 4 0 0 0 5.4.24 343.8 343.8 0 0 0 67.24-77.4M256 352a96 96 0 0 1-93.3-118.63 4 4 0 0 0-1.05-3.81l-66.84-66.87a4 4 0 0 0-5.41-.23c-24.39 20.81-47 46.13-67.67 75.72a31.92 31.92 0 0 0-.64 35.54c26.41 41.33 60.39 76.14 98.28 100.65C162.06 402 207.92 416 255.68 416a238.2 238.2 0 0 0 72.64-11.55 4 4 0 0 0 1.61-6.64l-47.47-47.46a4 4 0 0 0-3.81-1.05A96 96 0 0 1 256 352\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -2187,14 +2235,16 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "Cover",
-      "size": 5679,
+      "size": 6350,
       "summary": "Cover a face, a name or a number in a picture: black or mosaic, in the pixels.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.1.2.ftplugin",
-      "version": "1.1.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.1.3.ftplugin",
+      "version": "1.1.3"
     },
     {
-      "hash": "b3fec74a2fb9d9ca49d062a93936d30a62fb0afc0f508e1270da99509bd11a75",
+      "hash": "de9a0fd041532c162ce937a814b26678cdfe5369f3d3551f574bcbef570c31ac",
+      "icon": "scan-outline",
       "id": "com.flickertalk.scanner",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M342 444h46a56 56 0 0 0 56-56v-46M444 170v-46a56 56 0 0 0-56-56h-46M170 444h-46a56 56 0 0 1-56-56v-46M68 170v-46a56 56 0 0 1 56-56h46\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"44\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -2280,14 +2330,16 @@
       },
       "minCoreVersion": "1.1.0",
       "name": "Scanner",
-      "size": 14339,
+      "size": 14690,
       "summary": "Turn a photo of a paper into a straight, clean document and send it as a PDF or a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "e195e2965e1160f0a25504aca2136446b5980deb77f64aa37aacf0252b9b0726",
+      "hash": "79d9cdf8b780d4e3065fa2cfc2ab34a2cdb4135b8780532ac1f527ebf48b9dfd",
+      "icon": "pencil-outline",
       "id": "com.flickertalk.sign",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M358.62 129.28 86.49 402.08 70 442l39.92-16.49 272.8-272.13zM413.07 74.84l-11.79 11.78 24.1 24.1 11.79-11.79a16.51 16.51 0 0 0 0-23.34l-.75-.75a16.51 16.51 0 0 0-23.35 0\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"44\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -2373,14 +2425,16 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Sign",
-      "size": 953906,
+      "size": 954298,
       "summary": "Both of you sign the same PDF with a finger, in turns, through the chat: a drawn signature with the phone's date and time.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.sign/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sign/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "5a99382aefbfa060e30bc6ee7387bab1857175a6cfe54a2e65a456aa2e55ca62",
+      "hash": "d30ccd7b677c5777e45ab741839854c09cc2aedc146bbdcc26c6eca6c2bd9a1f",
+      "icon": "brush-outline",
       "id": "com.flickertalk.sketch",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M233.15 360.11a15.7 15.7 0 0 1-4.92-.77 16 16 0 0 1-10.92-13c-2.15-15-19.95-32.46-36.62-35.85a16 16 0 0 1-8.69-26.33l211.09-235.1c.19-.22.39-.43.59-.63a56.57 56.57 0 0 1 79.89 0 56.51 56.51 0 0 1 .11 79.78l-219 227a16 16 0 0 1-11.53 4.9M119.89 480.11c-32.14 0-65.45-16.89-84.85-43a16 16 0 0 1 12.85-25.54c5.34 0 20-4.87 20-20.57 0-39.07 31.4-70.86 70-70.86s70 31.79 70 70.86c0 49.12-39.48 89.11-88 89.11\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -2466,14 +2520,16 @@
       },
       "minCoreVersion": "0.1.0",
       "name": "Sketch",
-      "size": 4343,
+      "size": 4811,
       "summary": "Draw with a finger and send the drawing as a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.2.ftplugin",
-      "version": "1.1.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.3.ftplugin",
+      "version": "1.1.3"
     },
     {
-      "hash": "5f7e21cf743be2329d1c21c6dc3837c7fd4b179aef917edc6c3095a9a9e23283",
+      "hash": "0e96a33faf9bc3efaf6dd3cd87fe2f4d90cb7eb71d6d017cf471a17e1e552379",
+      "icon": "cut-outline",
       "id": "com.flickertalk.split",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#7C3AED\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M103.48 224a71.64 71.64 0 0 0 44.76-15.66l41.5 16.89 6.82-12.63a39 39 0 0 1 4.32-6.37l14.22-14.42-41.17-24.94A72 72 0 1 0 103.48 224m0-112a40 40 0 1 1-40 40 40 40 0 0 1 40-40\"/><path d=\"m480 169-5.52-12.58c-4.48-10.42-14.74-16-32.78-17.85-10.12-1-26.95-1.24-49.69 3.81-20 4.45-122.14 28.2-164.95 58.62-20.25 14.39-24.06 33.67-27.06 49.16-2.78 14.14-5 25.31-18 35-15 11.14-27.27 16.38-33.58 18.6a71.74 71.74 0 1 0 24.79 38Zm-224.52 87a16 16 0 1 1 16-16 16 16 0 0 1-16 16m-152 144a40 40 0 1 1 40-40 40 40 0 0 1-40 40\"/><path d=\"m343.79 259.87-83.74 48.18 27.63 13.08 3.62 1.74C310 331.92 359.74 356 410.53 359c3.89.23 7.47.34 10.78.34C442 359.31 453 354 459.75 350L480 336Z\"/></g></svg>\n",
       "kind": "tool",
       "locales": {
         "ar": {
@@ -2559,10 +2615,10 @@
       },
       "minCoreVersion": "1.3.0",
       "name": "Split",
-      "size": 67037,
+      "size": 67639,
       "summary": "Shared expenses between two people: who paid what and who owes whom, kept on each phone and joined live from a conversation.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.split/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.split/1.0.2.ftplugin",
+      "version": "1.0.2"
     }
   ]
 }
