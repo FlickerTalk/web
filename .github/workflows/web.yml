@@ -29,8 +29,19 @@ jobs:
           node-version: 22
       - run: npm test
       - name: The image serves the site
+        env:
+          # A made-up team: pull requests, forks too, build without the real secret.
+          APPLE_TEAM_ID: ABCDE12345
         run: |
-          docker build -q --build-arg VERSION="$GITHUB_SHA" -t web:test .
+          # Without a team ID, or with a malformed one, the image does not build. (`if`, not `!`:
+          # bash -e ignores a negated command that fails.)
+          if docker build -q -t web:no-team .; then
+            echo "::error::the image built without APPLE_TEAM_ID"; exit 1
+          fi
+          if APPLE_TEAM_ID=abc docker build -q --secret id=apple_team_id,env=APPLE_TEAM_ID -t web:bad-team .; then
+            echo "::error::the image built with a malformed APPLE_TEAM_ID"; exit 1
+          fi
+          docker build -q --build-arg VERSION="$GITHUB_SHA" --secret id=apple_team_id,env=APPLE_TEAM_ID -t web:test .
           docker run -d --name web -p 8080:8080 web:test
           sleep 1
           test "$(curl -fsS http://localhost:8080/version.txt)" = "$GITHUB_SHA"
@@ -43,6 +54,17 @@ jobs:
           curl -fsS -H 'Accept-Language: es-ES,es;q=0.9' http://localhost:8080/add | grep -q '<html lang="es">'
           curl -fsS http://localhost:8080/add | grep -q '<html lang="en">'
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/nope)" = 404
+          # App Links and Universal Links: 200, JSON, no redirect, the security headers.
+          for path in /.well-known/assetlinks.json /.well-known/apple-app-site-association; do
+            curl -sS -D headers -o body "http://localhost:8080$path"
+            head -n1 headers | grep -q ' 200'
+            grep -qi '^content-type: application/json' headers
+            if grep -qi '^location:' headers; then echo "::error::$path redirects"; exit 1; fi
+            grep -qi '^x-content-type-options: nosniff' headers
+            node -e 'JSON.parse(require("fs").readFileSync("body", "utf8"))'
+          done
+          # The last body is apple-app-site-association, with the team filled in.
+          grep -q "\"$APPLE_TEAM_ID\.com\.flickertalk\.app\"" body
 
   image:
     needs: test
@@ -64,6 +86,9 @@ jobs:
           context: .
           push: true
           build-args: VERSION=${{ github.sha }}
+          # The Apple team for apple-app-site-association; without it the image does not build.
+          secrets: |
+            apple_team_id=${{ secrets.APPLE_TEAM_ID }}
           tags: |
             ${{ env.IMAGE }}:latest
             ${{ env.IMAGE }}:sha-${{ github.sha }}
