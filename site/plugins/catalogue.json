@@ -1,7 +1,7 @@
 {
   "plugins": [
     {
-      "hash": "e45af5282db26c0a9ff716c0b07d54316ec643e792528de93b69d093f09afaae",
+      "hash": "f19c24b2fa749ecb4bc581e67f4ddac5fda407c5296acc009b662410832db400",
       "icon": "easel-outline",
       "id": "com.flickertalk.board",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><rect width=\"352\" height=\"208\" x=\"80\" y=\"112\" rx=\"12\" ry=\"12\"/><path d=\"M432 64H272V48a16 16 0 0 0-32 0v16H80a48.05 48.05 0 0 0-48 48v208a48.05 48.05 0 0 0 48 48h42.79l-26.17 91.6a16 16 0 1 0 30.76 8.8L156.07 368H240v48a16 16 0 0 0 32 0v-48h83.93l28.69 100.4a16 16 0 1 0 30.76-8.8L389.21 368H432a48.05 48.05 0 0 0 48-48V112a48.05 48.05 0 0 0-48-48m16 256a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V112a16 16 0 0 1 16-16h352a16 16 0 0 1 16 16Z\"/></g></svg>\n",
@@ -88,15 +88,15 @@
           "summary": "支援手寫、文字和公式的白板：畫一堂課，傳送出去，或即時講授。"
         }
       },
-      "minCoreVersion": "1.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "Board",
-      "size": 403510,
+      "size": 404081,
       "summary": "A whiteboard with ink, text and formulas: draw a class, send it, or give it live.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.1.0.ftplugin",
+      "version": "1.1.0"
     },
     {
-      "hash": "90dcb88d2cbfc68245d9966d1ff861d1b07812ea30a2d038337d16b79bc21b12",
+      "hash": "9f56ab009b35a7a5e02693251660015d15d8d5b2f00a8c047222c3d055052e11",
       "icon": "sparkles-outline",
       "id": "com.flickertalk.clean",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#C026D3\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M208 512a24.84 24.84 0 0 1-23.34-16l-39.84-103.6a16.06 16.06 0 0 0-9.19-9.19L32 343.34a25 25 0 0 1 0-46.68l103.6-39.84a16.06 16.06 0 0 0 9.19-9.19L184.66 144a25 25 0 0 1 46.68 0l39.84 103.6a16.06 16.06 0 0 0 9.19 9.19l103 39.63a25.49 25.49 0 0 1 16.63 24.1 24.82 24.82 0 0 1-16 22.82l-103.6 39.84a16.06 16.06 0 0 0-9.19 9.19L231.34 496A24.84 24.84 0 0 1 208 512M88 176a14.67 14.67 0 0 1-13.69-9.4l-16.86-43.84a7.28 7.28 0 0 0-4.21-4.21L9.4 101.69a14.67 14.67 0 0 1 0-27.38l43.84-16.86a7.3 7.3 0 0 0 4.21-4.21L74.16 9.79A15 15 0 0 1 86.23.11a14.67 14.67 0 0 1 15.46 9.29l16.86 43.84a7.3 7.3 0 0 0 4.21 4.21l43.84 16.86a14.67 14.67 0 0 1 0 27.38l-43.84 16.86a7.28 7.28 0 0 0-4.21 4.21l-16.86 43.84A14.67 14.67 0 0 1 88 176M400 256a16 16 0 0 1-14.93-10.26l-22.84-59.37a8 8 0 0 0-4.6-4.6l-59.37-22.84a16 16 0 0 1 0-29.86l59.37-22.84a8 8 0 0 0 4.6-4.6l22.67-58.95a16.45 16.45 0 0 1 13.17-10.57 16 16 0 0 1 16.86 10.15l22.84 59.37a8 8 0 0 0 4.6 4.6l59.37 22.84a16 16 0 0 1 0 29.86l-59.37 22.84a8 8 0 0 0-4.6 4.6l-22.84 59.37A16 16 0 0 1 400 256\"/></g></svg>\n",
@@ -183,15 +183,15 @@
           "summary": "在傳送前，於你的手機上查看並移除相片或 PDF 中的位置、手機型號、作者等隱藏資料。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Clean",
-      "size": 247624,
+      "size": 247397,
       "summary": "See and remove the location, phone model, author and other hidden data of a photo or PDF, on your phone, before sending it.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.clean/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.clean/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "2e705e771f5ddaf31139e13c6f9e453998b6ef6d7f80fb81707b0b1e33b605cf",
+      "hash": "f789e4d78101792aa1a210818d577ceed10795d11b34c30175b40f658086f002",
       "icon": "timer-outline",
       "id": "com.flickertalk.countdown",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#EA580C\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 48C141.12 48 48 141.12 48 256s93.12 208 208 208 208-93.12 208-208S370.88 48 256 48m-82.33 114.34 105 71a32.5 32.5 0 0 1-37.25 53.26 33.2 33.2 0 0 1-8-8l-71-105a8.13 8.13 0 0 1 11.32-11.32ZM256 432c-97 0-176-78.95-176-176a174.55 174.55 0 0 1 53.87-126.72 14.15 14.15 0 1 1 19.64 20.37A146.53 146.53 0 0 0 108.3 256c0 81.44 66.26 147.7 147.7 147.7S403.7 337.44 403.7 256c0-76.67-58.72-139.88-133.55-147v55a14.15 14.15 0 1 1-28.3 0V94.15A14.15 14.15 0 0 1 256 80c97.05 0 176 79 176 176s-78.95 176-176 176\"/></g></svg>\n",
@@ -278,15 +278,15 @@
           "summary": "重要的日子還有幾天：生日、旅行、紀念日，附帶只屬於你的提醒。"
         }
       },
-      "minCoreVersion": "1.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "Countdown",
-      "size": 20209,
+      "size": 21139,
       "summary": "The days that matter and how many are left: birthdays, trips, anniversaries, with a reminder for you alone.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.countdown/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.countdown/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "9124398d5ada6affd37a5ad778423aa6c20f3bd713cffe85eb4c4a0fd8f4d34c",
+      "hash": "d0ff0908101879745d4cd4dfcd7a5ea9432934f7a1c751d39245e4c4ea1829d0",
       "icon": "cloud-outline",
       "id": "com.flickertalk.drive",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0284C7\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M396 432H136c-36.44 0-70.36-12.57-95.51-35.41C14.38 372.88 0 340 0 304c0-36.58 13.39-68.12 38.72-91.22 18.11-16.53 42.22-28.25 69.18-33.87a16 16 0 0 0 11.37-9.15 156.24 156.24 0 0 1 42.05-56C187.76 91.69 220.5 80 256 80a153.57 153.57 0 0 1 107.14 42.9c24.73 23.81 41.5 55.28 49.18 92a16 16 0 0 0 12.12 12.39C470 237.42 512 270.43 512 328c0 33.39-12.24 60.78-35.41 79.23C456.23 423.43 428.37 432 396 432\"/></g></svg>\n",
@@ -373,15 +373,15 @@
           "summary": "你的檔案在手機上密封，存放在你自己的 Google 雲端硬碟中。"
         }
       },
-      "minCoreVersion": "1.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "My drive",
-      "size": 20332,
+      "size": 21131,
       "summary": "Your files, sealed on the phone, in your own Google Drive.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.drive/1.1.2.ftplugin",
-      "version": "1.1.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.drive/1.1.3.ftplugin",
+      "version": "1.1.3"
     },
     {
-      "hash": "30351fcc3e3fc44adbdccbd2d6e3bc2ce0318c989da27818a71dbea5bf57e29c",
+      "hash": "ec5396a9b0da55ea184e6411a87d2232f916bdf20d561fa08eea4f84d569eeb9",
       "icon": "dice-outline",
       "id": "com.flickertalk.game.backgammon",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M440.88 129.37 288.16 40.62a64.14 64.14 0 0 0-64.33 0L71.12 129.37a4 4 0 0 0 0 6.9L254 243.85a4 4 0 0 0 4.06 0L440.9 136.27a4 4 0 0 0-.02-6.9M256 152c-13.25 0-24-7.16-24-16s10.75-16 24-16 24 7.16 24 16-10.75 16-24 16M238 270.81 54 163.48a4 4 0 0 0-6 3.46v173.92a48 48 0 0 0 23.84 41.39L234 479.48a4 4 0 0 0 6-3.46V274.27a4 4 0 0 0-2-3.46M96 368c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96-32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24M458 163.51 274 271.56a4 4 0 0 0-2 3.45V476a4 4 0 0 0 6 3.46l162.15-97.23A48 48 0 0 0 464 340.86V167a4 4 0 0 0-6-3.49M320 424c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96 32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24\"/></g></svg>\n",
@@ -468,15 +468,15 @@
           "summary": "與聊天中的對方下雙陸棋：骰子由兩支手機共同投擲，透過它們之間的直接連線。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Backgammon",
-      "size": 57616,
+      "size": 58357,
       "summary": "Backgammon with the other person in the chat: dice rolled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "531c74bf9a318124565f5b9edb1b5e89e4b3348cf4d530416e1a484b7d36e7f3",
+      "hash": "0e12b214a29d45d53c5139bfabe6faaf8434eecd141078527b8bc07568a875c5",
       "icon": "radio-button-on-outline",
       "id": "com.flickertalk.game.checkers",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><circle cx=\"256\" cy=\"256\" r=\"144\"/></g></svg>\n",
@@ -563,15 +563,15 @@
           "summary": "與聊天對象下西洋跳棋，透過兩支手機之間的直接連線進行。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Checkers",
-      "size": 49546,
+      "size": 50263,
       "summary": "Checkers with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "c5546aa6cb1878212fc7a459680d92980b6817e2dc3a259cf2e2d46db9b0eff8",
+      "hash": "d5c551615e66c1fdb50fa6e9abae17b3aa7c746964c2de1081e555b4f0aeebe1",
       "icon": "shield-outline",
       "id": "com.flickertalk.game.chess",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#475569\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M479.07 111.35a16 16 0 0 0-13.15-14.75C379.89 81.18 343.69 69.12 266 34.16c-7.76-2.89-12.57-2.84-20 0-77.69 35-113.89 47-199.92 62.44a16 16 0 0 0-13.15 14.75c-3.85 61.1 4.34 118 24.36 169.15a348.9 348.9 0 0 0 71.43 112.41c44.67 47.43 94.2 75.12 119.74 85.6a20 20 0 0 0 15.11 0c27-10.92 74.69-37.82 119.71-85.62a348.9 348.9 0 0 0 71.43-112.39c20.02-51.14 28.21-108.05 24.36-169.15\"/></g></svg>\n",
@@ -658,15 +658,15 @@
           "summary": "透過兩支手機之間的直接連線，與聊天中的對方下西洋棋。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Chess",
-      "size": 90496,
+      "size": 91210,
       "summary": "Chess with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.4.ftplugin",
+      "version": "1.0.4"
     },
     {
-      "hash": "ecf9f49b5c04dcc5a4d3bb5bc8d24ae414ae47e19f116877c0908a9bfe56bf5c",
+      "hash": "f691a0b5bd9d3de55e59b8f5b7cbdab10189ca993d2f8dacfbe3ed61669d5f1c",
       "icon": "square-outline",
       "id": "com.flickertalk.game.dotsandboxes",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64m-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58\"/></g></svg>\n",
@@ -753,15 +753,15 @@
           "summary": "與聊天對象玩點格棋，透過兩支手機之間的直接連線進行。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Dots and Boxes",
-      "size": 47449,
+      "size": 48201,
       "summary": "Dots and boxes with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "16dce90f69f001002a3b9c84cb330a7dcc073eb9709d828c455f5d660f07114e",
+      "hash": "37412093d880352bac412be420bcc86e766005bdd8a7b9391dfd8062a5bb714b",
       "icon": "albums-outline",
       "id": "com.flickertalk.game.eights",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 96H144a16 16 0 0 1 0-32h224a16 16 0 0 1 0 32M400 144H112a16 16 0 0 1 0-32h288a16 16 0 0 1 0 32M419.13 448H92.87A44.92 44.92 0 0 1 48 403.13V204.87A44.92 44.92 0 0 1 92.87 160h326.26A44.92 44.92 0 0 1 464 204.87v198.26A44.92 44.92 0 0 1 419.13 448\"/></g></svg>\n",
@@ -848,15 +848,15 @@
           "summary": "與聊天中的對方玩瘋狂八：牌由兩支手機共同洗過，透過它們之間的直接連線。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Crazy Eights",
-      "size": 56861,
+      "size": 57606,
       "summary": "Crazy Eights with the other person in the chat: a deck shuffled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "d7129c983410ee6c0587426751ef2ca1426760f1cdeae72cdfc63ed0486946fd",
+      "hash": "b53d6794effb6d481c61a37c10fc5d098cc37b39cd6b2bb7f26bb1ff818b52a3",
       "icon": "ellipse-outline",
       "id": "com.flickertalk.game.fourinarow",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 464c-114.69 0-208-93.31-208-208S141.31 48 256 48s208 93.31 208 208-93.31 208-208 208\"/></g></svg>\n",
@@ -943,15 +943,15 @@
           "summary": "透過兩支手機之間的直接連線，與聊天中的對方下四子棋。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Four in a Row",
-      "size": 46260,
+      "size": 46978,
       "summary": "Four in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.4.ftplugin",
+      "version": "1.0.4"
     },
     {
-      "hash": "45c3bc8bde6e02a80c7847befb5f3852bb434326e969f16b23a8f8a45550d14a",
+      "hash": "03a5aac84ef0ea1cf0aab6baf09bfb405c478f2e301f62ebc5cc454a25ab1029",
       "icon": "apps-outline",
       "id": "com.flickertalk.game.gomoku",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M104 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56\"/></g></svg>\n",
@@ -1038,15 +1038,15 @@
           "summary": "與聊天中的對方下五子棋，透過兩支手機之間的直接連線。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Five in a Row",
-      "size": 46873,
+      "size": 47616,
       "summary": "Five in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "5cc6fdc07f928316db46a45d55fad1ab64a541848a4a9c50589ede087fe95ea2",
+      "hash": "aec5db3a8109aabec8de4aa3963398f4c27e3dabb8aa2f00a7c4a24ccb9ddf37",
       "icon": "basket-outline",
       "id": "com.flickertalk.game.mancala",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M424.11 192H360L268.8 70.4a16 16 0 0 0-25.6 0L152 192H87.89a32.57 32.57 0 0 0-32.62 32.44 30.3 30.3 0 0 0 1.31 9l46.27 163.14a50.72 50.72 0 0 0 48.84 36.91h208.62a51.21 51.21 0 0 0 49-36.86l46.33-163.36a15.6 15.6 0 0 0 .46-2.36l.53-4.93a13 13 0 0 0 .09-1.55A32.57 32.57 0 0 0 424.11 192M256 106.67 320 192H192Zm0 245a37.7 37.7 0 1 1 37.88-37.7A37.87 37.87 0 0 1 256 351.63Z\"/></g></svg>\n",
@@ -1133,15 +1133,15 @@
           "summary": "與聊天對象玩播棋，透過兩支手機之間的直接連線進行。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Mancala",
-      "size": 46340,
+      "size": 47089,
       "summary": "Mancala with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "329087c5e65ed2a6a6ceb25a980a8a38330f700fad8d6186417f9f89631673e3",
+      "hash": "2d244659831c763a7c5cc050c8f5cf323b1d6476dc8a43802dda0ca507f49d5d",
       "icon": "contrast-outline",
       "id": "com.flickertalk.game.reversi",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 32A224 224 0 0 0 97.61 414.39 224 224 0 1 0 414.39 97.61 222.53 222.53 0 0 0 256 32M64 256c0-105.87 86.13-192 192-192v384c-105.87 0-192-86.13-192-192\"/></g></svg>\n",
@@ -1228,15 +1228,15 @@
           "summary": "與聊天對象下黑白棋，透過兩支手機之間的直接連線進行。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Reversi",
-      "size": 45870,
+      "size": 46619,
       "summary": "Reversi with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "e7da169af4d5faef6521a883786bc71db0c43c8befe4c572d2f911d9b85cc091",
+      "hash": "02875d4be899211b0cb9ee857b14f1de93ac925aa0f9cc759e5fd53b26986bc0",
       "icon": "boat-outline",
       "id": "com.flickertalk.game.seabattle",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M416 473.14a6.83 6.83 0 0 0-3.57-6c-27.07-14.55-51.76-36.82-62.62-48a10.05 10.05 0 0 0-12.72-1.51c-50.33 32.42-111.61 32.44-161.95.05a10.09 10.09 0 0 0-12.82 1.56c-10.77 11.28-35.19 33.3-62.43 47.75a7.11 7.11 0 0 0-3.89 5.73 6.73 6.73 0 0 0 7.92 7.15c20.85-4.18 41-13.68 60.2-23.83a8.71 8.71 0 0 1 8-.06 185.14 185.14 0 0 0 167.81 0 8.82 8.82 0 0 1 8.09.06c19.1 10 39.22 19.59 60 23.8a6.73 6.73 0 0 0 8-6.71ZM476.71 246.91c-3.49-8.39-10.9-14.89-20.9-18.35L432 219.08V136a64 64 0 0 0-64-64h-32v-8a40 40 0 0 0-40-40h-80a40 40 0 0 0-40 40v8h-32a64 64 0 0 0-64 64v83.15l-23.58 9.39c-9.94 3.3-17.63 10-21.15 18.44-2.45 5.89-5.25 15-1.3 26.46l.1.3 46.66 119.44A23.33 23.33 0 0 0 102.58 408c.5 0 1 0 1.53-.05 31.32-2 56-17.27 72.6-31.61C200.42 396.81 228.31 408 256 408s55.43-11.2 79.14-31.7c16.59 14.36 41.3 29.67 72.61 31.65a23.36 23.36 0 0 0 23.37-14.74l46.65-119c3.28-8.09 2.9-17.76-1.06-27.3M269 154.21l-1.14-.4a39.53 39.53 0 0 0-23.73 0l-.58.18-126.07 50.23a4 4 0 0 1-5.48-3.72V136a32 32 0 0 1 32-32h224a32 32 0 0 1 32 32v64.44a4 4 0 0 1-5.48 3.72Z\"/></g></svg>\n",
@@ -1323,15 +1323,15 @@
           "summary": "與聊天中的對方玩海戰棋：隱藏的艦隊在最後核對，透過兩支手機之間的直接連線。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Sea Battle",
-      "size": 57295,
+      "size": 58043,
       "summary": "Sea Battle with the other person in the chat: hidden fleets, checked at the end, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "24083f0727a52b4c54b0325612356db6b4454958cfc3d7f685300a5723010ae7",
+      "hash": "7a6e26762d5f598574a9f39218369c1832f8a013c716856669a0d03212687049",
       "icon": "grid-outline",
       "id": "com.flickertalk.game.tictactoe",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M204 240H68a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 240H308a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M204 480H68a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 480H308a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36\"/></g></svg>\n",
@@ -1418,15 +1418,15 @@
           "summary": "透過兩支手機之間的直接連線，與聊天中的對方玩井字遊戲。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Tic-Tac-Toe",
-      "size": 45819,
+      "size": 46573,
       "summary": "Tic-Tac-Toe with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.4.ftplugin",
+      "version": "1.0.4"
     },
     {
-      "hash": "e7887b5bcc9d324a7f65a1cb62d876a641d46d25edd0f2dba3699e4aaf5306fd",
+      "hash": "d46d05961633c43feef6507a4a1d2cb401143fbaefeaf782732133313f348214",
       "icon": "text-outline",
       "id": "com.flickertalk.game.wordduel",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m292.6 407.78-120-320a22 22 0 0 0-41.2 0l-120 320a22 22 0 0 0 41.2 15.44l36.16-96.42a2 2 0 0 1 1.87-1.3h122.74a2 2 0 0 1 1.87 1.3l36.16 96.42a22 22 0 0 0 41.2-15.44m-185.84-129 43.37-115.65a2 2 0 0 1 3.74 0l43.37 115.67a2 2 0 0 1-1.87 2.7h-86.74a2 2 0 0 1-1.87-2.7ZM400.77 169.5c-41.72-.3-79.08 23.87-95 61.4a22 22 0 0 0 40.5 17.2c8.88-20.89 29.77-34.44 53.32-34.6 32.32-.22 58.41 26.5 58.41 58.85a1.5 1.5 0 0 1-1.45 1.5c-21.92.61-47.92 2.07-71.12 4.8-54.75 6.44-87.43 36.29-87.43 79.85 0 23.19 8.76 44 24.67 58.68C337.6 430.93 358 438.5 380 438.5c31 0 57.69-8 77.94-23.22h.06a22 22 0 1 0 44 .19v-143c0-56.18-45-102.56-101.23-102.97M380 394.5c-17.53 0-38-9.43-38-36 0-10.67 3.83-18.14 12.43-24.23 8.37-5.93 21.2-10.16 36.14-11.92 21.12-2.49 44.82-3.86 65.14-4.47a2 2 0 0 1 2 2.1C455 370.1 429.46 394.5 380 394.5\"/></g></svg>\n",
@@ -1513,15 +1513,15 @@
           "summary": "與聊天中的對方進行猜詞對決：各藏一個五字母單字，輪流猜測，英語或西班牙語。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Word Duel",
-      "size": 107852,
+      "size": 108573,
       "summary": "Word Duel with the other person in the chat: each hides a five-letter word, both guess in turn, English or Spanish, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "26bd07778662172b8b14d349b821876c96a491e0b5d8bcac4afdad7bae9a0156",
+      "hash": "89898930ab1058f0d31fe40aba876c21cc66b317b2e172be9c77f52eac46f098",
       "icon": "language-outline",
       "id": "com.flickertalk.game.wordgrid",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#7C3AED\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m478.33 433.6-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362 368 281.65 401.17 362ZM267.84 342.92a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z\"/></g></svg>\n",
@@ -1608,15 +1608,15 @@
           "summary": "與聊天中的對方玩字母格：十六個字母由兩支手機共同抽取，輪流說出單字，英語或西班牙語。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Letter Grid",
-      "size": 117211,
+      "size": 117938,
       "summary": "Letter Grid with the other person in the chat: sixteen letters drawn by both phones, words said in turn, English or Spanish, over the direct connection.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "2b271c03522d4b1bfd8c588afb92ce7220d7dc14023d7392d4e2816a9c2e7ac0",
+      "hash": "c6a6538e4e22edd114695592e8232be769c000fce622b5fb293cf0393e7b4b49",
       "icon": "image-outline",
       "id": "com.flickertalk.images",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M416 64H96a64.07 64.07 0 0 0-64 64v256a64.07 64.07 0 0 0 64 64h320a64.07 64.07 0 0 0 64-64V128a64.07 64.07 0 0 0-64-64m-80 64a48 48 0 1 1-48 48 48.05 48.05 0 0 1 48-48M96 416a32 32 0 0 1-32-32v-67.63l94.84-84.3a48.06 48.06 0 0 1 65.8 1.9l64.95 64.81L172.37 416Zm352-32a32 32 0 0 1-32 32H217.63l121.42-121.42a47.72 47.72 0 0 1 61.64-.16L448 333.84Z\"/></g></svg>\n",
@@ -1703,15 +1703,15 @@
           "summary": "縮小圖片、旋轉、裁切，並去掉相機寫入的資訊後送出。"
         }
       },
-      "minCoreVersion": "0.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "Image",
-      "size": 6508,
+      "size": 6617,
       "summary": "Make a picture smaller, turn it, cut it, and let it go without what the camera wrote in it.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.1.3.ftplugin",
-      "version": "1.1.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.1.4.ftplugin",
+      "version": "1.1.4"
     },
     {
-      "hash": "2e390553e681431e3f6c42a7ef44666a5f0eb790c1048c9b88d5df30d3aeef53",
+      "hash": "b7cd83f219c22e9a726a46caa2cb4c7ac4a1ee943f872b84a57c1a862e7ac31b",
       "icon": "list-outline",
       "id": "com.flickertalk.list",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M160 144h288M160 256h288M160 368h288\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"48\"/><circle cx=\"80\" cy=\"144\" r=\"16\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><circle cx=\"80\" cy=\"256\" r=\"16\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><circle cx=\"80\" cy=\"368\" r=\"16\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
@@ -1798,15 +1798,15 @@
           "summary": "購物清單或待辦清單，你們兩人可以在對話中即時編輯，保存在各自的手機上。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "List",
-      "size": 54155,
+      "size": 54270,
       "summary": "A shopping or to-do list you both edit live from a conversation, kept on each phone.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.list/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.list/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "1e5c2251c5ab4b2dded1d5b00df08794ff21dd197a018e11701dc65548c27cf6",
+      "hash": "eca0ffee5ff3d9d596f8cfbd40f4cb2f215041d10ba827076c1d2aaefdf7df0a",
       "icon": "location-outline",
       "id": "com.flickertalk.location",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><circle cx=\"256\" cy=\"192\" r=\"32\"/><path d=\"M256 32c-88.22 0-160 68.65-160 153 0 40.17 18.31 93.59 54.42 158.78 29 52.34 62.55 99.67 80 123.22a31.75 31.75 0 0 0 51.22 0c17.42-23.55 51-70.88 80-123.22C397.69 278.61 416 225.19 416 185c0-84.35-71.78-153-160-153m0 224a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64\"/></g></svg>\n",
@@ -1893,15 +1893,15 @@
           "summary": "以訊息形式傳送你所在的位置，僅一次；不使用地圖伺服器，不保存任何內容。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Location",
-      "size": 10720,
+      "size": 10866,
       "summary": "Send where you are, once, as a message; no map servers, nothing kept.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.location/1.0.1.ftplugin",
-      "version": "1.0.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.location/1.0.2.ftplugin",
+      "version": "1.0.2"
     },
     {
-      "hash": "7d91b3a745d96462bb122b98a5f4c69af418b857e326f818c314197bec18d7f8",
+      "hash": "aa27c221218374fe767f5c0299951ca6eaa73e9bbca00e4d10c12b90809c46e2",
       "icon": "logo-markdown",
       "id": "com.flickertalk.markdown",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#475569\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M475 64H37C16.58 64 0 81.38 0 102.77v306.42C0 430.59 16.58 448 37 448h438c20.38 0 37-17.41 37-38.81V102.77C512 81.38 495.42 64 475 64M288 368h-64V256l-48 64-48-64v112H64V144h64l48 80 48-80h64Zm96 0-80-112h48.05L352 144h64v112h48Z\"/></g></svg>\n",
@@ -1968,15 +1968,15 @@
           "summary": "撰寫 Markdown，查看效果，再放進聊天；也可以開啟或儲存檔案。"
         }
       },
-      "minCoreVersion": "0.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "Markdown",
-      "size": 6471,
+      "size": 6671,
       "summary": "Write markdown, look at it, and put it in the chat; open a file or save one.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.1.3.ftplugin",
-      "version": "1.1.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.1.4.ftplugin",
+      "version": "1.1.4"
     },
     {
-      "hash": "ab9a5558860fd9d6410a667f48403d4e2ab2e997fcae8bead62cd739c8144ef3",
+      "hash": "e3f2d6a2d19be265dd5ba0f12c45121cd6eec58633d497525d1af89660e5fe19",
       "icon": "reader-outline",
       "id": "com.flickertalk.notes",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 32H144a64.07 64.07 0 0 0-64 64v320a64.07 64.07 0 0 0 64 64h224a64.07 64.07 0 0 0 64-64V96a64.07 64.07 0 0 0-64-64M256 304h-80a16 16 0 0 1 0-32h80a16 16 0 0 1 0 32m80-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32m0-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32\"/></g></svg>\n",
@@ -2063,15 +2063,15 @@
           "summary": "附提醒的個人筆記，只保存在這支手機上。"
         }
       },
-      "minCoreVersion": "1.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "Notes",
-      "size": 15232,
+      "size": 15962,
       "summary": "Personal notes with a reminder, kept on this phone only.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.notes/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.notes/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "6a5774b2e516caf24a03bba6901c0b2927c1d1a63945b700ff76bb82cb4f68ad",
+      "hash": "74d623f35a641076943b56fee0d5af684061d181fb1d0b066d049452a5db56a8",
       "icon": "document-outline",
       "id": "com.flickertalk.pdf",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4\"/><path d=\"M419.22 188.59 275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41\"/></g></svg>\n",
@@ -2138,15 +2138,110 @@
           "summary": "把圖片合成一個 PDF，每頁一張，附文件模式。"
         }
       },
-      "minCoreVersion": "0.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "PDF",
-      "size": 6238,
+      "size": 6356,
       "summary": "Put pictures together into a PDF, one page each, with a document mode.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.3.ftplugin",
-      "version": "1.1.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.4.ftplugin",
+      "version": "1.1.4"
     },
     {
-      "hash": "a9986c4669d6cba2c7d5a697e4d74bd1e1cf2ea823a285c8ceba9c3ff208018e",
+      "hash": "572032331762725ab1905ac2ccc22e4b7cca32b14de3da55d92c72ed8c372075",
+      "icon": "book-outline",
+      "id": "com.flickertalk.pdfviewer",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M202.24 74C166.11 56.75 115.61 48.3 48 48a31.36 31.36 0 0 0-17.92 5.33A32 32 0 0 0 16 79.9V366c0 19.34 13.76 33.93 32 33.93 71.07 0 142.36 6.64 185.06 47a4.11 4.11 0 0 0 6.94-3V106.82a15.9 15.9 0 0 0-5.46-12A143 143 0 0 0 202.24 74M481.92 53.3A31.33 31.33 0 0 0 464 48c-67.61.3-118.11 8.71-154.24 26a143.3 143.3 0 0 0-32.31 20.78 15.93 15.93 0 0 0-5.45 12v337.13a3.93 3.93 0 0 0 6.68 2.81c25.67-25.5 70.72-46.82 185.36-46.81a32 32 0 0 0 32-32v-288a32 32 0 0 0-14.12-26.61\"/></g></svg>\n",
+      "kind": "tool",
+      "locales": {
+        "ar": {
+          "name": "عارض PDF",
+          "summary": "اقرأ ملفات PDF في المحادثة دون مغادرة التطبيق، وتابِع عرضًا تقديميًا صفحةً بصفحة أثناء المكالمة."
+        },
+        "bn": {
+          "name": "PDF ভিউয়ার",
+          "summary": "অ্যাপ না ছেড়েই চ্যাটের PDF পড়ুন, আর কলের সময় উপস্থাপনা পাতায় পাতায় অনুসরণ করুন।"
+        },
+        "de": {
+          "name": "PDF-Viewer",
+          "summary": "Lies die PDFs eines Chats, ohne die App zu verlassen, und folge einer Präsentation Seite für Seite während eines Anrufs."
+        },
+        "es": {
+          "name": "Visor de PDF",
+          "summary": "Lee los PDF de un chat sin salir de la app y sigue una presentación página a página durante una llamada."
+        },
+        "fr": {
+          "name": "Lecteur PDF",
+          "summary": "Lisez les PDF d’une conversation sans quitter l’app et suivez une présentation page par page pendant un appel."
+        },
+        "hi": {
+          "name": "PDF व्यूअर",
+          "summary": "ऐप छोड़े बिना चैट की PDF पढ़ें, और कॉल के दौरान प्रस्तुति को पेज-दर-पेज देखें।"
+        },
+        "id": {
+          "name": "Penampil PDF",
+          "summary": "Baca PDF dari obrolan tanpa keluar dari aplikasi, dan ikuti presentasi halaman demi halaman saat panggilan."
+        },
+        "it": {
+          "name": "Visualizzatore PDF",
+          "summary": "Leggi i PDF di una chat senza uscire dall’app e segui una presentazione pagina per pagina durante una chiamata."
+        },
+        "ja": {
+          "name": "PDF ビューア",
+          "summary": "アプリを離れずにチャットの PDF を読み、通話中は発表をページごとに追えます。"
+        },
+        "ko": {
+          "name": "PDF 뷰어",
+          "summary": "앱을 나가지 않고 채팅의 PDF를 읽고, 통화 중에는 발표를 한 페이지씩 따라가세요."
+        },
+        "pl": {
+          "name": "Przeglądarka PDF",
+          "summary": "Czytaj pliki PDF z czatu bez wychodzenia z aplikacji i śledź prezentację strona po stronie podczas rozmowy."
+        },
+        "pt": {
+          "name": "Visualizador de PDF",
+          "summary": "Leia os PDFs de uma conversa sem sair do app e acompanhe uma apresentação página por página durante uma chamada."
+        },
+        "ro": {
+          "name": "Vizualizator PDF",
+          "summary": "Citește PDF-urile unei conversații fără să ieși din aplicație și urmărește o prezentare pagină cu pagină în timpul unui apel."
+        },
+        "ru": {
+          "name": "Просмотр PDF",
+          "summary": "Читайте PDF из чата, не выходя из приложения, и следите за презентацией страница за страницей во время звонка."
+        },
+        "th": {
+          "name": "ตัวดู PDF",
+          "summary": "อ่าน PDF ในแชตได้โดยไม่ต้องออกจากแอป และติดตามการนำเสนอทีละหน้าระหว่างการโทร"
+        },
+        "tr": {
+          "name": "PDF görüntüleyici",
+          "summary": "Bir sohbetteki PDF'leri uygulamadan çıkmadan okuyun ve bir arama sırasında sunumu sayfa sayfa takip edin."
+        },
+        "uk": {
+          "name": "Перегляд PDF",
+          "summary": "Читайте PDF із чату, не виходячи із застосунку, і стежте за презентацією сторінка за сторінкою під час дзвінка."
+        },
+        "vi": {
+          "name": "Trình xem PDF",
+          "summary": "Đọc các tệp PDF trong cuộc trò chuyện mà không rời ứng dụng, và theo dõi bài trình bày từng trang trong cuộc gọi."
+        },
+        "zh-CN": {
+          "name": "PDF 查看器",
+          "summary": "无需离开应用即可阅读聊天中的 PDF，并在通话中逐页跟随演示。"
+        },
+        "zh-TW": {
+          "name": "PDF 檢視器",
+          "summary": "不必離開應用程式就能閱讀聊天中的 PDF，並在通話中逐頁跟著簡報。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "PDF viewer",
+      "size": 1180748,
+      "summary": "Read the PDFs of a chat without leaving the app, and follow a presentation page by page during a call.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdfviewer/1.1.0.ftplugin",
+      "version": "1.1.0"
+    },
+    {
+      "hash": "1592e718d82363a803264774b489688facb8f109142c7fcc199741d121730d92",
       "icon": "stats-chart-outline",
       "id": "com.flickertalk.poll",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M104 496H72a24 24 0 0 1-24-24V328a24 24 0 0 1 24-24h32a24 24 0 0 1 24 24v144a24 24 0 0 1-24 24M328 496h-32a24 24 0 0 1-24-24V232a24 24 0 0 1 24-24h32a24 24 0 0 1 24 24v240a24 24 0 0 1-24 24M440 496h-32a24 24 0 0 1-24-24V120a24 24 0 0 1 24-24h32a24 24 0 0 1 24 24v352a24 24 0 0 1-24 24M216 496h-32a24 24 0 0 1-24-24V40a24 24 0 0 1 24-24h32a24 24 0 0 1 24 24v432a24 24 0 0 1-24 24\"/></g></svg>\n",
@@ -2233,15 +2328,15 @@
           "summary": "提出選項或日期，你們兩人投票，再把選定的日期傳送到行事曆。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Poll",
-      "size": 52996,
+      "size": 53238,
       "summary": "Propose options or dates, vote between the two of you, and send the chosen date to the calendar.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.poll/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.poll/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "eeade4bcef1cf6131036b6b9f1aad6dd9fa34be3eeb950cf4fd5e0911f9c74d5",
+      "hash": "51a04d9f220f0965f54688873b3b394105184719edeefc7021a63aafca7b1280",
       "icon": "eye-off-outline",
       "id": "com.flickertalk.redact",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M432 448a15.92 15.92 0 0 1-11.31-4.69l-352-352a16 16 0 0 1 22.62-22.62l352 352A16 16 0 0 1 432 448M248 315.85l-51.79-51.79a2 2 0 0 0-3.39 1.69 64.11 64.11 0 0 0 53.49 53.49 2 2 0 0 0 1.69-3.39M264 196.15 315.87 248a2 2 0 0 0 3.4-1.69 64.13 64.13 0 0 0-53.55-53.55 2 2 0 0 0-1.72 3.39\"/><path d=\"M491 273.36a32.2 32.2 0 0 0-.1-34.76c-26.46-40.92-60.79-75.68-99.27-100.53C349 110.55 302 96 255.68 96a226.5 226.5 0 0 0-71.82 11.79 4 4 0 0 0-1.56 6.63l47.24 47.24a4 4 0 0 0 3.82 1.05 96 96 0 0 1 116 116 4 4 0 0 0 1.05 3.81l67.95 68a4 4 0 0 0 5.4.24 343.8 343.8 0 0 0 67.24-77.4M256 352a96 96 0 0 1-93.3-118.63 4 4 0 0 0-1.05-3.81l-66.84-66.87a4 4 0 0 0-5.41-.23c-24.39 20.81-47 46.13-67.67 75.72a31.92 31.92 0 0 0-.64 35.54c26.41 41.33 60.39 76.14 98.28 100.65C162.06 402 207.92 416 255.68 416a238.2 238.2 0 0 0 72.64-11.55 4 4 0 0 0 1.61-6.64l-47.47-47.46a4 4 0 0 0-3.81-1.05A96 96 0 0 1 256 352\"/></g></svg>\n",
@@ -2328,15 +2423,15 @@
           "summary": "遮擋圖片中的人臉、名字或號碼：黑塊或馬賽克，直接作用於像素。"
         }
       },
-      "minCoreVersion": "0.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "Cover",
-      "size": 6350,
+      "size": 6466,
       "summary": "Cover a face, a name or a number in a picture: black or mosaic, in the pixels.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.1.3.ftplugin",
-      "version": "1.1.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.1.4.ftplugin",
+      "version": "1.1.4"
     },
     {
-      "hash": "de9a0fd041532c162ce937a814b26678cdfe5369f3d3551f574bcbef570c31ac",
+      "hash": "780e57fbdab2dff35e1204928ca4942c74aef2fa1020dd053cb8079348ddfc0b",
       "icon": "scan-outline",
       "id": "com.flickertalk.scanner",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M342 444h46a56 56 0 0 0 56-56v-46M444 170v-46a56 56 0 0 0-56-56h-46M170 444h-46a56 56 0 0 1-56-56v-46M68 170v-46a56 56 0 0 1 56-56h46\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"44\"/></g></svg>\n",
@@ -2423,15 +2518,15 @@
           "summary": "把紙張的照片變成端正、乾淨的文件，並以 PDF 或圖片傳送。"
         }
       },
-      "minCoreVersion": "1.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "Scanner",
-      "size": 14690,
+      "size": 15168,
       "summary": "Turn a photo of a paper into a straight, clean document and send it as a PDF or a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "79d9cdf8b780d4e3065fa2cfc2ab34a2cdb4135b8780532ac1f527ebf48b9dfd",
+      "hash": "e16cbff63bd728bff8f3d33437c95753740d962fc3a0e815c914e13b1bade10e",
       "icon": "pencil-outline",
       "id": "com.flickertalk.sign",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M358.62 129.28 86.49 402.08 70 442l39.92-16.49 272.8-272.13zM413.07 74.84l-11.79 11.78 24.1 24.1 11.79-11.79a16.51 16.51 0 0 0 0-23.34l-.75-.75a16.51 16.51 0 0 0-23.35 0\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"44\"/></g></svg>\n",
@@ -2518,15 +2613,15 @@
           "summary": "你們兩人透過聊天輪流用手指簽署同一份 PDF：附有手機日期和時間的手寫簽名。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Sign",
-      "size": 954298,
+      "size": 954369,
       "summary": "Both of you sign the same PDF with a finger, in turns, through the chat: a drawn signature with the phone's date and time.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.sign/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sign/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "d30ccd7b677c5777e45ab741839854c09cc2aedc146bbdcc26c6eca6c2bd9a1f",
+      "hash": "17c28aaee9d53aee3730c41dc37a30218011a72c93830f4cd5c5189be94f95dc",
       "icon": "brush-outline",
       "id": "com.flickertalk.sketch",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M233.15 360.11a15.7 15.7 0 0 1-4.92-.77 16 16 0 0 1-10.92-13c-2.15-15-19.95-32.46-36.62-35.85a16 16 0 0 1-8.69-26.33l211.09-235.1c.19-.22.39-.43.59-.63a56.57 56.57 0 0 1 79.89 0 56.51 56.51 0 0 1 .11 79.78l-219 227a16 16 0 0 1-11.53 4.9M119.89 480.11c-32.14 0-65.45-16.89-84.85-43a16 16 0 0 1 12.85-25.54c5.34 0 20-4.87 20-20.57 0-39.07 31.4-70.86 70-70.86s70 31.79 70 70.86c0 49.12-39.48 89.11-88 89.11\"/></g></svg>\n",
@@ -2613,15 +2708,15 @@
           "summary": "用手指畫畫，再把畫當作圖片傳送。"
         }
       },
-      "minCoreVersion": "0.1.0",
+      "minCoreVersion": "1.6.0",
       "name": "Sketch",
-      "size": 4811,
+      "size": 4870,
       "summary": "Draw with a finger and send the drawing as a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.3.ftplugin",
-      "version": "1.1.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.4.ftplugin",
+      "version": "1.1.4"
     },
     {
-      "hash": "0e96a33faf9bc3efaf6dd3cd87fe2f4d90cb7eb71d6d017cf471a17e1e552379",
+      "hash": "201301722dae894a5989c06a9e5b0c79029a84d6e9bbb9b6dd25d56fe6bd1662",
       "icon": "cut-outline",
       "id": "com.flickertalk.split",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#7C3AED\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M103.48 224a71.64 71.64 0 0 0 44.76-15.66l41.5 16.89 6.82-12.63a39 39 0 0 1 4.32-6.37l14.22-14.42-41.17-24.94A72 72 0 1 0 103.48 224m0-112a40 40 0 1 1-40 40 40 40 0 0 1 40-40\"/><path d=\"m480 169-5.52-12.58c-4.48-10.42-14.74-16-32.78-17.85-10.12-1-26.95-1.24-49.69 3.81-20 4.45-122.14 28.2-164.95 58.62-20.25 14.39-24.06 33.67-27.06 49.16-2.78 14.14-5 25.31-18 35-15 11.14-27.27 16.38-33.58 18.6a71.74 71.74 0 1 0 24.79 38Zm-224.52 87a16 16 0 1 1 16-16 16 16 0 0 1-16 16m-152 144a40 40 0 1 1 40-40 40 40 0 0 1-40 40\"/><path d=\"m343.79 259.87-83.74 48.18 27.63 13.08 3.62 1.74C310 331.92 359.74 356 410.53 359c3.89.23 7.47.34 10.78.34C442 359.31 453 354 459.75 350L480 336Z\"/></g></svg>\n",
@@ -2708,12 +2803,12 @@
           "summary": "兩人之間的共同開銷：誰付了什麼、誰欠誰，保存在各自的手機上，並在對話中即時合併。"
         }
       },
-      "minCoreVersion": "1.3.0",
+      "minCoreVersion": "1.6.0",
       "name": "Split",
-      "size": 67639,
+      "size": 67922,
       "summary": "Shared expenses between two people: who paid what and who owes whom, kept on each phone and joined live from a conversation.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.split/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.split/1.0.3.ftplugin",
+      "version": "1.0.3"
     }
   ]
 }
