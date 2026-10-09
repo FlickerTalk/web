@@ -1,7 +1,7 @@
 {
   "plugins": [
     {
-      "hash": "e45af5282db26c0a9ff716c0b07d54316ec643e792528de93b69d093f09afaae",
+      "hash": "e6c7033e7214fe77cc69c46f0db5c9030a5c35aa55e8fc0bddafa2343b65a637",
       "icon": "easel-outline",
       "id": "com.flickertalk.board",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><rect width=\"352\" height=\"208\" x=\"80\" y=\"112\" rx=\"12\" ry=\"12\"/><path d=\"M432 64H272V48a16 16 0 0 0-32 0v16H80a48.05 48.05 0 0 0-48 48v208a48.05 48.05 0 0 0 48 48h42.79l-26.17 91.6a16 16 0 1 0 30.76 8.8L156.07 368H240v48a16 16 0 0 0 32 0v-48h83.93l28.69 100.4a16 16 0 1 0 30.76-8.8L389.21 368H432a48.05 48.05 0 0 0 48-48V112a48.05 48.05 0 0 0-48-48m16 256a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V112a16 16 0 0 1 16-16h352a16 16 0 0 1 16 16Z\"/></g></svg>\n",
@@ -90,10 +90,10 @@
       },
       "minCoreVersion": "1.1.0",
       "name": "Board",
-      "size": 403510,
+      "size": 403725,
       "summary": "A whiteboard with ink, text and formulas: draw a class, send it, or give it live.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.1.0.ftplugin",
+      "version": "1.1.0"
     },
     {
       "hash": "90dcb88d2cbfc68245d9966d1ff861d1b07812ea30a2d038337d16b79bc21b12",
@@ -2144,6 +2144,101 @@
       "summary": "Put pictures together into a PDF, one page each, with a document mode.",
       "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.3.ftplugin",
       "version": "1.1.3"
+    },
+    {
+      "hash": "23b5afd2f3a5e2c077d8fdfbe77643c1c434bd8f49a5a1370324c542bdd6b084",
+      "icon": "book-outline",
+      "id": "com.flickertalk.pdfviewer",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M202.24 74C166.11 56.75 115.61 48.3 48 48a31.36 31.36 0 0 0-17.92 5.33A32 32 0 0 0 16 79.9V366c0 19.34 13.76 33.93 32 33.93 71.07 0 142.36 6.64 185.06 47a4.11 4.11 0 0 0 6.94-3V106.82a15.9 15.9 0 0 0-5.46-12A143 143 0 0 0 202.24 74M481.92 53.3A31.33 31.33 0 0 0 464 48c-67.61.3-118.11 8.71-154.24 26a143.3 143.3 0 0 0-32.31 20.78 15.93 15.93 0 0 0-5.45 12v337.13a3.93 3.93 0 0 0 6.68 2.81c25.67-25.5 70.72-46.82 185.36-46.81a32 32 0 0 0 32-32v-288a32 32 0 0 0-14.12-26.61\"/></g></svg>\n",
+      "kind": "tool",
+      "locales": {
+        "ar": {
+          "name": "عارض PDF",
+          "summary": "اقرأ ملفات PDF في المحادثة دون مغادرة التطبيق، وتابِع عرضًا تقديميًا صفحةً بصفحة أثناء المكالمة."
+        },
+        "bn": {
+          "name": "PDF ভিউয়ার",
+          "summary": "অ্যাপ না ছেড়েই চ্যাটের PDF পড়ুন, আর কলের সময় উপস্থাপনা পাতায় পাতায় অনুসরণ করুন।"
+        },
+        "de": {
+          "name": "PDF-Viewer",
+          "summary": "Lies die PDFs eines Chats, ohne die App zu verlassen, und folge einer Präsentation Seite für Seite während eines Anrufs."
+        },
+        "es": {
+          "name": "Visor de PDF",
+          "summary": "Lee los PDF de un chat sin salir de la app y sigue una presentación página a página durante una llamada."
+        },
+        "fr": {
+          "name": "Lecteur PDF",
+          "summary": "Lisez les PDF d’une conversation sans quitter l’app et suivez une présentation page par page pendant un appel."
+        },
+        "hi": {
+          "name": "PDF व्यूअर",
+          "summary": "ऐप छोड़े बिना चैट की PDF पढ़ें, और कॉल के दौरान प्रस्तुति को पेज-दर-पेज देखें।"
+        },
+        "id": {
+          "name": "Penampil PDF",
+          "summary": "Baca PDF dari obrolan tanpa keluar dari aplikasi, dan ikuti presentasi halaman demi halaman saat panggilan."
+        },
+        "it": {
+          "name": "Visualizzatore PDF",
+          "summary": "Leggi i PDF di una chat senza uscire dall’app e segui una presentazione pagina per pagina durante una chiamata."
+        },
+        "ja": {
+          "name": "PDF ビューア",
+          "summary": "アプリを離れずにチャットの PDF を読み、通話中は発表をページごとに追えます。"
+        },
+        "ko": {
+          "name": "PDF 뷰어",
+          "summary": "앱을 나가지 않고 채팅의 PDF를 읽고, 통화 중에는 발표를 한 페이지씩 따라가세요."
+        },
+        "pl": {
+          "name": "Przeglądarka PDF",
+          "summary": "Czytaj pliki PDF z czatu bez wychodzenia z aplikacji i śledź prezentację strona po stronie podczas rozmowy."
+        },
+        "pt": {
+          "name": "Visualizador de PDF",
+          "summary": "Leia os PDFs de uma conversa sem sair do app e acompanhe uma apresentação página por página durante uma chamada."
+        },
+        "ro": {
+          "name": "Vizualizator PDF",
+          "summary": "Citește PDF-urile unei conversații fără să ieși din aplicație și urmărește o prezentare pagină cu pagină în timpul unui apel."
+        },
+        "ru": {
+          "name": "Просмотр PDF",
+          "summary": "Читайте PDF из чата, не выходя из приложения, и следите за презентацией страница за страницей во время звонка."
+        },
+        "th": {
+          "name": "ตัวดู PDF",
+          "summary": "อ่าน PDF ในแชตได้โดยไม่ต้องออกจากแอป และติดตามการนำเสนอทีละหน้าระหว่างการโทร"
+        },
+        "tr": {
+          "name": "PDF görüntüleyici",
+          "summary": "Bir sohbetteki PDF'leri uygulamadan çıkmadan okuyun ve bir arama sırasında sunumu sayfa sayfa takip edin."
+        },
+        "uk": {
+          "name": "Перегляд PDF",
+          "summary": "Читайте PDF із чату, не виходячи із застосунку, і стежте за презентацією сторінка за сторінкою під час дзвінка."
+        },
+        "vi": {
+          "name": "Trình xem PDF",
+          "summary": "Đọc các tệp PDF trong cuộc trò chuyện mà không rời ứng dụng, và theo dõi bài trình bày từng trang trong cuộc gọi."
+        },
+        "zh-CN": {
+          "name": "PDF 查看器",
+          "summary": "无需离开应用即可阅读聊天中的 PDF，并在通话中逐页跟随演示。"
+        },
+        "zh-TW": {
+          "name": "PDF 檢視器",
+          "summary": "不必離開應用程式就能閱讀聊天中的 PDF，並在通話中逐頁跟著簡報。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "PDF viewer",
+      "size": 1180912,
+      "summary": "Read the PDFs of a chat without leaving the app, and follow a presentation page by page during a call.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdfviewer/1.1.0.ftplugin",
+      "version": "1.1.0"
     },
     {
       "hash": "a9986c4669d6cba2c7d5a697e4d74bd1e1cf2ea823a285c8ceba9c3ff208018e",
