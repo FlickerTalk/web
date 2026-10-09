@@ -1,7 +1,7 @@
 {
   "plugins": [
     {
-      "hash": "dc9be64d9a77efc93628e6bee03b8b77b74942dee9afa45c8ca51ab8df3113d7",
+      "hash": "1c1db02b74ea0532935c4c4ace586ae1de6373621705004051806c9759a92b0f",
       "icon": "easel-outline",
       "id": "com.flickertalk.board",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><rect width=\"352\" height=\"208\" x=\"80\" y=\"112\" rx=\"12\" ry=\"12\"/><path d=\"M432 64H272V48a16 16 0 0 0-32 0v16H80a48.05 48.05 0 0 0-48 48v208a48.05 48.05 0 0 0 48 48h42.79l-26.17 91.6a16 16 0 1 0 30.76 8.8L156.07 368H240v48a16 16 0 0 0 32 0v-48h83.93l28.69 100.4a16 16 0 1 0 30.76-8.8L389.21 368H432a48.05 48.05 0 0 0 48-48V112a48.05 48.05 0 0 0-48-48m16 256a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V112a16 16 0 0 1 16-16h352a16 16 0 0 1 16 16Z\"/></g></svg>\n",
@@ -90,10 +90,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Board",
-      "size": 404203,
+      "size": 404515,
       "summary": "A whiteboard with ink, text and formulas: draw a class, send it, or give it live.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.1.2.ftplugin",
+      "version": "1.1.2"
     },
     {
       "hash": "9f56ab009b35a7a5e02693251660015d15d8d5b2f00a8c047222c3d055052e11",
@@ -2146,7 +2146,7 @@
       "version": "1.1.4"
     },
     {
-      "hash": "19a212e3b191d6d9fb9de72a1e705c16fd7895df5bd8bb46b065c7f0935be3aa",
+      "hash": "25b13e10e2c384d4e5b40e0c65c1ccecd50ab612017a2f6a79a88fb8e7f4f82d",
       "icon": "book-outline",
       "id": "com.flickertalk.pdfviewer",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M202.24 74C166.11 56.75 115.61 48.3 48 48a31.36 31.36 0 0 0-17.92 5.33A32 32 0 0 0 16 79.9V366c0 19.34 13.76 33.93 32 33.93 71.07 0 142.36 6.64 185.06 47a4.11 4.11 0 0 0 6.94-3V106.82a15.9 15.9 0 0 0-5.46-12A143 143 0 0 0 202.24 74M481.92 53.3A31.33 31.33 0 0 0 464 48c-67.61.3-118.11 8.71-154.24 26a143.3 143.3 0 0 0-32.31 20.78 15.93 15.93 0 0 0-5.45 12v337.13a3.93 3.93 0 0 0 6.68 2.81c25.67-25.5 70.72-46.82 185.36-46.81a32 32 0 0 0 32-32v-288a32 32 0 0 0-14.12-26.61\"/></g></svg>\n",
@@ -2235,10 +2235,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "PDF viewer",
-      "size": 1181011,
+      "size": 1181224,
       "summary": "Read the PDFs of a chat without leaving the app, and follow a presentation page by page during a call.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.pdfviewer/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdfviewer/1.1.2.ftplugin",
+      "version": "1.1.2"
     },
     {
       "hash": "1592e718d82363a803264774b489688facb8f109142c7fcc199741d121730d92",
