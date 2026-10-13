@@ -25,7 +25,7 @@
     <p>We keep no activity logs. Below is exactly what the service processes, what it stores and what other parties can still see.</p>
 
     <h2>Your identity</h2>
-    <p>When you open FlickerTalk for the first time, your phone creates your cryptographic identity: a pair of keys. Your private key is protected by the phone's secure key store (Android Keystore or the iOS Keychain); we do not hold a copy on our servers. The only time it leaves your phone is when you move to a new one with “Move to a new phone”, and then it travels directly between your two phones, over an encrypted connection, never through us. Your FlickerTalk ID is derived from the public key, which lets the service and your contacts recognise your device without an email address, phone number or password.</p>
+    <p>When you open FlickerTalk for the first time, your phone creates your cryptographic identity: a pair of keys. Your private key is protected by the phone's secure key store (Android Keystore or the iOS Keychain); we do not hold a copy on our servers. It leaves your phone in two cases only: when you move to a new one with “Move to a new phone”, it travels directly between your two phones, over an encrypted connection, never through us; and if you set up a backup, it goes inside the backup in your own Google Drive, encrypted on your phone first. Your FlickerTalk ID is derived from the public key, which lets the service and your contacts recognise your device without an email address, phone number or password.</p>
     <p>You add someone by scanning the code on their screen or opening the link they share. That code is a contact card signed by their key. We have no directory of users and never see your address book.</p>
 
     <h2>Sending a message</h2>
@@ -65,6 +65,8 @@
       <dd>When a direct connection is impossible, our relay carries the encrypted traffic. It sees the IP addresses of both phones and how much data flows, never the content, and it keeps no logs.</dd>
       <dt>Google and Apple</dt>
       <dd>They deliver the wake-up notifications, so they see that your phone got a push and when. The push never contains a message or who sent it.</dd>
+      <dt>Google Drive, if you set up a backup</dt>
+      <dd>The backup is encrypted on your phone before it is uploaded to your own Google Drive. Google sees how many encrypted files there are, their sizes and dates, and that you use FlickerTalk, never their names or contents. Our server is not involved.</dd>
       <dt>Our server</dt>
       <dd>It sees the IP address of a connection while it is open, to route it and to stop abuse. It does not keep it: the abuse limits use a salted hash that lives only in memory for a minute. If you send a suggestion from the app, it forwards the text to our mailbox without your FlickerTalk ID or IP address, and does not keep it.</dd>
       <dt>Your network provider</dt>
