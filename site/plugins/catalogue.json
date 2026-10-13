@@ -2526,7 +2526,7 @@
       "version": "1.0.0"
     },
     {
-      "hash": "1d55f278941642bb6faa64f6af3ba1272c355fe43a7c47e8a9649fbdad574282",
+      "hash": "ff3ab28929c5886e033113821e675e273a9d4f8b37a96f1490d4c8c968302232",
       "icon": "scan-outline",
       "id": "com.flickertalk.scanner",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M342 444h46a56 56 0 0 0 56-56v-46M444 170v-46a56 56 0 0 0-56-56h-46M170 444h-46a56 56 0 0 1-56-56v-46M68 170v-46a56 56 0 0 1 56-56h46\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"44\"/></g></svg>\n",
@@ -2615,10 +2615,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Scanner",
-      "size": 17380,
+      "size": 17608,
       "summary": "Turn a photo of a paper into a straight, clean document and send it as a PDF or a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.1.0.ftplugin",
-      "version": "1.1.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.1.1.ftplugin",
+      "version": "1.1.1"
     },
     {
       "hash": "e16cbff63bd728bff8f3d33437c95753740d962fc3a0e815c914e13b1bade10e",
