@@ -2336,6 +2336,101 @@
       "version": "1.1.3"
     },
     {
+      "hash": "4012cee1190926e03f3b4bcd674dfd165970157a400ae8703a9d85e348f45d2e",
+      "icon": "alarm-outline",
+      "id": "com.flickertalk.remind",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M153.59 110.46A21.41 21.41 0 0 0 152.48 79 62.67 62.67 0 0 0 112 64l-3.27.09h-.48C74.4 66.15 48 95.55 48.07 131c0 19 8 29.06 14.32 37.11a20.6 20.6 0 0 0 14.7 7.8c.26 0 .7.05 2 .05a19.06 19.06 0 0 0 13.75-5.89ZM403.79 64.11l-3.27-.1H400a62.67 62.67 0 0 0-40.52 15 21.41 21.41 0 0 0-1.11 31.44l60.77 59.65a19.06 19.06 0 0 0 13.79 5.9c1.28 0 1.72 0 2-.05a20.6 20.6 0 0 0 14.69-7.8c6.36-8.05 14.28-18.08 14.32-37.11.06-35.49-26.34-64.89-60.15-66.93\"/><path d=\"M256.07 96c-97 0-176 78.95-176 176a175.23 175.23 0 0 0 40.81 112.56l-36.12 36.13a16 16 0 1 0 22.63 22.62l36.12-36.12a175.63 175.63 0 0 0 225.12 0l36.13 36.12a16 16 0 1 0 22.63-22.62l-36.13-36.13A175.17 175.17 0 0 0 432.07 272c0-97-78.95-176-176-176m16 176a16 16 0 0 1-16 16h-80a16 16 0 0 1 0-32h64v-96a16 16 0 0 1 32 0Z\"/></g></svg>\n",
+      "kind": "tool",
+      "locales": {
+        "ar": {
+          "name": "التذكيرات",
+          "summary": "ضع تذكيرًا على رسالة: إشعار لك وحدك، محفوظ على هذا الهاتف."
+        },
+        "bn": {
+          "name": "রিমাইন্ডার",
+          "summary": "কোনো মেসেজে রিমাইন্ডার দিন: শুধু আপনার জন্য একটি বিজ্ঞপ্তি, এই ফোনেই রাখা থাকে।"
+        },
+        "de": {
+          "name": "Erinnerungen",
+          "summary": "Eine Erinnerung an eine Nachricht: eine Benachrichtigung nur für dich, auf diesem Telefon gespeichert."
+        },
+        "es": {
+          "name": "Recordatorios",
+          "summary": "Pon un recordatorio a un mensaje: un aviso solo para ti, guardado en este teléfono."
+        },
+        "fr": {
+          "name": "Rappels",
+          "summary": "Mettez un rappel sur un message : une notification pour vous seul, gardée sur ce téléphone."
+        },
+        "hi": {
+          "name": "रिमाइंडर",
+          "summary": "किसी संदेश पर रिमाइंडर लगाएँ: सिर्फ़ आपके लिए एक सूचना, इसी फ़ोन पर रखी जाती है।"
+        },
+        "id": {
+          "name": "Pengingat",
+          "summary": "Pasang pengingat pada pesan: notifikasi hanya untuk Anda, tersimpan di ponsel ini."
+        },
+        "it": {
+          "name": "Promemoria",
+          "summary": "Metti un promemoria su un messaggio: una notifica solo per te, conservata su questo telefono."
+        },
+        "ja": {
+          "name": "リマインダー",
+          "summary": "メッセージにリマインダーを設定。通知はあなただけに届き、この端末に保存されます。"
+        },
+        "ko": {
+          "name": "리마인더",
+          "summary": "메시지에 리마인더를 설정하세요. 나만 받는 알림으로, 이 휴대폰에 저장됩니다."
+        },
+        "pl": {
+          "name": "Przypomnienia",
+          "summary": "Przypomnienie o wiadomości: powiadomienie tylko dla ciebie, zapisane na tym telefonie."
+        },
+        "pt": {
+          "name": "Lembretes",
+          "summary": "Crie um lembrete para uma mensagem: um aviso só para você, guardado neste telefone."
+        },
+        "ro": {
+          "name": "Mementouri",
+          "summary": "Pune un memento pe un mesaj: o notificare doar pentru tine, păstrată pe acest telefon."
+        },
+        "ru": {
+          "name": "Напоминания",
+          "summary": "Напоминание о сообщении: уведомление только для вас, хранится на этом телефоне."
+        },
+        "th": {
+          "name": "การเตือน",
+          "summary": "ตั้งการเตือนให้ข้อความ: การแจ้งเตือนสำหรับคุณคนเดียว เก็บไว้ในโทรศัพท์เครื่องนี้"
+        },
+        "tr": {
+          "name": "Hatırlatıcılar",
+          "summary": "Bir mesaja hatırlatıcı kurun: yalnızca size bir bildirim, bu telefonda saklanır."
+        },
+        "uk": {
+          "name": "Нагадування",
+          "summary": "Нагадування про повідомлення: сповіщення лише для вас, зберігається на цьому телефоні."
+        },
+        "vi": {
+          "name": "Lời nhắc",
+          "summary": "Đặt lời nhắc cho một tin nhắn: thông báo chỉ dành cho bạn, được lưu trên điện thoại này."
+        },
+        "zh-CN": {
+          "name": "提醒",
+          "summary": "为消息设置提醒：只通知你自己，保存在这部手机上。"
+        },
+        "zh-TW": {
+          "name": "提醒",
+          "summary": "為訊息設定提醒：只通知你自己，保存在這支手機上。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Reminders",
+      "size": 18388,
+      "summary": "Set a reminder on a message: a notification for you alone, kept on this phone.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.remind/1.0.0.ftplugin",
+      "version": "1.0.0"
+    },
+    {
       "hash": "de9a0fd041532c162ce937a814b26678cdfe5369f3d3551f574bcbef570c31ac",
       "icon": "scan-outline",
       "id": "com.flickertalk.scanner",
