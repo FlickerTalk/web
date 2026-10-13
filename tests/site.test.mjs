@@ -42,6 +42,9 @@ const LOCALIZED = ["add", "move"].flatMap((dir) =>
     .map((file) => `${dir}/${file}`)
 );
 
+// Every HTML file the site serves: the pages above, the generated landings and anything added later.
+const ALL_HTML = readdirSync(site, { recursive: true }).filter((file) => file.endsWith(".html"));
+
 const read = (path) => readFileSync(join(site, path), "utf8");
 const text = (path) => read(path).replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ");
 const everything = () => PAGES.map(text).join(" ");
@@ -116,15 +119,54 @@ test("no privacy claim the design cannot keep", () => {
   }
 });
 
-// §40: the price is announced from the launch, on the landing and in the terms.
-test("the price is on the home page and in the terms", () => {
-  for (const page of ["index.html", "terms/index.html"]) {
+// §40, 2026-10-08, worded on 2026-10-13 (Ioan: only the Premium part costs €0.99 a year): the app is
+// free; Premium, the tools and the extra sessions protected with a PIN, has a 15-day trial from
+// installation and then costs €0.99 a year.
+test("the price is on the home page, in the FAQ and in the terms", () => {
+  for (const page of ["index.html", "faq/index.html", "terms/index.html"]) {
     const words = text(page);
-    assert.match(words, /first year/i, `${page}: first year free`);
-    assert.match(words, /€0\.99 (per|a) year/i, `${page}: €0.99 a year`);
-    assert.match(words, /under 21/i, `${page}: free under 21 (§40, 2026-09-22)`);
-    assert.match(words, /€0\.99 a year for users aged 21 and over/i, `${page}: €0.99 for users aged 21 and over`);
-    assert.doesNotMatch(words, /under 18|for adults/i, `${page}: the old age rule is gone`);
+    assert.match(words, /chat, voice messages, calls, files, circles and games/i, `${page}: what is free`);
+    assert.match(words, /\bfree\b/i, `${page}: the app is free`);
+    assert.match(words, /\bPremium\b/, `${page}: what costs money is called Premium`);
+    assert.match(words, /\btools\b/i, `${page}: the tools are Premium`);
+    assert.match(words, /extra sessions protected with a PIN/i, `${page}: the extra PIN sessions are Premium`);
+    assert.match(words, /15 days/i, `${page}: a 15-day trial`);
+    assert.match(words, /€0\.99 a year/i, `${page}: €0.99 a year`);
+  }
+});
+
+// Ioan, 2026-10-13: no text promises anything "forever", and nothing of the 1.2.x wording is left
+// anywhere on the site: no free first year, no age rule, and no "no cloud backup" (the app can keep a
+// backup in the user's own Google Drive, encrypted on the phone, §61).
+test("no page promises forever or keeps the 1.2.x price and backup wording", () => {
+  for (const page of ALL_HTML) {
+    const words = text(page);
+    assert.doesNotMatch(words, /forever/i, `${page}: nothing is promised forever`);
+    assert.doesNotMatch(words, /under 21/i, `${page}: no age rule`);
+    assert.doesNotMatch(words, /first year/i, `${page}: no free first year`);
+    assert.doesNotMatch(
+      words,
+      /no cloud backup|there are no backups|(do not|don't|never) (keep|store|provide|offer)[^.]*cloud backup/i,
+      `${page}: there is a backup, in the user's own Google Drive`,
+    );
+  }
+});
+
+// §40, 2026-10-08: the free year is gone; the trial lasts 15 days.
+test("no page still promises a free first year", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    assert.doesNotMatch(text(page), /first year|free year|year free/i, `${page}: the old free year`);
+  }
+});
+
+// §40, 2026-10-08: there is no age rule on the price any more.
+test("no page ties the price to an age", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    assert.doesNotMatch(
+      text(page),
+      /\bminors?\b|for adults|under (18|21)|aged (18|21)|(18|21) (and|or) (over|older)/i,
+      `${page}: the price names an age`,
+    );
   }
 });
 
@@ -247,8 +289,68 @@ test("the home page leads with privacy and no activity logs", () => {
   assert.match(words, /Your conversations are yours/);
   assert.match(words, /No activity logs/);
   assert.match(words, /7 days/);
-  assert.match(words, /install only the ones you want/i, "the tools are installed, not built in (§56)");
-  assert.match(words, /without network access/i);
+});
+
+// 1.6.0 (catalogue of web#28): 17 tools and 13 games, added from the Apps tab, which replaced
+// Settings → Plugins (2026-10-08). The app carries them all (§52), so none is "outside the app".
+// A tool reaches only what the user allows it (§53), and some of that goes over the network (My
+// drive to the user's own Google Drive, a live tool or game to the other phone): no page says
+// "without network access".
+test("the home page shows the tools and games of the Apps tab, and what each one reaches", () => {
+  const words = text("index.html");
+  assert.match(words, /17 tools and 13 games/);
+  assert.match(words, /Apps tab/);
+  assert.match(words, /install only the ones you want/i, "the user chooses them (§56)");
+  assert.match(words, /runs in isolation/);
+  assert.match(words, /only what you allow it/);
+  assert.match(words, /never your chat history, your contacts or your keys/);
+  assert.doesNotMatch(words, /None of them comes inside the app/);
+  for (const page of PAGES) {
+    assert.doesNotMatch(text(page), /without network access/i, `${page}: some tools use the network`);
+    assert.doesNotMatch(text(page), /(install|add)[^.]* from Settings/i, `${page}: tools come from the Apps tab`);
+  }
+});
+
+// §61: the app can keep a backup in the user's own Google Drive (Settings → Backup), encrypted on the
+// phone; on another phone only the recovery phrase the user chooses opens it, and our server is not
+// involved. Precise about it (§70, §78): Google sees how many encrypted files there are, their sizes
+// and dates, and that the user has FlickerTalk.
+test("the pages say a backup goes to the user's own Google Drive, encrypted on the phone", () => {
+  const pages = ["index.html", "faq/index.html", "privacy/index.html", "terms/index.html", "how-it-works/index.html", "security/index.html", "delete-data/index.html"];
+  for (const page of pages) {
+    assert.match(text(page), /your own Google Drive/, `${page}: the backup is in the user's own Google Drive`);
+  }
+  for (const page of ["index.html", "faq/index.html", "privacy/index.html", "terms/index.html", "how-it-works/index.html", "security/index.html"]) {
+    assert.match(text(page), /encrypted on (your|the) phone/, `${page}: encrypted before it leaves the phone`);
+  }
+  for (const page of ["faq/index.html", "privacy/index.html", "terms/index.html", "security/index.html", "delete-data/index.html"]) {
+    assert.match(text(page), /recovery phrase/, `${page}: the recovery phrase opens it`);
+  }
+  for (const page of ["privacy/index.html", "how-it-works/index.html"]) {
+    assert.match(text(page), /how many encrypted files there are, their sizes and dates/, `${page}: what Google sees`);
+    assert.match(text(page), /never their names or contents/, `${page}: and what it does not`);
+    assert.match(text(page), /Our server is not involved/i, `${page}: the backup does not go through us`);
+  }
+  assert.match(text("faq/index.html"), /Settings → Backup/, "the FAQ says where to set it up");
+});
+
+// §60, §61: the private key leaves the phone when moving to a new one and, encrypted, inside a backup.
+test("how it works and security say the keys also go into a backup", () => {
+  const how = text("how-it-works/index.html");
+  assert.doesNotMatch(how, /The only time it leaves your phone/);
+  assert.match(how, /inside the backup in your own Google Drive/);
+  const security = text("security/index.html");
+  assert.match(security, /inside the backup in your own Google Drive/);
+  assert.doesNotMatch(security, /cloud history \(there is none\)/);
+});
+
+// Erasing the phone does not touch the user's Google Drive (app, client.rs `erase`): a backup there
+// can still bring the identity back, and the page says how to remove it.
+test("delete your data says erasing the phone leaves a backup in Google Drive, and how to remove it", () => {
+  const words = text("delete-data/index.html");
+  assert.doesNotMatch(words, /the same identity cannot be brought back/);
+  assert.match(words, /does not touch a backup in your own Google Drive/);
+  assert.match(words, /delete the FlickerTalk folder from your Google Drive/);
 });
 
 test("the FAQ says what the server does keep", () => {
@@ -265,7 +367,7 @@ test("transparency lists the routing hash with the rest of what we have", () => 
 test("the privacy policy says what stays on the device, not what never leaves it", () => {
   const words = text("privacy/index.html");
   assert.match(words, /What stays on your device/);
-  assert.match(words, /under 21/);
+  assert.doesNotMatch(words, /Whether you are/, "nothing about age is decided or kept");
   assert.match(words, /under 14/, "the age of consent does not follow the price");
 });
 

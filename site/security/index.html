@@ -28,7 +28,7 @@
       <li><strong>Messages:</strong> end-to-end encrypted with Olm (Double Ratchet), using vodozemac, the Matrix project's audited Rust implementation. In a circle, each member gets their own encrypted copy over the Olm channel they share with the sender.</li>
       <li><strong>Transport:</strong> WebRTC between the phones (DTLS for data, DTLS-SRTP for calls); TLS to our server.</li>
       <li><strong>Identity:</strong> an Ed25519 key per phone; every request to our server is signed with it.</li>
-      <li><strong>Keys at rest:</strong> sealed by the phone's secure key store (Android Keystore, iOS Keychain). When you move to a new phone, they travel directly between your two phones over an encrypted connection, never through our servers.</li>
+      <li><strong>Keys at rest:</strong> sealed by the phone's secure key store (Android Keystore, iOS Keychain). When you move to a new phone, they travel directly between your two phones over an encrypted connection, never through our servers. If you set up a backup, they also go inside the backup in your own Google Drive, encrypted on the phone with a key protected by your recovery phrase (stretched with Argon2id).</li>
       <li><strong>Server:</strong> push tokens encrypted with a key kept outside the database; the mailbox holds only end-to-end encrypted messages and is never backed up.</li>
     </ul>
 
@@ -36,7 +36,7 @@
     <p>No advertising, analytics, third-party crash-reporting services or activity logs in FlickerTalk. This website also uses no cookies or trackers and keeps no access logs.</p>
 
     <h2>Threat model</h2>
-    <p>FlickerTalk is designed to protect against a breach of our database, anyone running our servers reading chats, central collection of messages, exposure of a cloud history (there is none), and push services reading messages.</p>
+    <p>FlickerTalk is designed to protect against a breach of our database, anyone running our servers reading chats, central collection of messages, exposure of a cloud history (we keep none, and a backup in your own Google Drive is encrypted on your phone), and push services reading messages.</p>
     <p>It cannot fully protect against a compromised phone or operating system, malware, screenshots, the people you write to copying messages, someone holding your unlocked phone, or network metadata held by third parties. <a href="/how-it-works/">How it works</a> lists who can see what.</p>
 
     <h2>Open source</h2>
