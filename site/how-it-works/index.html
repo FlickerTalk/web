@@ -50,6 +50,7 @@
         <tr><td>Your device ID and public key</td><td>To check that requests really come from your phone</td><td>Until you erase the phone in the app</td></tr>
         <tr><td>A hash of your contact card's routing code</td><td>So that only your contacts can wake you or leave you mail</td><td>Same</td></tr>
         <tr><td>Your push token, encrypted with a key kept outside the database</td><td>To wake your phone</td><td>Same, or until Google or Apple say it expired</td></tr>
+        <tr><td>Eight bits, one for each space on your phone (the main list and up to seven sessions protected with a PIN), marking the sessions you have left</td><td>So that a session you have left gets no wake-up notifications or calls. We can see when a bit changes, but not who is in a session or what is said in it</td><td>Until you erase the phone in the app</td></tr>
         <tr><td>Messages that could not be delivered, encrypted end to end</td><td>To deliver them later</td><td>Until picked up, at most 7 days</td></tr>
       </tbody>
     </table>
