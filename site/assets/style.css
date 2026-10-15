@@ -69,6 +69,12 @@ p { margin: 0 0 1rem; }
 .hero img { width: 44px; height: 44px; margin-bottom: 1.5rem; }
 .hero .lead { max-width: 38rem; }
 
+/* The trailer: YouTube's player, as wide as the column and 16:9 at any width; its size is known
+   before it loads, so nothing on the page moves. */
+.trailer h2 { margin-top: 2.5rem; }
+.trailer iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; margin: 0 auto 1rem; }
+.trailer p { color: var(--muted); font-size: 0.97rem; }
+
 .cards { display: grid; gap: 0 3rem; margin-top: 2.5rem; border-top: 1px solid var(--line); }
 @media (min-width: 42rem) {
   .cards { grid-template-columns: 1fr 1fr; }

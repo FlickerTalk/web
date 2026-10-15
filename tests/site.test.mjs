@@ -45,6 +45,14 @@ const LOCALIZED = ["add", "move"].flatMap((dir) =>
 // Every HTML file the site serves: the pages above, the generated landings and anything added later.
 const ALL_HTML = readdirSync(site, { recursive: true }).filter((file) => file.endsWith(".html"));
 
+// The English trailer on YouTube (2026-10-14), on the home page as YouTube's player in privacy-enhanced
+// mode (Ioan, 2026-10-15): the one thing the site loads from another site.
+const TRAILER_VIDEO = "QNMZLA05s7c";
+const TRAILER_EMBED = `https://www.youtube-nocookie.com/embed/${TRAILER_VIDEO}`;
+const TRAILER_YOUTUBE = `https://youtu.be/${TRAILER_VIDEO}`;
+const withoutTrailer = (html) => html.replace(new RegExp(`<iframe[^>]* src="${escape(TRAILER_EMBED)}"[^>]*>`), "");
+const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
 const read = (path) => readFileSync(join(site, path), "utf8");
 const text = (path) => read(path).replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ");
 const everything = () => PAGES.map(text).join(" ");
@@ -62,7 +70,7 @@ test("every page exists, in English, with a title and a description", () => {
 
 test("no scripts, no inline styles and nothing loaded from another site", () => {
   for (const page of [...PAGES, ...LOCALIZED]) {
-    const html = read(page);
+    const html = withoutTrailer(read(page));
     assert.doesNotMatch(html, /<script/i, `${page} has no scripts`);
     assert.doesNotMatch(html, /<style|\sstyle="/i, `${page} has no inline styles (the CSP forbids them)`);
     assert.doesNotMatch(html, /\s(src|srcset)="(https?:)?\/\//i, `${page} loads nothing from another site`);
@@ -395,7 +403,6 @@ const BADGE = "assets/google-play-badge.svg";
 // The App Store listing (Apple ID 6817480081); apps.apple.com picks the reader's storefront.
 const APP_STORE = "https://apps.apple.com/app/id6817480081";
 const APPLE_BADGE = "assets/app-store-badge.svg";
-const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const storeLinks = (url) => (html) => [...html.matchAll(new RegExp(`<a\\s[^>]*href="${escape(url)}"[^>]*>([\\s\\S]*?)</a>`, "g"))];
 const playLinks = storeLinks(PLAY);
 const appStoreLinks = storeLinks(APP_STORE);
@@ -499,9 +506,10 @@ test("the FAQ and help pages say where to get the app", () => {
   }
 });
 
-// Links out are few and known: the source code, the Spanish regulator and the store listings.
+// Links out are few and known: the source code, the Spanish regulator, the store listings and the
+// trailer on YouTube.
 test("every link to another site is one we know", () => {
-  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`), new RegExp(`^${escape(APP_STORE)}$`)];
+  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`), new RegExp(`^${escape(APP_STORE)}$`), new RegExp(`^${escape(TRAILER_YOUTUBE)}$`)];
   for (const page of [...PAGES, ...LOCALIZED]) {
     for (const [, url] of read(page).matchAll(/\shref="((?:https?:)?\/\/[^"]*)"/gi)) {
       assert.ok(known.some((k) => k.test(url)), `${page} → ${url}`);
@@ -735,4 +743,36 @@ test("the web server answers /add and /move without a redirect", () => {
     assert.match(conf, new RegExp(`location = /${name} \\{\\s*try_files [^;]*/${name}/index\\.html =404;\\s*\\}`), `/${name} is served as it is`);
   }
   assert.doesNotMatch(conf, /\b(return\s+30\d|rewrite)\b/, "no redirect anywhere");
+});
+
+// The English trailer (72 s) on the home page, as YouTube's player (Ioan, 2026-10-15): in
+// privacy-enhanced mode (youtube-nocookie.com), loaded only when scrolled to, never autoplaying,
+// with its size known before it loads. It is the one thing the site loads from another site, so the
+// home page, the privacy policy and the security page say what Google sees (§70, §78).
+test("the home page embeds the English trailer from YouTube, in privacy-enhanced mode", () => {
+  const html = read("index.html");
+  const frames = [...html.matchAll(/<iframe[^>]*>/g)].map((m) => m[0]);
+  assert.equal(frames.length, 1, "one player on the home page");
+  const [frame] = frames;
+  assert.match(frame, new RegExp(` src="${escape(TRAILER_EMBED)}"`), "privacy-enhanced domain, no parameters");
+  assert.match(frame, / title="[^"]+"/, "a title, for screen readers");
+  assert.match(frame, / loading="lazy"/, "loaded when scrolled to, not before");
+  assert.match(frame, / width="\d+" height="\d+"/, "its size is known before it loads: nothing moves");
+  assert.match(frame, / allowfullscreen/);
+  // The site sends Referrer-Policy: no-referrer, and YouTube refuses to play without a referrer
+  // (its "error 153"), so the player alone sends our origin and nothing more.
+  assert.match(frame, / referrerpolicy="origin"/, "the player gets our origin as referrer, the path never");
+  assert.doesNotMatch(frame, /autoplay/, "it never plays on its own");
+  assert.match(html, new RegExp(`<a href="${escape(TRAILER_YOUTUBE)}" target="_blank" rel="noopener">Watch it on YouTube</a>`), "the same trailer on YouTube, as a link");
+  for (const page of [...PAGES, ...LOCALIZED].filter((p) => p !== "index.html")) {
+    assert.doesNotMatch(read(page), /<iframe/i, `${page} embeds nothing`);
+  }
+  const seen = /YouTube player[^.]*Google sees that your browser loaded it/;
+  assert.match(text("index.html"), seen, "the home page says what Google sees");
+  assert.match(text("privacy/index.html"), seen, "the privacy policy says what Google sees");
+  assert.match(text("security/index.html"), seen, "the security page says what Google sees");
+  assert.doesNotMatch(text("privacy/index.html"), /loads nothing from other sites(?! except)/, "the policy no longer says nothing comes from other sites");
+  const conf = readFileSync(join(root, "nginx.conf"), "utf8");
+  assert.match(conf, /Content-Security-Policy "default-src 'none';[^"]*frame-src https:\/\/www\.youtube-nocookie\.com;/, "the policy admits the player and nothing else from outside");
+  assert.doesNotMatch(conf, /frame-src [^;]*youtube\.com/, "never the tracking domain");
 });
