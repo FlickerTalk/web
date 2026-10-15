@@ -551,6 +551,20 @@ test("the FAQ says what circles are, what they are not, and what members learn",
   assert.match(words, /members of a circle you are in/i, "circle members may see your IP address too");
 });
 
+// Silent slots (router 0.5.0, server#6): for each device the server keeps eight bits, one per space
+// on the phone (the main list and up to seven PIN sessions), and sends no push for a session the
+// user has left. "What our server keeps" lists it, with what the operator can learn from it.
+test("what our server keeps lists the bits of the sessions you have left", () => {
+  const html = read("how-it-works/index.html");
+  const table = html.slice(html.indexOf("<h2>What our server keeps</h2>"), html.indexOf("</table>"));
+  const row = table.match(/<tr><td>Eight bits[^]*?<\/tr>/)?.[0];
+  assert.ok(row, "a row for the session bits");
+  const [data, why, kept] = [...row.matchAll(/<td>([^]*?)<\/td>/g)].map((m) => m[1]);
+  assert.equal(data, "Eight bits, one for each space on your phone (the main list and up to seven sessions protected with a PIN), marking the sessions you have left");
+  assert.equal(why, "So that a session you have left gets no wake-up notifications or calls. We can see when a bit changes, but not who is in a session or what is said in it");
+  assert.equal(kept, "Until you erase the phone in the app");
+});
+
 test("how it works explains circles and what their members can see", () => {
   const words = text("how-it-works/index.html");
   assert.match(words, /In a circle/);
