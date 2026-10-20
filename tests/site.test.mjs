@@ -790,3 +790,32 @@ test("the home page embeds the English trailer from YouTube, in privacy-enhanced
   assert.match(conf, /Content-Security-Policy "default-src 'none';[^"]*frame-src https:\/\/www\.youtube-nocookie\.com;/, "the policy admits the player and nothing else from outside");
   assert.doesNotMatch(conf, /frame-src [^;]*youtube\.com/, "never the tracking domain");
 });
+
+// The Translator tool (app#177, 2026-10-20): it translates on the phone. On Android it is Google's
+// ML Kit, built into the app, which sends Google the languages used and diagnostic data about the
+// app, never the text; on iPhone iOS translates. Language packs are downloaded once from Google or
+// Apple. Precise about it (§70, §78): the agreed sentences, word for word, wherever the site lists
+// who sees what, and no sentence about the app says "no analytics" without "of our own".
+const TRANSLATOR_ANDROID =
+  "On Android the translator is Google's ML Kit, built into the app: the text stays on the phone. Google receives which languages are used and diagnostic data about the app, not the text.";
+const TRANSLATOR_IPHONE = "On iPhone the translation is done by iOS.";
+
+test("the privacy policy and how it works say what Google and Apple get from the translator", () => {
+  for (const page of ["privacy/index.html", "how-it-works/index.html"]) {
+    const words = text(page);
+    assert.ok(words.includes(TRANSLATOR_ANDROID), `${page}: the Android sentence, word for word`);
+    assert.ok(words.includes(TRANSLATOR_IPHONE), `${page}: the iPhone sentence, word for word`);
+    assert.match(words, /Language packs are downloaded once[^.]*never the text\./, `${page}: what a language pack download shows`);
+  }
+  assert.match(text("privacy/index.html"), /\bGoogle \(ML Kit\)/, "the policy lists ML Kit with who else takes part");
+  assert.ok(text("security/index.html").includes(TRANSLATOR_ANDROID), "the security page names the one exception");
+});
+
+test("no sentence about the app says there are no analytics without saying of our own", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    for (const sentence of text(page).split(/(?<=[.!?])\s+/)) {
+      if (!/analytics/i.test(sentence) || /this website/i.test(sentence)) continue;
+      assert.match(sentence, /analytics of our own/i, `${page}: "${sentence}"`);
+    }
+  }
+});

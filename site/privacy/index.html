@@ -21,7 +21,7 @@
   </header>
   <main class="wrap">
     <h1>Privacy policy</h1>
-    <p class="updated">Effective 13 October 2026</p>
+    <p class="updated">Effective 20 October 2026</p>
     <p class="lead">FlickerTalk does not store conversations, address books, private keys or communication histories on its servers. Messages that cannot be delivered directly are kept encrypted end to end, so that we cannot read them, only until they are delivered or expire. The service keeps only the minimum technical information needed to route notifications and deliver those pending messages.</p>
 
     <h2>1. Who is responsible</h2>
@@ -31,6 +31,7 @@
     <p>Your chat history, call history, contacts and the names you give them are stored on your device. Messages and files you send are transmitted to the person you choose, and messages in a circle to each of its members; undelivered messages may temporarily wait on our server, end-to-end encrypted, as described below. We do not keep a backup of your history or a copy of your private key. When you use “Move to a new phone”, your identity and history go directly from your old phone to your new one, never through our servers.</p>
     <p>In a circle (a small, closed group of contacts), every member of the circle receives your contact card, the same one you hand over when someone scans your code: your FlickerTalk ID, the name on your card, your public keys and the routing code that lets their phone reach yours. A member who is not your contact can therefore write to you; their message arrives as a request, and they cannot call you unless you accept them. When a member's phone connects directly to yours, it can see your public IP address. We keep no record of circles or of who is in them.</p>
     <p>If you set up a backup (Settings → Backup), the app keeps a copy of your phone, with your history, your keys and your files, in your own Google Drive. It is encrypted on your phone before it leaves, and on another phone only the recovery phrase you choose opens it; the phrase is not stored anywhere, and we never see it. Google sees how many encrypted files there are, their sizes and dates, and that you use FlickerTalk, never their names or contents. Our server is not involved.</p>
+    <p>If you use the Translator tool, it translates a message or your draft on your phone. On Android the translator is Google's ML Kit, built into the app: the text stays on the phone. Google receives which languages are used and diagnostic data about the app, not the text. That diagnostic data includes the phone's model and system version, its country, language and time zone, the app's version, performance figures, error codes and identifiers for this installation of the app; Google uses it to configure and diagnose ML Kit and to measure how it is used. On iPhone the translation is done by iOS. Language packs are downloaded once, from Google or Apple, which see which language your phone asks for and its IP address, never the text.</p>
     <p>FlickerTalk does not upload your phone's address book or ask for your date of birth.</p>
 
     <h2>3. Data our servers process</h2>
@@ -53,13 +54,14 @@
     <ul>
       <li><strong>Hetzner Online GmbH</strong> (Germany) hosts our servers in its data centre in Falkenstein, Germany.</li>
       <li><strong>Google</strong> (Firebase Cloud Messaging) delivers the wake-up notifications on Android, and <strong>Apple</strong> (Apple Push Notification service) on iPhone. They receive your push token and the time of each notification, never its content or sender.</li>
+      <li><strong>Google</strong> (ML Kit), on Android, if you use the Translator: it receives the languages used and the diagnostic data described in section 2, never the text.</li>
       <li><strong>OVH</strong> (France) hosts the mailbox of info@flickertalk.com.</li>
       <li><strong>Google Play and the App Store</strong> distribute the app and handle payments under their own privacy policies. We receive no payment data: your phone checks the subscription locally.</li>
     </ul>
     <p>Google and Apple may process data outside the European Economic Area, under the safeguards they provide (the EU-US Data Privacy Framework or standard contractual clauses).</p>
 
     <h2>5. No tracking</h2>
-    <p>No analytics, advertising or crash-reporting services in the app. This website sets no cookies, loads nothing from other sites except the trailer on the home page, and keeps no access logs. The trailer is a YouTube player in privacy-enhanced mode: Google sees that your browser loaded it, and YouTube's terms apply if you play it.</p>
+    <p>No analytics of our own, and no advertising or crash-reporting services, in the app. On Android, the Translator uses Google's ML Kit, which sends Google the languages used and diagnostic data, never the text (section 2). This website sets no cookies, loads nothing from other sites except the trailer on the home page, and keeps no access logs. The trailer is a YouTube player in privacy-enhanced mode: Google sees that your browser loaded it, and YouTube's terms apply if you play it.</p>
 
     <h2>6. Your rights</h2>
     <p>You can ask for access to, rectification or erasure of your data, restrict or object to its processing, and ask for its portability (GDPR arts. 15 to 22). You can delete everything yourself in the app with Settings → “Erase this phone”. Because we do not know who you are, we will need your FlickerTalk ID (shown in the app) to find your record. Write to <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>.</p>
