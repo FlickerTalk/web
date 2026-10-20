@@ -381,7 +381,7 @@
       "version": "1.1.3"
     },
     {
-      "hash": "e7ee4b81e159a908b2c0ac3dae6976aefabec5beb652208221d23cc16d6324c5",
+      "hash": "181d7979968958d2c9ece0ae01b1c8eeac1ee28cb83369b5319e4d60441cc74b",
       "icon": "dice-outline",
       "id": "com.flickertalk.game.backgammon",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M440.88 129.37 288.16 40.62a64.14 64.14 0 0 0-64.33 0L71.12 129.37a4 4 0 0 0 0 6.9L254 243.85a4 4 0 0 0 4.06 0L440.9 136.27a4 4 0 0 0-.02-6.9M256 152c-13.25 0-24-7.16-24-16s10.75-16 24-16 24 7.16 24 16-10.75 16-24 16M238 270.81 54 163.48a4 4 0 0 0-6 3.46v173.92a48 48 0 0 0 23.84 41.39L234 479.48a4 4 0 0 0 6-3.46V274.27a4 4 0 0 0-2-3.46M96 368c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96-32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24M458 163.51 274 271.56a4 4 0 0 0-2 3.45V476a4 4 0 0 0 6 3.46l162.15-97.23A48 48 0 0 0 464 340.86V167a4 4 0 0 0-6-3.49M320 424c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96 32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24\"/></g></svg>\n",
@@ -470,13 +470,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Backgammon",
-      "size": 58272,
+      "size": 58311,
       "summary": "Backgammon with the other person in the chat: dice rolled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "b3dc5957d057ac0525e4c0700758dd295c0a9e5d93c6d5c51c602fb5a2e8d3e4",
+      "hash": "a71db6f13365696700dada2a42bc34757b8312647088b2d711213a52dc6dab1e",
       "icon": "radio-button-on-outline",
       "id": "com.flickertalk.game.checkers",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><circle cx=\"256\" cy=\"256\" r=\"144\"/></g></svg>\n",
@@ -565,13 +565,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Checkers",
-      "size": 50177,
+      "size": 50211,
       "summary": "Checkers with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "75d55ed68f09bfaaad7a48269ae20d226515be8b8292b44fe699cb902fe6bdd5",
+      "hash": "59849d43f41a7a3ee707fee6a7217a3c3b4bbac3194d4fddfa5cf2c69d4ec1e6",
       "icon": "shield-outline",
       "id": "com.flickertalk.game.chess",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#475569\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M479.07 111.35a16 16 0 0 0-13.15-14.75C379.89 81.18 343.69 69.12 266 34.16c-7.76-2.89-12.57-2.84-20 0-77.69 35-113.89 47-199.92 62.44a16 16 0 0 0-13.15 14.75c-3.85 61.1 4.34 118 24.36 169.15a348.9 348.9 0 0 0 71.43 112.41c44.67 47.43 94.2 75.12 119.74 85.6a20 20 0 0 0 15.11 0c27-10.92 74.69-37.82 119.71-85.62a348.9 348.9 0 0 0 71.43-112.39c20.02-51.14 28.21-108.05 24.36-169.15\"/></g></svg>\n",
@@ -660,13 +660,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Chess",
-      "size": 91125,
+      "size": 91160,
       "summary": "Chess with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.6.ftplugin",
+      "version": "1.0.6"
     },
     {
-      "hash": "7c18b43925906cf9806934ff4391b6cf5eb5711f211bbbe1b889363e8d3a34f7",
+      "hash": "f2079fa66cd91c1e7bcb13f02793745892b2ec29ef75a70c4abe40ed6201ba78",
       "icon": "square-outline",
       "id": "com.flickertalk.game.dotsandboxes",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64m-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58\"/></g></svg>\n",
@@ -755,13 +755,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Dots and Boxes",
-      "size": 48119,
+      "size": 48153,
       "summary": "Dots and boxes with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "668eb531e0e4b7bd1a4db35cece27d128624b8637bd6c0ccaeeb8d510e471b31",
+      "hash": "40b801c008c1abf001063fba5272f7c195446ec262c1d2c43c8d1d4ff8700cac",
       "icon": "albums-outline",
       "id": "com.flickertalk.game.eights",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 96H144a16 16 0 0 1 0-32h224a16 16 0 0 1 0 32M400 144H112a16 16 0 0 1 0-32h288a16 16 0 0 1 0 32M419.13 448H92.87A44.92 44.92 0 0 1 48 403.13V204.87A44.92 44.92 0 0 1 92.87 160h326.26A44.92 44.92 0 0 1 464 204.87v198.26A44.92 44.92 0 0 1 419.13 448\"/></g></svg>\n",
@@ -850,13 +850,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Crazy Eights",
-      "size": 57521,
+      "size": 57552,
       "summary": "Crazy Eights with the other person in the chat: a deck shuffled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "f1bda8ce9763e4a9c5917cbfd222c3a18b4aa9b6d247ffd868a60fd06b29384b",
+      "hash": "5f9192223800054f3df195ac4c3b608ded5458ba1fd237cc5fce99cbb88ea636",
       "icon": "ellipse-outline",
       "id": "com.flickertalk.game.fourinarow",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 464c-114.69 0-208-93.31-208-208S141.31 48 256 48s208 93.31 208 208-93.31 208-208 208\"/></g></svg>\n",
@@ -945,13 +945,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Four in a Row",
-      "size": 46889,
+      "size": 46921,
       "summary": "Four in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.6.ftplugin",
+      "version": "1.0.6"
     },
     {
-      "hash": "174ef63fde0dbe4cf0f012629db21a53a5bc1851336f349bcff97cb96dd74d56",
+      "hash": "bf217d0ecbf5edcc509a3328adaceb3d78b799cd0e638c282a77c666a12aad0a",
       "icon": "apps-outline",
       "id": "com.flickertalk.game.gomoku",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M104 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56\"/></g></svg>\n",
@@ -1040,13 +1040,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Five in a Row",
-      "size": 47535,
+      "size": 47568,
       "summary": "Five in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "44f0c319a26444a6830d10b836a0a99628934f761f9e4068a3489355741ec535",
+      "hash": "1b4ae187d4324e47ba1578d804ab98816d27527174c170aed9f0318b2530b092",
       "icon": "basket-outline",
       "id": "com.flickertalk.game.mancala",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M424.11 192H360L268.8 70.4a16 16 0 0 0-25.6 0L152 192H87.89a32.57 32.57 0 0 0-32.62 32.44 30.3 30.3 0 0 0 1.31 9l46.27 163.14a50.72 50.72 0 0 0 48.84 36.91h208.62a51.21 51.21 0 0 0 49-36.86l46.33-163.36a15.6 15.6 0 0 0 .46-2.36l.53-4.93a13 13 0 0 0 .09-1.55A32.57 32.57 0 0 0 424.11 192M256 106.67 320 192H192Zm0 245a37.7 37.7 0 1 1 37.88-37.7A37.87 37.87 0 0 1 256 351.63Z\"/></g></svg>\n",
@@ -1135,13 +1135,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Mancala",
-      "size": 47004,
+      "size": 47037,
       "summary": "Mancala with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "6184b7a88ad87c52317a1adbe9312f565bb2f7b32af75d00c4218e99230108cb",
+      "hash": "7a013b2a7ab9206848162d026f2824fdd6909065adaaa9a6696754623f90848f",
       "icon": "contrast-outline",
       "id": "com.flickertalk.game.reversi",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 32A224 224 0 0 0 97.61 414.39 224 224 0 1 0 414.39 97.61 222.53 222.53 0 0 0 256 32M64 256c0-105.87 86.13-192 192-192v384c-105.87 0-192-86.13-192-192\"/></g></svg>\n",
@@ -1230,13 +1230,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Reversi",
-      "size": 46534,
+      "size": 46567,
       "summary": "Reversi with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "615047c8684545e68589cd9947478931ec60451b9c370838d096a0f65445832e",
+      "hash": "84cae84e604ea423b12ae2472ac88213c116974b955e6b3f744bfb719101ae65",
       "icon": "boat-outline",
       "id": "com.flickertalk.game.seabattle",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M416 473.14a6.83 6.83 0 0 0-3.57-6c-27.07-14.55-51.76-36.82-62.62-48a10.05 10.05 0 0 0-12.72-1.51c-50.33 32.42-111.61 32.44-161.95.05a10.09 10.09 0 0 0-12.82 1.56c-10.77 11.28-35.19 33.3-62.43 47.75a7.11 7.11 0 0 0-3.89 5.73 6.73 6.73 0 0 0 7.92 7.15c20.85-4.18 41-13.68 60.2-23.83a8.71 8.71 0 0 1 8-.06 185.14 185.14 0 0 0 167.81 0 8.82 8.82 0 0 1 8.09.06c19.1 10 39.22 19.59 60 23.8a6.73 6.73 0 0 0 8-6.71ZM476.71 246.91c-3.49-8.39-10.9-14.89-20.9-18.35L432 219.08V136a64 64 0 0 0-64-64h-32v-8a40 40 0 0 0-40-40h-80a40 40 0 0 0-40 40v8h-32a64 64 0 0 0-64 64v83.15l-23.58 9.39c-9.94 3.3-17.63 10-21.15 18.44-2.45 5.89-5.25 15-1.3 26.46l.1.3 46.66 119.44A23.33 23.33 0 0 0 102.58 408c.5 0 1 0 1.53-.05 31.32-2 56-17.27 72.6-31.61C200.42 396.81 228.31 408 256 408s55.43-11.2 79.14-31.7c16.59 14.36 41.3 29.67 72.61 31.65a23.36 23.36 0 0 0 23.37-14.74l46.65-119c3.28-8.09 2.9-17.76-1.06-27.3M269 154.21l-1.14-.4a39.53 39.53 0 0 0-23.73 0l-.58.18-126.07 50.23a4 4 0 0 1-5.48-3.72V136a32 32 0 0 1 32-32h224a32 32 0 0 1 32 32v64.44a4 4 0 0 1-5.48 3.72Z\"/></g></svg>\n",
@@ -1325,13 +1325,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Sea Battle",
-      "size": 57956,
+      "size": 57991,
       "summary": "Sea Battle with the other person in the chat: hidden fleets, checked at the end, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "6f417312df5da8b8233c63518c04697ed2db9297a29d906de38ba757a59e875c",
+      "hash": "ad63d14c02470d037ad2acdbb84a9f1a7fd03d1e77fa244f9cacf2fa561c469a",
       "icon": "grid-outline",
       "id": "com.flickertalk.game.tictactoe",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M204 240H68a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 240H308a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M204 480H68a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 480H308a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36\"/></g></svg>\n",
@@ -1420,13 +1420,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Tic-Tac-Toe",
-      "size": 46490,
+      "size": 46525,
       "summary": "Tic-Tac-Toe with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.6.ftplugin",
+      "version": "1.0.6"
     },
     {
-      "hash": "6f2bdbfbc858d41d40b0240287954f1633a866b9b76e1bcc887159b5cef13e7e",
+      "hash": "3fa1a6b799cd5d88e90496adacfe05fd3c8d38f1beb67c68d98e515d703e1392",
       "icon": "text-outline",
       "id": "com.flickertalk.game.wordduel",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m292.6 407.78-120-320a22 22 0 0 0-41.2 0l-120 320a22 22 0 0 0 41.2 15.44l36.16-96.42a2 2 0 0 1 1.87-1.3h122.74a2 2 0 0 1 1.87 1.3l36.16 96.42a22 22 0 0 0 41.2-15.44m-185.84-129 43.37-115.65a2 2 0 0 1 3.74 0l43.37 115.67a2 2 0 0 1-1.87 2.7h-86.74a2 2 0 0 1-1.87-2.7ZM400.77 169.5c-41.72-.3-79.08 23.87-95 61.4a22 22 0 0 0 40.5 17.2c8.88-20.89 29.77-34.44 53.32-34.6 32.32-.22 58.41 26.5 58.41 58.85a1.5 1.5 0 0 1-1.45 1.5c-21.92.61-47.92 2.07-71.12 4.8-54.75 6.44-87.43 36.29-87.43 79.85 0 23.19 8.76 44 24.67 58.68C337.6 430.93 358 438.5 380 438.5c31 0 57.69-8 77.94-23.22h.06a22 22 0 1 0 44 .19v-143c0-56.18-45-102.56-101.23-102.97M380 394.5c-17.53 0-38-9.43-38-36 0-10.67 3.83-18.14 12.43-24.23 8.37-5.93 21.2-10.16 36.14-11.92 21.12-2.49 44.82-3.86 65.14-4.47a2 2 0 0 1 2 2.1C455 370.1 429.46 394.5 380 394.5\"/></g></svg>\n",
@@ -1515,13 +1515,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Word Duel",
-      "size": 108482,
+      "size": 108512,
       "summary": "Word Duel with the other person in the chat: each hides a five-letter word, both guess in turn, English or Spanish, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "7c597bdc5e59ee8e8bcaa88ef9ea1212ab33e924a96c7da999c918b2c5e72007",
+      "hash": "e7e4b8cf3333c5b05fd41f537bb8317bc69e08be73a24375cd30b92fcc8a0592",
       "icon": "language-outline",
       "id": "com.flickertalk.game.wordgrid",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#7C3AED\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m478.33 433.6-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362 368 281.65 401.17 362ZM267.84 342.92a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z\"/></g></svg>\n",
@@ -1610,10 +1610,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Letter Grid",
-      "size": 117855,
+      "size": 117885,
       "summary": "Letter Grid with the other person in the chat: sixteen letters drawn by both phones, words said in turn, English or Spanish, over the direct connection.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
       "hash": "c6a6538e4e22edd114695592e8232be769c000fce622b5fb293cf0393e7b4b49",
