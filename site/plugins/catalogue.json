@@ -2904,6 +2904,361 @@
       "summary": "Shared expenses between two people: who paid what and who owes whom, kept on each phone and joined live from a conversation.",
       "url": "https://flickertalk.com/plugins/com.flickertalk.split/1.0.3.ftplugin",
       "version": "1.0.3"
+    },
+    {
+      "hash": "14388007f160f58cb736a613dcb04cc4d4a51e89472a9131d68fa83de6d66853",
+      "icon": "language-outline",
+      "id": "com.flickertalk.translate",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m478.33 433.6-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362 368 281.65 401.17 362ZM267.84 342.92a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z\"/></g></svg>\n",
+      "kind": "tool",
+      "locales": {
+        "ar": {
+          "hooks": {
+            "composer": "ترجمة",
+            "message": "ترجمة",
+            "settings": {
+              "fields": {
+                "lang": "اللغة",
+                "receive": "ترجمة ما أستلمه",
+                "send": "إرسال مترجَم"
+              },
+              "label": "الترجمة",
+              "note": "تُنزَّل حزم اللغات مرة واحدة؛ وتتم الترجمة على الهاتف."
+            }
+          },
+          "name": "المترجم",
+          "summary": "يترجم رسالة أو مسودتك على الهاتف. تُنزَّل حزم اللغات مرة واحدة من Apple أو Google؛ ولا يغادر النص الهاتف أبدًا."
+        },
+        "bn": {
+          "hooks": {
+            "composer": "অনুবাদ করুন",
+            "message": "অনুবাদ করুন",
+            "settings": {
+              "fields": {
+                "lang": "ভাষা",
+                "receive": "যা পাই তা অনুবাদ করুন",
+                "send": "অনুবাদ করে পাঠান"
+              },
+              "label": "অনুবাদ",
+              "note": "ভাষার প্যাক একবার ডাউনলোড হয়; অনুবাদ ফোনেই হয়।"
+            }
+          },
+          "name": "অনুবাদক",
+          "summary": "কোনো মেসেজ বা আপনার খসড়া ফোনেই অনুবাদ করে। ভাষার প্যাক Apple বা Google থেকে একবার ডাউনলোড হয়; লেখা কখনো ফোনের বাইরে যায় না।"
+        },
+        "de": {
+          "hooks": {
+            "composer": "Übersetzen",
+            "message": "Übersetzen",
+            "settings": {
+              "fields": {
+                "lang": "Sprache",
+                "receive": "Empfangenes übersetzen",
+                "send": "Übersetzt senden"
+              },
+              "label": "Übersetzung",
+              "note": "Sprachpakete werden einmal geladen; die Übersetzung geschieht auf dem Telefon."
+            }
+          },
+          "name": "Übersetzer",
+          "summary": "Übersetzt eine Nachricht oder deinen Entwurf auf dem Telefon. Sprachpakete werden einmal von Apple oder Google geladen; der Text verlässt das Telefon nie."
+        },
+        "es": {
+          "hooks": {
+            "composer": "Traducir",
+            "message": "Traducir",
+            "settings": {
+              "fields": {
+                "lang": "Idioma",
+                "receive": "Traducir lo que recibo",
+                "send": "Enviar traducido"
+              },
+              "label": "Traducción",
+              "note": "Los paquetes de idioma se descargan una vez; la traducción se hace en el teléfono."
+            }
+          },
+          "name": "Traductor",
+          "summary": "Traduce un mensaje o tu borrador en el teléfono. Los paquetes de idioma se descargan una vez de Apple o Google; el texto nunca sale del teléfono."
+        },
+        "fr": {
+          "hooks": {
+            "composer": "Traduire",
+            "message": "Traduire",
+            "settings": {
+              "fields": {
+                "lang": "Langue",
+                "receive": "Traduire ce que je reçois",
+                "send": "Envoyer traduit"
+              },
+              "label": "Traduction",
+              "note": "Les packs de langue sont téléchargés une fois ; la traduction se fait sur le téléphone."
+            }
+          },
+          "name": "Traducteur",
+          "summary": "Traduit un message ou votre brouillon sur le téléphone. Les packs de langue sont téléchargés une fois depuis Apple ou Google ; le texte ne quitte jamais le téléphone."
+        },
+        "hi": {
+          "hooks": {
+            "composer": "अनुवाद करें",
+            "message": "अनुवाद करें",
+            "settings": {
+              "fields": {
+                "lang": "भाषा",
+                "receive": "मिलने वाले संदेशों का अनुवाद करें",
+                "send": "अनुवाद करके भेजें"
+              },
+              "label": "अनुवाद",
+              "note": "भाषा पैक एक बार डाउनलोड होते हैं; अनुवाद फ़ोन पर ही होता है।"
+            }
+          },
+          "name": "अनुवादक",
+          "summary": "किसी संदेश या आपके ड्राफ़्ट का अनुवाद फ़ोन पर ही करता है। भाषा पैक Apple या Google से एक बार डाउनलोड होते हैं; टेक्स्ट कभी फ़ोन से बाहर नहीं जाता।"
+        },
+        "id": {
+          "hooks": {
+            "composer": "Terjemahkan",
+            "message": "Terjemahkan",
+            "settings": {
+              "fields": {
+                "lang": "Bahasa",
+                "receive": "Terjemahkan yang saya terima",
+                "send": "Kirim terjemahan"
+              },
+              "label": "Terjemahan",
+              "note": "Paket bahasa diunduh sekali; terjemahan dilakukan di ponsel."
+            }
+          },
+          "name": "Penerjemah",
+          "summary": "Menerjemahkan pesan atau draf Anda di ponsel. Paket bahasa diunduh sekali dari Apple atau Google; teks tidak pernah keluar dari ponsel."
+        },
+        "it": {
+          "hooks": {
+            "composer": "Traduci",
+            "message": "Traduci",
+            "settings": {
+              "fields": {
+                "lang": "Lingua",
+                "receive": "Traduci ciò che ricevo",
+                "send": "Invia tradotto"
+              },
+              "label": "Traduzione",
+              "note": "I pacchetti di lingua si scaricano una volta; la traduzione avviene sul telefono."
+            }
+          },
+          "name": "Traduttore",
+          "summary": "Traduce un messaggio o la tua bozza sul telefono. I pacchetti di lingua si scaricano una volta da Apple o Google; il testo non lascia mai il telefono."
+        },
+        "ja": {
+          "hooks": {
+            "composer": "翻訳",
+            "message": "翻訳",
+            "settings": {
+              "fields": {
+                "lang": "言語",
+                "receive": "受信したメッセージを翻訳",
+                "send": "翻訳して送信"
+              },
+              "label": "翻訳結果",
+              "note": "言語パックは一度だけダウンロードされ、翻訳は端末上で行われます。"
+            }
+          },
+          "name": "翻訳",
+          "summary": "メッセージや下書きを端末上で翻訳します。言語パックは Apple または Google から一度だけダウンロードされ、テキストが端末の外に出ることはありません。"
+        },
+        "ko": {
+          "hooks": {
+            "composer": "번역",
+            "message": "번역",
+            "settings": {
+              "fields": {
+                "lang": "언어",
+                "receive": "받은 메시지 번역",
+                "send": "번역해서 보내기"
+              },
+              "label": "번역 결과",
+              "note": "언어 팩은 한 번만 다운로드되며, 번역은 휴대폰에서 이루어집니다."
+            }
+          },
+          "name": "번역기",
+          "summary": "메시지나 작성 중인 글을 휴대폰에서 번역합니다. 언어 팩은 Apple 또는 Google에서 한 번만 다운로드되며, 텍스트는 휴대폰 밖으로 나가지 않습니다."
+        },
+        "pl": {
+          "hooks": {
+            "composer": "Przetłumacz",
+            "message": "Przetłumacz",
+            "settings": {
+              "fields": {
+                "lang": "Język",
+                "receive": "Tłumacz to, co otrzymuję",
+                "send": "Wysyłaj przetłumaczone"
+              },
+              "label": "Tłumaczenie",
+              "note": "Pakiety językowe pobiera się raz; tłumaczenie odbywa się na telefonie."
+            }
+          },
+          "name": "Tłumacz",
+          "summary": "Tłumaczy wiadomość lub twój szkic na telefonie. Pakiety językowe pobiera się raz od Apple lub Google; tekst nigdy nie opuszcza telefonu."
+        },
+        "pt": {
+          "hooks": {
+            "composer": "Traduzir",
+            "message": "Traduzir",
+            "settings": {
+              "fields": {
+                "lang": "Idioma",
+                "receive": "Traduzir o que recebo",
+                "send": "Enviar traduzido"
+              },
+              "label": "Tradução",
+              "note": "Os pacotes de idioma são baixados uma vez; a tradução é feita no telefone."
+            }
+          },
+          "name": "Tradutor",
+          "summary": "Traduz uma mensagem ou o seu rascunho no telefone. Os pacotes de idioma são baixados uma vez da Apple ou do Google; o texto nunca sai do telefone."
+        },
+        "ro": {
+          "hooks": {
+            "composer": "Tradu",
+            "message": "Tradu",
+            "settings": {
+              "fields": {
+                "lang": "Limba",
+                "receive": "Tradu ce primesc",
+                "send": "Trimite tradus"
+              },
+              "label": "Traducere",
+              "note": "Pachetele de limbă se descarcă o singură dată; traducerea se face pe telefon."
+            }
+          },
+          "name": "Traducător",
+          "summary": "Traduce un mesaj sau ciorna ta pe telefon. Pachetele de limbă se descarcă o singură dată de la Apple sau Google; textul nu părăsește niciodată telefonul."
+        },
+        "ru": {
+          "hooks": {
+            "composer": "Перевести",
+            "message": "Перевести",
+            "settings": {
+              "fields": {
+                "lang": "Язык",
+                "receive": "Переводить входящие",
+                "send": "Отправлять в переводе"
+              },
+              "label": "Перевод",
+              "note": "Языковые пакеты загружаются один раз; перевод выполняется на телефоне."
+            }
+          },
+          "name": "Переводчик",
+          "summary": "Переводит сообщение или ваш черновик на телефоне. Языковые пакеты загружаются один раз от Apple или Google; текст никогда не покидает телефон."
+        },
+        "th": {
+          "hooks": {
+            "composer": "แปล",
+            "message": "แปล",
+            "settings": {
+              "fields": {
+                "lang": "ภาษา",
+                "receive": "แปลข้อความที่ได้รับ",
+                "send": "ส่งแบบแปลแล้ว"
+              },
+              "label": "คำแปล",
+              "note": "ชุดภาษาดาวน์โหลดครั้งเดียว และการแปลทำบนโทรศัพท์"
+            }
+          },
+          "name": "แปลภาษา",
+          "summary": "แปลข้อความหรือร่างของคุณบนโทรศัพท์ ชุดภาษาดาวน์โหลดครั้งเดียวจาก Apple หรือ Google และข้อความไม่เคยออกจากโทรศัพท์"
+        },
+        "tr": {
+          "hooks": {
+            "composer": "Çevir",
+            "message": "Çevir",
+            "settings": {
+              "fields": {
+                "lang": "Dil",
+                "receive": "Gelenleri çevir",
+                "send": "Çevrilmiş gönder"
+              },
+              "label": "Çeviri",
+              "note": "Dil paketleri bir kez indirilir; çeviri telefonda yapılır."
+            }
+          },
+          "name": "Çevirmen",
+          "summary": "Bir mesajı veya taslağınızı telefonda çevirir. Dil paketleri Apple'dan veya Google'dan bir kez indirilir; metin telefondan asla çıkmaz."
+        },
+        "uk": {
+          "hooks": {
+            "composer": "Перекласти",
+            "message": "Перекласти",
+            "settings": {
+              "fields": {
+                "lang": "Мова",
+                "receive": "Перекладати вхідні",
+                "send": "Надсилати в перекладі"
+              },
+              "label": "Переклад",
+              "note": "Мовні пакети завантажуються один раз; переклад виконується на телефоні."
+            }
+          },
+          "name": "Перекладач",
+          "summary": "Перекладає повідомлення або вашу чернетку на телефоні. Мовні пакети завантажуються один раз від Apple або Google; текст ніколи не залишає телефон."
+        },
+        "vi": {
+          "hooks": {
+            "composer": "Dịch",
+            "message": "Dịch",
+            "settings": {
+              "fields": {
+                "lang": "Ngôn ngữ",
+                "receive": "Dịch tin nhắn nhận được",
+                "send": "Gửi bản dịch"
+              },
+              "label": "Bản dịch",
+              "note": "Gói ngôn ngữ được tải một lần; việc dịch diễn ra trên điện thoại."
+            }
+          },
+          "name": "Trình dịch",
+          "summary": "Dịch một tin nhắn hoặc bản nháp của bạn ngay trên điện thoại. Gói ngôn ngữ được tải một lần từ Apple hoặc Google; văn bản không bao giờ rời khỏi điện thoại."
+        },
+        "zh-CN": {
+          "hooks": {
+            "composer": "翻译",
+            "message": "翻译",
+            "settings": {
+              "fields": {
+                "lang": "语言",
+                "receive": "翻译收到的消息",
+                "send": "发送译文"
+              },
+              "label": "译文",
+              "note": "语言包只需下载一次；翻译在手机上完成。"
+            }
+          },
+          "name": "翻译",
+          "summary": "在手机上翻译消息或你的草稿。语言包只需从 Apple 或 Google 下载一次；文本永远不会离开手机。"
+        },
+        "zh-TW": {
+          "hooks": {
+            "composer": "翻譯",
+            "message": "翻譯",
+            "settings": {
+              "fields": {
+                "lang": "語言",
+                "receive": "翻譯收到的訊息",
+                "send": "傳送譯文"
+              },
+              "label": "譯文",
+              "note": "語言包只需下載一次；翻譯在手機上完成。"
+            }
+          },
+          "name": "翻譯",
+          "summary": "在手機上翻譯訊息或你的草稿。語言包只需從 Apple 或 Google 下載一次；文字永遠不會離開手機。"
+        }
+      },
+      "minCoreVersion": "1.7.0",
+      "name": "Translator",
+      "size": 31271,
+      "summary": "Translates a message or your draft on the phone. Language packs are downloaded once from Apple or Google; the text never leaves the phone.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.translate/1.1.2.ftplugin",
+      "version": "1.1.2"
     }
   ]
 }
