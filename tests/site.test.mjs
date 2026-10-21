@@ -45,9 +45,10 @@ const LOCALIZED = ["add", "move"].flatMap((dir) =>
 // Every HTML file the site serves: the pages above, the generated landings and anything added later.
 const ALL_HTML = readdirSync(site, { recursive: true }).filter((file) => file.endsWith(".html"));
 
-// The English trailer on YouTube (2026-10-14), on the home page as YouTube's player in privacy-enhanced
-// mode (Ioan, 2026-10-15): the one thing the site loads from another site.
-const TRAILER_VIDEO = "QNMZLA05s7c";
+// The English trailer on YouTube, on the home page as YouTube's player in privacy-enhanced mode
+// (Ioan, 2026-10-15): the one thing the site loads from another site. Since 2026-10-21 it is the copy on
+// the FlickerTalk channel (@FlickerTalk), not the one on a personal channel.
+const TRAILER_VIDEO = "8zyG-PZkouU";
 const TRAILER_EMBED = `https://www.youtube-nocookie.com/embed/${TRAILER_VIDEO}`;
 const TRAILER_YOUTUBE = `https://youtu.be/${TRAILER_VIDEO}`;
 const withoutTrailer = (html) => html.replace(new RegExp(`<iframe[^>]* src="${escape(TRAILER_EMBED)}"[^>]*>`), "");
