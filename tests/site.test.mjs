@@ -508,10 +508,10 @@ test("the FAQ and help pages say where to get the app", () => {
   }
 });
 
-// Links out are few and known: the source code, the Spanish regulator, the store listings and the
-// trailer on YouTube.
+// Links out are few and known: the source code, the Spanish regulator, the store listings, the
+// trailer on YouTube and the account on X.
 test("every link to another site is one we know", () => {
-  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`), new RegExp(`^${escape(APP_STORE)}$`), new RegExp(`^${escape(TRAILER_YOUTUBE)}$`)];
+  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/x\.com\/FlickerTalk$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`), new RegExp(`^${escape(APP_STORE)}$`), new RegExp(`^${escape(TRAILER_YOUTUBE)}$`)];
   for (const page of [...PAGES, ...LOCALIZED]) {
     for (const [, url] of read(page).matchAll(/\shref="((?:https?:)?\/\/[^"]*)"/gi)) {
       assert.ok(known.some((k) => k.test(url)), `${page} → ${url}`);
@@ -847,4 +847,17 @@ test("help & contact points to the FlickerTalk contact in the app and to abuse r
   assert.match(words, /every install has a contact called “FlickerTalk” that answers automatically/);
   assert.match(words, /We run it, so it can read what you send it/, "the one conversation we are the other end of");
   assert.match(words, /Abuse reports go to info@flickertalk\.com[^.]*handled within 24 hours/);
+});
+
+// The FlickerTalk account on X (2026-10-28): every page with the footer links to it, next to the
+// source code, as a plain link (no tracking parameters, nothing loaded from X).
+const X_ACCOUNT = "https://x.com/FlickerTalk";
+test("every page with the footer links to the X account next to the source code", () => {
+  for (const page of ALL_HTML) {
+    const html = read(page);
+    if (!html.includes("Source code</a>")) continue;
+    const footer = html.slice(html.lastIndexOf("<footer"));
+    assert.ok(footer.includes(`<a href="${X_ACCOUNT}">X</a>`), `${page}: footer link to X`);
+    assert.ok(!footer.includes(`${X_ACCOUNT}?`), `${page}: no query string on the X link`);
+  }
 });
