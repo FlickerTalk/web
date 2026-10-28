@@ -17,6 +17,7 @@
         <a href="/security/">Security</a>
         <a href="/faq/">FAQ</a>
         <a href="https://github.com/FlickerTalk">Source code</a>
+        <a href="https://x.com/FlickerTalk">X</a>
     </nav>
   </header>
   <main class="wrap">
@@ -50,6 +51,7 @@
         <tr><td>Your device ID and public key</td><td>To check that requests really come from your phone</td><td>Until you erase the phone in the app</td></tr>
         <tr><td>A hash of your contact card's routing code</td><td>So that only your contacts can wake you or leave you mail</td><td>Same</td></tr>
         <tr><td>Your push token, encrypted with a key kept outside the database</td><td>To wake your phone</td><td>Same, or until Google or Apple say it expired</td></tr>
+        <tr><td>Eight bits, one for each space on your phone (the main list and up to seven sessions protected with a PIN), marking the sessions you have left</td><td>So that a session you have left gets no wake-up notifications or calls. We can see when a bit changes, but not who is in a session or what is said in it</td><td>Until you erase the phone in the app</td></tr>
         <tr><td>Messages that could not be delivered, encrypted end to end</td><td>To deliver them later</td><td>Until picked up, at most 7 days</td></tr>
       </tbody>
     </table>
@@ -67,6 +69,8 @@
       <dd>They deliver the wake-up notifications, so they see that your phone got a push and when. The push never contains a message or who sent it.</dd>
       <dt>Google Drive, if you set up a backup</dt>
       <dd>The backup is encrypted on your phone before it is uploaded to your own Google Drive. Google sees how many encrypted files there are, their sizes and dates, and that you use FlickerTalk, never their names or contents. Our server is not involved.</dd>
+      <dt>Google or Apple, if you use the Translator</dt>
+      <dd>The Translator tool translates a message or your draft on your phone. On Android the translator is Google's ML Kit, built into the app: the text stays on the phone. Google receives which languages are used and diagnostic data about the app, not the text. On iPhone the translation is done by iOS. Language packs are downloaded once, from Google or Apple, which see which language your phone asks for and its IP address, never the text.</dd>
       <dt>Our server</dt>
       <dd>It sees the IP address of a connection while it is open, to route it and to stop abuse. It does not keep it: the abuse limits use a salted hash that lives only in memory for a minute. If you send a suggestion from the app, it forwards the text to our mailbox without your FlickerTalk ID or IP address, and does not keep it.</dd>
       <dt>Your network provider</dt>
@@ -86,6 +90,7 @@
       <a href="/transparency/">Transparency</a>
       <a href="/security/">Security</a>
       <a href="https://github.com/FlickerTalk">Source code</a>
+      <a href="https://x.com/FlickerTalk">X</a>
     </nav>
     <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
     <p>No cookies, analytics, trackers or access logs on this website.</p>

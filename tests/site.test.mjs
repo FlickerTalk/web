@@ -45,6 +45,15 @@ const LOCALIZED = ["add", "move"].flatMap((dir) =>
 // Every HTML file the site serves: the pages above, the generated landings and anything added later.
 const ALL_HTML = readdirSync(site, { recursive: true }).filter((file) => file.endsWith(".html"));
 
+// The English trailer on YouTube, on the home page as YouTube's player in privacy-enhanced mode
+// (Ioan, 2026-10-15): the one thing the site loads from another site. Since 2026-10-21 it is the copy on
+// the FlickerTalk channel (@FlickerTalk), not the one on a personal channel.
+const TRAILER_VIDEO = "8zyG-PZkouU";
+const TRAILER_EMBED = `https://www.youtube-nocookie.com/embed/${TRAILER_VIDEO}`;
+const TRAILER_YOUTUBE = `https://youtu.be/${TRAILER_VIDEO}`;
+const withoutTrailer = (html) => html.replace(new RegExp(`<iframe[^>]* src="${escape(TRAILER_EMBED)}"[^>]*>`), "");
+const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
 const read = (path) => readFileSync(join(site, path), "utf8");
 const text = (path) => read(path).replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ");
 const everything = () => PAGES.map(text).join(" ");
@@ -62,7 +71,7 @@ test("every page exists, in English, with a title and a description", () => {
 
 test("no scripts, no inline styles and nothing loaded from another site", () => {
   for (const page of [...PAGES, ...LOCALIZED]) {
-    const html = read(page);
+    const html = withoutTrailer(read(page));
     assert.doesNotMatch(html, /<script/i, `${page} has no scripts`);
     assert.doesNotMatch(html, /<style|\sstyle="/i, `${page} has no inline styles (the CSP forbids them)`);
     assert.doesNotMatch(html, /\s(src|srcset)="(https?:)?\/\//i, `${page} loads nothing from another site`);
@@ -159,11 +168,12 @@ test("no page still promises a free first year", () => {
   }
 });
 
-// §40, 2026-10-08: there is no age rule on the price any more.
+// §40, 2026-10-08: there is no age rule on the price any more. The terms' ban on sexual content
+// involving minors (Guideline 1.2, 2026-10-28) is about abuse, not the price.
 test("no page ties the price to an age", () => {
   for (const page of [...PAGES, ...LOCALIZED]) {
     assert.doesNotMatch(
-      text(page),
+      text(page).replace(/sexual content involving minors/g, ""),
       /\bminors?\b|for adults|under (18|21)|aged (18|21)|(18|21) (and|or) (over|older)/i,
       `${page}: the price names an age`,
     );
@@ -391,7 +401,6 @@ test("help & contact is honest about what we cannot do", () => {
 // Android is out (2026-10-01): the home page sends people to Google Play; iOS is still on its way.
 const PLAY = "https://play.google.com/store/apps/details?id=com.flickertalk.app";
 const BADGE = "assets/google-play-badge.svg";
-const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 const playLinks = (html) => [...html.matchAll(new RegExp(`<a\\s[^>]*href="${escape(PLAY)}"[^>]*>([\\s\\S]*?)</a>`, "g"))];
 
 test("the home page links the Google Play listing with the official badge, twice", () => {
@@ -442,9 +451,10 @@ test("the FAQ and help pages say where to get the app", () => {
   }
 });
 
-// Links out are few and known: the source code, the Spanish regulator and the store listing.
+// Links out are few and known: the source code, the Spanish regulator, the store listing, the
+// trailer on YouTube and the account on X.
 test("every link to another site is one we know", () => {
-  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`)];
+  const known = [/^https:\/\/github\.com\/FlickerTalk(\/[\w/-]*)?$/, /^https:\/\/x\.com\/FlickerTalk$/, /^https:\/\/www\.aepd\.es$/, new RegExp(`^${escape(PLAY)}$`), new RegExp(`^${escape(TRAILER_YOUTUBE)}$`)];
   for (const page of [...PAGES, ...LOCALIZED]) {
     for (const [, url] of read(page).matchAll(/\shref="((?:https?:)?\/\/[^"]*)"/gi)) {
       assert.ok(known.some((k) => k.test(url)), `${page} → ${url}`);
@@ -484,6 +494,20 @@ test("the FAQ says what circles are, what they are not, and what members learn",
   assert.match(words, /What do other members of a circle learn about me\?/);
   assert.match(words, /arrives as a request/);
   assert.match(words, /members of a circle you are in/i, "circle members may see your IP address too");
+});
+
+// Silent slots (router 0.5.0, server#6): for each device the server keeps eight bits, one per space
+// on the phone (the main list and up to seven PIN sessions), and sends no push for a session the
+// user has left. "What our server keeps" lists it, with what the operator can learn from it.
+test("what our server keeps lists the bits of the sessions you have left", () => {
+  const html = read("how-it-works/index.html");
+  const table = html.slice(html.indexOf("<h2>What our server keeps</h2>"), html.indexOf("</table>"));
+  const row = table.match(/<tr><td>Eight bits[^]*?<\/tr>/)?.[0];
+  assert.ok(row, "a row for the session bits");
+  const [data, why, kept] = [...row.matchAll(/<td>([^]*?)<\/td>/g)].map((m) => m[1]);
+  assert.equal(data, "Eight bits, one for each space on your phone (the main list and up to seven sessions protected with a PIN), marking the sessions you have left");
+  assert.equal(why, "So that a session you have left gets no wake-up notifications or calls. We can see when a bit changes, but not who is in a session or what is said in it");
+  assert.equal(kept, "Until you erase the phone in the app");
 });
 
 test("how it works explains circles and what their members can see", () => {
@@ -678,4 +702,105 @@ test("the web server answers /add and /move without a redirect", () => {
     assert.match(conf, new RegExp(`location = /${name} \\{\\s*try_files [^;]*/${name}/index\\.html =404;\\s*\\}`), `/${name} is served as it is`);
   }
   assert.doesNotMatch(conf, /\b(return\s+30\d|rewrite)\b/, "no redirect anywhere");
+});
+
+// The English trailer (72 s) on the home page, as YouTube's player (Ioan, 2026-10-15): in
+// privacy-enhanced mode (youtube-nocookie.com), loaded only when scrolled to, never autoplaying,
+// with its size known before it loads. It is the one thing the site loads from another site, so the
+// home page, the privacy policy and the security page say what Google sees (§70, §78).
+test("the home page embeds the English trailer from YouTube, in privacy-enhanced mode", () => {
+  const html = read("index.html");
+  const frames = [...html.matchAll(/<iframe[^>]*>/g)].map((m) => m[0]);
+  assert.equal(frames.length, 1, "one player on the home page");
+  const [frame] = frames;
+  assert.match(frame, new RegExp(` src="${escape(TRAILER_EMBED)}"`), "privacy-enhanced domain, no parameters");
+  assert.match(frame, / title="[^"]+"/, "a title, for screen readers");
+  assert.match(frame, / loading="lazy"/, "loaded when scrolled to, not before");
+  assert.match(frame, / width="\d+" height="\d+"/, "its size is known before it loads: nothing moves");
+  assert.match(frame, / allowfullscreen/);
+  // The site sends Referrer-Policy: no-referrer, and YouTube refuses to play without a referrer
+  // (its "error 153"), so the player alone sends our origin and nothing more.
+  assert.match(frame, / referrerpolicy="origin"/, "the player gets our origin as referrer, the path never");
+  assert.doesNotMatch(frame, /autoplay/, "it never plays on its own");
+  assert.match(html, new RegExp(`<a href="${escape(TRAILER_YOUTUBE)}" target="_blank" rel="noopener">Watch it on YouTube</a>`), "the same trailer on YouTube, as a link");
+  for (const page of [...PAGES, ...LOCALIZED].filter((p) => p !== "index.html")) {
+    assert.doesNotMatch(read(page), /<iframe/i, `${page} embeds nothing`);
+  }
+  const seen = /YouTube player[^.]*Google sees that your browser loaded it/;
+  assert.match(text("index.html"), seen, "the home page says what Google sees");
+  assert.match(text("privacy/index.html"), seen, "the privacy policy says what Google sees");
+  assert.match(text("security/index.html"), seen, "the security page says what Google sees");
+  assert.doesNotMatch(text("privacy/index.html"), /loads nothing from other sites(?! except)/, "the policy no longer says nothing comes from other sites");
+  const conf = readFileSync(join(root, "nginx.conf"), "utf8");
+  assert.match(conf, /Content-Security-Policy "default-src 'none';[^"]*frame-src https:\/\/www\.youtube-nocookie\.com;/, "the policy admits the player and nothing else from outside");
+  assert.doesNotMatch(conf, /frame-src [^;]*youtube\.com/, "never the tracking domain");
+});
+
+// The Translator tool (app#177, 2026-10-20): it translates on the phone. On Android it is Google's
+// ML Kit, built into the app, which sends Google the languages used and diagnostic data about the
+// app, never the text; on iPhone iOS translates. Language packs are downloaded once from Google or
+// Apple. Precise about it (§70, §78): the agreed sentences, word for word, wherever the site lists
+// who sees what, and no sentence about the app says "no analytics" without "of our own".
+const TRANSLATOR_ANDROID =
+  "On Android the translator is Google's ML Kit, built into the app: the text stays on the phone. Google receives which languages are used and diagnostic data about the app, not the text.";
+const TRANSLATOR_IPHONE = "On iPhone the translation is done by iOS.";
+
+test("the privacy policy and how it works say what Google and Apple get from the translator", () => {
+  for (const page of ["privacy/index.html", "how-it-works/index.html"]) {
+    const words = text(page);
+    assert.ok(words.includes(TRANSLATOR_ANDROID), `${page}: the Android sentence, word for word`);
+    assert.ok(words.includes(TRANSLATOR_IPHONE), `${page}: the iPhone sentence, word for word`);
+    assert.match(words, /Language packs are downloaded once[^.]*never the text\./, `${page}: what a language pack download shows`);
+  }
+  assert.match(text("privacy/index.html"), /\bGoogle \(ML Kit\)/, "the policy lists ML Kit with who else takes part");
+  assert.ok(text("security/index.html").includes(TRANSLATOR_ANDROID), "the security page names the one exception");
+});
+
+test("no sentence about the app says there are no analytics without saying of our own", () => {
+  for (const page of [...PAGES, ...LOCALIZED]) {
+    for (const sentence of text(page).split(/(?<=[.!?])\s+/)) {
+      if (!/analytics/i.test(sentence) || /this website/i.test(sentence)) continue;
+      assert.match(sentence, /analytics of our own/i, `${page}: "${sentence}"`);
+    }
+  }
+});
+
+// Abuse (App Review, Guideline 1.2, 2026-10-28): the terms say there is no tolerance for
+// objectionable content or abusive users, how to report, that reports are acted on within 24 hours
+// and what acting means for a service that cannot read messages: the device is cut off from our
+// servers. Precise about it (§70, §78): we cannot read or delete what people send each other.
+test("the terms have zero tolerance for abuse and say how reports are handled", () => {
+  const words = text("terms/index.html");
+  assert.match(words, /no tolerance[^.]*for objectionable content or abusive users/i);
+  for (const kind of ["harassment", "threats", "spam", "sexual content involving minors", "illegal content"]) {
+    assert.ok(words.includes(kind), `the terms name ${kind}`);
+  }
+  assert.match(words, /We cannot read what people send each other/);
+  assert.match(words, /we store no conversation history on our servers/);
+  assert.match(words, /Block: on the contact's page\. It works at once and only on your phone/);
+  assert.match(words, /Report: on the contact's page, tap Report/);
+  assert.match(words, /an email from your own mail app to info@flickertalk\.com with their FlickerTalk ID, the reason and only the evidence you chose to include/);
+  assert.match(words, /We review every report and act on it within 24 hours\./);
+  assert.match(words, /cut the reported device off from our servers: it can no longer register, be woken up or use the mailbox\./);
+  assert.doesNotMatch(words, /we (remove|delete) (the|their|its) (content|messages)/i, "delivered messages are only on the phones");
+});
+
+test("help & contact points to the FlickerTalk contact in the app and to abuse reports", () => {
+  const words = text("support/index.html");
+  assert.match(words, /every install has a contact called “FlickerTalk” that answers automatically/);
+  assert.match(words, /We run it, so it can read what you send it/, "the one conversation we are the other end of");
+  assert.match(words, /Abuse reports go to info@flickertalk\.com[^.]*handled within 24 hours/);
+});
+
+// The FlickerTalk account on X (2026-10-28): every page with the footer links to it, next to the
+// source code, as a plain link (no tracking parameters, nothing loaded from X).
+const X_ACCOUNT = "https://x.com/FlickerTalk";
+test("every page with the footer links to the X account next to the source code", () => {
+  for (const page of ALL_HTML) {
+    const html = read(page);
+    if (!html.includes("Source code</a>")) continue;
+    const footer = html.slice(html.lastIndexOf("<footer"));
+    assert.ok(footer.includes(`<a href="${X_ACCOUNT}">X</a>`), `${page}: footer link to X`);
+    assert.ok(!footer.includes(`${X_ACCOUNT}?`), `${page}: no query string on the X link`);
+  }
 });

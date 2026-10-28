@@ -66,6 +66,7 @@ function page(lang, name, strings) {
         <a href="/security/">Security</a>
         <a href="/faq/">FAQ</a>
         <a href="https://github.com/FlickerTalk">Source code</a>
+        <a href="https://x.com/FlickerTalk">X</a>
     </nav>
   </header>
   <main class="wrap">
@@ -97,6 +98,7 @@ function page(lang, name, strings) {
       <a href="/transparency/">Transparency</a>
       <a href="/security/">Security</a>
       <a href="https://github.com/FlickerTalk">Source code</a>
+      <a href="https://x.com/FlickerTalk">X</a>
     </nav>
     <p>FlickerTalk is a service of ERPLORA CLOUD SL, NIF B27593136.</p>
     <p>No cookies, analytics, trackers or access logs on this website.</p>

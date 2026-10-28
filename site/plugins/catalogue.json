@@ -1,7 +1,7 @@
 {
   "plugins": [
     {
-      "hash": "b8bb7e8f6fe2db48b025b956b24bdf908152115d8b35e2e4543ac015ce9d03d2",
+      "hash": "c8d4ba5942cf48ae0db8d54137ff82b64edce1c437f3ea22a8be15c15c11cec0",
       "icon": "easel-outline",
       "id": "com.flickertalk.board",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><rect width=\"352\" height=\"208\" x=\"80\" y=\"112\" rx=\"12\" ry=\"12\"/><path d=\"M432 64H272V48a16 16 0 0 0-32 0v16H80a48.05 48.05 0 0 0-48 48v208a48.05 48.05 0 0 0 48 48h42.79l-26.17 91.6a16 16 0 1 0 30.76 8.8L156.07 368H240v48a16 16 0 0 0 32 0v-48h83.93l28.69 100.4a16 16 0 1 0 30.76-8.8L389.21 368H432a48.05 48.05 0 0 0 48-48V112a48.05 48.05 0 0 0-48-48m16 256a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16V112a16 16 0 0 1 16-16h352a16 16 0 0 1 16 16Z\"/></g></svg>\n",
@@ -90,10 +90,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Board",
-      "size": 405262,
+      "size": 405271,
       "summary": "A whiteboard with ink, text and formulas: draw a class, send it, or give it live.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.1.3.ftplugin",
-      "version": "1.1.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.board/1.1.4.ftplugin",
+      "version": "1.1.4"
     },
     {
       "hash": "9f56ab009b35a7a5e02693251660015d15d8d5b2f00a8c047222c3d055052e11",
@@ -191,7 +191,7 @@
       "version": "1.0.3"
     },
     {
-      "hash": "f789e4d78101792aa1a210818d577ceed10795d11b34c30175b40f658086f002",
+      "hash": "be4dd3b40524baa5511274d5d4931ca9bfd0a3d826f5148e0ecd99a646a23f23",
       "icon": "timer-outline",
       "id": "com.flickertalk.countdown",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#EA580C\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 48C141.12 48 48 141.12 48 256s93.12 208 208 208 208-93.12 208-208S370.88 48 256 48m-82.33 114.34 105 71a32.5 32.5 0 0 1-37.25 53.26 33.2 33.2 0 0 1-8-8l-71-105a8.13 8.13 0 0 1 11.32-11.32ZM256 432c-97 0-176-78.95-176-176a174.55 174.55 0 0 1 53.87-126.72 14.15 14.15 0 1 1 19.64 20.37A146.53 146.53 0 0 0 108.3 256c0 81.44 66.26 147.7 147.7 147.7S403.7 337.44 403.7 256c0-76.67-58.72-139.88-133.55-147v55a14.15 14.15 0 1 1-28.3 0V94.15A14.15 14.15 0 0 1 256 80c97.05 0 176 79 176 176s-78.95 176-176 176\"/></g></svg>\n",
@@ -280,10 +280,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Countdown",
-      "size": 21139,
+      "size": 21605,
       "summary": "The days that matter and how many are left: birthdays, trips, anniversaries, with a reminder for you alone.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.countdown/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.countdown/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
       "hash": "d0ff0908101879745d4cd4dfcd7a5ea9432934f7a1c751d39245e4c4ea1829d0",
@@ -381,7 +381,7 @@
       "version": "1.1.3"
     },
     {
-      "hash": "ec5396a9b0da55ea184e6411a87d2232f916bdf20d561fa08eea4f84d569eeb9",
+      "hash": "181d7979968958d2c9ece0ae01b1c8eeac1ee28cb83369b5319e4d60441cc74b",
       "icon": "dice-outline",
       "id": "com.flickertalk.game.backgammon",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M440.88 129.37 288.16 40.62a64.14 64.14 0 0 0-64.33 0L71.12 129.37a4 4 0 0 0 0 6.9L254 243.85a4 4 0 0 0 4.06 0L440.9 136.27a4 4 0 0 0-.02-6.9M256 152c-13.25 0-24-7.16-24-16s10.75-16 24-16 24 7.16 24 16-10.75 16-24 16M238 270.81 54 163.48a4 4 0 0 0-6 3.46v173.92a48 48 0 0 0 23.84 41.39L234 479.48a4 4 0 0 0 6-3.46V274.27a4 4 0 0 0-2-3.46M96 368c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96-32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24M458 163.51 274 271.56a4 4 0 0 0-2 3.45V476a4 4 0 0 0 6 3.46l162.15-97.23A48 48 0 0 0 464 340.86V167a4 4 0 0 0-6-3.49M320 424c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96 32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24\"/></g></svg>\n",
@@ -470,13 +470,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Backgammon",
-      "size": 58357,
+      "size": 58311,
       "summary": "Backgammon with the other person in the chat: dice rolled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "0e12b214a29d45d53c5139bfabe6faaf8434eecd141078527b8bc07568a875c5",
+      "hash": "a71db6f13365696700dada2a42bc34757b8312647088b2d711213a52dc6dab1e",
       "icon": "radio-button-on-outline",
       "id": "com.flickertalk.game.checkers",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><circle cx=\"256\" cy=\"256\" r=\"144\"/></g></svg>\n",
@@ -565,13 +565,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Checkers",
-      "size": 50263,
+      "size": 50211,
       "summary": "Checkers with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "d5c551615e66c1fdb50fa6e9abae17b3aa7c746964c2de1081e555b4f0aeebe1",
+      "hash": "59849d43f41a7a3ee707fee6a7217a3c3b4bbac3194d4fddfa5cf2c69d4ec1e6",
       "icon": "shield-outline",
       "id": "com.flickertalk.game.chess",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#475569\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M479.07 111.35a16 16 0 0 0-13.15-14.75C379.89 81.18 343.69 69.12 266 34.16c-7.76-2.89-12.57-2.84-20 0-77.69 35-113.89 47-199.92 62.44a16 16 0 0 0-13.15 14.75c-3.85 61.1 4.34 118 24.36 169.15a348.9 348.9 0 0 0 71.43 112.41c44.67 47.43 94.2 75.12 119.74 85.6a20 20 0 0 0 15.11 0c27-10.92 74.69-37.82 119.71-85.62a348.9 348.9 0 0 0 71.43-112.39c20.02-51.14 28.21-108.05 24.36-169.15\"/></g></svg>\n",
@@ -660,13 +660,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Chess",
-      "size": 91210,
+      "size": 91160,
       "summary": "Chess with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.6.ftplugin",
+      "version": "1.0.6"
     },
     {
-      "hash": "f691a0b5bd9d3de55e59b8f5b7cbdab10189ca993d2f8dacfbe3ed61669d5f1c",
+      "hash": "f2079fa66cd91c1e7bcb13f02793745892b2ec29ef75a70c4abe40ed6201ba78",
       "icon": "square-outline",
       "id": "com.flickertalk.game.dotsandboxes",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64m-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58\"/></g></svg>\n",
@@ -755,13 +755,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Dots and Boxes",
-      "size": 48201,
+      "size": 48153,
       "summary": "Dots and boxes with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "37412093d880352bac412be420bcc86e766005bdd8a7b9391dfd8062a5bb714b",
+      "hash": "40b801c008c1abf001063fba5272f7c195446ec262c1d2c43c8d1d4ff8700cac",
       "icon": "albums-outline",
       "id": "com.flickertalk.game.eights",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 96H144a16 16 0 0 1 0-32h224a16 16 0 0 1 0 32M400 144H112a16 16 0 0 1 0-32h288a16 16 0 0 1 0 32M419.13 448H92.87A44.92 44.92 0 0 1 48 403.13V204.87A44.92 44.92 0 0 1 92.87 160h326.26A44.92 44.92 0 0 1 464 204.87v198.26A44.92 44.92 0 0 1 419.13 448\"/></g></svg>\n",
@@ -850,13 +850,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Crazy Eights",
-      "size": 57606,
+      "size": 57552,
       "summary": "Crazy Eights with the other person in the chat: a deck shuffled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "b53d6794effb6d481c61a37c10fc5d098cc37b39cd6b2bb7f26bb1ff818b52a3",
+      "hash": "5f9192223800054f3df195ac4c3b608ded5458ba1fd237cc5fce99cbb88ea636",
       "icon": "ellipse-outline",
       "id": "com.flickertalk.game.fourinarow",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 464c-114.69 0-208-93.31-208-208S141.31 48 256 48s208 93.31 208 208-93.31 208-208 208\"/></g></svg>\n",
@@ -945,13 +945,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Four in a Row",
-      "size": 46978,
+      "size": 46921,
       "summary": "Four in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.6.ftplugin",
+      "version": "1.0.6"
     },
     {
-      "hash": "03a5aac84ef0ea1cf0aab6baf09bfb405c478f2e301f62ebc5cc454a25ab1029",
+      "hash": "bf217d0ecbf5edcc509a3328adaceb3d78b799cd0e638c282a77c666a12aad0a",
       "icon": "apps-outline",
       "id": "com.flickertalk.game.gomoku",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M104 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56\"/></g></svg>\n",
@@ -1040,13 +1040,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Five in a Row",
-      "size": 47616,
+      "size": 47568,
       "summary": "Five in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "aec5db3a8109aabec8de4aa3963398f4c27e3dabb8aa2f00a7c4a24ccb9ddf37",
+      "hash": "1b4ae187d4324e47ba1578d804ab98816d27527174c170aed9f0318b2530b092",
       "icon": "basket-outline",
       "id": "com.flickertalk.game.mancala",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M424.11 192H360L268.8 70.4a16 16 0 0 0-25.6 0L152 192H87.89a32.57 32.57 0 0 0-32.62 32.44 30.3 30.3 0 0 0 1.31 9l46.27 163.14a50.72 50.72 0 0 0 48.84 36.91h208.62a51.21 51.21 0 0 0 49-36.86l46.33-163.36a15.6 15.6 0 0 0 .46-2.36l.53-4.93a13 13 0 0 0 .09-1.55A32.57 32.57 0 0 0 424.11 192M256 106.67 320 192H192Zm0 245a37.7 37.7 0 1 1 37.88-37.7A37.87 37.87 0 0 1 256 351.63Z\"/></g></svg>\n",
@@ -1135,13 +1135,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Mancala",
-      "size": 47089,
+      "size": 47037,
       "summary": "Mancala with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "2d244659831c763a7c5cc050c8f5cf323b1d6476dc8a43802dda0ca507f49d5d",
+      "hash": "7a013b2a7ab9206848162d026f2824fdd6909065adaaa9a6696754623f90848f",
       "icon": "contrast-outline",
       "id": "com.flickertalk.game.reversi",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 32A224 224 0 0 0 97.61 414.39 224 224 0 1 0 414.39 97.61 222.53 222.53 0 0 0 256 32M64 256c0-105.87 86.13-192 192-192v384c-105.87 0-192-86.13-192-192\"/></g></svg>\n",
@@ -1230,13 +1230,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Reversi",
-      "size": 46619,
+      "size": 46567,
       "summary": "Reversi with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "02875d4be899211b0cb9ee857b14f1de93ac925aa0f9cc759e5fd53b26986bc0",
+      "hash": "84cae84e604ea423b12ae2472ac88213c116974b955e6b3f744bfb719101ae65",
       "icon": "boat-outline",
       "id": "com.flickertalk.game.seabattle",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M416 473.14a6.83 6.83 0 0 0-3.57-6c-27.07-14.55-51.76-36.82-62.62-48a10.05 10.05 0 0 0-12.72-1.51c-50.33 32.42-111.61 32.44-161.95.05a10.09 10.09 0 0 0-12.82 1.56c-10.77 11.28-35.19 33.3-62.43 47.75a7.11 7.11 0 0 0-3.89 5.73 6.73 6.73 0 0 0 7.92 7.15c20.85-4.18 41-13.68 60.2-23.83a8.71 8.71 0 0 1 8-.06 185.14 185.14 0 0 0 167.81 0 8.82 8.82 0 0 1 8.09.06c19.1 10 39.22 19.59 60 23.8a6.73 6.73 0 0 0 8-6.71ZM476.71 246.91c-3.49-8.39-10.9-14.89-20.9-18.35L432 219.08V136a64 64 0 0 0-64-64h-32v-8a40 40 0 0 0-40-40h-80a40 40 0 0 0-40 40v8h-32a64 64 0 0 0-64 64v83.15l-23.58 9.39c-9.94 3.3-17.63 10-21.15 18.44-2.45 5.89-5.25 15-1.3 26.46l.1.3 46.66 119.44A23.33 23.33 0 0 0 102.58 408c.5 0 1 0 1.53-.05 31.32-2 56-17.27 72.6-31.61C200.42 396.81 228.31 408 256 408s55.43-11.2 79.14-31.7c16.59 14.36 41.3 29.67 72.61 31.65a23.36 23.36 0 0 0 23.37-14.74l46.65-119c3.28-8.09 2.9-17.76-1.06-27.3M269 154.21l-1.14-.4a39.53 39.53 0 0 0-23.73 0l-.58.18-126.07 50.23a4 4 0 0 1-5.48-3.72V136a32 32 0 0 1 32-32h224a32 32 0 0 1 32 32v64.44a4 4 0 0 1-5.48 3.72Z\"/></g></svg>\n",
@@ -1325,13 +1325,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Sea Battle",
-      "size": 58043,
+      "size": 57991,
       "summary": "Sea Battle with the other person in the chat: hidden fleets, checked at the end, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "7a6e26762d5f598574a9f39218369c1832f8a013c716856669a0d03212687049",
+      "hash": "ad63d14c02470d037ad2acdbb84a9f1a7fd03d1e77fa244f9cacf2fa561c469a",
       "icon": "grid-outline",
       "id": "com.flickertalk.game.tictactoe",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M204 240H68a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 240H308a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M204 480H68a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 480H308a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36\"/></g></svg>\n",
@@ -1420,13 +1420,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Tic-Tac-Toe",
-      "size": 46573,
+      "size": 46525,
       "summary": "Tic-Tac-Toe with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.6.ftplugin",
+      "version": "1.0.6"
     },
     {
-      "hash": "d46d05961633c43feef6507a4a1d2cb401143fbaefeaf782732133313f348214",
+      "hash": "3fa1a6b799cd5d88e90496adacfe05fd3c8d38f1beb67c68d98e515d703e1392",
       "icon": "text-outline",
       "id": "com.flickertalk.game.wordduel",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m292.6 407.78-120-320a22 22 0 0 0-41.2 0l-120 320a22 22 0 0 0 41.2 15.44l36.16-96.42a2 2 0 0 1 1.87-1.3h122.74a2 2 0 0 1 1.87 1.3l36.16 96.42a22 22 0 0 0 41.2-15.44m-185.84-129 43.37-115.65a2 2 0 0 1 3.74 0l43.37 115.67a2 2 0 0 1-1.87 2.7h-86.74a2 2 0 0 1-1.87-2.7ZM400.77 169.5c-41.72-.3-79.08 23.87-95 61.4a22 22 0 0 0 40.5 17.2c8.88-20.89 29.77-34.44 53.32-34.6 32.32-.22 58.41 26.5 58.41 58.85a1.5 1.5 0 0 1-1.45 1.5c-21.92.61-47.92 2.07-71.12 4.8-54.75 6.44-87.43 36.29-87.43 79.85 0 23.19 8.76 44 24.67 58.68C337.6 430.93 358 438.5 380 438.5c31 0 57.69-8 77.94-23.22h.06a22 22 0 1 0 44 .19v-143c0-56.18-45-102.56-101.23-102.97M380 394.5c-17.53 0-38-9.43-38-36 0-10.67 3.83-18.14 12.43-24.23 8.37-5.93 21.2-10.16 36.14-11.92 21.12-2.49 44.82-3.86 65.14-4.47a2 2 0 0 1 2 2.1C455 370.1 429.46 394.5 380 394.5\"/></g></svg>\n",
@@ -1515,13 +1515,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Word Duel",
-      "size": 108573,
+      "size": 108512,
       "summary": "Word Duel with the other person in the chat: each hides a five-letter word, both guess in turn, English or Spanish, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "89898930ab1058f0d31fe40aba876c21cc66b317b2e172be9c77f52eac46f098",
+      "hash": "e7e4b8cf3333c5b05fd41f537bb8317bc69e08be73a24375cd30b92fcc8a0592",
       "icon": "language-outline",
       "id": "com.flickertalk.game.wordgrid",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#7C3AED\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m478.33 433.6-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362 368 281.65 401.17 362ZM267.84 342.92a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z\"/></g></svg>\n",
@@ -1610,10 +1610,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Letter Grid",
-      "size": 117938,
+      "size": 117885,
       "summary": "Letter Grid with the other person in the chat: sixteen letters drawn by both phones, words said in turn, English or Spanish, over the direct connection.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
       "hash": "c6a6538e4e22edd114695592e8232be769c000fce622b5fb293cf0393e7b4b49",
@@ -1976,7 +1976,7 @@
       "version": "1.1.4"
     },
     {
-      "hash": "e3f2d6a2d19be265dd5ba0f12c45121cd6eec58633d497525d1af89660e5fe19",
+      "hash": "5840b5cd33fe393f6b1070121170846936d0869bbbf52185bfa174340c267be7",
       "icon": "reader-outline",
       "id": "com.flickertalk.notes",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 32H144a64.07 64.07 0 0 0-64 64v320a64.07 64.07 0 0 0 64 64h224a64.07 64.07 0 0 0 64-64V96a64.07 64.07 0 0 0-64-64M256 304h-80a16 16 0 0 1 0-32h80a16 16 0 0 1 0 32m80-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32m0-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32\"/></g></svg>\n",
@@ -2065,10 +2065,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Notes",
-      "size": 15962,
+      "size": 16060,
       "summary": "Personal notes with a reminder, kept on this phone only.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.notes/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.notes/1.0.4.ftplugin",
+      "version": "1.0.4"
     },
     {
       "hash": "74d623f35a641076943b56fee0d5af684061d181fb1d0b066d049452a5db56a8",
@@ -2146,7 +2146,7 @@
       "version": "1.1.4"
     },
     {
-      "hash": "25b13e10e2c384d4e5b40e0c65c1ccecd50ab612017a2f6a79a88fb8e7f4f82d",
+      "hash": "b6eef0543890e81e79c40ee556f4f140e6463cadef3a6322358d1249c7fad5bf",
       "icon": "book-outline",
       "id": "com.flickertalk.pdfviewer",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M202.24 74C166.11 56.75 115.61 48.3 48 48a31.36 31.36 0 0 0-17.92 5.33A32 32 0 0 0 16 79.9V366c0 19.34 13.76 33.93 32 33.93 71.07 0 142.36 6.64 185.06 47a4.11 4.11 0 0 0 6.94-3V106.82a15.9 15.9 0 0 0-5.46-12A143 143 0 0 0 202.24 74M481.92 53.3A31.33 31.33 0 0 0 464 48c-67.61.3-118.11 8.71-154.24 26a143.3 143.3 0 0 0-32.31 20.78 15.93 15.93 0 0 0-5.45 12v337.13a3.93 3.93 0 0 0 6.68 2.81c25.67-25.5 70.72-46.82 185.36-46.81a32 32 0 0 0 32-32v-288a32 32 0 0 0-14.12-26.61\"/></g></svg>\n",
@@ -2235,10 +2235,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "PDF viewer",
-      "size": 1181224,
+      "size": 1182277,
       "summary": "Read the PDFs of a chat without leaving the app, and follow a presentation page by page during a call.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.pdfviewer/1.1.2.ftplugin",
-      "version": "1.1.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdfviewer/1.1.3.ftplugin",
+      "version": "1.1.3"
     },
     {
       "hash": "1592e718d82363a803264774b489688facb8f109142c7fcc199741d121730d92",
@@ -2716,7 +2716,7 @@
       "version": "1.0.3"
     },
     {
-      "hash": "17c28aaee9d53aee3730c41dc37a30218011a72c93830f4cd5c5189be94f95dc",
+      "hash": "7dd7f7b085616d8d3345ea4fb33efabc247327de1a250ff9dac19bd6b02dc422",
       "icon": "brush-outline",
       "id": "com.flickertalk.sketch",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M233.15 360.11a15.7 15.7 0 0 1-4.92-.77 16 16 0 0 1-10.92-13c-2.15-15-19.95-32.46-36.62-35.85a16 16 0 0 1-8.69-26.33l211.09-235.1c.19-.22.39-.43.59-.63a56.57 56.57 0 0 1 79.89 0 56.51 56.51 0 0 1 .11 79.78l-219 227a16 16 0 0 1-11.53 4.9M119.89 480.11c-32.14 0-65.45-16.89-84.85-43a16 16 0 0 1 12.85-25.54c5.34 0 20-4.87 20-20.57 0-39.07 31.4-70.86 70-70.86s70 31.79 70 70.86c0 49.12-39.48 89.11-88 89.11\"/></g></svg>\n",
@@ -2805,10 +2805,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Sketch",
-      "size": 4870,
+      "size": 5501,
       "summary": "Draw with a finger and send the drawing as a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.4.ftplugin",
-      "version": "1.1.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.5.ftplugin",
+      "version": "1.1.5"
     },
     {
       "hash": "201301722dae894a5989c06a9e5b0c79029a84d6e9bbb9b6dd25d56fe6bd1662",
@@ -2904,6 +2904,361 @@
       "summary": "Shared expenses between two people: who paid what and who owes whom, kept on each phone and joined live from a conversation.",
       "url": "https://flickertalk.com/plugins/com.flickertalk.split/1.0.3.ftplugin",
       "version": "1.0.3"
+    },
+    {
+      "hash": "14388007f160f58cb736a613dcb04cc4d4a51e89472a9131d68fa83de6d66853",
+      "icon": "language-outline",
+      "id": "com.flickertalk.translate",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m478.33 433.6-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362 368 281.65 401.17 362ZM267.84 342.92a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z\"/></g></svg>\n",
+      "kind": "tool",
+      "locales": {
+        "ar": {
+          "hooks": {
+            "composer": "ترجمة",
+            "message": "ترجمة",
+            "settings": {
+              "fields": {
+                "lang": "اللغة",
+                "receive": "ترجمة ما أستلمه",
+                "send": "إرسال مترجَم"
+              },
+              "label": "الترجمة",
+              "note": "تُنزَّل حزم اللغات مرة واحدة؛ وتتم الترجمة على الهاتف."
+            }
+          },
+          "name": "المترجم",
+          "summary": "يترجم رسالة أو مسودتك على الهاتف. تُنزَّل حزم اللغات مرة واحدة من Apple أو Google؛ ولا يغادر النص الهاتف أبدًا."
+        },
+        "bn": {
+          "hooks": {
+            "composer": "অনুবাদ করুন",
+            "message": "অনুবাদ করুন",
+            "settings": {
+              "fields": {
+                "lang": "ভাষা",
+                "receive": "যা পাই তা অনুবাদ করুন",
+                "send": "অনুবাদ করে পাঠান"
+              },
+              "label": "অনুবাদ",
+              "note": "ভাষার প্যাক একবার ডাউনলোড হয়; অনুবাদ ফোনেই হয়।"
+            }
+          },
+          "name": "অনুবাদক",
+          "summary": "কোনো মেসেজ বা আপনার খসড়া ফোনেই অনুবাদ করে। ভাষার প্যাক Apple বা Google থেকে একবার ডাউনলোড হয়; লেখা কখনো ফোনের বাইরে যায় না।"
+        },
+        "de": {
+          "hooks": {
+            "composer": "Übersetzen",
+            "message": "Übersetzen",
+            "settings": {
+              "fields": {
+                "lang": "Sprache",
+                "receive": "Empfangenes übersetzen",
+                "send": "Übersetzt senden"
+              },
+              "label": "Übersetzung",
+              "note": "Sprachpakete werden einmal geladen; die Übersetzung geschieht auf dem Telefon."
+            }
+          },
+          "name": "Übersetzer",
+          "summary": "Übersetzt eine Nachricht oder deinen Entwurf auf dem Telefon. Sprachpakete werden einmal von Apple oder Google geladen; der Text verlässt das Telefon nie."
+        },
+        "es": {
+          "hooks": {
+            "composer": "Traducir",
+            "message": "Traducir",
+            "settings": {
+              "fields": {
+                "lang": "Idioma",
+                "receive": "Traducir lo que recibo",
+                "send": "Enviar traducido"
+              },
+              "label": "Traducción",
+              "note": "Los paquetes de idioma se descargan una vez; la traducción se hace en el teléfono."
+            }
+          },
+          "name": "Traductor",
+          "summary": "Traduce un mensaje o tu borrador en el teléfono. Los paquetes de idioma se descargan una vez de Apple o Google; el texto nunca sale del teléfono."
+        },
+        "fr": {
+          "hooks": {
+            "composer": "Traduire",
+            "message": "Traduire",
+            "settings": {
+              "fields": {
+                "lang": "Langue",
+                "receive": "Traduire ce que je reçois",
+                "send": "Envoyer traduit"
+              },
+              "label": "Traduction",
+              "note": "Les packs de langue sont téléchargés une fois ; la traduction se fait sur le téléphone."
+            }
+          },
+          "name": "Traducteur",
+          "summary": "Traduit un message ou votre brouillon sur le téléphone. Les packs de langue sont téléchargés une fois depuis Apple ou Google ; le texte ne quitte jamais le téléphone."
+        },
+        "hi": {
+          "hooks": {
+            "composer": "अनुवाद करें",
+            "message": "अनुवाद करें",
+            "settings": {
+              "fields": {
+                "lang": "भाषा",
+                "receive": "मिलने वाले संदेशों का अनुवाद करें",
+                "send": "अनुवाद करके भेजें"
+              },
+              "label": "अनुवाद",
+              "note": "भाषा पैक एक बार डाउनलोड होते हैं; अनुवाद फ़ोन पर ही होता है।"
+            }
+          },
+          "name": "अनुवादक",
+          "summary": "किसी संदेश या आपके ड्राफ़्ट का अनुवाद फ़ोन पर ही करता है। भाषा पैक Apple या Google से एक बार डाउनलोड होते हैं; टेक्स्ट कभी फ़ोन से बाहर नहीं जाता।"
+        },
+        "id": {
+          "hooks": {
+            "composer": "Terjemahkan",
+            "message": "Terjemahkan",
+            "settings": {
+              "fields": {
+                "lang": "Bahasa",
+                "receive": "Terjemahkan yang saya terima",
+                "send": "Kirim terjemahan"
+              },
+              "label": "Terjemahan",
+              "note": "Paket bahasa diunduh sekali; terjemahan dilakukan di ponsel."
+            }
+          },
+          "name": "Penerjemah",
+          "summary": "Menerjemahkan pesan atau draf Anda di ponsel. Paket bahasa diunduh sekali dari Apple atau Google; teks tidak pernah keluar dari ponsel."
+        },
+        "it": {
+          "hooks": {
+            "composer": "Traduci",
+            "message": "Traduci",
+            "settings": {
+              "fields": {
+                "lang": "Lingua",
+                "receive": "Traduci ciò che ricevo",
+                "send": "Invia tradotto"
+              },
+              "label": "Traduzione",
+              "note": "I pacchetti di lingua si scaricano una volta; la traduzione avviene sul telefono."
+            }
+          },
+          "name": "Traduttore",
+          "summary": "Traduce un messaggio o la tua bozza sul telefono. I pacchetti di lingua si scaricano una volta da Apple o Google; il testo non lascia mai il telefono."
+        },
+        "ja": {
+          "hooks": {
+            "composer": "翻訳",
+            "message": "翻訳",
+            "settings": {
+              "fields": {
+                "lang": "言語",
+                "receive": "受信したメッセージを翻訳",
+                "send": "翻訳して送信"
+              },
+              "label": "翻訳結果",
+              "note": "言語パックは一度だけダウンロードされ、翻訳は端末上で行われます。"
+            }
+          },
+          "name": "翻訳",
+          "summary": "メッセージや下書きを端末上で翻訳します。言語パックは Apple または Google から一度だけダウンロードされ、テキストが端末の外に出ることはありません。"
+        },
+        "ko": {
+          "hooks": {
+            "composer": "번역",
+            "message": "번역",
+            "settings": {
+              "fields": {
+                "lang": "언어",
+                "receive": "받은 메시지 번역",
+                "send": "번역해서 보내기"
+              },
+              "label": "번역 결과",
+              "note": "언어 팩은 한 번만 다운로드되며, 번역은 휴대폰에서 이루어집니다."
+            }
+          },
+          "name": "번역기",
+          "summary": "메시지나 작성 중인 글을 휴대폰에서 번역합니다. 언어 팩은 Apple 또는 Google에서 한 번만 다운로드되며, 텍스트는 휴대폰 밖으로 나가지 않습니다."
+        },
+        "pl": {
+          "hooks": {
+            "composer": "Przetłumacz",
+            "message": "Przetłumacz",
+            "settings": {
+              "fields": {
+                "lang": "Język",
+                "receive": "Tłumacz to, co otrzymuję",
+                "send": "Wysyłaj przetłumaczone"
+              },
+              "label": "Tłumaczenie",
+              "note": "Pakiety językowe pobiera się raz; tłumaczenie odbywa się na telefonie."
+            }
+          },
+          "name": "Tłumacz",
+          "summary": "Tłumaczy wiadomość lub twój szkic na telefonie. Pakiety językowe pobiera się raz od Apple lub Google; tekst nigdy nie opuszcza telefonu."
+        },
+        "pt": {
+          "hooks": {
+            "composer": "Traduzir",
+            "message": "Traduzir",
+            "settings": {
+              "fields": {
+                "lang": "Idioma",
+                "receive": "Traduzir o que recebo",
+                "send": "Enviar traduzido"
+              },
+              "label": "Tradução",
+              "note": "Os pacotes de idioma são baixados uma vez; a tradução é feita no telefone."
+            }
+          },
+          "name": "Tradutor",
+          "summary": "Traduz uma mensagem ou o seu rascunho no telefone. Os pacotes de idioma são baixados uma vez da Apple ou do Google; o texto nunca sai do telefone."
+        },
+        "ro": {
+          "hooks": {
+            "composer": "Tradu",
+            "message": "Tradu",
+            "settings": {
+              "fields": {
+                "lang": "Limba",
+                "receive": "Tradu ce primesc",
+                "send": "Trimite tradus"
+              },
+              "label": "Traducere",
+              "note": "Pachetele de limbă se descarcă o singură dată; traducerea se face pe telefon."
+            }
+          },
+          "name": "Traducător",
+          "summary": "Traduce un mesaj sau ciorna ta pe telefon. Pachetele de limbă se descarcă o singură dată de la Apple sau Google; textul nu părăsește niciodată telefonul."
+        },
+        "ru": {
+          "hooks": {
+            "composer": "Перевести",
+            "message": "Перевести",
+            "settings": {
+              "fields": {
+                "lang": "Язык",
+                "receive": "Переводить входящие",
+                "send": "Отправлять в переводе"
+              },
+              "label": "Перевод",
+              "note": "Языковые пакеты загружаются один раз; перевод выполняется на телефоне."
+            }
+          },
+          "name": "Переводчик",
+          "summary": "Переводит сообщение или ваш черновик на телефоне. Языковые пакеты загружаются один раз от Apple или Google; текст никогда не покидает телефон."
+        },
+        "th": {
+          "hooks": {
+            "composer": "แปล",
+            "message": "แปล",
+            "settings": {
+              "fields": {
+                "lang": "ภาษา",
+                "receive": "แปลข้อความที่ได้รับ",
+                "send": "ส่งแบบแปลแล้ว"
+              },
+              "label": "คำแปล",
+              "note": "ชุดภาษาดาวน์โหลดครั้งเดียว และการแปลทำบนโทรศัพท์"
+            }
+          },
+          "name": "แปลภาษา",
+          "summary": "แปลข้อความหรือร่างของคุณบนโทรศัพท์ ชุดภาษาดาวน์โหลดครั้งเดียวจาก Apple หรือ Google และข้อความไม่เคยออกจากโทรศัพท์"
+        },
+        "tr": {
+          "hooks": {
+            "composer": "Çevir",
+            "message": "Çevir",
+            "settings": {
+              "fields": {
+                "lang": "Dil",
+                "receive": "Gelenleri çevir",
+                "send": "Çevrilmiş gönder"
+              },
+              "label": "Çeviri",
+              "note": "Dil paketleri bir kez indirilir; çeviri telefonda yapılır."
+            }
+          },
+          "name": "Çevirmen",
+          "summary": "Bir mesajı veya taslağınızı telefonda çevirir. Dil paketleri Apple'dan veya Google'dan bir kez indirilir; metin telefondan asla çıkmaz."
+        },
+        "uk": {
+          "hooks": {
+            "composer": "Перекласти",
+            "message": "Перекласти",
+            "settings": {
+              "fields": {
+                "lang": "Мова",
+                "receive": "Перекладати вхідні",
+                "send": "Надсилати в перекладі"
+              },
+              "label": "Переклад",
+              "note": "Мовні пакети завантажуються один раз; переклад виконується на телефоні."
+            }
+          },
+          "name": "Перекладач",
+          "summary": "Перекладає повідомлення або вашу чернетку на телефоні. Мовні пакети завантажуються один раз від Apple або Google; текст ніколи не залишає телефон."
+        },
+        "vi": {
+          "hooks": {
+            "composer": "Dịch",
+            "message": "Dịch",
+            "settings": {
+              "fields": {
+                "lang": "Ngôn ngữ",
+                "receive": "Dịch tin nhắn nhận được",
+                "send": "Gửi bản dịch"
+              },
+              "label": "Bản dịch",
+              "note": "Gói ngôn ngữ được tải một lần; việc dịch diễn ra trên điện thoại."
+            }
+          },
+          "name": "Trình dịch",
+          "summary": "Dịch một tin nhắn hoặc bản nháp của bạn ngay trên điện thoại. Gói ngôn ngữ được tải một lần từ Apple hoặc Google; văn bản không bao giờ rời khỏi điện thoại."
+        },
+        "zh-CN": {
+          "hooks": {
+            "composer": "翻译",
+            "message": "翻译",
+            "settings": {
+              "fields": {
+                "lang": "语言",
+                "receive": "翻译收到的消息",
+                "send": "发送译文"
+              },
+              "label": "译文",
+              "note": "语言包只需下载一次；翻译在手机上完成。"
+            }
+          },
+          "name": "翻译",
+          "summary": "在手机上翻译消息或你的草稿。语言包只需从 Apple 或 Google 下载一次；文本永远不会离开手机。"
+        },
+        "zh-TW": {
+          "hooks": {
+            "composer": "翻譯",
+            "message": "翻譯",
+            "settings": {
+              "fields": {
+                "lang": "語言",
+                "receive": "翻譯收到的訊息",
+                "send": "傳送譯文"
+              },
+              "label": "譯文",
+              "note": "語言包只需下載一次；翻譯在手機上完成。"
+            }
+          },
+          "name": "翻譯",
+          "summary": "在手機上翻譯訊息或你的草稿。語言包只需從 Apple 或 Google 下載一次；文字永遠不會離開手機。"
+        }
+      },
+      "minCoreVersion": "1.7.0",
+      "name": "Translator",
+      "size": 31271,
+      "summary": "Translates a message or your draft on the phone. Language packs are downloaded once from Apple or Google; the text never leaves the phone.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.translate/1.1.2.ftplugin",
+      "version": "1.1.2"
     }
   ]
 }
