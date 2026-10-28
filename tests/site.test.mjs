@@ -168,11 +168,12 @@ test("no page still promises a free first year", () => {
   }
 });
 
-// §40, 2026-10-08: there is no age rule on the price any more.
+// §40, 2026-10-08: there is no age rule on the price any more. The terms' ban on sexual content
+// involving minors (Guideline 1.2, 2026-10-28) is about abuse, not the price.
 test("no page ties the price to an age", () => {
   for (const page of [...PAGES, ...LOCALIZED]) {
     assert.doesNotMatch(
-      text(page),
+      text(page).replace(/sexual content involving minors/g, ""),
       /\bminors?\b|for adults|under (18|21)|aged (18|21)|(18|21) (and|or) (over|older)/i,
       `${page}: the price names an age`,
     );
@@ -819,4 +820,31 @@ test("no sentence about the app says there are no analytics without saying of ou
       assert.match(sentence, /analytics of our own/i, `${page}: "${sentence}"`);
     }
   }
+});
+
+// Abuse (App Review, Guideline 1.2, 2026-10-28): the terms say there is no tolerance for
+// objectionable content or abusive users, how to report, that reports are acted on within 24 hours
+// and what acting means for a service that cannot read messages: the device is cut off from our
+// servers. Precise about it (§70, §78): we cannot read or delete what people send each other.
+test("the terms have zero tolerance for abuse and say how reports are handled", () => {
+  const words = text("terms/index.html");
+  assert.match(words, /no tolerance[^.]*for objectionable content or abusive users/i);
+  for (const kind of ["harassment", "threats", "spam", "sexual content involving minors", "illegal content"]) {
+    assert.ok(words.includes(kind), `the terms name ${kind}`);
+  }
+  assert.match(words, /We cannot read what people send each other/);
+  assert.match(words, /we store no conversation history on our servers/);
+  assert.match(words, /Block: on the contact's page\. It works at once and only on your phone/);
+  assert.match(words, /Report: on the contact's page, tap Report/);
+  assert.match(words, /an email from your own mail app to info@flickertalk\.com with their FlickerTalk ID, the reason and only the evidence you chose to include/);
+  assert.match(words, /We review every report and act on it within 24 hours\./);
+  assert.match(words, /cut the reported device off from our servers: it can no longer register, be woken up or use the mailbox\./);
+  assert.doesNotMatch(words, /we (remove|delete) (the|their|its) (content|messages)/i, "delivered messages are only on the phones");
+});
+
+test("help & contact points to the FlickerTalk contact in the app and to abuse reports", () => {
+  const words = text("support/index.html");
+  assert.match(words, /every install has a contact called “FlickerTalk” that answers automatically/);
+  assert.match(words, /We run it, so it can read what you send it/, "the one conversation we are the other end of");
+  assert.match(words, /Abuse reports go to info@flickertalk\.com[^.]*handled within 24 hours/);
 });
