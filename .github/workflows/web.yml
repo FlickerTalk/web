@@ -1,6 +1,4 @@
-# flickertalk.com (Plan §77, §105). Tests every change; every push to main publishes the image to
-# GHCR and redeploys the site through its own Dokploy webhook, which can only redeploy that stack
-# and lives in the `production` environment (main only). The site has no canary: it is text.
+# The Dokploy webhook secret lives in the production environment, so only main can redeploy.
 name: web
 
 on:
@@ -35,15 +33,12 @@ jobs:
           sleep 1
           test "$(curl -fsS http://localhost:8080/version.txt)" = "$GITHUB_SHA"
           curl -fsS -o /dev/null http://localhost:8080/privacy/
-          # Contact and move links land here: answered as they are, never redirected to /add/.
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/add)" = 200
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/move)" = 200
-          # In the browser's language, at the same address; English without one.
           test "$(curl -s -o /dev/null -w '%{http_code}' -H 'Accept-Language: es-ES,es;q=0.9' http://localhost:8080/add)" = 200
           curl -fsS -H 'Accept-Language: es-ES,es;q=0.9' http://localhost:8080/add | grep -q '<html lang="es">'
           curl -fsS http://localhost:8080/add | grep -q '<html lang="en">'
           test "$(curl -s -o /dev/null -w '%{http_code}' http://localhost:8080/nope)" = 404
-          # App Links and Universal Links: 200, JSON, no redirect, the security headers.
           for path in /.well-known/assetlinks.json /.well-known/apple-app-site-association; do
             curl -sS -D headers -o body "http://localhost:8080$path"
             head -n1 headers | grep -q ' 200'
@@ -52,7 +47,7 @@ jobs:
             grep -qi '^x-content-type-options: nosniff' headers
             node -e 'JSON.parse(require("fs").readFileSync("body", "utf8"))'
           done
-          # The last body is apple-app-site-association, naming the app.
+          # body still holds the last file of the loop, apple-app-site-association
           grep -q '"3TSPDYY333\.com\.flickertalk\.app"' body
 
   image:

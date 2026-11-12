@@ -1,10 +1,4 @@
-// Writes the /add and /move landings (2026-10-04) in every language of landing/<lang>.json:
-// site/<page>/index.html in English and site/<page>/<lang>.html for the rest. nginx picks one by
-// the browser's first language (nginx.conf, $landing_lang). The pages are committed; run
-// `npm run build-landings` after changing a string, and the tests check nothing drifted.
-//
-// In the copy, {key} is replaced by the app's own label for that key ("labels" in the same file),
-// copied verbatim from app/src/i18n/<lang>.json, so the page names the buttons as the app does.
+// The "labels" in landing/<lang>.json are copied verbatim from the app's src/i18n/<lang>.json.
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -15,9 +9,8 @@ const RTL = new Set(["ar"]);
 
 const escape = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
-// Korean: WebKit with word-break: keep-all breaks after an opening quote before Hangul, so the
-// quote and the first word of the label it opens go together in a span that does not wrap. Only
-// the first word: a whole label could be wider than a phone.
+// WebKit with word-break: keep-all breaks after an opening quote before Hangul. Only the first
+// word goes in the nowrap span, since a whole label can be wider than a phone.
 const KEEP_QUOTE_WITH_WORD = new Set(["ko"]);
 
 function fill(value, labels, where, lang) {
@@ -38,13 +31,11 @@ function fill(value, labels, where, lang) {
 function page(lang, name, strings) {
   const t = (key) => fill(strings[name][key], strings.labels, `${lang} ${name}.${key}`, lang);
   const common = (key) => fill(strings.common[key], strings.labels, `${lang} common.${key}`, lang);
-  // A step's title and its text: no space after full-width punctuation (ja, zh), where a space
-  // shows as a double gap; one space otherwise (Thai separates phrases with a space, too).
+  // after full-width punctuation (ja, zh) a space shows as a double gap
   const step = (n) => {
     const title = t(`step${n}Title`);
     return `<strong>${title}</strong>${/[。！？]$/.test(title) ? "" : " "}${t(`step${n}`)}`;
   };
-  // The header and footer lead to the English site.
   const english = lang === "en" ? "" : RTL.has(lang) ? ' lang="en" dir="ltr"' : ' lang="en"';
   return `<!doctype html>
 <html lang="${lang}"${RTL.has(lang) ? ' dir="rtl"' : ""}>
@@ -110,7 +101,6 @@ function page(lang, name, strings) {
 `;
 }
 
-/** Every landing page, by its path under site/. */
 export function build() {
   const pages = {};
   const languages = readdirSync(join(root, "landing")).filter((f) => f.endsWith(".json")).map((f) => f.replace(/\.json$/, ""));

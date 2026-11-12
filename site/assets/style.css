@@ -1,4 +1,3 @@
-/* flickertalk.com: black and white, nothing else. No web fonts, no scripts. */
 :root {
   --bg: #ffffff;
   --text: #000000;
@@ -31,7 +30,6 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; 
 a:hover { text-decoration-thickness: 2px; }
 :focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
 
-/* Wide on a desktop, edge to edge on a phone; the reading column stays comfortable. */
 .wrap { width: min(100% - clamp(1.5rem, 6vw, 5rem), 64rem); margin-inline: auto; }
 main :is(p, li, dd) { max-width: 44rem; }
 
@@ -51,8 +49,7 @@ main :is(p, li, dd) { max-width: 44rem; }
   text-decoration: none;
 }
 .brand img { width: 26px; height: 26px; }
-/* Navigation links are 44px tall to the finger: the padding grows the touch area and the nav's
-   negative margin gives it back, so the text stays where it was. Rows touch, never overlap. */
+/* Padding makes 44px tap targets and the nav's negative margin gives the space back. */
 .top nav { display: flex; flex-wrap: wrap; gap: 0 1.3rem; margin-block: calc((1.65em - 44px) / 2); font-size: 0.95rem; }
 .top nav a { color: var(--muted); text-decoration: none; padding-block: calc((44px - 1.65em) / 2); }
 .top nav a:hover, .top nav a[aria-current="page"] { color: var(--text); text-decoration: underline; }
@@ -69,8 +66,6 @@ p { margin: 0 0 1rem; }
 .hero img { width: 44px; height: 44px; margin-bottom: 1.5rem; }
 .hero .lead { max-width: 38rem; }
 
-/* The trailer: YouTube's player, as wide as the column and 16:9 at any width; its size is known
-   before it loads, so nothing on the page moves. */
 .trailer h2 { margin-top: 2.5rem; }
 .trailer iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; margin: 0 auto 1rem; }
 .trailer p { color: var(--muted); font-size: 0.97rem; }
@@ -84,7 +79,6 @@ p { margin: 0 0 1rem; }
 .card h3 { margin: 0 0 0.35rem; }
 .card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
 .card .icon { display: none; }
-/* Tables scroll instead of squeezing on a narrow phone. */
 @media (max-width: 40rem) {
   table { display: block; overflow-x: auto; }
   .price { padding: 1.3rem 1.2rem; }
@@ -104,12 +98,8 @@ table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.95r
 th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.8rem 0.6rem 0; border-bottom: 1px solid var(--line); }
 th { color: var(--muted); font-weight: 600; }
 
-/* Japanese: no line may start with a small kana or the long vowel mark (メッセ|ージ). */
 :lang(ja) { line-break: strict; }
-/* Korean: break between words, never inside one (붙|여넣으세요); a word longer than the line
-   still wraps instead of overflowing the screen. */
 :lang(ko) { word-break: keep-all; overflow-wrap: break-word; }
-/* Words that must stay on one line (in Korean, an opening quote and the word after it). */
 .nobr { white-space: nowrap; }
 
 ul { padding-left: 1.1rem; }
@@ -120,8 +110,7 @@ footer nav { display: flex; flex-wrap: wrap; gap: 0 1.4rem; margin-block: calc((
 footer nav a { padding-block: calc((44px - 1.65em) / 2); }
 footer p { margin: 0.2rem 0; }
 
-/* Where to get the app. Google's badge, untouched, at least 28px high (we use 56px) with a quarter
-   of its height clear around it; iOS waits beside it. */
+/* Google's badge rules ask for at least 28px of height and a quarter of it as clear space around. */
 .get { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 1.2rem; margin: 0 0 1rem; }
 .get .play { display: block; line-height: 0; }
 .get .play img { display: block; height: 56px; width: auto; }
