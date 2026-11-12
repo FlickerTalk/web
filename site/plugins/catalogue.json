@@ -191,7 +191,7 @@
       "version": "1.0.3"
     },
     {
-      "hash": "be4dd3b40524baa5511274d5d4931ca9bfd0a3d826f5148e0ecd99a646a23f23",
+      "hash": "6a7b21818327f83430d8ad42adcd98d988b20b690623a8324a6d8fe26861e546",
       "icon": "timer-outline",
       "id": "com.flickertalk.countdown",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#EA580C\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 48C141.12 48 48 141.12 48 256s93.12 208 208 208 208-93.12 208-208S370.88 48 256 48m-82.33 114.34 105 71a32.5 32.5 0 0 1-37.25 53.26 33.2 33.2 0 0 1-8-8l-71-105a8.13 8.13 0 0 1 11.32-11.32ZM256 432c-97 0-176-78.95-176-176a174.55 174.55 0 0 1 53.87-126.72 14.15 14.15 0 1 1 19.64 20.37A146.53 146.53 0 0 0 108.3 256c0 81.44 66.26 147.7 147.7 147.7S403.7 337.44 403.7 256c0-76.67-58.72-139.88-133.55-147v55a14.15 14.15 0 1 1-28.3 0V94.15A14.15 14.15 0 0 1 256 80c97.05 0 176 79 176 176s-78.95 176-176 176\"/></g></svg>\n",
@@ -280,13 +280,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Countdown",
-      "size": 21605,
+      "size": 19519,
       "summary": "The days that matter and how many are left: birthdays, trips, anniversaries, with a reminder for you alone.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.countdown/1.0.3.ftplugin",
-      "version": "1.0.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.countdown/1.0.4.ftplugin",
+      "version": "1.0.4"
     },
     {
-      "hash": "d0ff0908101879745d4cd4dfcd7a5ea9432934f7a1c751d39245e4c4ea1829d0",
+      "hash": "8a406b2d1c9d4eb01e0021f216c088e46621ab97b28c76fc7df663173d80b9a3",
       "icon": "cloud-outline",
       "id": "com.flickertalk.drive",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0284C7\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M396 432H136c-36.44 0-70.36-12.57-95.51-35.41C14.38 372.88 0 340 0 304c0-36.58 13.39-68.12 38.72-91.22 18.11-16.53 42.22-28.25 69.18-33.87a16 16 0 0 0 11.37-9.15 156.24 156.24 0 0 1 42.05-56C187.76 91.69 220.5 80 256 80a153.57 153.57 0 0 1 107.14 42.9c24.73 23.81 41.5 55.28 49.18 92a16 16 0 0 0 12.12 12.39C470 237.42 512 270.43 512 328c0 33.39-12.24 60.78-35.41 79.23C456.23 423.43 428.37 432 396 432\"/></g></svg>\n",
@@ -375,10 +375,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "My drive",
-      "size": 21131,
+      "size": 20172,
       "summary": "Your files, sealed on the phone, in your own Google Drive.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.drive/1.1.3.ftplugin",
-      "version": "1.1.3"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.drive/1.1.4.ftplugin",
+      "version": "1.1.4"
     },
     {
       "hash": "181d7979968958d2c9ece0ae01b1c8eeac1ee28cb83369b5319e4d60441cc74b",
@@ -1616,7 +1616,7 @@
       "version": "1.0.5"
     },
     {
-      "hash": "c6a6538e4e22edd114695592e8232be769c000fce622b5fb293cf0393e7b4b49",
+      "hash": "6900332afa14ece1e34294a6e0e8bddc4fcfe07e901d47c5d4aa18e3ab184fcb",
       "icon": "image-outline",
       "id": "com.flickertalk.images",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M416 64H96a64.07 64.07 0 0 0-64 64v256a64.07 64.07 0 0 0 64 64h320a64.07 64.07 0 0 0 64-64V128a64.07 64.07 0 0 0-64-64m-80 64a48 48 0 1 1-48 48 48.05 48.05 0 0 1 48-48M96 416a32 32 0 0 1-32-32v-67.63l94.84-84.3a48.06 48.06 0 0 1 65.8 1.9l64.95 64.81L172.37 416Zm352-32a32 32 0 0 1-32 32H217.63l121.42-121.42a47.72 47.72 0 0 1 61.64-.16L448 333.84Z\"/></g></svg>\n",
@@ -1705,10 +1705,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Image",
-      "size": 6617,
+      "size": 5859,
       "summary": "Make a picture smaller, turn it, cut it, and let it go without what the camera wrote in it.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.1.4.ftplugin",
-      "version": "1.1.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.images/1.1.5.ftplugin",
+      "version": "1.1.5"
     },
     {
       "hash": "b7cd83f219c22e9a726a46caa2cb4c7ac4a1ee943f872b84a57c1a862e7ac31b",
@@ -1806,7 +1806,7 @@
       "version": "1.0.3"
     },
     {
-      "hash": "eca0ffee5ff3d9d596f8cfbd40f4cb2f215041d10ba827076c1d2aaefdf7df0a",
+      "hash": "475633f99d52abc1a6cb75bdcf273349ed6c029595dc014836f6da5dec7ee7f4",
       "icon": "location-outline",
       "id": "com.flickertalk.location",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><circle cx=\"256\" cy=\"192\" r=\"32\"/><path d=\"M256 32c-88.22 0-160 68.65-160 153 0 40.17 18.31 93.59 54.42 158.78 29 52.34 62.55 99.67 80 123.22a31.75 31.75 0 0 0 51.22 0c17.42-23.55 51-70.88 80-123.22C397.69 278.61 416 225.19 416 185c0-84.35-71.78-153-160-153m0 224a64 64 0 1 1 64-64 64.07 64.07 0 0 1-64 64\"/></g></svg>\n",
@@ -1895,13 +1895,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Location",
-      "size": 10866,
+      "size": 9836,
       "summary": "Send where you are, once, as a message; no map servers, nothing kept.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.location/1.0.2.ftplugin",
-      "version": "1.0.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.location/1.0.3.ftplugin",
+      "version": "1.0.3"
     },
     {
-      "hash": "aa27c221218374fe767f5c0299951ca6eaa73e9bbca00e4d10c12b90809c46e2",
+      "hash": "b3614c9cd3fc35e3c21a7221b2eacc9f74323e13e91930721da6100298a3c338",
       "icon": "logo-markdown",
       "id": "com.flickertalk.markdown",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#475569\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M475 64H37C16.58 64 0 81.38 0 102.77v306.42C0 430.59 16.58 448 37 448h438c20.38 0 37-17.41 37-38.81V102.77C512 81.38 495.42 64 475 64M288 368h-64V256l-48 64-48-64v112H64V144h64l48 80 48-80h64Zm96 0-80-112h48.05L352 144h64v112h48Z\"/></g></svg>\n",
@@ -1970,13 +1970,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Markdown",
-      "size": 6671,
+      "size": 5923,
       "summary": "Write markdown, look at it, and put it in the chat; open a file or save one.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.1.4.ftplugin",
-      "version": "1.1.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.markdown/1.1.5.ftplugin",
+      "version": "1.1.5"
     },
     {
-      "hash": "5840b5cd33fe393f6b1070121170846936d0869bbbf52185bfa174340c267be7",
+      "hash": "012fec2af7570f2e5fd172483283f96437e82ed73def9200f78ac10e0964ef6e",
       "icon": "reader-outline",
       "id": "com.flickertalk.notes",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 32H144a64.07 64.07 0 0 0-64 64v320a64.07 64.07 0 0 0 64 64h224a64.07 64.07 0 0 0 64-64V96a64.07 64.07 0 0 0-64-64M256 304h-80a16 16 0 0 1 0-32h80a16 16 0 0 1 0 32m80-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32m0-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32\"/></g></svg>\n",
@@ -2065,13 +2065,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Notes",
-      "size": 16060,
+      "size": 14665,
       "summary": "Personal notes with a reminder, kept on this phone only.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.notes/1.0.4.ftplugin",
-      "version": "1.0.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.notes/1.0.5.ftplugin",
+      "version": "1.0.5"
     },
     {
-      "hash": "74d623f35a641076943b56fee0d5af684061d181fb1d0b066d049452a5db56a8",
+      "hash": "19a9131304eee83bb3e5078b6f3753ed99ab70e3f84de401895e0c5989a2eab7",
       "icon": "document-outline",
       "id": "com.flickertalk.pdf",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4\"/><path d=\"M419.22 188.59 275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41\"/></g></svg>\n",
@@ -2140,10 +2140,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "PDF",
-      "size": 6356,
+      "size": 5766,
       "summary": "Put pictures together into a PDF, one page each, with a document mode.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.4.ftplugin",
-      "version": "1.1.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.pdf/1.1.5.ftplugin",
+      "version": "1.1.5"
     },
     {
       "hash": "b6eef0543890e81e79c40ee556f4f140e6463cadef3a6322358d1249c7fad5bf",
@@ -2336,7 +2336,7 @@
       "version": "1.0.3"
     },
     {
-      "hash": "51a04d9f220f0965f54688873b3b394105184719edeefc7021a63aafca7b1280",
+      "hash": "c28a0466859d52ef61c3d648defa2d632620b013663804d048b0370616ddf7a5",
       "icon": "eye-off-outline",
       "id": "com.flickertalk.redact",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M432 448a15.92 15.92 0 0 1-11.31-4.69l-352-352a16 16 0 0 1 22.62-22.62l352 352A16 16 0 0 1 432 448M248 315.85l-51.79-51.79a2 2 0 0 0-3.39 1.69 64.11 64.11 0 0 0 53.49 53.49 2 2 0 0 0 1.69-3.39M264 196.15 315.87 248a2 2 0 0 0 3.4-1.69 64.13 64.13 0 0 0-53.55-53.55 2 2 0 0 0-1.72 3.39\"/><path d=\"M491 273.36a32.2 32.2 0 0 0-.1-34.76c-26.46-40.92-60.79-75.68-99.27-100.53C349 110.55 302 96 255.68 96a226.5 226.5 0 0 0-71.82 11.79 4 4 0 0 0-1.56 6.63l47.24 47.24a4 4 0 0 0 3.82 1.05 96 96 0 0 1 116 116 4 4 0 0 0 1.05 3.81l67.95 68a4 4 0 0 0 5.4.24 343.8 343.8 0 0 0 67.24-77.4M256 352a96 96 0 0 1-93.3-118.63 4 4 0 0 0-1.05-3.81l-66.84-66.87a4 4 0 0 0-5.41-.23c-24.39 20.81-47 46.13-67.67 75.72a31.92 31.92 0 0 0-.64 35.54c26.41 41.33 60.39 76.14 98.28 100.65C162.06 402 207.92 416 255.68 416a238.2 238.2 0 0 0 72.64-11.55 4 4 0 0 0 1.61-6.64l-47.47-47.46a4 4 0 0 0-3.81-1.05A96 96 0 0 1 256 352\"/></g></svg>\n",
@@ -2425,13 +2425,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Cover",
-      "size": 6466,
+      "size": 5910,
       "summary": "Cover a face, a name or a number in a picture: black or mosaic, in the pixels.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.1.4.ftplugin",
-      "version": "1.1.4"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.redact/1.1.5.ftplugin",
+      "version": "1.1.5"
     },
     {
-      "hash": "4012cee1190926e03f3b4bcd674dfd165970157a400ae8703a9d85e348f45d2e",
+      "hash": "4f66bc67f38ba3fb460ea7ae4a254d2b5507a1641b376d4bf386c10b1aaffb46",
       "icon": "alarm-outline",
       "id": "com.flickertalk.remind",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M153.59 110.46A21.41 21.41 0 0 0 152.48 79 62.67 62.67 0 0 0 112 64l-3.27.09h-.48C74.4 66.15 48 95.55 48.07 131c0 19 8 29.06 14.32 37.11a20.6 20.6 0 0 0 14.7 7.8c.26 0 .7.05 2 .05a19.06 19.06 0 0 0 13.75-5.89ZM403.79 64.11l-3.27-.1H400a62.67 62.67 0 0 0-40.52 15 21.41 21.41 0 0 0-1.11 31.44l60.77 59.65a19.06 19.06 0 0 0 13.79 5.9c1.28 0 1.72 0 2-.05a20.6 20.6 0 0 0 14.69-7.8c6.36-8.05 14.28-18.08 14.32-37.11.06-35.49-26.34-64.89-60.15-66.93\"/><path d=\"M256.07 96c-97 0-176 78.95-176 176a175.23 175.23 0 0 0 40.81 112.56l-36.12 36.13a16 16 0 1 0 22.63 22.62l36.12-36.12a175.63 175.63 0 0 0 225.12 0l36.13 36.12a16 16 0 1 0 22.63-22.62l-36.13-36.13A175.17 175.17 0 0 0 432.07 272c0-97-78.95-176-176-176m16 176a16 16 0 0 1-16 16h-80a16 16 0 0 1 0-32h64v-96a16 16 0 0 1 32 0Z\"/></g></svg>\n",
@@ -2520,13 +2520,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Reminders",
-      "size": 18388,
+      "size": 16665,
       "summary": "Set a reminder on a message: a notification for you alone, kept on this phone.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.remind/1.0.0.ftplugin",
-      "version": "1.0.0"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.remind/1.0.1.ftplugin",
+      "version": "1.0.1"
     },
     {
-      "hash": "ff3ab28929c5886e033113821e675e273a9d4f8b37a96f1490d4c8c968302232",
+      "hash": "a4068b3f3f6c9220b3b8b8e88e2d1c53c7ab1deda58454c2fddd3fd0918d5fa1",
       "icon": "scan-outline",
       "id": "com.flickertalk.scanner",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M342 444h46a56 56 0 0 0 56-56v-46M444 170v-46a56 56 0 0 0-56-56h-46M170 444h-46a56 56 0 0 1-56-56v-46M68 170v-46a56 56 0 0 1 56-56h46\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"44\"/></g></svg>\n",
@@ -2615,10 +2615,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Scanner",
-      "size": 17608,
+      "size": 15269,
       "summary": "Turn a photo of a paper into a straight, clean document and send it as a PDF or a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.1.1.ftplugin",
-      "version": "1.1.1"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.scanner/1.1.2.ftplugin",
+      "version": "1.1.2"
     },
     {
       "hash": "e16cbff63bd728bff8f3d33437c95753740d962fc3a0e815c914e13b1bade10e",
@@ -2716,7 +2716,7 @@
       "version": "1.0.3"
     },
     {
-      "hash": "7dd7f7b085616d8d3345ea4fb33efabc247327de1a250ff9dac19bd6b02dc422",
+      "hash": "62189acc132d2d8647183ffd7b82c59768a5e16b3ab2701438bb9476e0729781",
       "icon": "brush-outline",
       "id": "com.flickertalk.sketch",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M233.15 360.11a15.7 15.7 0 0 1-4.92-.77 16 16 0 0 1-10.92-13c-2.15-15-19.95-32.46-36.62-35.85a16 16 0 0 1-8.69-26.33l211.09-235.1c.19-.22.39-.43.59-.63a56.57 56.57 0 0 1 79.89 0 56.51 56.51 0 0 1 .11 79.78l-219 227a16 16 0 0 1-11.53 4.9M119.89 480.11c-32.14 0-65.45-16.89-84.85-43a16 16 0 0 1 12.85-25.54c5.34 0 20-4.87 20-20.57 0-39.07 31.4-70.86 70-70.86s70 31.79 70 70.86c0 49.12-39.48 89.11-88 89.11\"/></g></svg>\n",
@@ -2805,10 +2805,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Sketch",
-      "size": 5501,
+      "size": 4802,
       "summary": "Draw with a finger and send the drawing as a picture.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.5.ftplugin",
-      "version": "1.1.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.sketch/1.1.6.ftplugin",
+      "version": "1.1.6"
     },
     {
       "hash": "201301722dae894a5989c06a9e5b0c79029a84d6e9bbb9b6dd25d56fe6bd1662",
@@ -2906,7 +2906,7 @@
       "version": "1.0.3"
     },
     {
-      "hash": "14388007f160f58cb736a613dcb04cc4d4a51e89472a9131d68fa83de6d66853",
+      "hash": "19b8d1464ee6457a0ea084f734e9d541cb59c8349aa6e4d55ea50a4dfa1bf3b8",
       "icon": "language-outline",
       "id": "com.flickertalk.translate",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m478.33 433.6-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362 368 281.65 401.17 362ZM267.84 342.92a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z\"/></g></svg>\n",
@@ -3255,10 +3255,10 @@
       },
       "minCoreVersion": "1.7.0",
       "name": "Translator",
-      "size": 31271,
+      "size": 27517,
       "summary": "Translates a message or your draft on the phone. Language packs are downloaded once from Apple or Google; the text never leaves the phone.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.translate/1.1.2.ftplugin",
-      "version": "1.1.2"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.translate/1.1.3.ftplugin",
+      "version": "1.1.3"
     }
   ]
 }
