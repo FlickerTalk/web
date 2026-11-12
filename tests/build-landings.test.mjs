@@ -1,7 +1,3 @@
-// The /add and /move landings in the app's languages (2026-10-04). Whoever opens a contact or
-// move link in the browser reads the steps in their own language, with the button names the app
-// shows them. The pages are static: scripts/build-landings.mjs writes them from landing/<lang>.json,
-// and nginx picks one by the browser's first language, at the same address, without a redirect.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
@@ -12,12 +8,8 @@ import { build } from "../scripts/build-landings.mjs";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const site = join(root, "site");
 
-// The languages of the app (app/src/i18n/<lang>.json). English is the source.
 const LANGUAGES = ["ar", "bn", "de", "en", "es", "fr", "hi", "id", "it", "ja", "ko", "pl", "pt", "ro", "ru", "th", "tr", "uk", "vi", "zh-CN", "zh-TW"];
 const LANDINGS = ["add", "move"];
-// The app's own button and screen names each page quotes. They are copied verbatim into
-// landing/<lang>.json ("labels") from app/src/i18n/<lang>.json, under the same keys, so the page
-// shows exactly what the app shows. Never translated here.
 const LABELS = {
   add: ["addContact.title", "addContact.scan", "addContact.paste", "addContact.add", "tabs.chats"],
   move: ["welcome.fromOld", "tabs.settings", "settings.movePhone", "move.scan", "move.paste", "move.go"],
@@ -48,7 +40,6 @@ test("every language has every piece of the copy, filled in and translated", () 
       const value = copyOf(json, key);
       assert.equal(typeof value, "string", `${lang}: ${key}`);
       assert.ok(value.trim(), `${lang}: ${key} is not empty`);
-      // Labels may coincide with English ("Chat"); the copy around them may not.
       if (lang !== "en") assert.notEqual(value, copyOf(english, key), `${lang}: ${key} is translated`);
     }
   }
@@ -89,7 +80,6 @@ test("every page is in its language, right to left only in Arabic, with English 
       assert.match(html, /<title>[^<]+ · FlickerTalk<\/title>/, `${path}: title`);
       assert.match(html, /<meta name="description" content="[^"]+"/, `${path}: description`);
       assert.match(html, /<meta name="robots" content="noindex">/, `${path}: noindex`);
-      // The header and footer lead to the English site.
       if (lang !== "en") {
         assert.match(html, /<header class="wrap top" lang="en"( dir="ltr")?>/, `${path}: the header is marked English`);
         assert.match(html, /<footer class="wrap" lang="en"( dir="ltr")?>/, `${path}: the footer is marked English`);
@@ -105,7 +95,6 @@ test("every page quotes its language's app labels verbatim and links Google Play
       const json = strings(lang);
       const words = text(path);
       for (const key of LABELS[page]) assert.ok(words.includes(json.labels[key]), `${path}: ${key} “${json.labels[key]}”`);
-      // Under the badge, as a sentence: no iPhone app in the App Store yet.
       assert.ok(json.common.appStore, `${lang}: the App Store sentence`);
       assert.match(read(path), new RegExp(`</a>\\s*</div>\\s*<p>${escape(json.common.appStore)}</p>`), `${path}: the App Store sentence under the badge`);
       assert.doesNotMatch(read(path), /class="soon"/, `${path}: no box that looks like a button`);
@@ -120,8 +109,6 @@ test("every page quotes its language's app labels verbatim and links Google Play
   }
 });
 
-// Review on an iPhone (2026-10-04): after a full-width "。", a space shows as a double gap. Step
-// titles that end in full-width punctuation run straight into the step; the rest keep one space.
 test("a step title is followed by one space, or by none after full-width punctuation", () => {
   for (const page of LANDINGS) {
     for (const lang of LANGUAGES) {
@@ -136,9 +123,6 @@ test("a step title is followed by one space, or by none after full-width punctua
   assert.match(read("add/zh-TW.html"), /<strong>取得 FlickerTalk。<\/strong>如果/, "zh-TW: no gap");
 });
 
-// Tablet review (2026-10-04): WebKit with word-break: keep-all breaks after an opening quote before
-// Hangul, leaving "‘" alone at the end of a line. In Korean, the quote and the first word of the
-// label it opens never wrap apart (only the first word: a whole label could be wider than a phone).
 test("in Korean, an opening quote stays on the line of its label's first word", () => {
   for (const page of LANDINGS) {
     const path = `${page}/ko.html`;
@@ -157,8 +141,6 @@ test("in Korean, an opening quote stays on the line of its label's first word", 
   }
 });
 
-// The map in nginx.conf, read and run here the way nginx runs it: regular expressions in order,
-// the first that matches wins, otherwise the default.
 const conf = () => readFileSync(join(root, "nginx.conf"), "utf8");
 const landingMap = () => {
   const block = conf().match(/map \$http_accept_language \$landing_lang \{([\s\S]*?)\n\}/)?.[1];
@@ -198,7 +180,6 @@ test("nginx picks the landing language from the browser's first language", () =>
     "ar-EG,ar;q=0.9": "ar",
     "uk-UA": "uk",
     "ja-JP": "ja",
-    // A language code that only starts like one of ours is not ours.
     fil: "en",
     roh: "en",
     itx: "en",
@@ -217,6 +198,5 @@ test("nginx serves /add and /move in that language, at the same address, without
     );
   }
   assert.doesNotMatch(config, /\b(return\s+30\d|rewrite)\b/, "no redirect anywhere");
-  // At server level: an add_header inside a location would drop the security headers.
   assert.match(config, /\n    add_header Vary "Accept-Language" always;/, "caches know the page depends on the language");
 });

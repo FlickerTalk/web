@@ -1,8 +1,3 @@
-// The files that let a contact link (https://flickertalk.com/add#…) or a move link (/move#…) open
-// the app instead of the browser: Android App Links read /.well-known/assetlinks.json, iOS
-// Universal Links read /.well-known/apple-app-site-association. Both are static files in
-// site/.well-known/, served as they are. The Apple team ID in the second one is public by design
-// (it is in every iOS app bundle and in every app's apple-app-site-association), not a secret.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
@@ -17,9 +12,7 @@ const BUNDLE = "com.flickertalk.app";
 const TEAM = "3TSPDYY333";
 const AASA = "site/.well-known/apple-app-site-association";
 const FINGERPRINT = /^([0-9A-F]{2}:){31}[0-9A-F]{2}$/;
-// The upload key, read from the signed APK of the 1.4.1 release.
 const UPLOAD_KEY = "97:C2:84:62:4C:46:71:05:81:FB:63:E5:1F:E0:2C:CB:42:AF:06:EA:73:35:C5:20:98:29:51:CA:E9:7E:0F:6B";
-// Play's app signing key (Play Console → App signing), the one on every install from Google Play.
 const PLAY_KEY = "D2:08:CB:64:1F:C6:26:B1:49:9F:8A:85:9E:33:65:2B:DD:36:94:A3:63:49:38:EE:9B:1C:D7:40:2A:29:E0:5B";
 const LINK_PATHS = ["/add", "/move"];
 

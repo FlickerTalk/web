@@ -1,6 +1,3 @@
-// The catalogue of plugins the app downloads from here (Plan §56): a signed index and the
-// packages next to it. The app checks the signature and the hash; these tests check that what is
-// served is in step with itself, so a rebuilt package with a stale index never reaches a phone.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readFileSync, statSync } from "node:fs";
@@ -11,8 +8,6 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const plugins = join(root, "site", "plugins");
 const HOME = "https://flickertalk.com/plugins/";
 
-// Two indexes (2026-09-28): catalogue.json, everything, read by the app from 1.1.0 on; and
-// index.json, read by the app 1.0.0, which ignores minCoreVersion and so gets only what runs there.
 const INDEXES = ["catalogue.json", "index.json"];
 const LEGACY_CORE = "1.0.0";
 const read = (name) => JSON.parse(readFileSync(join(plugins, name), "utf8")).plugins;
@@ -38,10 +33,6 @@ test("the app 1.0.0 is offered only what runs on it, and nothing the other index
   }
 });
 
-// Games (2026-10-02, plan of the games): only an app from GAMES_SINCE on tells a game from a tool;
-// an older one would show it among the tools. So index.json (the app 1.0.0) never lists a game,
-// and a game in catalogue.json asks for a core that knows games. `ftcatalogue` refuses to build
-// anything else; this checks what is really served.
 const GAMES_SINCE = "1.3.0";
 const gamesIn = (listed) => listed.filter((plugin) => plugin.kind === "game").map((plugin) => plugin.id);
 const gamesForOldApps = (listed) => gamesIn(listed.filter((plugin) => !atLeast(plugin.minCoreVersion, GAMES_SINCE)));
@@ -78,10 +69,6 @@ test("every plugin listed is served from here, and is the file that was listed",
   }
 });
 
-// Names and summaries in the app's languages (2026-10-02, plan of the catalogue's translations):
-// each entry copies its manifest's `locales`, so the app shows a plugin in the phone's language
-// before installing it. The app's 20 languages besides English; the limits are the ones the app
-// enforces on a manifest. Markdown and PDF are formats: they keep their English name everywhere.
 const LANGUAGES = ["es", "pt", "fr", "de", "it", "ro", "ru", "uk", "pl", "tr", "ar", "hi", "bn", "id", "vi", "th", "ja", "ko", "zh-CN", "zh-TW"];
 const NAME_LIMIT = 64;
 const SUMMARY_LIMIT = 200;
