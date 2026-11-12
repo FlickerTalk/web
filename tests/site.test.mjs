@@ -264,7 +264,7 @@ test("the home page shows the tools and games of the Apps tab, and what each one
   const words = text("index.html");
   assert.match(words, /17 tools and 13 games/);
   assert.match(words, /Apps tab/);
-  assert.match(words, /install only the ones you want/i, "the user chooses them (§56)");
+  assert.match(words, /install only the ones you want/i, "the user chooses them");
   assert.match(words, /runs in isolation/);
   assert.match(words, /only what you allow it/);
   assert.match(words, /never your chat history, your contacts or your keys/);
@@ -314,7 +314,7 @@ test("the FAQ says what the server does keep", () => {
   const words = text("faq/index.html");
   assert.match(words, /Does that mean your servers store nothing\?/);
   assert.match(words, /hash of your routing code/);
-  assert.match(words, /never through our servers/, "moving phones never goes through us (§60)");
+  assert.match(words, /never through our servers/, "moving phones never goes through us");
 });
 
 test("transparency lists the routing hash with the rest of what we have", () => {
