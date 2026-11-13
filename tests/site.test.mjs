@@ -119,7 +119,7 @@ test("the price is on the home page, in the FAQ and in the terms", () => {
     assert.match(words, /\bPremium\b/, `${page}: what costs money is called Premium`);
     assert.match(words, /\btools\b/i, `${page}: the tools are Premium`);
     assert.match(words, /extra sessions protected with a PIN/i, `${page}: the extra PIN sessions are Premium`);
-    assert.match(words, /15 days/i, `${page}: a 15-day trial`);
+    assert.match(words, /free for one year/i, `${page}: Premium is free for one year after install`);
     assert.match(words, /€0\.99 a year/i, `${page}: €0.99 a year`);
   }
 });
@@ -129,7 +129,6 @@ test("no page promises forever or keeps the 1.2.x price and backup wording", () 
     const words = text(page);
     assert.doesNotMatch(words, /forever/i, `${page}: nothing is promised forever`);
     assert.doesNotMatch(words, /under 21/i, `${page}: no age rule`);
-    assert.doesNotMatch(words, /first year/i, `${page}: no free first year`);
     assert.doesNotMatch(
       words,
       /no cloud backup|there are no backups|(do not|don't|never) (keep|store|provide|offer)[^.]*cloud backup/i,
@@ -138,9 +137,9 @@ test("no page promises forever or keeps the 1.2.x price and backup wording", () 
   }
 });
 
-test("no page still promises a free first year", () => {
+test("no page still offers the 15-day trial", () => {
   for (const page of [...PAGES, ...LOCALIZED]) {
-    assert.doesNotMatch(text(page), /first year|free year|year free/i, `${page}: the old free year`);
+    assert.doesNotMatch(text(page), /15 days|15-day|fifteen days/i, `${page}: the old 15-day trial`);
   }
 });
 
