@@ -40,6 +40,7 @@
       <thead><tr><th>Data</th><th>Purpose and legal basis</th><th>Kept</th></tr></thead>
       <tbody>
         <tr><td>Device ID, public key and a hash of your routing code</td><td>Authenticate your phone's requests and let only your contacts reach you. Performance of the contract (GDPR art. 6.1.b).</td><td>Until you use “Erase this phone”</td></tr>
+        <tr><td>A list of coded values, one for each contact you have blocked, muted or turned calls off for</td><td>Not ring your phone when one of them calls. A value does not name the contact; it can only be matched while that contact is calling you. Art. 6.1.b.</td><td>Until you undo it or use “Erase this phone”</td></tr>
         <tr><td>Push token and provider, encrypted</td><td>Wake your phone when a message or call arrives. Art. 6.1.b.</td><td>Until you erase the phone, turn notifications off, or the provider says the token expired</td></tr>
         <tr><td>Undelivered messages, end-to-end encrypted, without sender</td><td>Deliver them when your phone comes back. Art. 6.1.b.</td><td>Until picked up, at most 7 days; never in backups</td></tr>
         <tr><td>IP address of an open connection</td><td>Route it and limit abuse. Legitimate interest in the security of the service (art. 6.1.f).</td><td>Not stored; the abuse limits use a salted hash held in memory for one minute</td></tr>
@@ -48,6 +49,7 @@
         <tr><td>Suggestions you send from the app</td><td>Read your ideas to improve FlickerTalk. Art. 6.1.f.</td><td>As long as needed to handle them; our server does not store them</td></tr>
       </tbody>
     </table>
+    <p>When someone calls you, their phone signs the request, so for that moment our server sees which FlickerTalk ID is calling which. It uses this only to check the list of coded values above, and does not store or log it. Messages are sent without that signature.</p>
     <p>A report is an email you send from your own mail app to <a href="mailto:info@flickertalk.com">info@flickertalk.com</a>, with only the evidence you choose to include.</p>
     <p>A suggestion is what you write in the app under Settings → “Suggest something”. Our server forwards it by email to info@flickertalk.com without your name, FlickerTalk ID or IP address: the email carries only your text, the app version and the platform. The server does not store it. To limit how many each phone can send in a day, it counts them per FlickerTalk ID, in memory only, never on disk or in a log. Because we do not know who sent a suggestion, we cannot reply.</p>
 

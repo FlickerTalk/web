@@ -37,6 +37,7 @@
     <table>
       <tr><th>What</th><th>Why</th><th>How long</th></tr>
       <tr><td>Device identifier, public key and a hash of your routing code</td><td>so our server can check that requests come from your phone, and only your contacts can reach you</td><td>until you erase the phone</td></tr>
+      <tr><td>A list of coded values for the contacts you have blocked, muted or turned calls off for</td><td>so their calls do not ring your phone; a value does not name the contact</td><td>until you undo it or erase the phone</td></tr>
       <tr><td>Encrypted notification token</td><td>so another phone can wake yours when a message is waiting</td><td>until you erase the phone, or until Google or Apple say it expired</td></tr>
       <tr><td>Messages waiting in the mailbox, encrypted end to end</td><td>so a message still arrives when your phone was off</td><td>deleted the moment they are delivered; at most 7 days</td></tr>
     </table>
