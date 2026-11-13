@@ -321,6 +321,15 @@ test("transparency lists the routing hash with the rest of what we have", () => 
   assert.match(text("transparency/index.html"), /routing code/);
 });
 
+test("the pages that list what the server keeps include the call rules", () => {
+  const privacy = text("privacy/index.html");
+  assert.match(privacy, /A list of coded values, one for each contact you have blocked, muted or turned calls off for/);
+  assert.match(privacy, /our server sees which FlickerTalk ID is calling which/);
+  assert.match(privacy, /does not store or log it/);
+  assert.match(text("faq/index.html"), /a list of coded values for the contacts whose calls must not ring/);
+  assert.match(text("transparency/index.html"), /coded values for the contacts whose calls must not ring/);
+});
+
 test("the privacy policy says what stays on the device, not what never leaves it", () => {
   const words = text("privacy/index.html");
   assert.match(words, /What stays on your device/);
@@ -668,7 +677,9 @@ test("the terms have zero tolerance for abuse and say how reports are handled", 
   }
   assert.match(words, /We cannot read what people send each other/);
   assert.match(words, /we store no conversation history on our servers/);
-  assert.match(words, /Block: on the contact's page\. It works at once and only on your phone/);
+  assert.match(words, /Block: on the contact's page\. It works at once: your phone closes any direct connection/);
+  assert.match(words, /tells our server not to notify you of their calls/);
+  assert.doesNotMatch(words, /without going through our servers/, "a block is also told to the server");
   assert.match(words, /Report: on the contact's page, tap Report/);
   assert.match(words, /an email from your own mail app to info@flickertalk\.com with their FlickerTalk ID, the reason and only the evidence you chose to include/);
   assert.match(words, /We review every report and act on it within 24 hours\./);
