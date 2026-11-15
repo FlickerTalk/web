@@ -250,6 +250,35 @@ test("the web server keeps no access log and sends a strict policy", () => {
   assert.match(conf, /Referrer-Policy "no-referrer"/);
 });
 
+test("the download counter runs only where packages are served and never logs", () => {
+  const conf = readFileSync(join(root, "nginx.conf"), "utf8");
+  assert.deepEqual([...new Set(conf.match(/\bjs_\w+/g))].sort(), ["js_header_filter", "js_import", "js_periodic", "js_shared_dict_zone"]);
+  assert.equal(conf.match(/js_header_filter/g).length, 1);
+  assert.match(conf, /location ~ \\\.ftplugin\$ \{\s*js_header_filter downloads\.count;\s*\}/);
+  assert.match(conf, /location @\w+ \{\s*js_periodic downloads\.prune interval=1d;\s*\}/);
+  const module = readFileSync(join(root, "njs/downloads.js"), "utf8");
+  assert.doesNotMatch(module, /\b(ngx\.log|r\.log|r\.warn|r\.error|console\.)/);
+});
+
+test("nginx.conf takes the host name from the container and no other variable", () => {
+  const conf = readFileSync(join(root, "nginx.conf"), "utf8");
+  assert.deepEqual([...new Set(conf.match(/\$\{[^}]*\}/g))], ["${HOSTNAME}"]);
+  assert.match(conf, /state=\/var\/lib\/ft-downloads\/\$\{HOSTNAME\}\.json;/);
+  const dockerfile = readFileSync(join(root, "Dockerfile"), "utf8");
+  assert.match(dockerfile, /^ENV NGINX_ENVSUBST_FILTER=\^HOSTNAME\$$/m);
+  assert.match(dockerfile, /^COPY nginx\.conf \/etc\/nginx\/templates\/default\.conf\.template$/m);
+});
+
+const DOWNLOAD_COUNTER =
+  "This website counts how many times each tool or game package is downloaded, in totals per package, version and month, never linked to a person or device.";
+
+test("the privacy policy and the transparency page say what the download counter keeps", () => {
+  for (const page of ["privacy/index.html", "transparency/index.html"]) {
+    assert.ok(text(page).includes(DOWNLOAD_COUNTER), `${page}: the counter, word for word`);
+  }
+  assert.match(text("privacy/index.html"), /This website sets no cookies[^.]*and keeps no access logs\./);
+});
+
 test("the home page leads with privacy and no activity logs", () => {
   const html = read("index.html");
   assert.match(html, /<title>[^<]*No activity logs[^<]*<\/title>/);
