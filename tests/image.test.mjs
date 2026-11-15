@@ -19,6 +19,7 @@ const suffix = `${process.pid}-${Date.now()}`;
 const image = `ft-web-downloads-test:${suffix}`;
 const volume = `ft-web-downloads-test-${suffix}`;
 const containers = [];
+const volumes = [volume];
 
 const docker = (...args) => execFileSync("docker", args, { cwd: root, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim();
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -37,10 +38,10 @@ const fetchRaw = (port, path, { method = "GET", headers = {} } = {}) =>
     req.end();
   });
 
-const start = (name, { withVolume = true, hostname, env = [] } = {}) => {
+const start = (name, { withVolume = true, volumeName = volume, hostname, env = [] } = {}) => {
   const args = ["run", "-d", "--name", name, "-p", "127.0.0.1::8080"];
   if (hostname) args.push("--hostname", hostname);
-  if (withVolume) args.push("-v", `${volume}:${STATE_DIR}`);
+  if (withVolume) args.push("-v", `${volumeName}:${STATE_DIR}`);
   for (const pair of env) args.push("-e", pair);
   docker(...args, image);
   containers.push(name);
@@ -97,7 +98,7 @@ describe("the image counts package downloads", { skip }, () => {
 
   after(() => {
     for (const name of containers) spawnSync("docker", ["rm", "-f", name], { stdio: "ignore" });
-    spawnSync("docker", ["volume", "rm", "-f", volume], { stdio: "ignore" });
+    for (const name of volumes) spawnSync("docker", ["volume", "rm", "-f", name], { stdio: "ignore" });
     spawnSync("docker", ["image", "rm", "-f", image], { stdio: "ignore" });
   });
 
@@ -162,5 +163,16 @@ describe("the image counts package downloads", { skip }, () => {
     assert.equal((await fetchRaw(loosePort, packagePath)).status, 200);
     const hostname = docker("exec", loose, "hostname");
     await waitForTotals(loose, hostname, { [keyOf("app")]: 1 });
+  });
+
+  test("totals older than 25 months are dropped when the server starts", async () => {
+    const oldVolume = `${volume}-old`;
+    volumes.push(oldVolume);
+    docker("volume", "create", oldVolume);
+    const seeded = JSON.stringify({ "2020-01|com.flickertalk.board|1.0.0|app": { value: 5 }, [keyOf("app")]: { value: 2 } });
+    docker("run", "--rm", "--entrypoint", "sh", "-v", `${oldVolume}:${STATE_DIR}`, image, "-c", `printf '%s' '${seeded}' > ${STATE_DIR}/web-9.json`);
+    const pruned = `ft-web-downloads-test-e-${suffix}`;
+    start(pruned, { hostname: "web-9", volumeName: oldVolume });
+    await waitForTotals(pruned, "web-9", { [keyOf("app")]: 2 });
   });
 });
