@@ -24,6 +24,7 @@ function count(r, now) {
         status: r.status,
         uri: r.uri,
         userAgent: r.headersIn['User-Agent'],
+        // nginx turns a range answer into 206 only after this filter, so here it still says 200.
         range: r.headersIn.Range,
         now: now || new Date()
     });
