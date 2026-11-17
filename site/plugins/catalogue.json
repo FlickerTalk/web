@@ -381,7 +381,7 @@
       "version": "1.1.4"
     },
     {
-      "hash": "181d7979968958d2c9ece0ae01b1c8eeac1ee28cb83369b5319e4d60441cc74b",
+      "hash": "0f114890ece78c482964861f6f18cc485feec71d63014ddf9ecccd05b63dd9af",
       "icon": "dice-outline",
       "id": "com.flickertalk.game.backgammon",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M440.88 129.37 288.16 40.62a64.14 64.14 0 0 0-64.33 0L71.12 129.37a4 4 0 0 0 0 6.9L254 243.85a4 4 0 0 0 4.06 0L440.9 136.27a4 4 0 0 0-.02-6.9M256 152c-13.25 0-24-7.16-24-16s10.75-16 24-16 24 7.16 24 16-10.75 16-24 16M238 270.81 54 163.48a4 4 0 0 0-6 3.46v173.92a48 48 0 0 0 23.84 41.39L234 479.48a4 4 0 0 0 6-3.46V274.27a4 4 0 0 0-2-3.46M96 368c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96-32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24M458 163.51 274 271.56a4 4 0 0 0-2 3.45V476a4 4 0 0 0 6 3.46l162.15-97.23A48 48 0 0 0 464 340.86V167a4 4 0 0 0-6-3.49M320 424c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m96 32c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24m0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24 16 10.75 16 24-7.16 24-16 24\"/></g></svg>\n",
@@ -470,13 +470,583 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Backgammon",
-      "size": 58311,
+      "size": 87764,
       "summary": "Backgammon with the other person in the chat: dice rolled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.0.5.ftplugin",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.backgammon/1.2.2.ftplugin",
+      "version": "1.2.2"
+    },
+    {
+      "hash": "9c978495a17f6e557b035cf9be00bf1ae1d4d4481aa296af54b6d3306d821e93",
+      "icon": "balloon-outline",
+      "id": "com.flickertalk.game.balloonfair",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#BE123C\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M414.11 153.82C429.66 264.4 345.85 357.09 282.54 366s-169.48-57.5-185-167.68a159.82 159.82 0 1 1 316.53-44.49Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><path d=\"M236.06 308.05c-32.83-13-67.08-43.1-82.27-85.46M367.7 495.78c-32.83-13-63.31-40.06-78.5-82.41\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><path d=\"m266.71 368.21-9.17 49.61 63.31-8.9-22.49-45.16z\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "مهرجان البالونات",
+          "summary": "فرقع البالونات في كشك الملاهي بقاذف الفلين أو رشّاش الماء أو قوس بسهام لاصقة، لكل العائلة: ضد FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "বেলুনের মেলা",
+          "summary": "মেলার স্টলে কর্ক ছোড়ার খেলনা, জলের পিচকারি বা সাকশন কাপ ধনুক দিয়ে বেলুন ফাটান, পুরো পরিবারের জন্য: FlickerTalk-এর বিরুদ্ধে বা চ্যাটের অন্য ব্যক্তির সঙ্গে।"
+        },
+        "de": {
+          "name": "Ballonjahrmarkt",
+          "summary": "Lass an einer Jahrmarktbude Ballons platzen, mit Korken-Knaller, Wasserspritze oder Saugnapf-Bogen, für die ganze Familie: gegen FlickerTalk oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Feria de globos",
+          "summary": "Explota globos en una caseta de feria con un lanzacorchos, un lanzador de agua o un arco de ventosas, para toda la familia: contra FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Foire aux ballons",
+          "summary": "Éclate des ballons à un stand de fête foraine avec un lance-bouchons, un lance-eau ou un arc à ventouses, pour toute la famille : contre FlickerTalk ou avec l’autre personne du chat."
+        },
+        "hi": {
+          "name": "गुब्बारों का मेला",
+          "summary": "मेले के स्टॉल पर कॉर्क वाले खिलौने, पानी की पिचकारी या सक्शन कप वाले धनुष से गुब्बारे फोड़ें, पूरे परिवार के लिए: FlickerTalk के ख़िलाफ़ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Pekan Raya Balon",
+          "summary": "Letuskan balon di kios pekan raya dengan pelontar gabus, penyemprot air, atau busur dengan panah penghisap, untuk seluruh keluarga: melawan FlickerTalk atau bersama lawan bicaramu di chat."
+        },
+        "it": {
+          "name": "Fiera dei palloncini",
+          "summary": "Fai scoppiare i palloncini a un banco della fiera con un lanciatappi, uno spruzzatore d’acqua o un arco a ventose, per tutta la famiglia: contro FlickerTalk o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "風船まつり",
+          "summary": "おまつりの屋台で、コルクでっぽう・水でっぽう・吸盤の弓矢を使って風船を割ろう。家族みんなで楽しめます。FlickerTalk と対戦、またはチャットの相手といっしょに。"
+        },
+        "ko": {
+          "name": "풍선 축제",
+          "summary": "축제 부스에서 코르크 딱총, 물총, 흡착 화살 활로 풍선을 터뜨리세요. 온 가족이 함께 즐길 수 있어요. FlickerTalk와 대결하거나 채팅 상대와 함께 플레이하세요."
+        },
+        "pl": {
+          "name": "Balonowy jarmark",
+          "summary": "Przebijaj balony na straganie w wesołym miasteczku korkową pukawką, sikawką na wodę albo łukiem z przyssawkami, dla całej rodziny: przeciw FlickerTalk albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Feira dos balões",
+          "summary": "Estoure balões numa barraca de feira com um lança-rolhas, um lançador de água ou um arco de ventosas, para toda a família: contra o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Bâlciul baloanelor",
+          "summary": "Sparge baloane la o tarabă de bâlci cu un lansator de dopuri, o stropitoare cu apă sau un arc cu ventuze, pentru toată familia: împotriva lui FlickerTalk sau cu cealaltă persoană din chat."
+        },
+        "ru": {
+          "name": "Ярмарка шариков",
+          "summary": "Лопай шарики в ярмарочной палатке пробковой хлопушкой, водяной брызгалкой или луком с присосками — для всей семьи: против FlickerTalk или с собеседником из чата."
+        },
+        "th": {
+          "name": "งานวัดลูกโป่ง",
+          "summary": "ทำลูกโป่งให้แตกที่ซุ้มงานวัดด้วยของเล่นยิงจุกไม้ก๊อก ที่ฉีดน้ำ หรือธนูลูกดอกจุกยาง สำหรับทั้งครอบครัว แข่งกับ FlickerTalk หรือเล่นกับอีกคนในแชต"
+        },
+        "tr": {
+          "name": "Balon Panayırı",
+          "summary": "Bir panayır tezgâhında mantar fırlatıcı, su fışkırtıcı ya da vantuzlu yayla balon patlat; tüm aile için: FlickerTalk’a karşı ya da sohbetteki diğer kişiyle."
+        },
+        "uk": {
+          "name": "Ярмарок кульок",
+          "summary": "Лускай кульки в ярмарковому наметі корковою хлопавкою, водяною бризкалкою чи луком із присосками — для всієї родини: проти FlickerTalk або зі співрозмовником із чату."
+        },
+        "vi": {
+          "name": "Hội chợ bóng bay",
+          "summary": "Làm nổ bóng bay ở gian hàng hội chợ bằng ống bắn nút bần, bình xịt nước hoặc cung tên giác hút, dành cho cả gia đình: đấu với FlickerTalk hoặc chơi cùng người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "气球嘉年华",
+          "summary": "在游乐场的小摊上，用软木塞发射器、喷水器或吸盘弓打破气球，适合全家一起玩：可以和 FlickerTalk 对战，也可以和聊天里的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "氣球嘉年華",
+          "summary": "在遊樂場的小攤上，用軟木塞發射器、噴水器或吸盤弓打破氣球，適合全家一起玩：可以和 FlickerTalk 對戰，也可以和聊天裡的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Balloon Fair",
+      "size": 73596,
+      "summary": "Pop balloons at a fairground stall with a cork popgun, a water blaster or a suction-cup bow, for the whole family: against FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.balloonfair/1.0.7.ftplugin",
+      "version": "1.0.7"
+    },
+    {
+      "hash": "646860f999ef19efdb1b604c9b0a631f3fc95f15fa32b1fb5b5ed2dbb4e4456d",
+      "icon": "balloon-outline",
+      "id": "com.flickertalk.game.balloonruler",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#E11D48\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M414.11 153.82C429.66 264.4 345.85 357.09 282.54 366s-169.48-57.5-185-167.68a159.82 159.82 0 1 1 316.53-44.49Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><path d=\"M236.06 308.05c-32.83-13-67.08-43.1-82.27-85.46M367.7 495.78c-32.83-13-63.31-40.06-78.5-82.41\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><path d=\"m266.71 368.21-9.17 49.61 63.31-8.9-22.49-45.16z\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "مسطرة البالونات",
+          "summary": "أين يسكن العدد؟ المس المسطرة فيفرقع سهم بمحجم البالون في ذلك الموضع: كلما اقتربت كان أفضل. من النقاط إلى الكسور، وحدك أو مع FlickerTalk أو مع الطرف الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "বেলুনের রুলার",
+          "summary": "সংখ্যাটি কোথায় থাকে? রুলারে ছোঁও, আর সাকশন কাপ লাগানো তির সেখানকার বেলুন ফাটিয়ে দেবে: যত কাছে, তত ভালো। বিন্দু থেকে ভগ্নাংশ পর্যন্ত, একা, FlickerTalk-এর সঙ্গে বা চ্যাটের অন্য মানুষটির সঙ্গে।"
+        },
+        "de": {
+          "name": "Ballonlineal",
+          "summary": "Wo wohnt die Zahl? Tippe auf das Lineal, und ein Saugnapfpfeil lässt dort den Ballon platzen: je näher, desto besser. Von Punkten bis Brüchen, allein, mit FlickerTalk oder deinem Chatpartner."
+        },
+        "es": {
+          "name": "Regla de globos",
+          "summary": "¿Dónde vive el número? Toca la regla y una flecha con ventosa explota el globo de ese punto: cuanto más cerca, mejor. De puntos a fracciones, solo, con FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Règle aux ballons",
+          "summary": "Où vit ce nombre ? Touche la règle et une flèche à ventouse éclate le ballon à cet endroit : plus c’est près, mieux c’est. Des points aux fractions, seul, avec FlickerTalk ou avec ton contact."
+        },
+        "hi": {
+          "name": "गुब्बारों वाला रूलर",
+          "summary": "संख्या कहाँ रहती है? रूलर को छुएँ और सक्शन कप वाला तीर उसी जगह का गुब्बारा फोड़ देगा: जितना पास, उतना अच्छा। बिंदुओं से भिन्नों तक, अकेले, FlickerTalk के साथ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Penggaris Balon",
+          "summary": "Di mana angkanya? Sentuh penggaris dan panah berpenghisap memecahkan balon di situ: makin dekat, makin bagus. Dari titik sampai pecahan, sendirian, dengan FlickerTalk, atau dengan lawan bicara."
+        },
+        "it": {
+          "name": "Righello dei palloncini",
+          "summary": "Dove abita il numero? Tocca il righello e una freccia a ventosa scoppia il palloncino in quel punto: più vicino, meglio è. Dai puntini alle frazioni, da solo, con FlickerTalk o con il tuo contatto."
+        },
+        "ja": {
+          "name": "風船ものさし",
+          "summary": "その数はどこにある？定規にタッチすると、吸盤の矢がその場所の風船を割ります。近いほど高得点。点の数から分数まで、ひとりでも、FlickerTalkとでも、チャットの相手とでも遊べます。"
+        },
+        "ko": {
+          "name": "풍선 눈금자",
+          "summary": "수는 어디에 있을까요? 자를 터치하면 흡착 화살이 그 자리의 풍선을 터뜨립니다. 가까울수록 좋아요. 점에서 분수까지, 혼자서, FlickerTalk와 함께, 또는 대화 상대와 함께 즐기세요."
+        },
+        "pl": {
+          "name": "Balonowa linijka",
+          "summary": "Gdzie mieszka liczba? Dotknij linijki, a strzała z przyssawką przebije balon w tym miejscu: im bliżej, tym lepiej. Od kropek po ułamki, w pojedynkę, z FlickerTalk albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Régua de balões",
+          "summary": "Onde mora o número? Toque na régua e uma flecha com ventosa estoura o balão dali: quanto mais perto, melhor. De pontinhos a frações, sozinho, com o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Rigla cu baloane",
+          "summary": "Unde stă numărul? Atinge rigla și o săgeată cu ventuză sparge balonul de acolo: cu cât mai aproape, cu atât mai bine. De la buline la fracții, singur, cu FlickerTalk sau cu celălalt din conversație."
+        },
+        "ru": {
+          "name": "Линейка с шариками",
+          "summary": "Где живёт число? Коснись линейки, и стрела с присоской лопнет шарик в этом месте: чем ближе, тем лучше. От точек до дробей, в одиночку, с FlickerTalk или с собеседником из чата."
+        },
+        "th": {
+          "name": "ไม้บรรทัดลูกโป่ง",
+          "summary": "ตัวเลขอยู่ตรงไหน แตะไม้บรรทัดแล้วลูกศรหัวจุกยางจะยิงลูกโป่งตรงนั้นให้แตก ยิ่งใกล้ยิ่งดี ตั้งแต่จุดไปจนถึงเศษส่วน เล่นคนเดียว เล่นกับ FlickerTalk หรือกับอีกคนในแชต"
+        },
+        "tr": {
+          "name": "Balonlu Cetvel",
+          "summary": "Sayı nerede yaşıyor? Cetvele dokun, vantuzlu ok o noktadaki balonu patlatsın: ne kadar yakınsa o kadar iyi. Noktalardan kesirlere, tek başına, FlickerTalk ile ya da sohbetteki kişiyle."
+        },
+        "uk": {
+          "name": "Лінійка з кульками",
+          "summary": "Де живе число? Торкнися лінійки, і стріла з присоскою лусне кульку в цьому місці: що ближче, то краще. Від крапок до дробів, наодинці, з FlickerTalk або зі співрозмовником із чату."
+        },
+        "vi": {
+          "name": "Thước bóng bay",
+          "summary": "Con số ở đâu? Chạm vào thước, mũi tên giác hút sẽ làm nổ quả bóng ở chỗ đó: càng gần càng tốt. Từ chấm tròn đến phân số, chơi một mình, với FlickerTalk hoặc với người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "气球尺",
+          "summary": "这个数住在哪儿？点一下尺子，吸盘箭就会射破那里的气球：越近越好。从圆点到分数，可以自己玩，和 FlickerTalk 玩，或和聊天中的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "氣球尺",
+          "summary": "這個數住在哪裡？點一下尺，吸盤箭就會射破那裡的氣球：越近越好。從圓點到分數，可以自己玩、和 FlickerTalk 玩，或和聊天中的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Balloon Ruler",
+      "size": 75684,
+      "summary": "Where does the number live? Touch the ruler and a suction-cup arrow pops the balloon there: the closer, the better. Dots to fractions, alone, with FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.balloonruler/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "bb6073b8640c43bf4954bce5b2ffd5527363e9366e0cfdc3a43ee136a4d3b1b0",
+      "icon": "musical-notes-outline",
+      "id": "com.flickertalk.game.beatwagons",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#7C3AED\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M192 218v-6c0-14.84 10-27 24.24-30.59l174.59-46.68A20 20 0 0 1 416 154v22\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><path d=\"M416 295.94v80c0 13.91-8.93 25.59-22 30l-22 8c-25.9 8.72-52-10.42-52-38h0a33.37 33.37 0 0 1 23-32l51-18.15c13.07-4.4 22-15.94 22-29.85V58a10 10 0 0 0-12.6-9.61L204 102a16.48 16.48 0 0 0-12 16v226c0 13.91-8.93 25.6-22 30l-52 18c-13.88 4.68-22 17.22-22 32h0c0 27.58 26.52 46.55 52 38l22-8c13.07-4.4 22-16.08 22-30v-80\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "عربات الإيقاع",
+          "summary": "لغز أنماط موسيقي لكل العائلة: ضع العربة الناقصة فيعزف القطار لحنه، وحدك أو ضد FlickerTalk أو مع الشخص الآخر في المحادثة، يركّب كلٌّ منكما قطارات للآخر."
+        },
+        "bn": {
+          "name": "তালের বগি",
+          "summary": "পুরো পরিবারের জন্য সুরেলা নকশার ধাঁধা: হারানো বগিটি বসান আর ট্রেন তার সুর বাজাবে, একা, FlickerTalk-এর বিরুদ্ধে বা চ্যাটের অন্য মানুষটির সঙ্গে, একে অপরের জন্য ট্রেন সাজিয়ে।"
+        },
+        "de": {
+          "name": "Rhythmuswagen",
+          "summary": "Ein musikalisches Musterrätsel für die ganze Familie: Setz den fehlenden Wagen ein, und der Zug spielt seine Melodie, allein, gegen FlickerTalk oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Vagones con ritmo",
+          "summary": "Un puzle musical de patrones para toda la familia: pon el vagón que falta y el tren toca su melodía, solo, contra FlickerTalk o con la otra persona del chat, componiendo trenes el uno para el otro."
+        },
+        "fr": {
+          "name": "Wagons en rythme",
+          "summary": "Un puzzle musical de motifs pour toute la famille : place le wagon manquant et le train joue sa mélodie, seul, contre FlickerTalk ou avec l’autre personne du chat, qui complète tes trains."
+        },
+        "hi": {
+          "name": "ताल के डिब्बे",
+          "summary": "पूरे परिवार के लिए संगीत भरी क्रम पहेली: छूटा हुआ डिब्बा लगाएँ और रेलगाड़ी अपनी धुन बजाएगी, अकेले, FlickerTalk के ख़िलाफ़ या चैट के दूसरे व्यक्ति के साथ, एक-दूसरे के लिए रेलगाड़ियाँ बनाकर।"
+        },
+        "id": {
+          "name": "Gerbong Irama",
+          "summary": "Teka-teki pola bermusik untuk seluruh keluarga: pasang gerbong yang hilang dan kereta memainkan lagunya, sendiri, melawan FlickerTalk, atau dengan orang lain di obrolan, saling menyusun kereta."
+        },
+        "it": {
+          "name": "Vagoni a ritmo",
+          "summary": "Un rompicapo musicale di schemi per tutta la famiglia: metti il vagone mancante e il treno suona la sua melodia, da solo, contro FlickerTalk o con l’altra persona della chat, componendo treni."
+        },
+        "ja": {
+          "name": "リズム列車",
+          "summary": "家族みんなで楽しめる音楽のパターンパズル。足りない車両を入れると列車がメロディーをかなでます。ひとりで、FlickerTalk を相手に、またはチャットの相手とおたがいに列車をつくって遊べます。"
+        },
+        "ko": {
+          "name": "리듬 기차",
+          "summary": "온 가족이 즐기는 음악 규칙 퍼즐: 빠진 객차를 넣으면 기차가 멜로디를 연주합니다. 혼자서, FlickerTalk를 상대로, 또는 채팅 상대와 서로 기차를 꾸며 주며 즐기세요."
+        },
+        "pl": {
+          "name": "Rytmiczne wagoniki",
+          "summary": "Muzyczna łamigłówka ze wzorami dla całej rodziny: wstaw brakujący wagon, a pociąg zagra melodię — samodzielnie, przeciw FlickerTalk albo z drugą osobą z czatu, układając pociągi dla siebie."
+        },
+        "pt": {
+          "name": "Vagões com ritmo",
+          "summary": "Um quebra-cabeça musical de padrões para toda a família: coloque o vagão que falta e o trem toca a sua melodia, sozinho, contra o FlickerTalk ou com a outra pessoa da conversa, compondo trens."
+        },
+        "ro": {
+          "name": "Vagoane cu ritm",
+          "summary": "Un puzzle muzical cu modele pentru toată familia: pune vagonul care lipsește și trenul își cântă melodia, singur, contra FlickerTalk sau cu cealaltă persoană din chat, compunând trenuri."
+        },
+        "ru": {
+          "name": "Ритмичные вагончики",
+          "summary": "Музыкальная головоломка с узорами для всей семьи: поставь недостающий вагон, и поезд сыграет мелодию — в одиночку, против FlickerTalk или с собеседником, составляя поезда друг для друга."
+        },
+        "th": {
+          "name": "ตู้รถไฟจังหวะ",
+          "summary": "ปริศนาแบบรูปพร้อมเสียงดนตรีสำหรับทั้งครอบครัว: วางตู้ที่หายไปแล้วรถไฟจะเล่นทำนอง เล่นคนเดียว เล่นกับ FlickerTalk หรือกับอีกคนในแชต โดยจัดขบวนรถไฟให้กันและกัน"
+        },
+        "tr": {
+          "name": "Ritimli Vagonlar",
+          "summary": "Tüm aile için müzikli bir örüntü bulmacası: eksik vagonu yerine koy, tren melodisini çalsın; tek başına, FlickerTalk'a karşı ya da sohbetteki kişiyle birbirinize tren kurarak."
+        },
+        "uk": {
+          "name": "Ритмічні вагончики",
+          "summary": "Музична головоломка з візерунками для всієї родини: постав вагон, якого бракує, і потяг зіграє мелодію — наодинці, проти FlickerTalk або зі співрозмовником, складаючи потяги одне для одного."
+        },
+        "vi": {
+          "name": "Toa tàu nhịp điệu",
+          "summary": "Trò giải đố quy luật có âm nhạc cho cả gia đình: đặt toa còn thiếu và đoàn tàu chơi giai điệu của nó, một mình, đấu với FlickerTalk hoặc cùng người kia trong cuộc trò chuyện, xếp tàu cho nhau."
+        },
+        "zh-CN": {
+          "name": "节奏车厢",
+          "summary": "适合全家的音乐规律谜题：放上缺少的车厢，火车就会奏出旋律。可以独自玩、和 FlickerTalk 对玩，或与聊天中的对方互相编火车。"
+        },
+        "zh-TW": {
+          "name": "節奏車廂",
+          "summary": "適合全家的音樂規律謎題：放上缺少的車廂，火車就會奏出旋律。可以獨自玩、和 FlickerTalk 對玩，或與聊天中的對方互相編火車。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Beat Wagons",
+      "size": 81068,
+      "summary": "A musical pattern puzzle for the whole family: put the missing wagon in the train and it plays its tune, alone, against FlickerTalk or with the other person in the chat, making trains for each other.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.beatwagons/1.0.5.ftplugin",
       "version": "1.0.5"
     },
     {
-      "hash": "a71db6f13365696700dada2a42bc34757b8312647088b2d711213a52dc6dab1e",
+      "hash": "53fb4613638acba277f3607fad4259c28ee6fd4209d21ac7511bdd489658fdf9",
+      "icon": "navigate-outline",
+      "id": "com.flickertalk.game.beeproute",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0891B2\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M448 64 64 240.14h200a8 8 0 0 1 8 8V448Z\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "مسار بيب",
+          "summary": "أول لغز برمجة للعائلة كلها: ضع الأسهم ليصل روبوت صغير إلى هدفه، وحدك أو ضد FlickerTalk أو مع الشخص الآخر في المحادثة، وتصنعان المستويات لبعضكما."
+        },
+        "bn": {
+          "name": "বিপ-পথ",
+          "summary": "পুরো পরিবারের জন্য প্রোগ্রামিংয়ের প্রথম ধাঁধা: ছোট্ট একটি রোবটকে লক্ষ্যে পৌঁছাতে তীর বসান, একা, FlickerTalk-এর বিরুদ্ধে বা চ্যাটের অন্যজনের সঙ্গে, একে অপরের জন্য লেভেল বানিয়ে।"
+        },
+        "de": {
+          "name": "Piep-Route",
+          "summary": "Ein erstes Programmierrätsel für die ganze Familie: Leg Pfeile, damit ein kleiner Roboter sein Ziel erreicht – allein, gegen FlickerTalk oder mit der anderen Person im Chat, mit Levels füreinander."
+        },
+        "es": {
+          "name": "Ruta bip",
+          "summary": "Un primer puzle de programación para toda la familia: pon flechas para llevar un robot a la meta, solo, contra FlickerTalk o con la otra persona del chat, creando niveles el uno para el otro."
+        },
+        "fr": {
+          "name": "Parcours bip",
+          "summary": "Un premier puzzle de programmation pour toute la famille : pose des flèches pour mener un robot au but, seul, contre FlickerTalk ou avec l’autre personne du chat, qui résout tes niveaux."
+        },
+        "hi": {
+          "name": "बीप रास्ता",
+          "summary": "पूरे परिवार के लिए प्रोग्रामिंग की पहली पहेली: एक छोटे रोबोट को उसके लक्ष्य तक पहुँचाने के लिए तीर रखें, अकेले, FlickerTalk के ख़िलाफ़ या चैट के दूसरे व्यक्ति के साथ, एक-दूसरे के लिए स्तर बनाकर।"
+        },
+        "id": {
+          "name": "Rute Bip",
+          "summary": "Teka-teki pemrograman pertama untuk seluruh keluarga: taruh panah agar robot kecil sampai ke tujuannya, sendiri, melawan FlickerTalk, atau bersama orang lain di obrolan sambil saling membuat level."
+        },
+        "it": {
+          "name": "Percorso bip",
+          "summary": "Un primo rompicapo di programmazione per tutta la famiglia: metti frecce per portare un robot al traguardo, da solo, contro FlickerTalk o con l’altra persona della chat, creando livelli."
+        },
+        "ja": {
+          "name": "ビープルート",
+          "summary": "家族みんなのための、はじめてのプログラミングパズル。矢印をならべて小さなロボットをゴールへ。ひとりで、FlickerTalk と、またはチャットの相手とレベルをつくり合って。"
+        },
+        "ko": {
+          "name": "삐빅 루트",
+          "summary": "온 가족을 위한 첫 프로그래밍 퍼즐: 작은 로봇이 목표에 닿도록 화살표를 놓으세요. 혼자, FlickerTalk와, 또는 채팅 상대와 서로 레벨을 만들어 주며."
+        },
+        "pl": {
+          "name": "Trasa bip",
+          "summary": "Pierwsza łamigłówka programistyczna dla całej rodziny: układaj strzałki, by mały robot dotarł do celu — sam, przeciw FlickerTalk albo z drugą osobą z czatu, budując sobie nawzajem poziomy."
+        },
+        "pt": {
+          "name": "Rota bip",
+          "summary": "Um primeiro quebra-cabeça de programação para toda a família: coloque setas para levar um robô à meta, sozinho, contra o FlickerTalk ou com a outra pessoa da conversa, criando níveis."
+        },
+        "ro": {
+          "name": "Traseu bip",
+          "summary": "Un prim puzzle de programare pentru toată familia: pune săgeți ca un roboțel să ajungă la țintă, singur, împotriva lui FlickerTalk sau cu cealaltă persoană din conversație."
+        },
+        "ru": {
+          "name": "Бип-маршрут",
+          "summary": "Первая головоломка о программировании для всей семьи: выкладывай стрелки, чтобы робот добрался до цели, — одному, против FlickerTalk или с собеседником из чата, придумывая уровни."
+        },
+        "th": {
+          "name": "เส้นทางบี๊บ",
+          "summary": "ปริศนาการเขียนโปรแกรมแรกสำหรับทั้งครอบครัว วางลูกศรให้หุ่นยนต์ตัวเล็กไปถึงเส้นชัย เล่นคนเดียว เล่นกับ FlickerTalk หรือกับอีกคนในแชท แล้วสร้างด่านให้กันและกัน"
+        },
+        "tr": {
+          "name": "Bip Rotası",
+          "summary": "Tüm aile için ilk programlama bulmacası: küçük bir robotu hedefine ulaştırmak için oklar diz; tek başına, FlickerTalk'a karşı ya da sohbetteki kişiyle birbirinize seviyeler yaparak."
+        },
+        "uk": {
+          "name": "Біп-маршрут",
+          "summary": "Перша головоломка про програмування для всієї родини: викладай стрілки, щоб маленький робот дістався цілі, — самому, проти FlickerTalk або з людиною з чату, вигадуючи рівні одне для одного."
+        },
+        "vi": {
+          "name": "Lộ trình bíp",
+          "summary": "Trò giải đố lập trình đầu tiên cho cả gia đình: đặt mũi tên để rô-bốt nhỏ tới đích, chơi một mình, đấu với FlickerTalk hoặc với người kia trong cuộc trò chuyện, tạo màn chơi cho nhau."
+        },
+        "zh-CN": {
+          "name": "哔哔路线",
+          "summary": "全家都能玩的第一个编程谜题：摆好箭头，带小机器人走到终点，可以独自玩、和 FlickerTalk 玩，或和聊天里的对方互相出关卡。"
+        },
+        "zh-TW": {
+          "name": "嗶嗶路線",
+          "summary": "全家都能玩的第一個程式謎題：擺好箭頭，帶小機器人走到終點，可以獨自玩、和 FlickerTalk 玩，或和聊天裡的對方互相出關卡。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Beep Route",
+      "size": 84089,
+      "summary": "A first programming puzzle for the whole family: lay arrows for a little robot to reach its goal, alone, against FlickerTalk or with the other person in the chat, making levels for each other.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.beeproute/1.0.5.ftplugin",
+      "version": "1.0.5"
+    },
+    {
+      "hash": "4721d5b61b7992e45ced08576542150c6194c96cb3d748525f85926a975210cf",
+      "icon": "help-buoy-outline",
+      "id": "com.flickertalk.game.bumperring",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0891B2\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><circle cx=\"256\" cy=\"256\" r=\"208\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><circle cx=\"256\" cy=\"256\" r=\"80\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><path d=\"m208 54 8 132M296 186l8-132M208 458l8-132M296 326l8 132M458 208l-132 8M326 296l132 8M54 208l132 8M186 296l-132 8\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "حلبة التدافع",
+          "summary": "لعبة تدافع لكل العائلة: اندفع نحو اتجاه سهمك وادفع اللاعب الآخر خارج المنصة العائمة، ضد FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "ঠেলাঠেলির রিং",
+          "summary": "পুরো পরিবারের জন্য ঠেলাঠেলির খেলা: তীরের দিকে ছুটে গিয়ে অন্য খেলোয়াড়কে ভাসমান প্ল্যাটফর্ম থেকে ঠেলে ফেলুন, FlickerTalk-এর বিরুদ্ধে বা চ্যাটের অন্যজনের সঙ্গে।"
+        },
+        "de": {
+          "name": "Schubsring",
+          "summary": "Ein Schubsspiel für die ganze Familie: Sause in Pfeilrichtung los und schubse die andere Person von der schwimmenden Plattform, gegen FlickerTalk oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Ring de empujones",
+          "summary": "Un juego de empujones para toda la familia: lánzate hacia donde apunta tu flecha y saca al otro jugador de la plataforma flotante, contra FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Ring de bousculade",
+          "summary": "Un jeu de bousculade pour toute la famille : fonce là où pointe ta flèche et pousse l’autre joueur hors de la plateforme flottante, contre FlickerTalk ou avec l’autre personne du chat."
+        },
+        "hi": {
+          "name": "धक्का-मुक्की अखाड़ा",
+          "summary": "पूरे परिवार के लिए धक्का-मुक्की का खेल: अपने तीर की दिशा में झपटें और दूसरे खिलाड़ी को तैरते प्लेटफ़ॉर्म से धकेल दें, FlickerTalk के ख़िलाफ़ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Arena Dorong",
+          "summary": "Permainan dorong-dorongan untuk seluruh keluarga: melesat ke arah panahmu dan dorong pemain lain dari panggung terapung, melawan FlickerTalk atau bersama orang lain di obrolan."
+        },
+        "it": {
+          "name": "Ring degli spintoni",
+          "summary": "Un gioco di spintoni per tutta la famiglia: scatta dove punta la tua freccia e spingi l’altro giocatore giù dalla piattaforma galleggiante, contro FlickerTalk o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "おしあいリング",
+          "summary": "家族みんなで楽しめる押し合いゲーム。矢印の向きにダッシュして、相手を浮かぶ足場から押し出そう。FlickerTalk と、またはチャットの相手と。"
+        },
+        "ko": {
+          "name": "밀어내기 링",
+          "summary": "온 가족을 위한 밀어내기 게임: 화살표 방향으로 돌진해 상대를 떠 있는 발판 밖으로 밀어내세요. FlickerTalk와, 또는 채팅 상대와 함께."
+        },
+        "pl": {
+          "name": "Ring przepychanek",
+          "summary": "Gra w przepychanki dla całej rodziny: rusz tam, gdzie wskazuje strzałka, i zepchnij drugiego gracza z pływającej platformy — przeciw FlickerTalk albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Ringue de empurrões",
+          "summary": "Um jogo de empurrões para toda a família: dispare na direção da sua seta e tire o outro jogador da plataforma flutuante, contra o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Ringul îmbrâncelilor",
+          "summary": "Un joc cu îmbrânceli pentru toată familia: țâșnește încotro arată săgeata ta și împinge celălalt jucător de pe platforma plutitoare, împotriva lui FlickerTalk sau cu cealaltă persoană din conversație."
+        },
+        "ru": {
+          "name": "Ринг-толкалка",
+          "summary": "Игра в толкалки для всей семьи: рвани туда, куда смотрит стрелка, и столкни другого игрока с плавучей платформы — против FlickerTalk или с собеседником из чата."
+        },
+        "th": {
+          "name": "เวทีดันกัน",
+          "summary": "เกมดันกันสำหรับทั้งครอบครัว พุ่งไปตามทิศที่ลูกศรชี้แล้วดันอีกฝ่ายให้ตกจากแท่นลอยน้ำ เล่นกับ FlickerTalk หรือกับอีกคนในแชท"
+        },
+        "tr": {
+          "name": "İtişme Ringi",
+          "summary": "Tüm aile için bir itişme oyunu: okunun gösterdiği yöne atıl ve diğer oyuncuyu yüzen platformdan it; FlickerTalk’a karşı ya da sohbetteki kişiyle."
+        },
+        "uk": {
+          "name": "Ринг-штовханка",
+          "summary": "Гра у штовханки для всієї родини: рвони туди, куди вказує стрілка, і зіштовхни іншого гравця з плавучої платформи — проти FlickerTalk або з людиною з чату."
+        },
+        "vi": {
+          "name": "Võ đài xô đẩy",
+          "summary": "Trò chơi xô đẩy cho cả gia đình: lao theo hướng mũi tên và đẩy người chơi kia khỏi sân nổi, đấu với FlickerTalk hoặc với người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "碰碰擂台",
+          "summary": "适合全家的碰碰游戏：朝箭头方向冲出去，把对方推下漂浮的平台，可以和 FlickerTalk 比，或和聊天里的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "碰碰擂台",
+          "summary": "適合全家的碰碰遊戲：朝箭頭方向衝出去，把對方推下漂浮的平台，可以和 FlickerTalk 比，或和聊天裡的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Bumper Ring",
+      "size": 76615,
+      "summary": "A bumping game for the whole family: dash where your arrow points and push the other player off the floating platform, against FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.bumperring/1.0.7.ftplugin",
+      "version": "1.0.7"
+    },
+    {
+      "hash": "7b5a8ce9de3c6224b6586e3e404fc45a252bac9d6cb71fc4a80c5768e310f12a",
+      "icon": "copy-outline",
+      "id": "com.flickertalk.game.cardcorner",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#15803D\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><rect width=\"336\" height=\"336\" x=\"128\" y=\"128\" rx=\"57\" ry=\"57\" fill=\"none\" stroke=\"#fff\" stroke-linejoin=\"round\" stroke-width=\"32\"/><path d=\"m383.5 128 .5-24a56.16 56.16 0 0 0-56-56H112a64.19 64.19 0 0 0-64 64v216a56.16 56.16 0 0 0 56 56h24\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "ركن الورق",
+          "summary": "أربع ألعاب ورق مع الشخص الآخر في الدردشة: الأزواج والحرب ورمي وصيد السمك، بأوراق يخلطها الهاتفان معًا."
+        },
+        "bn": {
+          "name": "তাসের কোণ",
+          "summary": "চ্যাটের অন্য ব্যক্তির সঙ্গে তাসের চারটি খেলা: জোড়া, যুদ্ধ, রামি ও গো ফিশ; কার্ড দুই ফোন মিলে ফেটায়।"
+        },
+        "de": {
+          "name": "Kartenecke",
+          "summary": "Vier Kartenspiele mit der anderen Person im Chat: Paare, Krieg, Rommé und Go Fish, mit einem von beiden Telefonen gemischten Blatt."
+        },
+        "es": {
+          "name": "Rincón de cartas",
+          "summary": "Cuatro juegos de cartas con la otra persona del chat: Parejas, Guerra, Rummy y Pesca, con una baraja mezclada por los dos teléfonos."
+        },
+        "fr": {
+          "name": "Coin des cartes",
+          "summary": "Quatre jeux de cartes avec l’autre personne de la conversation : Paires, Bataille, Rami et Pêche, avec un jeu mélangé par les deux téléphones."
+        },
+        "hi": {
+          "name": "ताश का कोना",
+          "summary": "चैट के दूसरे व्यक्ति के साथ ताश के चार खेल: जोड़े, युद्ध, रमी और गो फ़िश; गड्डी दोनों फ़ोन मिलकर फेंटते हैं।"
+        },
+        "id": {
+          "name": "Pojok Kartu",
+          "summary": "Empat permainan kartu dengan orang lain di obrolan: Pasangan, Perang, Remi, dan Memancing, dengan kartu yang dikocok oleh kedua ponsel."
+        },
+        "it": {
+          "name": "Angolo delle carte",
+          "summary": "Quattro giochi di carte con l’altra persona della chat: Coppie, Guerra, Ramino e Pesca, con un mazzo mescolato dai due telefoni."
+        },
+        "ja": {
+          "name": "カードコーナー",
+          "summary": "チャットの相手と遊ぶ4つのトランプゲーム：神経衰弱、戦争、ラミー、ゴーフィッシュ。山札は2台の端末が一緒に混ぜます。"
+        },
+        "ko": {
+          "name": "카드 코너",
+          "summary": "채팅 상대와 즐기는 네 가지 카드 게임: 짝 맞추기, 전쟁, 러미, 고 피시. 카드는 두 휴대폰이 함께 섞어요."
+        },
+        "pl": {
+          "name": "Karciany kącik",
+          "summary": "Cztery gry karciane z drugą osobą z czatu: Pary, Wojna, Remik i Na ryby, z talią tasowaną przez oba telefony."
+        },
+        "pt": {
+          "name": "Canto das cartas",
+          "summary": "Quatro jogos de cartas com a outra pessoa da conversa: Pares, Guerra, Rummy e Pesca, com um baralho baralhado pelos dois telefones."
+        },
+        "ro": {
+          "name": "Colțul cărților",
+          "summary": "Patru jocuri de cărți cu cealaltă persoană din conversație: Perechi, Război, Remi și La pescuit, cu un pachet amestecat de ambele telefoane."
+        },
+        "ru": {
+          "name": "Карточный уголок",
+          "summary": "Четыре карточные игры с собеседником из чата: «Пары», «Пьяница», «Рамми» и «Рыбалка»; колоду тасуют оба телефона."
+        },
+        "th": {
+          "name": "มุมไพ่",
+          "summary": "เกมไพ่สี่เกมกับอีกคนในแชท: จับคู่ สงคราม รัมมี่ และโกฟิช ด้วยสำรับที่โทรศัพท์ทั้งสองสับร่วมกัน"
+        },
+        "tr": {
+          "name": "Kart Köşesi",
+          "summary": "Sohbetteki diğer kişiyle dört kart oyunu: Eşler, Savaş, Remi ve Balık Tut; desteyi iki telefon birlikte karar."
+        },
+        "uk": {
+          "name": "Картковий куточок",
+          "summary": "Чотири карткові гри зі співрозмовником із чату: «Пари», «П’яниця», «Раммі» та «Риболовля»; колоду тасують обидва телефони."
+        },
+        "vi": {
+          "name": "Góc bài",
+          "summary": "Bốn trò chơi bài với người kia trong cuộc trò chuyện: Cặp đôi, Chiến tranh, Rummy và Câu cá, với bộ bài do cả hai điện thoại xáo."
+        },
+        "zh-CN": {
+          "name": "纸牌角",
+          "summary": "与聊天中的对方玩四种纸牌游戏：配对、战争、拉米和钓鱼，牌由两部手机共同洗过。"
+        },
+        "zh-TW": {
+          "name": "紙牌角",
+          "summary": "與聊天中的對方玩四種紙牌遊戲：配對、戰爭、拉密和釣魚，牌由兩支手機共同洗過。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Card Corner",
+      "size": 151543,
+      "summary": "Four card games with the other person in the chat: Pairs, War, Rummy and Go Fish, with a deck shuffled by both phones.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.cardcorner/1.0.2.ftplugin",
+      "version": "1.0.2"
+    },
+    {
+      "hash": "d16c48332ca52a2bf58c9960bc9ce905528ec2c15b1409a8e0cfaa2efa574ccd",
       "icon": "radio-button-on-outline",
       "id": "com.flickertalk.game.checkers",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><circle cx=\"256\" cy=\"256\" r=\"144\"/></g></svg>\n",
@@ -565,13 +1135,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Checkers",
-      "size": 50211,
+      "size": 77029,
       "summary": "Checkers with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.checkers/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "59849d43f41a7a3ee707fee6a7217a3c3b4bbac3194d4fddfa5cf2c69d4ec1e6",
+      "hash": "d7f3dfbc4ad68863f854dcf74949e0befd188c3d5900446056e9208206235d3d",
       "icon": "shield-outline",
       "id": "com.flickertalk.game.chess",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#475569\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M479.07 111.35a16 16 0 0 0-13.15-14.75C379.89 81.18 343.69 69.12 266 34.16c-7.76-2.89-12.57-2.84-20 0-77.69 35-113.89 47-199.92 62.44a16 16 0 0 0-13.15 14.75c-3.85 61.1 4.34 118 24.36 169.15a348.9 348.9 0 0 0 71.43 112.41c44.67 47.43 94.2 75.12 119.74 85.6a20 20 0 0 0 15.11 0c27-10.92 74.69-37.82 119.71-85.62a348.9 348.9 0 0 0 71.43-112.39c20.02-51.14 28.21-108.05 24.36-169.15\"/></g></svg>\n",
@@ -660,13 +1230,108 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Chess",
-      "size": 91160,
+      "size": 93381,
       "summary": "Chess with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.0.6.ftplugin",
-      "version": "1.0.6"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.chess/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "f2079fa66cd91c1e7bcb13f02793745892b2ec29ef75a70c4abe40ed6201ba78",
+      "hash": "4b6b0a9795401a3065b3e81cddabe467cf7bd0401e54ca3287d13ffe22b98534",
+      "icon": "color-palette-outline",
+      "id": "com.flickertalk.game.colourcorner",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#C026D3\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M430.11 347.9c-6.6-6.1-16.3-7.6-24.6-9-11.5-1.9-15.9-4-22.6-10-14.3-12.7-14.3-31.1 0-43.8l30.3-26.9c46.4-41 46.4-108.2 0-149.2-34.2-30.1-80.1-45-127.8-45-55.7 0-113.9 20.3-158.8 60.1-83.5 73.8-83.5 194.7 0 268.5 41.5 36.7 97.5 55 152.9 55.4h1.7c55.4 0 110-17.9 148.8-52.4 14.4-12.7 11.99-36.6.1-47.7Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><circle cx=\"144\" cy=\"208\" r=\"32\"/><circle cx=\"152\" cy=\"311\" r=\"32\"/><circle cx=\"224\" cy=\"144\" r=\"32\"/><circle cx=\"256\" cy=\"367\" r=\"48\"/><circle cx=\"328\" cy=\"144\" r=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "ركن الألوان",
+          "summary": "صفحات تلوين تُملأ جزءًا جزءًا، ورسم حر بالفُرش والأختام والمرآة، وحدك أو مع FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "রঙের কোণ",
+          "summary": "অংশ ধরে ধরে রং করার ছবি, আর তুলি, ছাপ ও আয়না দিয়ে মুক্তভাবে আঁকা, একা, FlickerTalk-এর সঙ্গে বা চ্যাটের অন্যজনের সঙ্গে।"
+        },
+        "de": {
+          "name": "Malecke",
+          "summary": "Ausmalbilder, Feld für Feld gefüllt, und freies Malen mit Pinseln, Stempeln und Spiegel, allein, mit FlickerTalk oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Rincón de colores",
+          "summary": "Dibujos para colorear zona a zona y pintura libre con pinceles, sellos y un espejo, solo, con FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Coin des couleurs",
+          "summary": "Des coloriages à remplir zone par zone et de la peinture libre avec pinceaux, tampons et miroir, seul, avec FlickerTalk ou avec l’autre personne du chat."
+        },
+        "hi": {
+          "name": "रंगों का कोना",
+          "summary": "हिस्सा-दर-हिस्सा रंग भरने वाले चित्र और ब्रश, मुहरों व दर्पण से मुक्त चित्रकारी, अकेले, FlickerTalk के साथ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Pojok Warna",
+          "summary": "Gambar mewarnai yang diisi bagian demi bagian dan melukis bebas dengan kuas, stempel, dan cermin, sendiri, bersama FlickerTalk, atau bersama orang lain di obrolan."
+        },
+        "it": {
+          "name": "Angolo dei colori",
+          "summary": "Disegni da colorare zona per zona e pittura libera con pennelli, timbri e uno specchio, da solo, con FlickerTalk o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "ぬりえコーナー",
+          "summary": "部分ごとにぬっていくぬりえと、筆・スタンプ・ミラーで描く自由なお絵かき。ひとりで、FlickerTalk と、またはチャットの相手と。"
+        },
+        "ko": {
+          "name": "색칠 코너",
+          "summary": "부분마다 색을 채우는 색칠 그림과 붓, 도장, 거울로 하는 자유 그리기. 혼자, FlickerTalk와, 또는 채팅 상대와 함께."
+        },
+        "pl": {
+          "name": "Kolorowy kącik",
+          "summary": "Kolorowanki wypełniane pole po polu i swobodne malowanie pędzlami, stemplami i lustrem — sam, z FlickerTalk albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Canto das cores",
+          "summary": "Desenhos para colorir área por área e pintura livre com pincéis, carimbos e espelho, sozinho, com o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Colțul culorilor",
+          "summary": "Planșe de colorat umplute zonă cu zonă și pictură liberă cu pensule, ștampile și oglindă, singur, cu FlickerTalk sau cu cealaltă persoană din conversație."
+        },
+        "ru": {
+          "name": "Цветной уголок",
+          "summary": "Раскраски, которые заполняются по частям, и свободное рисование кистями, штампами и зеркалом — одному, с FlickerTalk или с собеседником из чата."
+        },
+        "th": {
+          "name": "มุมระบายสี",
+          "summary": "ภาพระบายสีที่เติมทีละส่วน และวาดภาพอิสระด้วยพู่กัน ตราปั๊ม และกระจก เล่นคนเดียว เล่นกับ FlickerTalk หรือกับอีกคนในแชท"
+        },
+        "tr": {
+          "name": "Renk Köşesi",
+          "summary": "Bölüm bölüm doldurulan boyama sayfaları ve fırça, damga ve aynayla serbest boyama; tek başına, FlickerTalk ile ya da sohbetteki kişiyle."
+        },
+        "uk": {
+          "name": "Кольоровий куточок",
+          "summary": "Розмальовки, що заповнюються частина за частиною, і вільне малювання пензликами, штампами та дзеркалом — самому, з FlickerTalk або з людиною з чату."
+        },
+        "vi": {
+          "name": "Góc tô màu",
+          "summary": "Tranh tô màu theo từng phần và vẽ tự do với cọ, con dấu và gương, chơi một mình, với FlickerTalk hoặc với người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "涂色角",
+          "summary": "逐个区域填色的涂色画，以及用画笔、印章和镜像自由绘画，可以独自玩、和 FlickerTalk 一起，或和聊天里的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "著色角",
+          "summary": "逐個區域填色的著色畫，以及用畫筆、印章和鏡像自由繪畫，可以獨自玩、和 FlickerTalk 一起，或和聊天裡的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Colour Corner",
+      "size": 90089,
+      "summary": "Colouring pages filled zone by zone, and free painting with brushes, stamps and a mirror, alone, with FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.colourcorner/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "c970c7d1a1ec3f991225bbb012fa2ca449195658b84068b9da18a205811d6f79",
       "icon": "square-outline",
       "id": "com.flickertalk.game.dotsandboxes",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DC2626\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M400 48H112a64.07 64.07 0 0 0-64 64v288a64.07 64.07 0 0 0 64 64h288a64.07 64.07 0 0 0 64-64V112a64.07 64.07 0 0 0-64-64m-35.75 138.29-134.4 160a16 16 0 0 1-12 5.71h-.27a16 16 0 0 1-11.89-5.3l-57.6-64a16 16 0 1 1 23.78-21.4l45.29 50.32 122.59-145.91a16 16 0 0 1 24.5 20.58\"/></g></svg>\n",
@@ -755,13 +1420,108 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Dots and Boxes",
-      "size": 48153,
+      "size": 74717,
       "summary": "Dots and boxes with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.dotsandboxes/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "40b801c008c1abf001063fba5272f7c195446ec262c1d2c43c8d1d4ff8700cac",
+      "hash": "a96d81e7c435aa3805fe8b2ff3be61f577745695d49b4b45dc5ec11dc9575049",
+      "icon": "rocket-outline",
+      "id": "com.flickertalk.game.duosquad",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#1D4ED8\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M461.81 53.81a4.4 4.4 0 0 0-3.3-3.39c-54.38-13.3-180 34.09-248.13 102.17a295 295 0 0 0-33.09 39.08c-21-1.9-42-.3-59.88 7.5-50.49 22.2-65.18 80.18-69.28 105.07a9 9 0 0 0 9.8 10.4l81.07-8.9a180 180 0 0 0 1.1 18.3 18.15 18.15 0 0 0 5.3 11.09l31.39 31.39a18.15 18.15 0 0 0 11.1 5.3 180 180 0 0 0 18.19 1.1l-8.89 81a9 9 0 0 0 10.39 9.79c24.9-4 83-18.69 105.07-69.17 7.8-17.9 9.4-38.79 7.6-59.69a294 294 0 0 0 39.19-33.09c68.38-68 115.47-190.86 102.37-247.95M298.66 213.67a42.7 42.7 0 1 1 60.38 0 42.65 42.65 0 0 1-60.38 0\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><path d=\"M109.64 352a45.06 45.06 0 0 0-26.35 12.84C65.67 382.52 64 448 64 448s65.52-1.67 83.15-19.31A44.73 44.73 0 0 0 160 402.32\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "الفريق الثنائي",
+          "summary": "اثنان في فريق واحد ضد موجات من الطائرات المسيّرة ووحوش البحر والآلات العملاقة، في الفضاء وأعماق البحر والصحراء، لكل العائلة: مع FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "জুটির দল",
+          "summary": "একই দলে দুজন, মহাকাশে, গভীর সমুদ্রে আর মরুভূমিতে ড্রোন, সমুদ্রদানব ও দৈত্যাকার যন্ত্রের ঢেউয়ের বিরুদ্ধে, পুরো পরিবারের জন্য: FlickerTalk-এর সঙ্গে বা চ্যাটের অন্য মানুষটির সঙ্গে।"
+        },
+        "de": {
+          "name": "Duo-Staffel",
+          "summary": "Zwei im selben Team gegen Wellen von Drohnen, Seeungeheuern und Riesenmaschinen, im Weltraum, in der Tiefsee und in der Wüste, für die ganze Familie: mit FlickerTalk oder der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Escuadrilla de dos",
+          "summary": "Dos en el mismo equipo contra oleadas de drones, monstruos marinos y máquinas gigantes, en el espacio, el mar y el desierto, para toda la familia: con FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Escouade duo",
+          "summary": "Deux dans la même équipe contre des vagues de drones, monstres marins et machines géantes, dans l’espace, la mer et le désert, pour toute la famille : avec FlickerTalk ou l’autre personne du chat."
+        },
+        "hi": {
+          "name": "जोड़ी दस्ता",
+          "summary": "एक ही टीम में दो खिलाड़ी, अंतरिक्ष, गहरे समुद्र और रेगिस्तान में ड्रोन, समुद्री दैत्यों और विशाल मशीनों की लहरों के सामने, पूरे परिवार के लिए: FlickerTalk के साथ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Skuad Duo",
+          "summary": "Berdua dalam satu tim melawan gelombang drone, monster laut, dan mesin raksasa, di luar angkasa, laut dalam, dan gurun, untuk seluruh keluarga: bersama FlickerTalk atau orang lain di obrolan."
+        },
+        "it": {
+          "name": "Squadriglia in due",
+          "summary": "In due nella stessa squadra contro ondate di droni, mostri marini e macchine giganti, nello spazio, nel mare e nel deserto, per tutta la famiglia: con FlickerTalk o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "デュオスクワッド",
+          "summary": "ふたりで同じチームになり、宇宙・深海・砂漠でドローンや海の怪物、巨大マシンの波に立ち向かう、家族みんなのゲーム。FlickerTalk と、またはチャットの相手と。"
+        },
+        "ko": {
+          "name": "듀오 스쿼드",
+          "summary": "둘이 한 팀이 되어 우주, 깊은 바다, 사막에서 드론, 바다 괴물, 거대 기계의 물결에 맞서는 온 가족용 게임: FlickerTalk와 함께 또는 채팅 상대와 함께."
+        },
+        "pl": {
+          "name": "Eskadra we dwoje",
+          "summary": "Dwoje w jednej drużynie przeciw falom dronów, morskich potworów i olbrzymich maszyn, w kosmosie, w głębinach i na pustyni, dla całej rodziny: z FlickerTalk albo z drugą osobą na czacie."
+        },
+        "pt": {
+          "name": "Esquadrilha em dupla",
+          "summary": "Dois na mesma equipe contra ondas de drones, monstros marinhos e máquinas gigantes, no espaço, no fundo do mar e no deserto, para toda a família: com o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Escadrila în doi",
+          "summary": "Doi în aceeași echipă împotriva valurilor de drone, monștri marini și mașini uriașe, în spațiu, în adâncul mării și în deșert, pentru toată familia: cu FlickerTalk sau cu cealaltă persoană din chat."
+        },
+        "ru": {
+          "name": "Отряд вдвоём",
+          "summary": "Двое в одной команде против волн дронов, морских чудищ и гигантских машин, в космосе, в морских глубинах и в пустыне, для всей семьи: с FlickerTalk или с собеседником в чате."
+        },
+        "th": {
+          "name": "หน่วยคู่หู",
+          "summary": "สองคนทีมเดียวกันสู้กับคลื่นโดรน สัตว์ประหลาดทะเล และเครื่องจักรยักษ์ ในอวกาศ ทะเลลึก และทะเลทราย สำหรับทั้งครอบครัว: เล่นกับ FlickerTalk หรือกับอีกคนในแชต"
+        },
+        "tr": {
+          "name": "İkili Filo",
+          "summary": "Aynı takımda iki kişi; uzayda, derin denizde ve çölde dron, deniz canavarı ve dev makine dalgalarına karşı, tüm aile için: FlickerTalk ile ya da sohbetteki diğer kişiyle."
+        },
+        "uk": {
+          "name": "Загін удвох",
+          "summary": "Двоє в одній команді проти хвиль дронів, морських чудовиськ і велетенських машин, у космосі, в морських глибинах і в пустелі, для всієї родини: з FlickerTalk або зі співрозмовником у чаті."
+        },
+        "vi": {
+          "name": "Biệt đội song hành",
+          "summary": "Hai người cùng một đội chống lại các đợt drone, quái vật biển và cỗ máy khổng lồ, trong vũ trụ, biển sâu và sa mạc, cho cả gia đình: cùng FlickerTalk hoặc người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "双人小队",
+          "summary": "两人同队，在太空、深海和沙漠里对抗一波波无人机、海怪和巨型机器，全家都能玩：和 FlickerTalk 一起，或和聊天里的对方一起。"
+        },
+        "zh-TW": {
+          "name": "雙人小隊",
+          "summary": "兩人同隊，在太空、深海和沙漠裡對抗一波波無人機、海怪和巨型機器，全家都能玩：和 FlickerTalk 一起，或和聊天裡的對方一起。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Duo Squad",
+      "size": 87474,
+      "summary": "Two on the same team against waves of drones, sea monsters and giant machines, in space, the deep sea and the desert, for the whole family: with FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.duosquad/1.0.7.ftplugin",
+      "version": "1.0.7"
+    },
+    {
+      "hash": "4bf55fc9101d69b5655bdc8dac1af901ea57fc8ba528ac6e7eec836d7e024b97",
       "icon": "albums-outline",
       "id": "com.flickertalk.game.eights",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M368 96H144a16 16 0 0 1 0-32h224a16 16 0 0 1 0 32M400 144H112a16 16 0 0 1 0-32h288a16 16 0 0 1 0 32M419.13 448H92.87A44.92 44.92 0 0 1 48 403.13V204.87A44.92 44.92 0 0 1 92.87 160h326.26A44.92 44.92 0 0 1 464 204.87v198.26A44.92 44.92 0 0 1 419.13 448\"/></g></svg>\n",
@@ -850,13 +1610,108 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Crazy Eights",
-      "size": 57552,
+      "size": 135514,
       "summary": "Crazy Eights with the other person in the chat: a deck shuffled by both phones, over the direct connection between them.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.eights/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "5f9192223800054f3df195ac4c3b608ded5458ba1fd237cc5fce99cbb88ea636",
+      "hash": "3f800df8fd178a94a600214b64f687ea94616f11a4884db6b55ba923ec918c4b",
+      "icon": "notifications-outline",
+      "id": "com.flickertalk.game.foamduel",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#9333EA\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M427.68 351.43C402 320 383.87 304 383.87 217.35 383.87 138 343.35 109.73 310 96c-4.43-1.82-8.6-6-9.95-10.55C294.2 65.54 277.8 48 256 48s-38.21 17.55-44 37.47c-1.35 4.6-5.52 8.71-9.95 10.53-33.39 13.75-73.87 41.92-73.87 121.35C128.13 304 110 320 84.32 351.43 73.68 364.45 83 384 101.61 384h308.88c18.51 0 27.77-19.61 17.19-32.57M320 384v16a64 64 0 0 1-128 0v-16\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "مبارزة الإسفنج",
+          "summary": "مبارزة ردود فعل بسيوف إسفنجية لكل العائلة: عندما يقفز الجرس، كن أول من يلمس وفرقع البالون على خوذة الآخر. ضد FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "ফোমের দ্বৈরথ",
+          "summary": "পুরো পরিবারের জন্য ফোমের তলোয়ারের রিফ্লেক্স লড়াই: ঘণ্টা লাফিয়ে উঠলে সবার আগে ট্যাপ করে অন্যজনের হেলমেটের বেলুন ফাটান। FlickerTalk-এর বিরুদ্ধে বা চ্যাটের অন্য মানুষটির সঙ্গে।"
+        },
+        "de": {
+          "name": "Schaumstoffduell",
+          "summary": "Reflex-Duell mit Schaumstoffschwertern für die ganze Familie: Springt die Glocke, tippe zuerst und lass den Helmballon des anderen platzen. Gegen FlickerTalk oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Duelo de espuma",
+          "summary": "Un duelo de reflejos con espadas de espuma para toda la familia: cuando salte la campana, toca primero y explota el globo del casco del otro. Contra FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Duel en mousse",
+          "summary": "Un duel de réflexes à l’épée en mousse pour toute la famille : quand la cloche bondit, touche en premier pour éclater le ballon du casque adverse. Contre FlickerTalk ou avec l’autre personne du chat."
+        },
+        "hi": {
+          "name": "फ़ोम द्वंद्व",
+          "summary": "पूरे परिवार के लिए फ़ोम की तलवारों वाला रिफ़्लेक्स मुक़ाबला: घंटी उछलते ही सबसे पहले टैप करें और सामने वाले के हेलमेट का ग़ुब्बारा फोड़ें। FlickerTalk के ख़िलाफ़ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Duel Busa",
+          "summary": "Duel refleks dengan pedang busa untuk seluruh keluarga: saat lonceng melompat, jadilah yang pertama mengetuk dan letuskan balon di helm lawan. Melawan FlickerTalk atau dengan orang lain di obrolan."
+        },
+        "it": {
+          "name": "Duello di gommapiuma",
+          "summary": "Duello di riflessi con spade di gommapiuma per tutta la famiglia: al salto della campana, tocca per primo e scoppia il palloncino sull’elmo rivale. Contro FlickerTalk o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "スポンジデュエル",
+          "summary": "家族みんなで楽しめる、スポンジの剣の反射神経バトル。ベルがとびはねたら、だれよりも先にタップして相手のかぶとの風船をわろう。FlickerTalk と対戦、またはチャットの相手といっしょに。"
+        },
+        "ko": {
+          "name": "스펀지 대결",
+          "summary": "온 가족이 즐기는 스펀지 칼 순발력 대결: 종이 튀어 오르면 가장 먼저 탭해서 상대 투구 위 풍선을 터뜨리세요. FlickerTalk와 겨루거나 채팅 상대와 함께하세요."
+        },
+        "pl": {
+          "name": "Piankowy pojedynek",
+          "summary": "Pojedynek na refleks na piankowe miecze dla całej rodziny: gdy dzwonek podskoczy, dotknij pierwszy i przebij balon na hełmie rywala. Przeciw FlickerTalk albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Duelo de espuma",
+          "summary": "Um duelo de reflexos com espadas de espuma para toda a família: quando o sino saltar, toque primeiro e estoure o balão do capacete do outro. Contra o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Duel de burete",
+          "summary": "Un duel de reflexe cu săbii de burete pentru toată familia: când sare clopoțelul, atinge primul și sparge balonul de pe coiful celuilalt. Împotriva lui FlickerTalk sau cu cealaltă persoană din chat."
+        },
+        "ru": {
+          "name": "Поролоновая дуэль",
+          "summary": "Дуэль на реакцию на поролоновых мечах для всей семьи: когда подпрыгнет колокольчик, коснись первым и лопни шарик на шлеме соперника. Против FlickerTalk или с собеседником в чате."
+        },
+        "th": {
+          "name": "ดวลดาบโฟม",
+          "summary": "ดวลวัดไหวพริบด้วยดาบโฟมสำหรับทั้งครอบครัว เมื่อระฆังเด้งขึ้น แตะให้เร็วที่สุดเพื่อทำให้ลูกโป่งบนหมวกของอีกฝ่ายแตก เล่นกับ FlickerTalk หรือกับอีกคนในแชต"
+        },
+        "tr": {
+          "name": "Sünger Düellosu",
+          "summary": "Tüm aile için sünger kılıçlarla bir refleks düellosu: zil zıpladığında ilk dokunan sen ol ve rakibin miğferindeki balonu patlat. FlickerTalk’a karşı ya da sohbetteki diğer kişiyle."
+        },
+        "uk": {
+          "name": "Поролонова дуель",
+          "summary": "Дуель на реакцію на поролонових мечах для всієї родини: коли підстрибне дзвоник, торкнися першим і лусни кульку на шоломі суперника. Проти FlickerTalk або зі співрозмовником у чаті."
+        },
+        "vi": {
+          "name": "Đấu kiếm xốp",
+          "summary": "Trận đấu phản xạ bằng kiếm xốp cho cả gia đình: khi chuông nảy lên, hãy chạm trước để làm nổ quả bóng trên mũ đối thủ. Đấu với FlickerTalk hoặc với người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "泡沫剑对决",
+          "summary": "适合全家人的泡沫剑反应对决：铃铛一跳，抢先点按，戳破对方头盔上的气球。可以对战 FlickerTalk，也可以和聊天里的另一个人一起玩。"
+        },
+        "zh-TW": {
+          "name": "泡棉劍對決",
+          "summary": "適合全家人的泡棉劍反應對決：鈴鐺一跳，搶先點按，戳破對方頭盔上的氣球。可以對戰 FlickerTalk，也可以和聊天裡的另一個人一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Foam Duel",
+      "size": 76925,
+      "summary": "A foam-sword duel of reflexes for the whole family: when the bell jumps, be the first to tap and pop the balloon on the other's helmet. Against FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.foamduel/1.0.7.ftplugin",
+      "version": "1.0.7"
+    },
+    {
+      "hash": "849432cad5658eeb2e254d29eced0dbe9402b75374434aca1ed83bfd24348e92",
       "icon": "ellipse-outline",
       "id": "com.flickertalk.game.fourinarow",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 464c-114.69 0-208-93.31-208-208S141.31 48 256 48s208 93.31 208 208-93.31 208-208 208\"/></g></svg>\n",
@@ -945,13 +1800,108 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Four in a Row",
-      "size": 46921,
+      "size": 72852,
       "summary": "Four in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.0.6.ftplugin",
-      "version": "1.0.6"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.fourinarow/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "bf217d0ecbf5edcc509a3328adaceb3d78b799cd0e638c282a77c666a12aad0a",
+      "hash": "19a9dbaab16d84329997449eff4509e6a174fac262b384d43a2d9991ac4b4f4d",
+      "icon": "football-outline",
+      "id": "com.flickertalk.game.goalswipe",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#15803D\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><circle cx=\"256\" cy=\"256\" r=\"192\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"32\"/><path d=\"m256 175.15-76.09 63.83L200 320h112l20.09-81.02zM332.09 238.98l52.87-22.4 25.78-73.26M447 269.97l-62.04-53.39M179.91 238.98l-52.87-22.4-25.78-73.26M65 269.97l62.04-53.39M256 175.15v-57.57l64-42.64M192 74.93l64 42.65M312 320l28 48-28 71M410.74 368H342M200 320l-28 48 28.37 71.5M101.63 368H172\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "اسحب وسجّل",
+          "summary": "ركلات ترجيح لكل العائلة: اسحب لتسدّد، والمس لتقفز وتتصدّى، خمس ركلات لكل لاعب، ضد FlickerTalk أو لاعبان على هاتف واحد أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "সোয়াইপে গোল",
+          "summary": "পুরো পরিবারের জন্য পেনাল্টি শুট-আউট: শট নিতে সোয়াইপ করুন, ঝাঁপিয়ে ঠেকাতে ট্যাপ করুন, প্রত্যেকের পাঁচটি শট, FlickerTalk-এর বিরুদ্ধে, এক ফোনে দুজন বা চ্যাটের অন্যজনের সঙ্গে।"
+        },
+        "de": {
+          "name": "Wisch zum Tor",
+          "summary": "Ein Elfmeterschießen für die ganze Familie: Wisch zum Schießen, tipp zum Hechten und Halten, fünf Schüsse für jeden, gegen FlickerTalk, zu zweit an einem Handy oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Desliza y marca",
+          "summary": "Una tanda de penaltis para toda la familia: desliza para chutar, toca para lanzarte y parar, cinco tiros cada uno, contra FlickerTalk, dos en un mismo teléfono o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Glisse et marque",
+          "summary": "Une séance de tirs au but pour toute la famille : glisse pour tirer, touche pour plonger et arrêter, cinq tirs chacun, contre FlickerTalk, à deux sur un téléphone ou avec l’autre personne du chat."
+        },
+        "hi": {
+          "name": "स्वाइप और गोल",
+          "summary": "पूरे परिवार के लिए पेनल्टी शूट-आउट: शॉट मारने के लिए स्वाइप करें, छलाँग लगाकर रोकने के लिए टैप करें, हर किसी के पाँच शॉट, FlickerTalk के ख़िलाफ़, एक ही फ़ोन पर दो लोग या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Usap Jadi Gol",
+          "summary": "Adu penalti untuk seluruh keluarga: usap untuk menendang, ketuk untuk melompat dan menepis, lima tendangan masing-masing, melawan FlickerTalk, berdua di satu ponsel atau dengan orang lain di obrolan."
+        },
+        "it": {
+          "name": "Scorri e segna",
+          "summary": "Una sfida ai rigori per tutta la famiglia: scorri per tirare, tocca per tuffarti e parare, cinque tiri a testa, contro FlickerTalk, in due su un telefono o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "スワイプゴール",
+          "summary": "家族みんなで楽しめる PK 戦。スワイプでシュート、タップで飛びついてセーブ。ひとり 5 本ずつ。FlickerTalk と、1 台でふたりで、またはチャットの相手と。"
+        },
+        "ko": {
+          "name": "스와이프 골",
+          "summary": "온 가족이 즐기는 승부차기: 밀어서 슛하고, 눌러서 몸을 날려 막으세요. 각자 다섯 번씩, FlickerTalk와, 한 휴대폰에서 둘이, 또는 채팅 상대와 함께."
+        },
+        "pl": {
+          "name": "Przesuń i strzel",
+          "summary": "Seria rzutów karnych dla całej rodziny: przesuń palcem, by strzelić, dotknij, by rzucić się i obronić, po pięć strzałów, przeciw FlickerTalk, we dwoje na jednym telefonie albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Deslize e marque",
+          "summary": "Disputa de pênaltis para toda a família: deslize para chutar, toque para se atirar e defender, cinco chutes cada um, contra o FlickerTalk, a dois no mesmo telefone ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Glisează și marchează",
+          "summary": "Penaltiuri pentru toată familia: glisează ca să șutezi, atinge ca să plonjezi și să aperi, cinci șuturi fiecare, contra lui FlickerTalk, în doi pe un telefon sau cu cealaltă persoană din conversație."
+        },
+        "ru": {
+          "name": "Свайп и гол",
+          "summary": "Серия пенальти для всей семьи: проведи пальцем, чтобы ударить, коснись, чтобы прыгнуть и отбить, по пять ударов, против FlickerTalk, вдвоём на одном телефоне или с собеседником из чата."
+        },
+        "th": {
+          "name": "ปัดยิงประตู",
+          "summary": "ดวลจุดโทษสำหรับทั้งครอบครัว ปัดเพื่อยิง แตะเพื่อพุ่งเซฟ คนละห้าลูก เล่นกับ FlickerTalk เล่นสองคนบนเครื่องเดียว หรือกับอีกคนในแชท"
+        },
+        "tr": {
+          "name": "Kaydır, Gol At",
+          "summary": "Bütün aile için penaltı atışları: şut için kaydır, uçup kurtarmak için dokun, herkese beş atış; FlickerTalk'a karşı, tek telefonda iki kişi ya da sohbetteki kişiyle."
+        },
+        "uk": {
+          "name": "Свайп і гол",
+          "summary": "Серія пенальті для всієї родини: проведи пальцем, щоб ударити, торкнися, щоб стрибнути й відбити, по п’ять ударів, проти FlickerTalk, удвох на одному телефоні або з людиною з чату."
+        },
+        "vi": {
+          "name": "Vuốt ghi bàn",
+          "summary": "Loạt sút luân lưu cho cả gia đình: vuốt để sút, chạm để bay người cản phá, mỗi người năm lượt, đấu với FlickerTalk, hai người trên một máy hoặc với người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "滑动射门",
+          "summary": "适合全家的点球大战：滑动射门，点按扑救，每人五球，可以和 FlickerTalk 比、两人同用一部手机，或和聊天里的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "滑動射門",
+          "summary": "適合全家的 PK 大戰：滑動射門，點按撲救，每人五球，可以和 FlickerTalk 比、兩人共用一支手機，或和聊天裡的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Goal Swipe",
+      "size": 80201,
+      "summary": "A penalty shoot-out for the whole family: swipe to shoot, tap to dive and save, five shots each, against FlickerTalk, two on one phone or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.goalswipe/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "6fdf0e5a78814288e41082ea95350ebe4b32648fdb7f4bb84ee2509810cdc1e1",
       "icon": "apps-outline",
       "id": "com.flickertalk.game.gomoku",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#16A34A\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M104 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 160a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 312a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M104 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M256 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56M408 464a56 56 0 1 1 56-56 56.06 56.06 0 0 1-56 56\"/></g></svg>\n",
@@ -1040,13 +1990,108 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Five in a Row",
-      "size": 47568,
+      "size": 74173,
       "summary": "Five in a Row with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.gomoku/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "1b4ae187d4324e47ba1578d804ab98816d27527174c170aed9f0318b2530b092",
+      "hash": "a4812ed9437efc6cf919b90f7fce3f0df0f9243c555c37098a921eee2505c240",
+      "icon": "fish-outline",
+      "id": "com.flickertalk.game.littlepier",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0891B2\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M240 152c-50.71 12.21-94.15 52.31-120.3 73.43a261 261 0 0 0-23.81-19.58C59.53 179.29 16 176 16 176s11.37 51.53 41.36 79.83C27.37 284.14 16 335.67 16 335.67s43.53-3.29 79.89-29.85a259 259 0 0 0 23.61-19.41c26.1 21.14 69.74 61.34 120.5 73.59l-16 56c39.43-6.67 78.86-35.51 94.72-48.25C448 362 496 279 496 256c0-22-48-106-176.89-111.73C303.52 131.78 263.76 102.72 224 96Z\" fill=\"none\" stroke=\"#fff\" stroke-linejoin=\"round\" stroke-width=\"32\"/><circle cx=\"416\" cy=\"239.99\" r=\"16\"/><path d=\"M378.37 356a199.22 199.22 0 0 1 0-200\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-miterlimit=\"20\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "الرصيف الصغير",
+          "summary": "صيد هادئ لا خسارة فيه: اضغط مطولًا لإنزال الصنارة، واترك لرفع ما علق بها، واملأ ألبوم الملصقات، وحدك أو مع FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "ছোট্ট ঘাট",
+          "summary": "শান্ত মাছ ধরা, যেখানে হারানোর কিছু নেই: বড়শি নামাতে চেপে ধরুন, যা ধরা পড়ল তুলতে ছেড়ে দিন আর স্টিকার অ্যালবাম ভরান, একা, FlickerTalk-এর সঙ্গে বা চ্যাটের অন্যজনের সঙ্গে।"
+        },
+        "de": {
+          "name": "Kleiner Steg",
+          "summary": "Ruhiges Angeln, bei dem man nichts verlieren kann: Halten senkt den Haken, Loslassen holt hoch, was angebissen hat. Füll ein Stickeralbum, allein, mit FlickerTalk oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Pequeño muelle",
+          "summary": "Pesca tranquila en la que no se pierde nada: mantén pulsado para bajar el anzuelo, suelta para subir lo que picó y llena un álbum de cromos, solo, con FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Petit ponton",
+          "summary": "Une pêche paisible où l’on ne perd rien : maintiens pour descendre l’hameçon, lâche pour remonter ce qui a mordu et remplis un album d’autocollants, seul, avec FlickerTalk ou avec ton contact."
+        },
+        "hi": {
+          "name": "छोटा घाट",
+          "summary": "सुकून भरा मछली पकड़ना, जिसमें हारने को कुछ नहीं: काँटा नीचे करने के लिए दबाए रखें, जो फँसा उसे ऊपर लाने के लिए छोड़ें और स्टिकर एल्बम भरें, अकेले, FlickerTalk के साथ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Dermaga Kecil",
+          "summary": "Memancing santai tanpa bisa kalah: tahan untuk menurunkan kail, lepas untuk mengangkat yang tersangkut, dan isi album stiker, sendiri, bersama FlickerTalk, atau bersama orang lain di obrolan."
+        },
+        "it": {
+          "name": "Piccolo pontile",
+          "summary": "Pesca tranquilla in cui non si perde nulla: tieni premuto per calare l’amo, lascia per tirare su ciò che ha abboccato e riempi un album di figurine, da solo, con FlickerTalk o con il tuo contatto."
+        },
+        "ja": {
+          "name": "小さな桟橋",
+          "summary": "負けのない、のんびり釣りゲーム。長押しで針をおろし、はなして釣り上げ、ステッカーアルバムをうめよう。ひとりで、FlickerTalk と、またはチャットの相手と。"
+        },
+        "ko": {
+          "name": "작은 부두",
+          "summary": "질 일이 없는 느긋한 낚시: 길게 눌러 낚싯바늘을 내리고, 손을 떼어 문 것을 끌어올려 스티커 앨범을 채우세요. 혼자, FlickerTalk와, 또는 채팅 상대와 함께."
+        },
+        "pl": {
+          "name": "Mały pomost",
+          "summary": "Spokojne wędkowanie, w którym nie da się przegrać: przytrzymaj, by opuścić haczyk, puść, by wyciągnąć to, co wzięło, i zapełniaj album z naklejkami — sam, z FlickerTalk albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Pequeno cais",
+          "summary": "Pesca tranquila em que nada se perde: segure para baixar o anzol, solte para puxar o que fisgou e complete um álbum de figurinhas, sozinho, com o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Micul ponton",
+          "summary": "Pescuit liniștit, fără nimic de pierdut: ține apăsat ca să cobori cârligul, dă drumul ca să scoți ce a mușcat și umple un album cu abțibilduri, singur, cu FlickerTalk sau cu persoana din chat."
+        },
+        "ru": {
+          "name": "Маленький причал",
+          "summary": "Спокойная рыбалка, где нельзя проиграть: удерживай, чтобы опустить крючок, отпусти, чтобы вытащить улов, и собирай альбом наклеек — одному, с FlickerTalk или с собеседником из чата."
+        },
+        "th": {
+          "name": "ท่าเรือน้อย",
+          "summary": "ตกปลาสบาย ๆ ไม่มีแพ้ แตะค้างเพื่อหย่อนเบ็ด ปล่อยเพื่อดึงสิ่งที่ติดเบ็ดขึ้นมา แล้วสะสมสติกเกอร์ให้เต็มอัลบั้ม เล่นคนเดียว เล่นกับ FlickerTalk หรือกับอีกคนในแชท"
+        },
+        "tr": {
+          "name": "Küçük İskele",
+          "summary": "Kaybetmenin olmadığı sakin bir balık avı: oltayı indirmek için basılı tut, takılanı çekmek için bırak ve çıkartma albümünü doldur; tek başına, FlickerTalk ile ya da sohbetteki kişiyle."
+        },
+        "uk": {
+          "name": "Маленька пристань",
+          "summary": "Спокійна риболовля, де неможливо програти: утримуй, щоб опустити гачок, відпусти, щоб витягти улов, і збирай альбом наліпок — самому, з FlickerTalk або з людиною з чату."
+        },
+        "vi": {
+          "name": "Bến câu nhỏ",
+          "summary": "Câu cá thư thả, không có gì để thua: giữ để thả lưỡi câu, thả tay để kéo lên thứ đã cắn câu và làm đầy album nhãn dán, một mình, cùng FlickerTalk hoặc cùng người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "小码头",
+          "summary": "不会输的悠闲钓鱼：按住放下鱼钩，松手拉起上钩的东西，集满贴纸相册，可以独自玩、和 FlickerTalk 一起，或和聊天里的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "小碼頭",
+          "summary": "不會輸的悠閒釣魚：按住放下魚鉤，鬆手拉起上鉤的東西，集滿貼紙相簿，可以獨自玩、和 FlickerTalk 一起，或和聊天裡的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Little Pier",
+      "size": 80072,
+      "summary": "Calm fishing with nothing to lose: hold to lower the hook, let go to bring up what bit, and fill a sticker album, alone, with FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.littlepier/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "cc7655a030a0de7b8327fa324a8afe5171ede88ae452a9a5b3d08c65f71b00f2",
       "icon": "basket-outline",
       "id": "com.flickertalk.game.mancala",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#D97706\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M424.11 192H360L268.8 70.4a16 16 0 0 0-25.6 0L152 192H87.89a32.57 32.57 0 0 0-32.62 32.44 30.3 30.3 0 0 0 1.31 9l46.27 163.14a50.72 50.72 0 0 0 48.84 36.91h208.62a51.21 51.21 0 0 0 49-36.86l46.33-163.36a15.6 15.6 0 0 0 .46-2.36l.53-4.93a13 13 0 0 0 .09-1.55A32.57 32.57 0 0 0 424.11 192M256 106.67 320 192H192Zm0 245a37.7 37.7 0 1 1 37.88-37.7A37.87 37.87 0 0 1 256 351.63Z\"/></g></svg>\n",
@@ -1135,13 +2180,298 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Mancala",
-      "size": 47037,
+      "size": 75001,
       "summary": "Mancala with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.mancala/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "7a013b2a7ab9206848162d026f2824fdd6909065adaaa9a6696754623f90848f",
+      "hash": "4ed79cca014441942fdbe71023c6a83f282dad6214479d0732f9ee92f92372a7",
+      "icon": "tennisball-outline",
+      "id": "com.flickertalk.game.paddlepop",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#C2410C\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><circle cx=\"256\" cy=\"256\" r=\"208\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><path d=\"M461.43 271.44c-5.09.37-8.24.56-13.43.56-114.88 0-208-93.12-208-208 0-5.37.2-8.69.6-14M49.65 240.56S58.84 240 64 240c114.88 0 208 93.12 208 208 0 5.38-.61 14-.61 14\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "مضرب وكرة",
+          "summary": "لعبة مضرب وكرة لكل العائلة: أعِد الكرة بينما تفاجئك الطاولة، ضد FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "প্যাডেল আর বল",
+          "summary": "পুরো পরিবারের জন্য প্যাডেল আর বলের খেলা: টেবিলের চমকের মাঝে বল ফেরত পাঠান, FlickerTalk-এর বিরুদ্ধে বা চ্যাটের অন্যজনের সঙ্গে।"
+        },
+        "de": {
+          "name": "Schläger und Ball",
+          "summary": "Ein Schläger-und-Ball-Spiel für die ganze Familie: Spiel den Ball zurück, während dich der Tisch überrascht, gegen FlickerTalk oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Pala y pelota",
+          "summary": "Un juego de pala y pelota para toda la familia: devuelve la pelota mientras la mesa te sorprende, contra FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Raquette et balle",
+          "summary": "Un jeu de raquette et de balle pour toute la famille : renvoie la balle pendant que la table te réserve des surprises, contre FlickerTalk ou avec l’autre personne du chat."
+        },
+        "hi": {
+          "name": "पैडल और गेंद",
+          "summary": "पूरे परिवार के लिए पैडल और गेंद का खेल: टेबल के सरप्राइज़ के बीच गेंद वापस भेजें, FlickerTalk के ख़िलाफ़ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Raket dan Bola",
+          "summary": "Permainan raket dan bola untuk seluruh keluarga: kembalikan bola sementara meja memberi kejutan, melawan FlickerTalk atau bersama orang lain di obrolan."
+        },
+        "it": {
+          "name": "Racchetta e palla",
+          "summary": "Un gioco di racchetta e palla per tutta la famiglia: rimanda la palla mentre il tavolo ti sorprende, contro FlickerTalk o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "ラケットとボール",
+          "summary": "家族みんなで楽しめるラケットとボールのゲーム。テーブルのサプライズに負けずにボールを打ち返そう。FlickerTalk と、またはチャットの相手と。"
+        },
+        "ko": {
+          "name": "라켓과 공",
+          "summary": "온 가족을 위한 라켓과 공 게임: 테이블이 깜짝 놀라게 해도 공을 받아넘기세요. FlickerTalk와, 또는 채팅 상대와 함께."
+        },
+        "pl": {
+          "name": "Paletka i piłka",
+          "summary": "Gra z paletką i piłką dla całej rodziny: odbijaj piłkę, gdy stół szykuje niespodzianki — przeciw FlickerTalk albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Raquete e bola",
+          "summary": "Um jogo de raquete e bola para toda a família: rebata a bola enquanto a mesa te surpreende, contra o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Paletă și minge",
+          "summary": "Un joc cu paletă și minge pentru toată familia: trimite mingea înapoi în timp ce masa te surprinde, împotriva lui FlickerTalk sau cu cealaltă persoană din conversație."
+        },
+        "ru": {
+          "name": "Ракетка и мяч",
+          "summary": "Игра с ракеткой и мячом для всей семьи: отбивай мяч, пока стол готовит сюрпризы, — против FlickerTalk или с собеседником из чата."
+        },
+        "th": {
+          "name": "ไม้ตีกับลูกบอล",
+          "summary": "เกมไม้ตีกับลูกบอลสำหรับทั้งครอบครัว ตีลูกกลับไปขณะที่โต๊ะคอยสร้างเซอร์ไพรส์ เล่นกับ FlickerTalk หรือกับอีกคนในแชท"
+        },
+        "tr": {
+          "name": "Raket ve Top",
+          "summary": "Tüm aile için raket ve top oyunu: masa seni şaşırtırken topu geri gönder; FlickerTalk’a karşı ya da sohbetteki kişiyle."
+        },
+        "uk": {
+          "name": "Ракетка і м’яч",
+          "summary": "Гра з ракеткою та м’ячем для всієї родини: відбивай м’яч, поки стіл готує сюрпризи, — проти FlickerTalk або з людиною з чату."
+        },
+        "vi": {
+          "name": "Vợt và bóng",
+          "summary": "Trò chơi vợt và bóng cho cả gia đình: đánh trả bóng trong khi mặt bàn mang đến bất ngờ, đấu với FlickerTalk hoặc với người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "球拍弹弹乐",
+          "summary": "适合全家的球拍击球游戏：球台不断带来惊喜，把球打回去，可以和 FlickerTalk 比，或和聊天里的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "球拍彈彈樂",
+          "summary": "適合全家的球拍擊球遊戲：球桌不斷帶來驚喜，把球打回去，可以和 FlickerTalk 比，或和聊天裡的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Paddle Pop",
+      "size": 73976,
+      "summary": "A paddle-and-ball game for the whole family: send the ball back while the table surprises you, against FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.paddlepop/1.0.7.ftplugin",
+      "version": "1.0.7"
+    },
+    {
+      "hash": "cb591bdd933a78338302557bb61a62a25da828c1ee56c69485010bba9f5cdab5",
+      "icon": "color-fill-outline",
+      "id": "com.flickertalk.game.painttanks",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#CA8A04\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M419.1 337.45a3.94 3.94 0 0 0-6.1 0c-10.5 12.4-45 46.55-45 77.66 0 27 21.5 48.89 48 48.89s48-22 48-48.89c0-31.11-34.3-65.26-44.9-77.66ZM387 287.9 155.61 58.36a36 36 0 0 0-51 0l-5.15 5.15a36 36 0 0 0 0 51l52.89 52.89 57-57L56.33 263.2a28 28 0 0 0 .3 40l131.2 126a28.05 28.05 0 0 0 38.9-.1c37.8-36.6 118.3-114.5 126.7-122.9 5.8-5.8 18.2-7.1 28.7-7.1h.3a6.53 6.53 0 0 0 4.57-11.2Z\" fill=\"none\" stroke=\"#fff\" stroke-miterlimit=\"10\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "دبابات الطلاء",
+          "summary": "دبابات وسفن وغواصات لعبة تتناوب على رمي الطلاء: صوّب وانتبه للريح ولوّن الطرف الآخر. ضد FlickerTalk أو مع الشخص الآخر في المحادثة أو وحدك في تمرين التصويب."
+        },
+        "bn": {
+          "name": "রঙের ট্যাংক",
+          "summary": "খেলনা ট্যাংক, জাহাজ আর সাবমেরিন পালা করে রং ছোড়ে: নিশানা করুন, বাতাস খেয়াল রাখুন আর অন্য পক্ষকে রাঙিয়ে দিন। FlickerTalk-এর বিরুদ্ধে, চ্যাটের অন্যজনের সঙ্গে বা একা নিশানা অনুশীলনে।"
+        },
+        "de": {
+          "name": "Farbpanzer",
+          "summary": "Spielzeugpanzer, -schiffe und -U-Boote werfen abwechselnd Farbe: zielen, den Wind beachten und die andere Seite einfärben. Gegen FlickerTalk, mit der anderen Person im Chat oder allein beim Zielüben."
+        },
+        "es": {
+          "name": "Tanques de pintura",
+          "summary": "Tanques, barcos y submarinos de juguete se turnan para lanzar pintura: apunta, cuenta con el viento y cubre al otro. Contra FlickerTalk, con la otra persona del chat o practicando la puntería a solas."
+        },
+        "fr": {
+          "name": "Chars à peinture",
+          "summary": "Chars, bateaux et sous-marins jouets lancent de la peinture tour à tour : vise, compte avec le vent et couvre l’autre camp. Contre FlickerTalk, avec l’autre personne du chat ou seul, à l’entraînement."
+        },
+        "hi": {
+          "name": "रंग वाले टैंक",
+          "summary": "खिलौना टैंक, जहाज़ और पनडुब्बियाँ बारी-बारी से रंग फेंकते हैं: निशाना साधें, हवा का ध्यान रखें और सामने वाले को रंग दें। FlickerTalk के ख़िलाफ़, चैट के दूसरे व्यक्ति के साथ या अकेले निशाने का अभ्यास।"
+        },
+        "id": {
+          "name": "Tank Cat",
+          "summary": "Tank, kapal, dan kapal selam mainan bergiliran melempar cat: bidik, perhitungkan angin, dan warnai pihak lawan. Melawan FlickerTalk, bersama orang lain di obrolan, atau latihan membidik sendirian."
+        },
+        "it": {
+          "name": "Carri a vernice",
+          "summary": "Carri armati, navi e sottomarini giocattolo lanciano vernice a turno: mira, tieni conto del vento e ricopri l’altro. Contro FlickerTalk, con l’altra persona della chat o da solo al tiro al bersaglio."
+        },
+        "ja": {
+          "name": "ペンキ戦車",
+          "summary": "おもちゃの戦車、船、潜水艦が交代でペンキを投げ合います。ねらいを定め、風を読んで相手をぬりつぶそう。FlickerTalk と、チャットの相手と、またはひとりで的当て練習。"
+        },
+        "ko": {
+          "name": "물감 탱크",
+          "summary": "장난감 탱크, 배, 잠수함이 번갈아 물감을 던져요. 조준하고 바람을 읽어 상대를 물감으로 덮으세요. FlickerTalk와, 채팅 상대와, 또는 혼자 과녁 연습으로."
+        },
+        "pl": {
+          "name": "Czołgi z farbą",
+          "summary": "Zabawkowe czołgi, statki i łodzie podwodne na zmianę rzucają farbą: celuj, uważaj na wiatr i pomaluj drugą stronę. Przeciw FlickerTalk, z drugą osobą z czatu albo samemu, ćwicząc celność."
+        },
+        "pt": {
+          "name": "Tanques de tinta",
+          "summary": "Tanques, barcos e submarinos de brinquedo lançam tinta à vez: aponte, conte com o vento e cubra o outro lado. Contra o FlickerTalk, com a outra pessoa da conversa ou a treinar a pontaria a sós."
+        },
+        "ro": {
+          "name": "Tancuri cu vopsea",
+          "summary": "Tancuri, vapoare și submarine de jucărie aruncă vopsea pe rând: țintește, ține cont de vânt și acoperă-l pe rival. Împotriva lui FlickerTalk, cu cealaltă persoană din chat sau singur, la țintă."
+        },
+        "ru": {
+          "name": "Танки с краской",
+          "summary": "Игрушечные танки, корабли и подлодки по очереди бросают краску: целься, учитывай ветер и закрась соперника. Против FlickerTalk, с собеседником из чата или одному — в стрельбе по мишеням."
+        },
+        "th": {
+          "name": "รถถังปาสี",
+          "summary": "รถถัง เรือ และเรือดำน้ำของเล่นผลัดกันปาสี เล็งให้ดี ดูทิศทางลม แล้วระบายสีอีกฝ่ายให้ทั่ว เล่นกับ FlickerTalk กับอีกคนในแชท หรือฝึกเล็งเป้าคนเดียว"
+        },
+        "tr": {
+          "name": "Boya Tankları",
+          "summary": "Oyuncak tanklar, gemiler ve denizaltılar sırayla boya fırlatır: nişan al, rüzgârı hesapla ve karşı tarafı boya. FlickerTalk'a karşı, sohbetteki kişiyle ya da tek başına atış talimi yaparak."
+        },
+        "uk": {
+          "name": "Танки з фарбою",
+          "summary": "Іграшкові танки, кораблі та підводні човни по черзі кидають фарбу: цілься, зважай на вітер і зафарбуй суперника. Проти FlickerTalk, з людиною з чату або самому — у стрільбі по мішенях."
+        },
+        "vi": {
+          "name": "Xe tăng bắn sơn",
+          "summary": "Xe tăng, tàu và tàu ngầm đồ chơi lần lượt ném sơn: ngắm, tính sức gió và phủ sơn lên bên kia. Đấu với FlickerTalk, chơi với người kia trong cuộc trò chuyện hoặc tự tập ngắm bắn một mình."
+        },
+        "zh-CN": {
+          "name": "颜料坦克",
+          "summary": "玩具坦克、轮船和潜艇轮流投掷颜料：瞄准、留意风向，把对方涂满颜色。可以和 FlickerTalk 比，和聊天里的对方玩，或独自练习打靶。"
+        },
+        "zh-TW": {
+          "name": "顏料坦克",
+          "summary": "玩具坦克、輪船和潛艇輪流投擲顏料：瞄準、留意風向，把對方塗滿顏色。可以和 FlickerTalk 比，和聊天裡的對方玩，或獨自練習打靶。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Paint Tanks",
+      "size": 91907,
+      "summary": "Toy tanks, ships and submarines take turns throwing paint: aim, mind the wind and cover the other side. Against FlickerTalk, with the other person in the chat, or target practice alone.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.painttanks/1.0.4.ftplugin",
+      "version": "1.0.4"
+    },
+    {
+      "hash": "8213313625c4be82cdf1450134d729d501a2481b9b116f581767258fc40df69b",
+      "icon": "car-sport-outline",
+      "id": "com.flickertalk.game.racer",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#EA580C\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M494.26 276.22c-3.6-40.41-9.53-48.28-11.77-51.24-5.15-6.84-13.39-11.31-22.11-16a3.6 3.6 0 0 1-.91-5.68 15.93 15.93 0 0 0 4.53-12.53A16.27 16.27 0 0 0 447.65 176h-15.6a17 17 0 0 0-2 .13 8.5 8.5 0 0 0-1.41-.47c-9.24-19.53-21.89-46.27-48.11-59.32C341.64 97 270 96 256 96s-85.64 1-124.48 20.31c-26.22 13.05-38.87 39.79-48.11 59.32l-.08.16a6.5 6.5 0 0 0-1.35.34 17 17 0 0 0-2-.13H64.35A16.27 16.27 0 0 0 48 190.77a15.93 15.93 0 0 0 4.59 12.47 3.6 3.6 0 0 1-.91 5.68c-8.72 4.72-17 9.19-22.11 16-2.24 3-8.16 10.83-11.77 51.24-2 22.74-2.3 46.28-.73 61.44 3.29 31.5 9.46 50.54 9.72 51.33a16 16 0 0 0 13.2 10.87v.2a16 16 0 0 0 16 16h56a16 16 0 0 0 16-16c8.61 0 14.6-1.54 20.95-3.18a159 159 0 0 1 28-4.91C207.45 389 237.79 388 256 388c17.84 0 49.52 1 80.08 3.91a159 159 0 0 1 28.11 4.93c6.08 1.56 11.85 3 19.84 3.15a16 16 0 0 0 16 16h56a16 16 0 0 0 16-16v-.12A16 16 0 0 0 485.27 389c.26-.79 6.43-19.83 9.72-51.33 1.57-15.17 1.29-38.67-.73-61.45m-381.93-86.91c8-17 17.15-36.24 33.44-44.35 23.54-11.72 72.33-17 110.23-17s86.69 5.24 110.23 17c16.29 8.11 25.4 27.36 33.44 44.35l1 2.17a8 8 0 0 1-7.44 11.42C360 202 290 199.12 256 199.12s-104 2.95-137.28 3.85a8 8 0 0 1-7.44-11.42c.35-.74.72-1.49 1.05-2.24m11.93 79.63A427 427 0 0 1 72.42 272c-10.6 0-21.53-3-23.56-12.44-1.39-6.35-1.24-9.92-.49-13.51C49 243 50 240.78 55 240c13-2 20.27.51 41.55 6.78 14.11 4.15 24.29 9.68 30.09 14.06 2.91 2.16 1.36 7.8-2.38 8.1m221.38 82c-13.16 1.5-39.48.95-89.34.95s-76.17.55-89.33-.95c-13.58-1.51-30.89-14.35-19.07-25.79 7.87-7.54 26.23-13.18 50.68-16.35s34.8-4.8 57.62-4.8 32.12 1 57.62 4.81 44.77 9.52 50.68 16.35c10.78 12.24-5.29 24.19-18.86 25.84Zm117.5-91.39c-2 9.48-13 12.44-23.56 12.44a456 456 0 0 1-52.84-3.06c-3.06-.29-4.48-5.66-1.38-8.1 5.71-4.49 16-9.91 30.09-14.06 21.28-6.27 33.55-8.78 44.09-6.69 2.57.51 3.93 3.27 4.09 5a40.6 40.6 0 0 1-.49 14.48Z\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "المتسابق",
+          "summary": "سباق مع سيارة روبوت لطيفة: اضغط لتنطلق، واسحب إصبعك لتوجيه السيارة."
+        },
+        "bn": {
+          "name": "রেসার",
+          "summary": "এক বন্ধুসুলভ রোবট গাড়ির সঙ্গে দৌড়: চলতে চেপে ধরে রাখুন, ঘুরতে আঙুল সরান।"
+        },
+        "de": {
+          "name": "Flitzer",
+          "summary": "Ein Rennen gegen ein freundliches Roboterauto: Drücken zum Fahren, Wischen zum Lenken."
+        },
+        "es": {
+          "name": "Bólido",
+          "summary": "Una carrera contra un simpático coche robot: mantén pulsado para avanzar y desliza para girar."
+        },
+        "fr": {
+          "name": "Bolide",
+          "summary": "Une course contre une gentille voiture robot : appuie pour avancer, fais glisser pour tourner."
+        },
+        "hi": {
+          "name": "रेसर",
+          "summary": "एक दोस्ताना रोबोट कार से रेस: चलने के लिए दबाकर रखें, मुड़ने के लिए उंगली सरकाएँ।"
+        },
+        "id": {
+          "name": "Pembalap",
+          "summary": "Balapan melawan mobil robot yang ramah: tekan untuk melaju, geser untuk berbelok."
+        },
+        "it": {
+          "name": "Bolide",
+          "summary": "Una gara contro una simpatica auto robot: tieni premuto per andare, scorri per sterzare."
+        },
+        "ja": {
+          "name": "レーサー",
+          "summary": "やさしいロボットカーとレース。押して進み、指をすべらせてハンドルを切ろう。"
+        },
+        "ko": {
+          "name": "레이서",
+          "summary": "친절한 로봇 자동차와 경주해요. 눌러서 달리고, 손가락을 밀어서 방향을 바꿔요."
+        },
+        "pl": {
+          "name": "Bolid",
+          "summary": "Wyścig z przyjaznym samochodem-robotem: przytrzymaj, by jechać, i przesuń palec, by skręcać."
+        },
+        "pt": {
+          "name": "Bólide",
+          "summary": "Uma corrida contra um simpático carro-robô: mantenha pressionado para andar e deslize para virar."
+        },
+        "ro": {
+          "name": "Bolidul",
+          "summary": "O cursă împotriva unei mașini-robot prietenoase: apasă ca să mergi, glisează ca să virezi."
+        },
+        "ru": {
+          "name": "Гонщик",
+          "summary": "Гонка с дружелюбной машиной-роботом: нажми, чтобы ехать, и веди пальцем, чтобы рулить."
+        },
+        "th": {
+          "name": "นักแข่ง",
+          "summary": "แข่งกับรถหุ่นยนต์ใจดี กดค้างไว้เพื่อวิ่ง แล้วเลื่อนนิ้วเพื่อเลี้ยว"
+        },
+        "tr": {
+          "name": "Yarışçı",
+          "summary": "Sevimli bir robot arabaya karşı yarış: gitmek için basılı tut, yön vermek için kaydır."
+        },
+        "uk": {
+          "name": "Гонщик",
+          "summary": "Перегони з доброю машиною-роботом: натисни, щоб їхати, і веди пальцем, щоб кермувати."
+        },
+        "vi": {
+          "name": "Tay đua",
+          "summary": "Cuộc đua với một chiếc xe rô-bốt thân thiện: nhấn giữ để chạy, vuốt để lái."
+        },
+        "zh-CN": {
+          "name": "赛车手",
+          "summary": "和友好的机器人赛车比一比：按住前进，滑动转向。"
+        },
+        "zh-TW": {
+          "name": "賽車手",
+          "summary": "和友善的機器人賽車比一比：按住前進，滑動轉向。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Racer",
+      "size": 46267,
+      "summary": "A race against a friendly robot car: press to go, slide to steer.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.racer/0.7.7.ftplugin",
+      "version": "0.7.7"
+    },
+    {
+      "hash": "2e12d03b94a042b9dde327bd6e2eb82e6d538ad370506faafecac2cf17162811",
       "icon": "contrast-outline",
       "id": "com.flickertalk.game.reversi",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0D9488\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M256 32A224 224 0 0 0 97.61 414.39 224 224 0 1 0 414.39 97.61 222.53 222.53 0 0 0 256 32M64 256c0-105.87 86.13-192 192-192v384c-105.87 0-192-86.13-192-192\"/></g></svg>\n",
@@ -1230,13 +2560,108 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Reversi",
-      "size": 46567,
+      "size": 73273,
       "summary": "Reversi with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.reversi/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "84cae84e604ea423b12ae2472ac88213c116974b955e6b3f744bfb719101ae65",
+      "hash": "6e1c87516a6e5d25224e70bb3514e8be4e9646d9b6e621b855ab2817525e69ae",
+      "icon": "hardware-chip-outline",
+      "id": "com.flickertalk.game.robotrumble",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#6D28D9\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><rect width=\"352\" height=\"352\" x=\"80\" y=\"80\" rx=\"48\" ry=\"48\" fill=\"none\" stroke=\"#fff\" stroke-linejoin=\"round\" stroke-width=\"32\"/><rect width=\"224\" height=\"224\" x=\"144\" y=\"144\" rx=\"16\" ry=\"16\" fill=\"none\" stroke=\"#fff\" stroke-linejoin=\"round\" stroke-width=\"32\"/><path d=\"M256 80V48M336 80V48M176 80V48M256 464v-32M336 464v-32M176 464v-32M432 256h32M432 336h32M432 176h32M48 256h32M48 336h32M48 176h32\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "نزال الروبوتات",
+          "summary": "مباراة بين روبوتات لعبة لكل العائلة: اختر القفاز أو الحذاء أو الدرع في اللحظة نفسها مع خصمك، ضد FlickerTalk، أو لاعبان على هاتف واحد، أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "রোবটের লড়াই",
+          "summary": "পুরো পরিবারের জন্য খেলনা রোবটের লড়াই: প্রতিপক্ষের সঙ্গে একই মুহূর্তে দস্তানা, বুট বা ঢাল বেছে নাও, FlickerTalk-এর বিরুদ্ধে, এক ফোনে দুজন বা চ্যাটের অন্য মানুষটির সঙ্গে।"
+        },
+        "de": {
+          "name": "Roboter-Rauferei",
+          "summary": "Ein Spielzeugroboter-Duell für die ganze Familie: Wähle Handschuh, Stiefel oder Schild zugleich mit deinem Gegner, gegen FlickerTalk, zu zweit an einem Handy oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Combate de robots",
+          "summary": "Un combate de robots de juguete para toda la familia: elige guante, bota o escudo a la vez que tu rival, contra FlickerTalk, dos en un mismo teléfono o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Duel de robots",
+          "summary": "Un duel de robots jouets pour toute la famille : choisis le gant, la botte ou le bouclier en même temps que ton rival, contre FlickerTalk, à deux sur un téléphone ou avec l’autre personne du chat."
+        },
+        "hi": {
+          "name": "रोबोटों का मुक़ाबला",
+          "summary": "पूरे परिवार के लिए खिलौना रोबोटों का मुक़ाबला: अपने प्रतिद्वंद्वी के साथ एक ही पल में दस्ताना, जूता या ढाल चुनें, FlickerTalk के ख़िलाफ़, एक फ़ोन पर दो लोग या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Adu Robot",
+          "summary": "Adu robot mainan untuk seluruh keluarga: pilih sarung tinju, sepatu bot, atau perisai pada saat yang sama dengan lawanmu, melawan FlickerTalk, berdua di satu ponsel, atau dengan orang lain di obrolan."
+        },
+        "it": {
+          "name": "Sfida tra robot",
+          "summary": "Una sfida tra robot giocattolo per tutta la famiglia: scegli guanto, stivale o scudo nello stesso momento del rivale, contro FlickerTalk, in due su un telefono o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "ロボットランブル",
+          "summary": "家族みんなで楽しめるおもちゃロボットの対決。相手と同時にグローブ、ブーツ、シールドのどれかを選ぼう。FlickerTalkと、1台のスマホで2人で、またはチャットの相手と遊べます。"
+        },
+        "ko": {
+          "name": "로봇 럼블",
+          "summary": "온 가족이 즐기는 장난감 로봇 대결: 상대와 같은 순간에 글러브, 부츠, 방패 중 하나를 고르세요. FlickerTalk와, 한 휴대폰에서 둘이, 또는 채팅 상대와 함께 즐겨요."
+        },
+        "pl": {
+          "name": "Bitka robotów",
+          "summary": "Pojedynek robotów zabawek dla całej rodziny: wybierz rękawicę, but lub tarczę w tej samej chwili co rywal, przeciwko FlickerTalk, we dwoje na jednym telefonie albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Luta de robôs",
+          "summary": "Uma luta de robôs de brinquedo para toda a família: escolha luva, bota ou escudo ao mesmo tempo que seu rival, contra o FlickerTalk, a dois no mesmo telefone ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Duelul roboților",
+          "summary": "Un duel între roboți de jucărie pentru toată familia: alege mănușa, gheata sau scutul în același moment cu rivalul, contra FlickerTalk, în doi pe un telefon sau cu cealaltă persoană din chat."
+        },
+        "ru": {
+          "name": "Битва роботов",
+          "summary": "Поединок игрушечных роботов для всей семьи: выбирай перчатку, ботинок или щит одновременно с соперником — против FlickerTalk, вдвоём на одном телефоне или с собеседником в чате."
+        },
+        "th": {
+          "name": "ศึกหุ่นยนต์",
+          "summary": "ศึกหุ่นยนต์ของเล่นสำหรับทั้งครอบครัว เลือกนวม รองเท้าบูต หรือโล่พร้อมกับคู่แข่ง เล่นกับ FlickerTalk สองคนในโทรศัพท์เครื่องเดียว หรือกับอีกคนในแชต"
+        },
+        "tr": {
+          "name": "Robot Kapışması",
+          "summary": "Tüm aile için oyuncak robot karşılaşması: rakibinle aynı anda eldiveni, botu ya da kalkanı seç; FlickerTalk’a karşı, tek telefonda iki kişi ya da sohbetteki diğer kişiyle."
+        },
+        "uk": {
+          "name": "Битва роботів",
+          "summary": "Двобій іграшкових роботів для всієї родини: обирай рукавичку, черевик або щит одночасно із суперником — проти FlickerTalk, удвох на одному телефоні або зі співрозмовником у чаті."
+        },
+        "vi": {
+          "name": "Robot so tài",
+          "summary": "Trận đấu robot đồ chơi cho cả gia đình: chọn găng tay, ủng hoặc khiên cùng lúc với đối thủ, đấu với FlickerTalk, hai người trên một điện thoại hoặc với người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "机器人大乱斗",
+          "summary": "适合全家人的玩具机器人对决：和对手同时选择拳套、靴子或盾牌，可以对战 FlickerTalk、两人共用一部手机，或与聊天中的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "機器人大亂鬥",
+          "summary": "適合全家人的玩具機器人對決：和對手同時選擇拳套、靴子或盾牌，可以對戰 FlickerTalk、兩人共用一支手機，或與聊天中的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Robot Rumble",
+      "size": 75384,
+      "summary": "A toy robot match for the whole family: pick the glove, the boot or the shield at the same moment as your rival, against FlickerTalk, two on one phone or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.robotrumble/1.0.7.ftplugin",
+      "version": "1.0.7"
+    },
+    {
+      "hash": "a9a156975889867a6a542ae672aeca3da00042cdaf3b9e1709244fbf1ebe0dcb",
       "icon": "boat-outline",
       "id": "com.flickertalk.game.seabattle",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#2563EB\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M416 473.14a6.83 6.83 0 0 0-3.57-6c-27.07-14.55-51.76-36.82-62.62-48a10.05 10.05 0 0 0-12.72-1.51c-50.33 32.42-111.61 32.44-161.95.05a10.09 10.09 0 0 0-12.82 1.56c-10.77 11.28-35.19 33.3-62.43 47.75a7.11 7.11 0 0 0-3.89 5.73 6.73 6.73 0 0 0 7.92 7.15c20.85-4.18 41-13.68 60.2-23.83a8.71 8.71 0 0 1 8-.06 185.14 185.14 0 0 0 167.81 0 8.82 8.82 0 0 1 8.09.06c19.1 10 39.22 19.59 60 23.8a6.73 6.73 0 0 0 8-6.71ZM476.71 246.91c-3.49-8.39-10.9-14.89-20.9-18.35L432 219.08V136a64 64 0 0 0-64-64h-32v-8a40 40 0 0 0-40-40h-80a40 40 0 0 0-40 40v8h-32a64 64 0 0 0-64 64v83.15l-23.58 9.39c-9.94 3.3-17.63 10-21.15 18.44-2.45 5.89-5.25 15-1.3 26.46l.1.3 46.66 119.44A23.33 23.33 0 0 0 102.58 408c.5 0 1 0 1.53-.05 31.32-2 56-17.27 72.6-31.61C200.42 396.81 228.31 408 256 408s55.43-11.2 79.14-31.7c16.59 14.36 41.3 29.67 72.61 31.65a23.36 23.36 0 0 0 23.37-14.74l46.65-119c3.28-8.09 2.9-17.76-1.06-27.3M269 154.21l-1.14-.4a39.53 39.53 0 0 0-23.73 0l-.58.18-126.07 50.23a4 4 0 0 1-5.48-3.72V136a32 32 0 0 1 32-32h224a32 32 0 0 1 32 32v64.44a4 4 0 0 1-5.48 3.72Z\"/></g></svg>\n",
@@ -1325,13 +2750,298 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Sea Battle",
-      "size": 57991,
+      "size": 87834,
       "summary": "Sea Battle with the other person in the chat: hidden fleets, checked at the end, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.seabattle/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
-      "hash": "ad63d14c02470d037ad2acdbb84a9f1a7fd03d1e77fa244f9cacf2fa561c469a",
+      "hash": "121f139aab07d204b89160f36866794ca79ffd6403d9ffbb8d0c2bec2cd45235",
+      "icon": "diamond-outline",
+      "id": "com.flickertalk.game.shardsplitter",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0284C7\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m35.42 188.21 207.75 269.46a16.17 16.17 0 0 0 25.66 0l207.75-269.46a16.52 16.52 0 0 0 .95-18.75L407.06 55.71A16.22 16.22 0 0 0 393.27 48H118.73a16.22 16.22 0 0 0-13.79 7.71L34.47 169.46a16.52 16.52 0 0 0 .95 18.75M48 176h416\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/><path d=\"m400 64-48 112-96-128M112 64l48 112 96-128M256 448l-96-272M256 448l96-272\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "مقسّم البلّور",
+          "summary": "اقسم غولمات البلّور بالضغط على قواسم أعدادها حتى تصل إلى الأعداد الأولية: لغز جدول الضرب لكل العائلة، وحدك أو مع FlickerTalk أو كفريق مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "স্ফটিক ভাগ",
+          "summary": "স্ফটিক গোলেমদের সংখ্যার ভাজকে চাপ দিয়ে মৌলিক সংখ্যা পর্যন্ত ভাগ করো: পুরো পরিবারের জন্য নামতার ধাঁধা — একা, FlickerTalk-এর সঙ্গে বা চ্যাটের অন্য মানুষটির সঙ্গে দল বেঁধে।"
+        },
+        "de": {
+          "name": "Kristallspalter",
+          "summary": "Teile Kristallgolems, indem du die Teiler ihrer Zahlen antippst, bis nur Primzahlen bleiben: ein Einmaleins-Rätsel für die ganze Familie, allein, mit FlickerTalk oder im Team zu zweit."
+        },
+        "es": {
+          "name": "Rompecristales",
+          "summary": "Parte gólems de cristal tocando los divisores de sus números, hasta los primos: un puzle de tablas de multiplicar para toda la familia, solo, con FlickerTalk o en equipo con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Brise-cristaux",
+          "summary": "Partage des golems de cristal en touchant les diviseurs de leurs nombres, jusqu’aux nombres premiers : un puzzle de tables pour toute la famille, seul, avec FlickerTalk ou en équipe à deux."
+        },
+        "hi": {
+          "name": "क्रिस्टल बाँटो",
+          "summary": "क्रिस्टल गोलेम को उनकी संख्याओं के भाजक छूकर अभाज्य संख्याओं तक बाँटो: पूरे परिवार के लिए पहाड़ों की पहेली — अकेले, FlickerTalk के साथ या चैट के दूसरे व्यक्ति के साथ टीम बनाकर।"
+        },
+        "id": {
+          "name": "Pembelah Kristal",
+          "summary": "Belah golem kristal dengan mengetuk pembagi angkanya sampai tinggal bilangan prima: teka-teki perkalian untuk seluruh keluarga, sendirian, bersama FlickerTalk, atau satu tim dengan lawan bicaramu."
+        },
+        "it": {
+          "name": "Spaccacristalli",
+          "summary": "Dividi i golem di cristallo toccando i divisori dei loro numeri, fino ai numeri primi: un rompicapo di tabelline per tutta la famiglia, da solo, con FlickerTalk o in squadra con l’altra persona."
+        },
+        "ja": {
+          "name": "クリスタル割り",
+          "summary": "数の約数をタップしてクリスタルゴーレムを素数になるまで分けよう。家族みんなで楽しめる九九のパズルです。ひとりで、FlickerTalk と、またはチャットの相手とチームで遊べます。"
+        },
+        "ko": {
+          "name": "크리스털 쪼개기",
+          "summary": "수의 약수를 눌러 크리스털 골렘을 소수가 될 때까지 나누세요. 온 가족이 즐기는 구구단 퍼즐입니다. 혼자서, FlickerTalk와 함께, 또는 채팅 상대와 한 팀으로 즐길 수 있어요."
+        },
+        "pl": {
+          "name": "Łamacz kryształów",
+          "summary": "Dziel kryształowe golemy, dotykając dzielników ich liczb, aż do liczb pierwszych: łamigłówka z tabliczką mnożenia dla całej rodziny, samemu, z FlickerTalk albo w drużynie z drugą osobą."
+        },
+        "pt": {
+          "name": "Quebra-cristais",
+          "summary": "Parta golens de cristal tocando nos divisores dos seus números, até chegar aos primos: um quebra-cabeça de tabuada para toda a família, sozinho, com o FlickerTalk ou em equipe com a outra pessoa."
+        },
+        "ro": {
+          "name": "Spărgătorul de cristale",
+          "summary": "Împarte golemi de cristal atingând divizorii numerelor lor, până la numere prime: un puzzle cu tabla înmulțirii pentru toată familia, singur, cu FlickerTalk sau în echipă cu cealaltă persoană."
+        },
+        "ru": {
+          "name": "Раскол кристаллов",
+          "summary": "Дели хрустальных големов, нажимая на делители их чисел, до простых чисел: головоломка с таблицей умножения для всей семьи — в одиночку, с FlickerTalk или в команде с собеседником."
+        },
+        "th": {
+          "name": "แบ่งคริสตัล",
+          "summary": "แบ่งโกเลมคริสตัลด้วยการแตะตัวหารของตัวเลขจนเหลือจำนวนเฉพาะ: ปริศนาสูตรคูณสำหรับทั้งครอบครัว เล่นคนเดียว เล่นกับ FlickerTalk หรือเป็นทีมกับอีกคนในแชต"
+        },
+        "tr": {
+          "name": "Kristal Bölücü",
+          "summary": "Kristal golemleri, sayılarının bölenlerine dokunarak asal sayılara kadar böl: tüm aile için bir çarpım tablosu bulmacası; tek başına, FlickerTalk ile ya da sohbetteki diğer kişiyle takım olarak."
+        },
+        "uk": {
+          "name": "Розкол кристалів",
+          "summary": "Діли кришталевих големів, торкаючись дільників їхніх чисел, аж до простих чисел: головоломка з таблицею множення для всієї родини — наодинці, з FlickerTalk або в команді зі співрозмовником."
+        },
+        "vi": {
+          "name": "Tách pha lê",
+          "summary": "Tách người đá pha lê bằng cách chạm vào ước số của con số trên mình chúng, đến khi còn số nguyên tố: câu đố bảng cửu chương cho cả gia đình, chơi một mình, với FlickerTalk hoặc cùng đội với người kia."
+        },
+        "zh-CN": {
+          "name": "水晶切分",
+          "summary": "点击数的除数，把水晶魔像一直分到只剩质数：适合全家的乘法表益智游戏，可以独自玩、和 FlickerTalk 一起玩，或与聊天中的对方组队。"
+        },
+        "zh-TW": {
+          "name": "水晶切分",
+          "summary": "點擊數的除數，把水晶魔像一直分到只剩質數：適合全家的乘法表益智遊戲，可以獨自玩、和 FlickerTalk 一起玩，或與聊天中的對方組隊。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Shard Splitter",
+      "size": 76626,
+      "summary": "Split crystal golems by tapping the divisors of their numbers, down to primes: a times-table puzzle for the whole family, alone, with FlickerTalk or as a team with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.shardsplitter/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "1ced4a8a36bbf5d51589aa631b8f63f3a2e9dbbad3774d78c02b00e6b270d2b5",
+      "icon": "airplane-outline",
+      "id": "com.flickertalk.game.skychase",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0284C7\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M407.72 224c-3.4 0-14.79.1-18 .3l-64.9 1.7a1.83 1.83 0 0 1-1.69-.9L193.55 67.56a9 9 0 0 0-6.66-3.56H160l73 161a2.35 2.35 0 0 1-2.26 3.35l-121.69 1.8a8.06 8.06 0 0 1-6.6-3.1l-37-45c-3-3.9-8.62-6-13.51-6H33.08c-1.29 0-1.1 1.21-.75 2.43l19.84 71.42a16.3 16.3 0 0 1 0 11.9L32.31 333c-.59 1.95-.52 3 1.77 3H52c8.14 0 9.25-1.06 13.41-6.3l37.7-45.7a8.19 8.19 0 0 1 6.6-3.1l120.68 2.7a2.7 2.7 0 0 1 2.43 3.74L160 448h26.64a9 9 0 0 0 6.65-3.55L323.14 287c.39-.6 2-.9 2.69-.9l63.9 1.7c3.3.2 14.59.3 18 .3C452 288.1 480 275.93 480 256s-27.88-32-72.28-32\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "مطاردة في السماء",
+          "summary": "مطاردة بالونات في السماء لكل العائلة: وجّه طائرة أو مروحية لعبة بإصبع واحد وفرقع بالونات الآخر الثلاثة، ضد FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "আকাশে তাড়া",
+          "summary": "পুরো পরিবারের জন্য আকাশে বেলুন তাড়া: এক আঙুলে খেলনা বিমান বা হেলিকপ্টার চালাও আর অন্যজনের তিনটি বেলুন ফাটাও, FlickerTalk-এর বিরুদ্ধে বা চ্যাটের অন্য মানুষটির সঙ্গে।"
+        },
+        "de": {
+          "name": "Himmelsjagd",
+          "summary": "Eine Ballonjagd am Himmel für die ganze Familie: Steuere ein Spielzeugflugzeug oder einen Hubschrauber mit einem Finger und triff die drei Ballons des anderen, gegen FlickerTalk oder zu zweit im Chat."
+        },
+        "es": {
+          "name": "Persecución en el cielo",
+          "summary": "Una persecución de globos en el cielo para toda la familia: pilota un avión o helicóptero de juguete con un dedo y explota los tres globos del otro, contra FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Poursuite céleste",
+          "summary": "Une poursuite de ballons dans le ciel pour toute la famille : pilote un avion ou un hélicoptère jouet d’un doigt et éclate les trois ballons de l’autre, contre FlickerTalk ou à deux dans le chat."
+        },
+        "hi": {
+          "name": "आसमान में पीछा",
+          "summary": "पूरे परिवार के लिए आसमान में गुब्बारों का पीछा: एक उँगली से खिलौना हवाई जहाज़ या हेलिकॉप्टर उड़ाओ और दूसरे के तीन गुब्बारे फोड़ो, FlickerTalk के ख़िलाफ़ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Kejar di Langit",
+          "summary": "Kejar-kejaran balon di langit untuk seluruh keluarga: kemudikan pesawat atau helikopter mainan dengan satu jari dan letuskan tiga balon lawan, melawan FlickerTalk atau bersama orang lain di obrolan."
+        },
+        "it": {
+          "name": "Inseguimento in cielo",
+          "summary": "Un inseguimento di palloncini nel cielo per tutta la famiglia: pilota un aereo o un elicottero giocattolo con un dito e scoppia i tre palloncini dell’altro, contro FlickerTalk o in due nella chat."
+        },
+        "ja": {
+          "name": "スカイチェイス",
+          "summary": "家族みんなで楽しめる、空の風船チェイス。指1本でおもちゃの飛行機やヘリコプターを操縦し、相手の3つの風船を割りましょう。FlickerTalk と、またはチャットの相手と遊べます。"
+        },
+        "ko": {
+          "name": "하늘 추격전",
+          "summary": "온 가족이 즐기는 하늘 위 풍선 추격전: 손가락 하나로 장난감 비행기나 헬리콥터를 조종해 상대의 풍선 세 개를 터뜨리세요. FlickerTalk와 겨루거나 채팅 상대와 함께 즐길 수 있습니다."
+        },
+        "pl": {
+          "name": "Pościg w chmurach",
+          "summary": "Powietrzny pościg z balonami dla całej rodziny: steruj jednym palcem zabawkowym samolotem lub helikopterem i przebij trzy balony rywala, przeciwko FlickerTalk albo z drugą osobą na czacie."
+        },
+        "pt": {
+          "name": "Perseguição no céu",
+          "summary": "Uma perseguição de balões no céu para toda a família: pilote um avião ou helicóptero de brinquedo com um dedo e estoure os três balões do outro, contra o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Urmărire pe cer",
+          "summary": "O urmărire cu baloane pe cer pentru toată familia: pilotează cu un deget un avion sau un elicopter de jucărie și sparge cele trei baloane ale celuilalt, contra FlickerTalk sau în doi, în chat."
+        },
+        "ru": {
+          "name": "Погоня в небе",
+          "summary": "Воздушная погоня с шариками для всей семьи: управляй игрушечным самолётом или вертолётом одним пальцем и лопни три шарика соперника — против FlickerTalk или с собеседником в чате."
+        },
+        "th": {
+          "name": "ไล่ล่าบนฟ้า",
+          "summary": "เกมไล่ล่าลูกโป่งบนท้องฟ้าสำหรับทั้งครอบครัว บังคับเครื่องบินหรือเฮลิคอปเตอร์ของเล่นด้วยนิ้วเดียว แล้วทำลูกโป่งสามลูกของอีกฝ่ายให้แตก เล่นกับ FlickerTalk หรือกับอีกคนในแชต"
+        },
+        "tr": {
+          "name": "Gökyüzü Kovalamacası",
+          "summary": "Tüm aile için gökyüzünde bir balon kovalamacası: oyuncak bir uçağı ya da helikopteri tek parmakla yönlendir ve rakibin üç balonunu patlat; FlickerTalk'a karşı ya da sohbetteki diğer kişiyle."
+        },
+        "uk": {
+          "name": "Погоня в небі",
+          "summary": "Повітряна погоня з кульками для всієї родини: керуй іграшковим літаком або гелікоптером одним пальцем і лопни три кульки суперника — проти FlickerTalk або зі співрозмовником у чаті."
+        },
+        "vi": {
+          "name": "Rượt đuổi trên trời",
+          "summary": "Cuộc rượt đuổi bóng bay trên bầu trời cho cả gia đình: lái máy bay hoặc trực thăng đồ chơi bằng một ngón tay và làm nổ ba quả bóng của đối phương, đấu với FlickerTalk hoặc với người kia trong chat."
+        },
+        "zh-CN": {
+          "name": "空中追逐",
+          "summary": "适合全家人的空中气球追逐：用一根手指操控玩具飞机或直升机，打破对方的三个气球，可以对战 FlickerTalk，也可以和聊天中的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "空中追逐",
+          "summary": "適合全家人的空中氣球追逐：用一根手指操控玩具飛機或直升機，打破對方的三顆氣球，可以對戰 FlickerTalk，也可以和聊天中的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Sky Chase",
+      "size": 78495,
+      "summary": "A balloon chase in the sky for the whole family: fly a toy plane or helicopter with one finger and pop the other's three balloons, against FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.skychase/1.0.7.ftplugin",
+      "version": "1.0.7"
+    },
+    {
+      "hash": "134702a30d0b69672f7052d045c965d62fb87c34b3aff456217df88adccc404d",
+      "icon": "flag-outline",
+      "id": "com.flickertalk.game.squarehop",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#9333EA\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M80 464V68.14a8 8 0 0 1 4-6.9C91.81 56.66 112.92 48 160 48c64 0 145 48 192 48a199.5 199.5 0 0 0 77.23-15.77 2 2 0 0 1 2.77 1.85v219.36a4 4 0 0 1-2.39 3.65C421.37 308.7 392.33 320 352 320c-48 0-128-32-192-32s-80 16-80 16\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-miterlimit=\"10\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "رالي المربعات",
+          "summary": "سباق بالأدوار لكل العائلة: يُرمى نردان، تختار واحدًا وتقفز بعدده على مربعات مرقّمة، مع نوابض وتوربو وبرك ماء. ضد FlickerTalk، أو مع الشخص الآخر في المحادثة، أو لاعبان على هاتف واحد."
+        },
+        "bn": {
+          "name": "ঘরের র‍্যালি",
+          "summary": "পুরো পরিবারের জন্য পালা করে খেলার দৌড়: দুটি ছক্কা পড়ে, আপনি একটি বেছে নিয়ে ততগুলো নম্বর দেওয়া ঘর লাফান। FlickerTalk-এর বিরুদ্ধে, চ্যাটের অন্য জনের সঙ্গে বা এক ফোনে দুজন।"
+        },
+        "de": {
+          "name": "Hüpf-Rallye",
+          "summary": "Ein Wettlauf in Zügen für die ganze Familie: Zwei Würfel fallen, du wählst einen und hüpfst so viele nummerierte Felder. Gegen FlickerTalk, mit der anderen Person im Chat oder zu zweit am Telefon."
+        },
+        "es": {
+          "name": "Rally de casillas",
+          "summary": "Una carrera por turnos para toda la familia: salen dos dados, eliges uno y saltas ese número de casillas numeradas. Contra FlickerTalk, con la otra persona del chat o dos en un teléfono."
+        },
+        "fr": {
+          "name": "Rallye des cases",
+          "summary": "Une course au tour par tour pour toute la famille : deux dés sont lancés, tu en choisis un et tu sautes ce nombre de cases numérotées. Contre FlickerTalk, avec l’autre personne du chat ou à deux."
+        },
+        "hi": {
+          "name": "खानों की रैली",
+          "summary": "पूरे परिवार के लिए बारी-बारी की दौड़: दो पासे फेंके जाते हैं, आप एक चुनते हैं और उतने नंबर वाले खाने कूदते हैं। FlickerTalk के ख़िलाफ़, चैट के दूसरे व्यक्ति के साथ या एक फ़ोन पर दो लोग।"
+        },
+        "id": {
+          "name": "Reli Lompat Petak",
+          "summary": "Balapan bergiliran untuk seluruh keluarga: dua dadu dilempar, kamu memilih satu lalu melompat sebanyak itu di petak bernomor. Melawan FlickerTalk, dengan temanmu di chat, atau berdua di satu ponsel."
+        },
+        "it": {
+          "name": "Rally delle caselle",
+          "summary": "Una corsa a turni per tutta la famiglia: si tirano due dadi, ne scegli uno e salti di altrettante caselle numerate. Contro FlickerTalk, con l’altra persona della chat o in due su un telefono."
+        },
+        "ja": {
+          "name": "マスとびラリー",
+          "summary": "家族みんなで楽しめるターン制のレース。サイコロが2つ出るので1つ選び、その数だけ番号つきのマスを進みます。バネやターボ、水たまりも登場。FlickerTalk と対戦、チャットの相手と、または1台でふたりで。"
+        },
+        "ko": {
+          "name": "칸 뛰기 랠리",
+          "summary": "온 가족이 즐기는 턴제 경주: 주사위 두 개가 나오면 하나를 골라 그 수만큼 번호가 적힌 칸을 뜁니다. 길에는 스프링, 터보, 물웅덩이가 있어요. FlickerTalk와 겨루거나, 채팅 상대와, 또는 한 기기에서 둘이."
+        },
+        "pl": {
+          "name": "Rajd po polach",
+          "summary": "Wyścig na tury dla całej rodziny: wypadają dwie kostki, wybierasz jedną i skaczesz o tyle ponumerowanych pól. Przeciw FlickerTalk, z drugą osobą z czatu albo we dwoje na jednym telefonie."
+        },
+        "pt": {
+          "name": "Rali das casas",
+          "summary": "Uma corrida por turnos para toda a família: saem dois dados, você escolhe um e salta esse número de casas numeradas. Contra o FlickerTalk, com a outra pessoa da conversa ou dois num telefone."
+        },
+        "ro": {
+          "name": "Raliul căsuțelor",
+          "summary": "O cursă pe rând pentru toată familia: se aruncă două zaruri, alegi unul și sari tot atâtea căsuțe numerotate. Împotriva lui FlickerTalk, cu cealaltă persoană din conversație sau în doi pe un telefon."
+        },
+        "ru": {
+          "name": "Ралли по клеткам",
+          "summary": "Гонка по очереди для всей семьи: выпадают два кубика, вы выбираете один и прыгаете на столько пронумерованных клеток. Против FlickerTalk, с собеседником из чата или вдвоём на одном телефоне."
+        },
+        "th": {
+          "name": "แรลลี่กระโดดช่อง",
+          "summary": "เกมแข่งผลัดตาสำหรับทั้งครอบครัว: ทอยลูกเต๋าสองลูก เลือกหนึ่งลูกแล้วกระโดดไปตามจำนวนช่องที่มีหมายเลข แข่งกับ FlickerTalk กับอีกคนในแชต หรือสองคนบนโทรศัพท์เครื่องเดียว"
+        },
+        "tr": {
+          "name": "Kare Rallisi",
+          "summary": "Tüm aile için sırayla oynanan bir yarış: iki zar atılır, birini seçer ve o kadar numaralı kare zıplarsın. FlickerTalk’a karşı, sohbetteki kişiyle ya da tek telefonda iki kişi."
+        },
+        "uk": {
+          "name": "Ралі по клітинках",
+          "summary": "Перегони по черзі для всієї родини: випадають два кубики, ви обираєте один і стрибаєте на стільки пронумерованих клітинок. Проти FlickerTalk, зі співрозмовником із чату або вдвох на одному телефоні."
+        },
+        "vi": {
+          "name": "Đua nhảy ô",
+          "summary": "Cuộc đua theo lượt cho cả gia đình: gieo hai viên xúc xắc, bạn chọn một viên rồi nhảy bấy nhiêu ô đánh số. Đấu với FlickerTalk, với người kia trong cuộc trò chuyện hoặc hai người trên một máy."
+        },
+        "zh-CN": {
+          "name": "跳格拉力赛",
+          "summary": "适合全家的回合制赛跑：掷出两颗骰子，选一颗，在带数字的格子上跳相应的格数，途中有弹簧、加速和水坑。可对战 FlickerTalk、与聊天中的对方一起玩，或两人共用一部手机。"
+        },
+        "zh-TW": {
+          "name": "跳格拉力賽",
+          "summary": "適合全家的回合制賽跑：擲出兩顆骰子，選一顆，在帶數字的格子上跳相應的格數，途中有彈簧、加速和水坑。可對戰 FlickerTalk、與聊天中的對方一起玩，或兩人共用一部手機。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Square Hop Rally",
+      "size": 75991,
+      "summary": "A race by turns for the whole family: two dice are rolled, you choose one and hop that many numbered squares. Against FlickerTalk, with the other person in the chat or two on one phone.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.squarehop/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "a9c5614ac02b6eaa322b1db5dc2e6c419f5d5cf0e82ece730971ae71d182e572",
       "icon": "grid-outline",
       "id": "com.flickertalk.game.tictactoe",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#DB2777\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M204 240H68a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 240H308a36 36 0 0 1-36-36V68a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M204 480H68a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36M444 480H308a36 36 0 0 1-36-36V308a36 36 0 0 1 36-36h136a36 36 0 0 1 36 36v136a36 36 0 0 1-36 36\"/></g></svg>\n",
@@ -1420,13 +3130,108 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Tic-Tac-Toe",
-      "size": 46525,
+      "size": 72772,
       "summary": "Tic-Tac-Toe with the other person in the chat, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.0.6.ftplugin",
-      "version": "1.0.6"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tictactoe/1.3.2.ftplugin",
+      "version": "1.3.2"
     },
     {
-      "hash": "3fa1a6b799cd5d88e90496adacfe05fd3c8d38f1beb67c68d98e515d703e1392",
+      "hash": "23b67df0e336457c4ad342bbef791560e92ca2b310d1710beff66f1b01c990a5",
+      "icon": "extension-puzzle-outline",
+      "id": "com.flickertalk.game.tilecourt",
+      "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#0F766E\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"M413.66 246.1H386a2 2 0 0 1-2-2v-77.24A38.86 38.86 0 0 0 345.14 128H267.9a2 2 0 0 1-2-2V98.34c0-27.14-21.5-49.86-48.64-50.33a49.53 49.53 0 0 0-50.4 49.51V126a2 2 0 0 1-2 2H87.62A39.74 39.74 0 0 0 48 167.62V238a2 2 0 0 0 2 2h26.91c29.37 0 53.68 25.48 54.09 54.85.42 29.87-23.51 57.15-53.29 57.15H50a2 2 0 0 0-2 2v70.38A39.74 39.74 0 0 0 87.62 464H158a2 2 0 0 0 2-2v-20.93c0-30.28 24.75-56.35 55-57.06 30.1-.7 57 20.31 57 50.28V462a2 2 0 0 0 2 2h71.14A38.86 38.86 0 0 0 384 425.14v-78a2 2 0 0 1 2-2h28.48c27.63 0 49.52-22.67 49.52-50.4s-23.2-48.64-50.34-48.64\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\"/></g></svg>\n",
+      "kind": "game",
+      "locales": {
+        "ar": {
+          "name": "فناء البلاط",
+          "summary": "لغز هادئ لكل الأعمار: اسحب القطع إلى الفناء واملأ الصفوف والأعمدة، وحدك أو ضد FlickerTalk أو مع الشخص الآخر في المحادثة."
+        },
+        "bn": {
+          "name": "টালির উঠোন",
+          "summary": "সব বয়সের জন্য এক শান্ত ধাঁধা: টুকরোগুলো উঠোনে টেনে এনে সারি আর কলাম ভরান, একা, FlickerTalk-এর বিরুদ্ধে বা চ্যাটের অন্যজনের সঙ্গে।"
+        },
+        "de": {
+          "name": "Kachelhof",
+          "summary": "Ein ruhiges Rätsel für jedes Alter: Zieh Teile in einen Innenhof und füll Reihen und Spalten, allein, gegen FlickerTalk oder mit der anderen Person im Chat."
+        },
+        "es": {
+          "name": "Patio de piezas",
+          "summary": "Un puzle tranquilo para todas las edades: arrastra piezas a un patio y llena filas y columnas, solo, contra FlickerTalk o con la otra persona del chat."
+        },
+        "fr": {
+          "name": "Cour carrelée",
+          "summary": "Un puzzle tranquille pour tous les âges : fais glisser des pièces dans une cour et remplis lignes et colonnes, seul, contre FlickerTalk ou avec l’autre personne du chat."
+        },
+        "hi": {
+          "name": "टाइलों का आँगन",
+          "summary": "हर उम्र के लिए एक शांत पहेली: टुकड़ों को आँगन में खींचें और पंक्तियाँ व स्तंभ भरें, अकेले, FlickerTalk के ख़िलाफ़ या चैट के दूसरे व्यक्ति के साथ।"
+        },
+        "id": {
+          "name": "Halaman Ubin",
+          "summary": "Teka-teki tenang untuk segala usia: seret kepingan ke halaman dan isi baris serta kolom, sendiri, melawan FlickerTalk, atau bersama orang lain di obrolan."
+        },
+        "it": {
+          "name": "Cortile delle tessere",
+          "summary": "Un rompicapo tranquillo per tutte le età: trascina i pezzi in un cortile e riempi righe e colonne, da solo, contro FlickerTalk o con l’altra persona della chat."
+        },
+        "ja": {
+          "name": "タイルの中庭",
+          "summary": "だれでも楽しめる、のんびりパズル。ピースを中庭へドラッグして行と列をうめよう。ひとりで、FlickerTalk と、またはチャットの相手と。"
+        },
+        "ko": {
+          "name": "타일 안뜰",
+          "summary": "모든 연령을 위한 차분한 퍼즐: 조각을 안뜰로 끌어 줄과 열을 채우세요. 혼자, FlickerTalk와, 또는 채팅 상대와 함께."
+        },
+        "pl": {
+          "name": "Kafelkowy dziedziniec",
+          "summary": "Spokojna łamigłówka dla każdego: przeciągaj elementy na dziedziniec i wypełniaj rzędy i kolumny — sam, przeciw FlickerTalk albo z drugą osobą z czatu."
+        },
+        "pt": {
+          "name": "Pátio das peças",
+          "summary": "Um quebra-cabeça tranquilo para todas as idades: arraste peças para um pátio e preencha linhas e colunas, sozinho, contra o FlickerTalk ou com a outra pessoa da conversa."
+        },
+        "ro": {
+          "name": "Curtea cu dale",
+          "summary": "Un puzzle liniștit pentru toate vârstele: trage piese într-o curte și umple rânduri și coloane, singur, împotriva lui FlickerTalk sau cu cealaltă persoană din conversație."
+        },
+        "ru": {
+          "name": "Плиточный дворик",
+          "summary": "Спокойная головоломка для любого возраста: перетаскивай фигуры во двор и заполняй ряды и столбцы — одному, против FlickerTalk или с собеседником из чата."
+        },
+        "th": {
+          "name": "ลานกระเบื้อง",
+          "summary": "ปริศนาสบาย ๆ สำหรับทุกวัย ลากชิ้นส่วนลงในลานแล้วเติมแถวและคอลัมน์ให้เต็ม เล่นคนเดียว เล่นกับ FlickerTalk หรือกับอีกคนในแชท"
+        },
+        "tr": {
+          "name": "Karo Avlusu",
+          "summary": "Her yaşa uygun sakin bir bulmaca: parçaları avluya sürükle, satırları ve sütunları doldur; tek başına, FlickerTalk'a karşı ya da sohbetteki kişiyle."
+        },
+        "uk": {
+          "name": "Плитковий дворик",
+          "summary": "Спокійна головоломка для будь-якого віку: перетягуй фігури у двір і заповнюй ряди та стовпці — самому, проти FlickerTalk або з людиною з чату."
+        },
+        "vi": {
+          "name": "Sân gạch",
+          "summary": "Trò xếp hình nhẹ nhàng cho mọi lứa tuổi: kéo các mảnh vào sân và lấp đầy hàng, cột, chơi một mình, đấu với FlickerTalk hoặc với người kia trong cuộc trò chuyện."
+        },
+        "zh-CN": {
+          "name": "瓷砖庭院",
+          "summary": "适合各个年龄的轻松拼图：把拼片拖进庭院，填满行和列，可以独自玩、和 FlickerTalk 比，或和聊天里的对方一起玩。"
+        },
+        "zh-TW": {
+          "name": "磁磚庭院",
+          "summary": "適合各個年齡的輕鬆拼圖：把拼片拖進庭院，填滿行和列，可以獨自玩、和 FlickerTalk 比，或和聊天裡的對方一起玩。"
+        }
+      },
+      "minCoreVersion": "1.6.0",
+      "name": "Tile Court",
+      "size": 76120,
+      "summary": "A calm puzzle for all ages: drag tiles onto a courtyard and fill rows and columns, alone, against FlickerTalk or with the other person in the chat.",
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.tilecourt/1.0.3.ftplugin",
+      "version": "1.0.3"
+    },
+    {
+      "hash": "ab3308d3f4cac0e604e79ebfe1dcbfcf935ee6510df2dbc6dbfde7a6b492e7bb",
       "icon": "text-outline",
       "id": "com.flickertalk.game.wordduel",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#4F46E5\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m292.6 407.78-120-320a22 22 0 0 0-41.2 0l-120 320a22 22 0 0 0 41.2 15.44l36.16-96.42a2 2 0 0 1 1.87-1.3h122.74a2 2 0 0 1 1.87 1.3l36.16 96.42a22 22 0 0 0 41.2-15.44m-185.84-129 43.37-115.65a2 2 0 0 1 3.74 0l43.37 115.67a2 2 0 0 1-1.87 2.7h-86.74a2 2 0 0 1-1.87-2.7ZM400.77 169.5c-41.72-.3-79.08 23.87-95 61.4a22 22 0 0 0 40.5 17.2c8.88-20.89 29.77-34.44 53.32-34.6 32.32-.22 58.41 26.5 58.41 58.85a1.5 1.5 0 0 1-1.45 1.5c-21.92.61-47.92 2.07-71.12 4.8-54.75 6.44-87.43 36.29-87.43 79.85 0 23.19 8.76 44 24.67 58.68C337.6 430.93 358 438.5 380 438.5c31 0 57.69-8 77.94-23.22h.06a22 22 0 1 0 44 .19v-143c0-56.18-45-102.56-101.23-102.97M380 394.5c-17.53 0-38-9.43-38-36 0-10.67 3.83-18.14 12.43-24.23 8.37-5.93 21.2-10.16 36.14-11.92 21.12-2.49 44.82-3.86 65.14-4.47a2 2 0 0 1 2 2.1C455 370.1 429.46 394.5 380 394.5\"/></g></svg>\n",
@@ -1515,13 +3320,13 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Word Duel",
-      "size": 108512,
+      "size": 138644,
       "summary": "Word Duel with the other person in the chat: each hides a five-letter word, both guess in turn, English or Spanish, over the direct connection between your phones.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordduel/1.2.3.ftplugin",
+      "version": "1.2.3"
     },
     {
-      "hash": "e7e4b8cf3333c5b05fd41f537bb8317bc69e08be73a24375cd30b92fcc8a0592",
+      "hash": "953dae6c679631a28d4e330a8ab6e7a6faa55c5ac908e8ae0bb8155c108fc7ef",
       "icon": "language-outline",
       "id": "com.flickertalk.game.wordgrid",
       "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" fill=\"#7C3AED\"/><g fill=\"#fff\" transform=\"translate(15 15) scale(0.06640625)\"><path d=\"m478.33 433.6-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362 368 281.65 401.17 362ZM267.84 342.92a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z\"/></g></svg>\n",
@@ -1610,10 +3415,10 @@
       },
       "minCoreVersion": "1.6.0",
       "name": "Letter Grid",
-      "size": 117885,
+      "size": 148451,
       "summary": "Letter Grid with the other person in the chat: sixteen letters drawn by both phones, words said in turn, English or Spanish, over the direct connection.",
-      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.0.5.ftplugin",
-      "version": "1.0.5"
+      "url": "https://flickertalk.com/plugins/com.flickertalk.game.wordgrid/1.2.2.ftplugin",
+      "version": "1.2.2"
     },
     {
       "hash": "6900332afa14ece1e34294a6e0e8bddc4fcfe07e901d47c5d4aa18e3ab184fcb",
